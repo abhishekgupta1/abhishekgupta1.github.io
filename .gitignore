@@ -27,3 +27,14 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# removing unwanted files
+.editorconfig
+.gitattributes
+.github
+/docs
+/test
+CHANGELOG.md
+minimal-mistakes-jekyll.gemspec
+screenshot-layouts.png
+screenshot.png

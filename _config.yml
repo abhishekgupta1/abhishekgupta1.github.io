@@ -111,22 +111,22 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:abhishekcgupta1@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/automationhacks/"
+      url: "https://www.linkedin.com/in/abhishekcgupta1/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/automationhacks"
+      url: "https://github.com/abhishekgupta1"
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/automationhacks/"
+      url: "https://www.linkedin.com/in/abhishekcgupta1/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/automationhacks"
+      url: "https://github.com/abhishekgupta1"
 
 
 # Reading Files
@@ -264,6 +264,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
