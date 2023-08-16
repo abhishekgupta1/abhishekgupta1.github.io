@@ -1,6 +1,5 @@
 ---
 title: "When to Release a product or feature ??"
-permalink: /2023/01/01/When to Release a product or feature
 header:
   caption: "When to Release a product or feature ??"
 tags:
