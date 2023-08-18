@@ -1,7 +1,7 @@
 ---
-title: "Different API architecture styles"
+title: "Key aspects of a Testing Strategy"
 header:
-  caption: "Different API architecture styles"
+  caption: "Key aspects of a Testing Strategy"
 tags:
   - sdet
   - quality-assurance
