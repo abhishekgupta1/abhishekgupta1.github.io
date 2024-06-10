@@ -8,6 +8,11 @@ tags:
 toc: false  
 ---
 ---
+pytest is a powerful testing framework for Python that makes it easy to write simple and scalable test cases.
+```
+pip install pytest
+```
+
 #### Using Assertions
 ```
 def test_addition():
