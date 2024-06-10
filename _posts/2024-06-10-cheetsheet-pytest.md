@@ -3,10 +3,8 @@ title: "CheetSheet : PyTest"
 header:
   caption: "CheetSheet : PyTest"
 tags:
-  - sdet
-  - quality-assurance
-  - Testing
-  - QA
+  - CheetSheet
+  - Integration Test
 toc: false  
 ---
 ---
@@ -28,18 +26,6 @@ def test_custom_message():
     assert 1 + 1 == 3, "Math is broken!"
     
 ```
-#### Test Class
-```
-import pytest
-
-@pytest.fixture
-def sample_list():
-    return [1, 2, 3, 4, 5]
-
-def test_sum(sample_list):
-    assert sum(sample_list) == 15
-```
-
 #### Parameterized Tests
 ```
 # test_example.py
