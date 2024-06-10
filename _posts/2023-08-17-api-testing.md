@@ -1,7 +1,7 @@
 ---
-title: "APIs thought to give while Testing"
+title: "Checklist : API Testing"
 header:
-  caption: "APIs thought to give while Testing"
+  caption: "Checklist : API Testing"
 tags:
   - sdet
   - quality-assurance
@@ -9,13 +9,7 @@ tags:
   - QA
 toc: false  
 ---
-
-Checklist : API Testing
-
 ---
-
-### API Testing QA Checklist
-
 #### **1. Preparation**
 -  Understand API specifications, including endpoints, request methods, request/response formats, headers, params, response schema, authentication methods, and configuration flags.
 -  Develop a test plan outlining scope, description, actions, data, expected results.
