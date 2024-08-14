@@ -1,0 +1,40 @@
+ /docs and /test if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme
+
+ GemBased theme
+ -------------------
+ assets, _layouts, _includes, and _sass
+
+ add anything to gem file with below command 
+ ------------------------------------------
+ gem "minimal-mistakes-jekyll"
+
+Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.
+Fetch and update bundled gems by running the following Bundler command:
+
+================bundle
+Set the theme in your project’s Jekyll _config.yml file:
+
+Copy codetheme: minimal-mistakes-jekyll
+===========================================
+bundle update
+
+
+
+List of unnecessary folders and files 
+-----------------
+.editorconfig
+.gitattributes
+.github
+/docs
+/test
+CHANGELOG.md
+minimal-mistakes-jekyll.gemspec
+README.md
+screenshot-layouts.png
+screenshot.png
+
+_data/ui-text.yml => the file is for the localization feature to work 
+
+_data/navigation.yml - navigation documentation
+
+bundle exec jekyll serve should spin-up your site.
