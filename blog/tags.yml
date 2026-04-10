@@ -1,19 +1,44 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+testing:
+  label: Testing
+  permalink: /testing
+  description: Articles about software testing strategies and methodologies
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+playwright:
+  label: Playwright
+  permalink: /playwright
+  description: Playwright test automation tips and patterns
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+sre:
+  label: SRE
+  permalink: /sre
+  description: Site Reliability Engineering practices and insights
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+observability:
+  label: Observability
+  permalink: /observability
+  description: Monitoring, alerting, and observability tooling
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Artificial intelligence in software testing and development
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Test automation and CI/CD pipeline topics
+
+kubernetes:
+  label: Kubernetes
+  permalink: /kubernetes
+  description: Container orchestration and Kubernetes operations
+
+ci-cd:
+  label: CI/CD
+  permalink: /ci-cd
+  description: Continuous integration and delivery pipelines
+
+reliability:
+  label: Reliability
+  permalink: /reliability
+  description: Building and maintaining reliable systems
