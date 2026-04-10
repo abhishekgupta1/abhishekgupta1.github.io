@@ -12,10 +12,10 @@ const config = {
   },
 
   url: 'https://abhishekgupta1.github.io',
-  baseUrl: '/portfolio-site/',
+  baseUrl: '/',
 
   organizationName: 'abhishekgupta1',
-  projectName: 'portfolio-site',
+  projectName: 'abhishekgupta1.github.io',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
