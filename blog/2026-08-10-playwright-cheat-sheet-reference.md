@@ -6,7 +6,6 @@ authors: [abhishek]
 tags: [playwright, testing, automation, ci-cd]
 description: "A scannable, curated Playwright cheat sheet — CLI commands, locator strategies, assertions, and the framework practices worth building around."
 image: "/img/og-image.png"
-draft: true
 ---
 
 Every time I set up a new Playwright suite or review someone else's, I end up hunting for the same handful of things: the right locator strategy, the assertion that auto-retries instead of flaking, the CLI flag I always forget. So I put together a single reference — part command cheat sheet, part framework checklist — that I keep coming back to. This is that reference, cleaned up and organized so it's actually scannable.
