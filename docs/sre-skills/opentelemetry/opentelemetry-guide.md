@@ -48,6 +48,41 @@ your logs and linked from your metrics lets you pivot from "latency spiked"
 (metric) → "here are the slow traces" (trace) → "here's the exact error
 stack" (log) without leaving your observability tool.
 
+### Why this matters operationally: MTTD, MTTR, MTBF, MTTF
+
+Observability isn't collected for its own sake — it exists to protect a
+system's **availability, reliability, and performance**, and its payoff is
+measurable in four reliability metrics:
+
+| Metric | Definition | What Reduces It |
+|---|---|---|
+| **MTTD** (Mean Time to Detect) | Average time between a failure occurring and someone/something noticing | Monitoring — alerts, dashboards |
+| **MTTR** (Mean Time to Repair) | Average time to fix an issue after it's detected | Observability — root-cause context (correlated traces/logs/metrics) |
+| **MTBF** (Mean Time Between Failures) | Average time between distinct failures | Observability — fixes informed by root cause prevent repeat incidents |
+| **MTTF** (Mean Time to Failure) | Total operational time from one failure to the next | A composite outcome: `MTTF = MTTD + MTTR + MTBF` |
+
+> **Key distinction:** *monitoring* (a dashboard telling you something is
+> wrong) mainly improves **MTTD**. *Observability* (the ability to ask
+> arbitrary questions of correlated telemetry) is what improves **MTTR and
+> MTBF** too — because it gives you the "why," not just the "that." This is
+> the real argument for adopting OTel over a pile of disconnected
+> logging/metrics tools: the win isn't detecting faster, it's repairing
+> faster and not repeating the same incident.
+
+This is the same idea as the classic observability feedback loop:
+
+```
+1. Measure  → Collect telemetry from the system  (SDK + Collector)
+2. Analyze  → Interpret it to understand internal state  (dashboards, alerting, trace search)
+3. Control  → Act to restore/maintain desired state  (rollback, scale, page a human)
+```
+
+A pipeline that only *measures* — ships telemetry to a backend nobody looks
+at or alerts on — isn't delivering observability yet; it's just data
+collection. The Collector and SDK are the "measure" stage; everything in
+sections 7–9 below (correlation, backends, debugging) is what turns that
+into "analyze" and "control."
+
 ---
 
 ## 2. Core Concepts by Signal
@@ -124,6 +159,39 @@ tools like Grafana or Datadog.
   field names — critical for dashboards/queries to work uniformly across a
   polyglot fleet.
 
+### 2.6 Baggage
+
+A fourth, less-discussed signal: **key-value pairs propagated across service
+boundaries alongside (but distinct from) trace context**, carried in a
+`baggage` HTTP header:
+
+```
+baggage: user.tier=enterprise,feature.flag.new-checkout=true
+```
+
+Unlike a span attribute (which only exists on the span it's set on), baggage
+travels with the *request*, hop to hop, so any downstream service can read
+values set far upstream — without needing to look anything up. Common
+real-world use: a gateway sets `user.tier=enterprise` in baggage, and a
+downstream service reads it to decide to trace this specific request at
+100% instead of the default 1% sample rate, or to branch feature-flag
+behavior. Baggage is *not* automatically attached to spans/logs/metrics —
+you have to explicitly read it and set it as a span attribute if you want it
+to show up in your backend; propagating it does not, by itself, export it
+anywhere.
+
+### 2.7 Signal Maturity (as of 2025)
+
+Not all signals are equally production-ready across every language SDK —
+worth checking before you commit to one in a new stack:
+
+| Signal | Status |
+|---|---|
+| Traces | Stable across most languages |
+| Metrics | Stable across most languages |
+| Logs | Experimental in some language SDKs |
+| Profiling | Still in development (newest addition to the OTel signal set) |
+
 ---
 
 ## 3. Architecture: API, SDK, and Collector
@@ -166,6 +234,15 @@ tools like Grafana or Datadog.
 
 ## 4. Instrumentation: Auto vs. Manual
 
+In practice there are three approaches, and a recommended hybrid:
+
+| Approach | Code Changes | Control | Setup Speed | When |
+|---|---|---|---|---|
+| **Zero-code (auto)** | None | Low | Minutes | Baseline coverage, legacy code you can't touch, quick PoC |
+| **Library-based** | Import + configure | Medium | Hours | Popular frameworks needing more control than auto gives |
+| **Code-based (manual)** | Explicit SDK/API calls | Full | Days | Business-specific spans/metrics/attributes |
+| **Hybrid** (recommended default) | Mix of all three | Full where it matters | — | Auto for framework coverage, manual only where it leaves a real blind spot |
+
 ### Auto-instrumentation
 Language agents/packages that patch common libraries (HTTP frameworks, DB
 drivers, message queues) to emit spans/metrics with zero code changes.
@@ -185,8 +262,47 @@ java -javaagent:opentelemetry-javaagent.jar \
      -jar app.jar
 ```
 
+```js
+// Node.js example — tracing.js, required BEFORE your app code loads
+const { NodeSDK } = require('@opentelemetry/sdk-node');
+const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
+const { Resource } = require('@opentelemetry/resources');
+const { SemanticResourceAttributes: S } = require('@opentelemetry/semantic-conventions');
+
+const sdk = new NodeSDK({
+  resource: new Resource({
+    [S.SERVICE_NAME]: 'order-service',
+    [S.DEPLOYMENT_ENVIRONMENT]: 'production',
+  }),
+  traceExporter: new OTLPTraceExporter({ url: 'http://collector:4317' }),
+  instrumentations: [getNodeAutoInstrumentations()],
+});
+
+sdk.start();
+```
+
+```bash
+node -r ./tracing.js server.js
+```
+
 Auto-instrumentation gets you HTTP server/client spans, DB query spans, and
 basic metrics essentially for free — the fastest path to baseline coverage.
+
+**Node-specific trap:** auto-instrumentation patches libraries by
+intercepting `require()`. If `server.js` (which `require`s Express/pg/etc.)
+loads *before* `tracing.js` runs, the patch never attaches — you get zero
+spans, with no error. This is the single most common Node OTel mistake:
+
+```js
+// WRONG — express is already loaded before tracing.js can patch it
+require('./server.js');
+require('./tracing.js');
+```
+
+Always load the tracing setup first, either via `node -r ./tracing.js
+server.js` (as above) or as the literal first `require`/`import` in your
+entrypoint.
 
 ### Manual instrumentation
 For business-meaningful spans/attributes auto-instrumentation can't know
@@ -240,6 +356,26 @@ cost). Sampling decides what to keep.
 
 Tail-based sampling is usually implemented in the **Collector**, not the SDK,
 since it needs to see the whole trace before deciding.
+
+### Cost optimization, with rough numbers
+
+Sampling is one lever; combined with Collector-side filtering/aggregation,
+teams commonly cut observability spend significantly without losing
+visibility into failures:
+
+| Strategy | Approach | Typical savings |
+|---|---|---|
+| **Tail sampling** | Keep 100% of errors/slow traces, sample 1–10% of the rest | 90–99% less trace volume |
+| **Metric aggregation** | Aggregate in the Collector before export; prefer histograms over raw gauge samples | 80–95% less metric volume |
+| **Log filtering** | Drop `DEBUG`/`INFO` in the Collector, keep `WARN`/`ERROR` | 70–90% less log volume |
+| **Hybrid backend** | OSS stack (Jaeger/Prometheus/Loki) for dev/staging, commercial vendor only for prod | 50–70% cost reduction |
+
+The non-negotiable rule underneath all of these: **never sample away errors
+or slow requests to save cost** — savings should come out of the volume of
+*normal*, successful, fast traffic, which is by definition the least
+interesting data you're storing. And do the filtering/aggregation in the
+**Collector**, not the backend — otherwise you're still paying to ingest
+data you intended to discard.
 
 ---
 
@@ -376,6 +512,11 @@ disconnected tools.
   silently drop all telemetry during the exact incident you need visibility into.
 - **Clock skew** across hosts can make spans appear to start before their
   parent — NTP hygiene matters for trace tree correctness.
+- **Node: SDK initialized after app code** — Node auto-instrumentation
+  patches modules via `require()` interception; if Express/pg/etc. load
+  before the tracing SDK does, the patch never attaches and you silently get
+  zero spans. Always `require`/`import` the tracing setup first, or launch
+  with `node -r ./tracing.js server.js`.
 
 ---
 
@@ -434,6 +575,36 @@ slow *trace* showing *where* time was spent across services; the trace's
 `trace_id`, automatically attached to log lines emitted during that request,
 lets you pull the exact *logs* explaining *why* — end to end without
 manually correlating timestamps across three separate tools.
+
+**Q: What's the difference between what monitoring improves and what
+observability improves, in reliability terms?**
+A: Monitoring — alerts and dashboards telling you something broke — mainly
+shortens **MTTD** (mean time to detect). Observability — the ability to
+correlate traces/logs/metrics and ask arbitrary questions of the data — is
+what shortens **MTTR** (you have root-cause context instead of guessing) and
+raises **MTBF** (fixes based on real root cause stop the same failure from
+recurring). If a team only ships dashboards and alerts, they've bought
+faster detection, not faster or fewer incidents.
+
+**Q: What is baggage, and how is it different from a span attribute?**
+A: Baggage is a key-value context (`baggage` header) that propagates across
+every hop of a request, independent of any single span — a downstream
+service can read a value set several services upstream without an extra
+lookup. A span attribute, by contrast, only exists on the span it was set
+on. Baggage isn't automatically exported anywhere; a common pattern is
+reading a baggage value (e.g. `user.tier=enterprise`) and using it to drive
+a local decision, like sampling this request at 100% or copying it onto a
+span attribute so it's actually visible in the backend.
+
+**Q: A Node.js service has zero spans even though auto-instrumentation is
+installed and configured correctly. What do you check first?**
+A: Whether the tracing SDK is being loaded *before* the instrumented
+libraries. Node auto-instrumentation patches modules by intercepting
+`require()`/`import`; if `server.js` (and therefore Express/pg/etc.) loads
+before the SDK initializes, the patch never attaches — and there's no error,
+just silent zero spans. Fix is to load the tracing bootstrap first,
+typically via `node -r ./tracing.js server.js` or as the literal first line
+of the entrypoint.
 
 ---
 
