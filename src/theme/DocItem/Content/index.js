@@ -11,6 +11,7 @@ import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import ListenButton from '@site/src/components/ListenButton';
+import MindMapButton from '@site/src/components/MindMapButton';
 
 function useSyntheticTitle() {
   const {metadata, frontMatter, contentTitle} = useDoc();
@@ -23,11 +24,17 @@ function useSyntheticTitle() {
 
 export default function DocItemContent({children}) {
   const syntheticTitle = useSyntheticTitle();
+  const {metadata, frontMatter} = useDoc();
   const contentRef = useRef(null);
 
   return (
     <>
       <ListenButton targetRef={contentRef} />
+      <MindMapButton
+        targetRef={contentRef}
+        title={syntheticTitle || metadata.title}
+        subtitle={frontMatter.description || metadata.description}
+      />
       <div ref={contentRef} className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
         {syntheticTitle && (
           <header>
