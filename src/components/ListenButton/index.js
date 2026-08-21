@@ -73,7 +73,14 @@ export default function ListenButton({targetRef}) {
   const getText = useCallback(() => {
     const node = targetRef.current;
     if (!node) return '';
-    return node.innerText || node.textContent || '';
+    // Diagram SVGs (e.g. "Mental model" callouts) repeat their node labels
+    // as many small positioned <text> elements - great visually, but read
+    // aloud as disconnected word fragments. Strip just the <svg> from a
+    // clone so the surrounding prose (including the diagram's caption) is
+    // still read, without the label soup.
+    const clone = node.cloneNode(true);
+    clone.querySelectorAll('svg').forEach((el) => el.remove());
+    return clone.innerText || clone.textContent || '';
   }, [targetRef]);
 
   // Populate the timeline as soon as the content is available, so it's

@@ -14,6 +14,51 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: velocity, burndown, sprint-planning, forecasting
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-velocity-title mm-velocity-desc">
+<title id="mm-velocity-title">From noisy past sprints to a mid-sprint replan decision</title>
+<desc id="mm-velocity-desc">Past sprint numbers become a trailing average and range, which sets a low-biased sprint plan, which is checked mid-sprint against the burndown, leading to a replan decision if the trend is off.</desc>
+<defs>
+  <marker id="mm-velocity-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="10" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="75" y="110" text-anchor="middle">Past sprints</text>
+<text class="mm-node-sub" x="75" y="126" text-anchor="middle">32,28,41,25,34</text>
+
+<path class="mm-arrow" d="M140,115 L162,115" marker-end="url(#mm-velocity-arrow)"/>
+
+<rect class="mm-n2" x="166" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="231" y="110" text-anchor="middle">Trailing avg</text>
+<text class="mm-node-sub" x="231" y="126" text-anchor="middle">avg 32, rng 25-41</text>
+
+<path class="mm-arrow" d="M296,115 L318,115" marker-end="url(#mm-velocity-arrow)"/>
+
+<rect class="mm-n3" x="322" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="387" y="110" text-anchor="middle">Sprint plan</text>
+<text class="mm-node-sub" x="387" y="126" text-anchor="middle">~30, low-biased</text>
+
+<path class="mm-arrow" d="M452,115 L474,115" marker-end="url(#mm-velocity-arrow)"/>
+
+<rect class="mm-n4" x="478" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="543" y="105" text-anchor="middle">Burndown check</text>
+<text class="mm-node-sub" x="543" y="121" text-anchor="middle">day 6: 20% vs 40%</text>
+<text class="mm-node-sub" x="543" y="135" text-anchor="middle">ideal</text>
+
+<path class="mm-arrow" d="M608,115 L630,115" marker-end="url(#mm-velocity-arrow)"/>
+
+<rect class="mm-n5" x="634" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="699" y="110" text-anchor="middle">Replan</text>
+<text class="mm-node-sub" x="699" y="126" text-anchor="middle">cut scope now</text>
+</svg>
+
+<p class="mental-model__caption">Velocity forecasting is a chain, not a lookup — noisy past sprints become a trailing average and range, that range sets a deliberately low-biased plan, and a mid-sprint burndown check catches drift early enough to actually replan instead of just missing the date.</p>
+</div>
+
 ## Quick Reference
 
 Velocity is a **measurement**, not a **target** — use the trailing 3-6 sprint average to forecast, and treat any single sprint's number as noisy. A burndown chart's job is to show *trend*, not to shame a team into a specific slope; a flattening burndown mid-sprint is a signal to replan, not a signal to push harder.

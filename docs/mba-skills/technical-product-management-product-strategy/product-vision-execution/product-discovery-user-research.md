@@ -14,6 +14,42 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: product-discovery, user-research, customer-interviews, personas
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-discovery-title mm-discovery-desc">
+<title id="mm-discovery-title">From behavioral interviews to a usable persona</title>
+<desc id="mm-discovery-desc">Behavioral interviews about past behavior are filtered for friction that shows up unprompted and repeatedly across many people, and only that pattern becomes a persona — a one-off complaint mentioned only when asked directly is discarded as weak signal.</desc>
+<defs>
+  <marker id="mm-discovery-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="10" y="80" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="120" y="112" text-anchor="middle">Behavioral interviews</text>
+<text class="mm-node-sub" x="120" y="129" text-anchor="middle">past behavior,</text>
+<text class="mm-node-sub" x="120" y="142" text-anchor="middle">not future intent</text>
+
+<path class="mm-arrow" d="M230,120 L296,120" marker-end="url(#mm-discovery-arrow)"/>
+<text class="mm-flow-label" x="263" y="105" text-anchor="middle">6 of 8, unprompted</text>
+
+<rect class="mm-n4" x="300" y="80" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="410" y="112" text-anchor="middle">Unprompted &amp; repeated?</text>
+<text class="mm-node-sub" x="410" y="129" text-anchor="middle">filters out one-off,</text>
+<text class="mm-node-sub" x="410" y="142" text-anchor="middle">low-signal noise</text>
+
+<path class="mm-arrow" d="M520,120 L586,120" marker-end="url(#mm-discovery-arrow)"/>
+
+<rect class="mm-n5" x="590" y="80" width="180" height="80" rx="10"/>
+<text class="mm-node-title" x="680" y="112" text-anchor="middle">Persona</text>
+<text class="mm-node-sub" x="680" y="129" text-anchor="middle">narrow, actionable</text>
+<text class="mm-node-sub" x="680" y="142" text-anchor="middle">segment</text>
+</svg>
+
+<p class="mental-model__caption">Product discovery narrows raw interview signal down to a usable persona in one direction only: gather behavioral interviews about what actually happened, keep only the friction that surfaces unprompted and repeatedly across many people, and let that pattern — not a demographic guess — define the persona.</p>
+</div>
+
 ## Quick Reference
 
 Interview for **past behavior, not future intent** ("walk me through the last time you hit this problem" beats "would you use a feature that..."). Look for friction that shows up **unprompted and repeatedly** across interviews — that's a real problem; a friction point only one person mentions when asked directly is weak signal. Build personas from patterns in actual friction, not from demographic guesses.

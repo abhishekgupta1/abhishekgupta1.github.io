@@ -13,6 +13,54 @@ into an SDE interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 290" role="img" aria-labelledby="mm-git-title mm-git-desc">
+<title id="mm-git-title">The git snapshot pipeline</title>
+<desc id="mm-git-desc">Edits in the working directory are staged with git add, committed into the local repo as a DAG of snapshots, and pushed to a remote. Git fetch or pull brings remote history back, and git checkout or restore brings a snapshot back into the working directory.</desc>
+<defs>
+  <marker id="mm-git-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="105" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="100" y="135" text-anchor="middle">Working Dir</text>
+<text class="mm-node-sub" x="100" y="152" text-anchor="middle">your edited files</text>
+
+<path class="mm-arrow" d="M180,140 L226,140" marker-end="url(#mm-git-arrow)"/>
+<text class="mm-flow-label" x="203" y="128" text-anchor="middle">git add</text>
+
+<rect class="mm-n5" x="230" y="105" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="310" y="135" text-anchor="middle">Staging Area</text>
+<text class="mm-node-sub" x="310" y="152" text-anchor="middle">git add snapshot</text>
+
+<path class="mm-arrow" d="M390,140 L436,140" marker-end="url(#mm-git-arrow)"/>
+<text class="mm-flow-label" x="413" y="128" text-anchor="middle">git commit</text>
+
+<rect class="mm-n1" x="440" y="100" width="170" height="80" rx="10"/>
+<text class="mm-node-title" x="525" y="130" text-anchor="middle">Local Repo</text>
+<text class="mm-node-sub" x="525" y="147" text-anchor="middle">DAG of commits</text>
+<text class="mm-node-sub" x="525" y="160" text-anchor="middle">(snapshots, not diffs)</text>
+
+<path class="mm-arrow" d="M610,140 L636,140" marker-end="url(#mm-git-arrow)"/>
+<text class="mm-flow-label" x="623" y="128" text-anchor="middle">git push</text>
+
+<rect class="mm-n6" x="640" y="105" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="705" y="135" text-anchor="middle">Remote Repo</text>
+<text class="mm-node-sub" x="705" y="152" text-anchor="middle">origin (GitHub)</text>
+
+<path class="mm-arrow" d="M705,175 C705,220 560,220 560,182" marker-end="url(#mm-git-arrow)"/>
+<text class="mm-flow-label" x="650" y="212" text-anchor="middle">git fetch / pull</text>
+
+<path class="mm-arrow" d="M460,182 C460,250 100,250 100,177" marker-end="url(#mm-git-arrow)"/>
+<text class="mm-flow-label" x="280" y="264" text-anchor="middle">git checkout / restore</text>
+</svg>
+
+<p class="mental-model__caption">Changes flow one way through git add, commit, and push — from working directory to staging to the local snapshot history to a remote — and flow back the other way through fetch/pull and checkout/restore, which together are most of what git commands do.</p>
+</div>
+
 ## 1. What Git Actually Is
 
 Git is a **distributed, content-addressable version control system**. Every

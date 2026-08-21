@@ -14,6 +14,46 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: generative-ai, LLM, vector-database, AI-ethics, data-privacy, API-cost
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-genai-title mm-genai-desc">
+<title id="mm-genai-title">The four decisions behind any generative AI feature</title>
+<desc id="mm-genai-desc">Building a feature on an LLM requires four linked decisions around a central hub: which model and how to tier it, whether to add retrieval over your own data, how to control cost, and how to guard privacy and ethics — all evaluated as one probabilistic component embedded in a deterministic product.</desc>
+<defs>
+  <marker id="mm-genai-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="300" y="115" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">LLM feature</text>
+<text class="mm-node-sub" x="390" y="162" text-anchor="middle">a new decision surface</text>
+
+<path class="mm-arrow" d="M310,118 L190,80" marker-end="url(#mm-genai-arrow)"/>
+<rect class="mm-n1" x="20" y="20" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="115" y="45" text-anchor="middle">Model tiering</text>
+<text class="mm-node-sub" x="115" y="61" text-anchor="middle">cheap model for easy cases</text>
+
+<path class="mm-arrow" d="M470,118 L610,80" marker-end="url(#mm-genai-arrow)"/>
+<rect class="mm-n2" x="590" y="20" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="685" y="45" text-anchor="middle">RAG retrieval</text>
+<text class="mm-node-sub" x="685" y="61" text-anchor="middle">ground answers in your data</text>
+
+<path class="mm-arrow" d="M310,182 L190,220" marker-end="url(#mm-genai-arrow)"/>
+<rect class="mm-n4" x="20" y="220" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="115" y="245" text-anchor="middle">Cost controls</text>
+<text class="mm-node-sub" x="115" y="261" text-anchor="middle">caching, prompt discipline</text>
+
+<path class="mm-arrow" d="M470,182 L610,220" marker-end="url(#mm-genai-arrow)"/>
+<rect class="mm-n5" x="590" y="220" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="685" y="245" text-anchor="middle">Privacy &amp; ethics</text>
+<text class="mm-node-sub" x="685" y="261" text-anchor="middle">guardrails from day one</text>
+</svg>
+
+<p class="mental-model__caption">Every generative AI feature is really four linked decisions around one probabilistic component: which model to use and how to tier it by task difficulty, whether to ground it in your own data through retrieval, how to keep its API cost predictable, and how to build in privacy and ethics guardrails before launch rather than retrofitting them after.</p>
+</div>
+
 ## Quick Reference
 
 Evaluate LLMs on task-specific accuracy, latency, and **cost per unit of value delivered**, not benchmark leaderboards alone. Control API cost with caching, prompt-length discipline, and model-tiering (cheaper model for easy cases, stronger model only when needed). Use a vector database when you need semantic retrieval over your own data (RAG), not by default. Build privacy and ethics guardrails in from the start — what data reaches the model, what the model is allowed to do with it, and how outputs are reviewed — since retrofitting them after launch is far more expensive than designing for them upfront.

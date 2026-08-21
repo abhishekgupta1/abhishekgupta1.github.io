@@ -13,6 +13,48 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-otel-title mm-otel-desc">
+<title id="mm-otel-title">How the three signals flow through OpenTelemetry</title>
+<desc id="mm-otel-desc">Traces, metrics, and logs are emitted by an instrumented app, converge on a Collector that receives, processes, and exports them, which forwards the data to a backend for storage and querying.</desc>
+<defs>
+  <marker id="mm-otel-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="50" y="20" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="125" y="46" text-anchor="middle">Traces</text>
+<text class="mm-node-sub" x="125" y="62" text-anchor="middle">request path, spans</text>
+
+<rect class="mm-n2" x="315" y="20" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="46" text-anchor="middle">Metrics</text>
+<text class="mm-node-sub" x="390" y="62" text-anchor="middle">counters, histograms</text>
+
+<rect class="mm-n4" x="580" y="20" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="655" y="46" text-anchor="middle">Logs</text>
+<text class="mm-node-sub" x="655" y="62" text-anchor="middle">structured events</text>
+
+<path class="mm-arrow" d="M140,80 L320,138" marker-end="url(#mm-otel-arrow)"/>
+<path class="mm-arrow" d="M390,80 L390,138" marker-end="url(#mm-otel-arrow)"/>
+<path class="mm-arrow" d="M640,80 L460,138" marker-end="url(#mm-otel-arrow)"/>
+
+<rect class="mm-n5" x="280" y="140" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="170" text-anchor="middle">Collector</text>
+<text class="mm-node-sub" x="390" y="187" text-anchor="middle">receive → process → export</text>
+
+<path class="mm-arrow" d="M390,210 L390,238" marker-end="url(#mm-otel-arrow)"/>
+
+<rect class="mm-n6" x="290" y="240" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="266" text-anchor="middle">Backend</text>
+<text class="mm-node-sub" x="390" y="282" text-anchor="middle">Jaeger / Prometheus / etc.</text>
+</svg>
+
+<p class="mental-model__caption">The app never talks to a backend directly — it emits three signal types that all funnel through the Collector, which batches, filters, and re-exports them so the storage backend can change underneath the app without touching a single line of instrumentation code.</p>
+</div>
+
 ## 1. What OpenTelemetry Is and Why It Exists
 
 OpenTelemetry is a **CNCF-hosted, vendor-neutral standard** (APIs, SDKs,

@@ -11,6 +11,50 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-c2-title mm-c2-desc">
+<title id="mm-c2-title">Every known risk routes through the same gate</title>
+<desc id="mm-c2-desc">A known risk fans out into three real options — fix and delay, ship with mitigation, or ship and accept the risk — which converge into a single documented decision with a named, authorized owner.</desc>
+<defs>
+  <marker id="mm-c2-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="100" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="105" y="130" text-anchor="middle">Known risk found</text>
+<text class="mm-node-sub" x="105" y="147" text-anchor="middle">bug, gap, or incident</text>
+
+<path class="mm-arrow" d="M190,120 L280,50" marker-end="url(#mm-c2-arrow)"/>
+<path class="mm-arrow" d="M190,135 L280,130" marker-end="url(#mm-c2-arrow)"/>
+<path class="mm-arrow" d="M190,150 L280,210" marker-end="url(#mm-c2-arrow)"/>
+
+<rect class="mm-n1" x="280" y="20" width="210" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="45" text-anchor="middle">Fix &amp; delay</text>
+<text class="mm-node-sub" x="385" y="62" text-anchor="middle">eliminate the risk</text>
+
+<rect class="mm-n4" x="280" y="100" width="210" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="125" text-anchor="middle">Ship + mitigate</text>
+<text class="mm-node-sub" x="385" y="142" text-anchor="middle">workaround documented</text>
+
+<rect class="mm-n5" x="280" y="180" width="210" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="205" text-anchor="middle">Ship + accept</text>
+<text class="mm-node-sub" x="385" y="222" text-anchor="middle">risk owner signs off</text>
+
+<path class="mm-arrow" d="M490,50 L580,120" marker-end="url(#mm-c2-arrow)"/>
+<path class="mm-arrow" d="M490,130 L580,135" marker-end="url(#mm-c2-arrow)"/>
+<path class="mm-arrow" d="M490,210 L580,150" marker-end="url(#mm-c2-arrow)"/>
+
+<rect class="mm-n2" x="580" y="100" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="670" y="130" text-anchor="middle">Documented decision</text>
+<text class="mm-node-sub" x="670" y="147" text-anchor="middle">owner + rationale recorded</text>
+</svg>
+
+<p class="mental-model__caption">Every known risk routes through the same gate — state it plainly, lay out the real options of fixing it, shipping with mitigation, or shipping and accepting it, and make sure whoever chooses has the authority to do so, with the decision documented in writing.</p>
+</div>
+
 ## 11. A Product Manager demands shipping a feature with known open high-severity bugs to hit a critical marketing deadline
 
 **Core Objective**: Make the risk explicit and get an informed decision from someone with the authority to accept it — not silently comply or unilaterally block.

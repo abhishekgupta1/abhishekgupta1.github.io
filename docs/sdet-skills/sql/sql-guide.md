@@ -14,6 +14,47 @@ top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-sql-title mm-sql-desc">
+<title id="mm-sql-title">SQL's four sub-languages</title>
+<desc id="mm-sql-desc">SQL splits into four sub-languages around one core: DDL for defining schema objects, DML for manipulating data, DCL for controlling access, and TCL for controlling transactions.</desc>
+<defs>
+  <marker id="mm-sql-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="305" y="115" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">SQL</text>
+<text class="mm-node-sub" x="390" y="162" text-anchor="middle">relational query language</text>
+
+<path class="mm-arrow" d="M330,130 L210,60" marker-end="url(#mm-sql-arrow)"/>
+<path class="mm-arrow" d="M450,130 L585,60" marker-end="url(#mm-sql-arrow)"/>
+<path class="mm-arrow" d="M330,170 L210,235" marker-end="url(#mm-sql-arrow)"/>
+<path class="mm-arrow" d="M450,170 L585,235" marker-end="url(#mm-sql-arrow)"/>
+
+<rect class="mm-n3" x="20" y="20" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="115" y="50" text-anchor="middle">DDL</text>
+<text class="mm-node-sub" x="115" y="67" text-anchor="middle">CREATE, ALTER, DROP</text>
+
+<rect class="mm-n2" x="590" y="20" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="685" y="50" text-anchor="middle">DML</text>
+<text class="mm-node-sub" x="685" y="67" text-anchor="middle">SELECT, INSERT, UPDATE</text>
+
+<rect class="mm-n4" x="20" y="215" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="115" y="245" text-anchor="middle">DCL</text>
+<text class="mm-node-sub" x="115" y="262" text-anchor="middle">GRANT, REVOKE</text>
+
+<rect class="mm-n6" x="590" y="215" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="685" y="245" text-anchor="middle">TCL</text>
+<text class="mm-node-sub" x="685" y="262" text-anchor="middle">COMMIT, ROLLBACK</text>
+</svg>
+
+<p class="mental-model__caption">SQL isn't one language but four working together: DDL shapes the schema itself, DML reads and writes the rows inside it, DCL controls who can touch it, and TCL wraps changes in transactions you can commit or roll back — for an SDET, DML and TCL are the daily tools, DDL mostly for throwaway test schemas.</p>
+</div>
+
 ## 1. What SQL Is, in Practical Terms
 
 SQL (Structured Query Language) is the standard language for querying and

@@ -14,6 +14,39 @@ top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 230" role="img" aria-labelledby="mm-restassured-title mm-restassured-desc">
+<title id="mm-restassured-title">The given / when / then flow of a Rest Assured test</title>
+<desc id="mm-restassured-desc">A test declares setup in Given, performs the HTTP action in When, and asserts on the response in Then; values extracted in Then can feed back into the When of a chained follow-up request.</desc>
+<defs>
+  <marker id="mm-restassured-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="60" y="80" width="200" height="80" rx="10"/>
+<text class="mm-node-title" x="160" y="112" text-anchor="middle">Given</text>
+<text class="mm-node-sub" x="160" y="129" text-anchor="middle">baseUri, headers, auth</text>
+<path class="mm-arrow" d="M260,120 L306,120" marker-end="url(#mm-restassured-arrow)"/>
+
+<rect class="mm-n2" x="310" y="80" width="200" height="80" rx="10"/>
+<text class="mm-node-title" x="410" y="112" text-anchor="middle">When</text>
+<text class="mm-node-sub" x="410" y="129" text-anchor="middle">the HTTP action</text>
+<path class="mm-arrow" d="M510,120 L556,120" marker-end="url(#mm-restassured-arrow)"/>
+
+<rect class="mm-n4" x="560" y="80" width="200" height="80" rx="10"/>
+<text class="mm-node-title" x="660" y="112" text-anchor="middle">Then</text>
+<text class="mm-node-sub" x="660" y="129" text-anchor="middle">assert status, JSON path</text>
+
+<path class="mm-arrow" d="M660,160 C660,200 410,200 410,160" marker-end="url(#mm-restassured-arrow)"/>
+<text class="mm-flow-label" x="535" y="195" text-anchor="middle">extract value, chain next request</text>
+</svg>
+
+<p class="mental-model__caption">Every Rest Assured test reads as one sentence: Given sets up the request with a base URI, headers, and auth, When performs the actual HTTP call, and Then asserts on the response using status codes, JSON path expressions, or schema validation — values extracted in Then can feed straight back into the When of the next chained request.</p>
+</div>
+
 ## 1. What Rest Assured Is, in Practical Terms
 
 Rest Assured is a **Java DSL (domain-specific language) library** for

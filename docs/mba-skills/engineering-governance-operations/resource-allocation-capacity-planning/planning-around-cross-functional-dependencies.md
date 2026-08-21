@@ -14,6 +14,44 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: dependencies, planning, cross-team, sequencing
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-crossdep-title mm-crossdep-desc">
+<title id="mm-crossdep-title">A launch plan depends on three external teams delivering first</title>
+<desc id="mm-crossdep-desc">A central launch plan pulls in three external dependencies — design mocks, a platform API, and a legal review — each tracked with an owner, a needed-by date, and a confirmation status, since an unconfirmed dependency is the real risk to the date.</desc>
+<defs>
+  <marker id="mm-crossdep-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="300" y="115" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">Launch plan</text>
+<text class="mm-node-sub" x="390" y="161" text-anchor="middle">6-week target</text>
+
+<rect class="mm-n2" x="40" y="15" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="140" y="41" text-anchor="middle">Design mocks</text>
+<text class="mm-node-sub" x="140" y="57" text-anchor="middle">confirmed, wk 2</text>
+
+<rect class="mm-n4" x="540" y="15" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="640" y="41" text-anchor="middle">Platform API</text>
+<text class="mm-node-sub" x="640" y="57" text-anchor="middle">unconfirmed, wk 4</text>
+
+<rect class="mm-n5" x="290" y="225" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="251" text-anchor="middle">Legal review</text>
+<text class="mm-node-sub" x="390" y="267" text-anchor="middle">slow, tightest at wk 5</text>
+
+<path class="mm-arrow" d="M220,75 C270,95 300,105 320,120" marker-end="url(#mm-crossdep-arrow)"/>
+<path class="mm-arrow" d="M600,75 C550,95 500,105 470,122" marker-end="url(#mm-crossdep-arrow)"/>
+<path class="mm-arrow" d="M390,225 L390,187" marker-end="url(#mm-crossdep-arrow)"/>
+
+<text class="mm-flow-label" x="640" y="95" text-anchor="middle">unconfirmed = biggest risk</text>
+</svg>
+
+<p class="mental-model__caption">A plan's real date is set by its least-confirmed external dependency, not by your own team's work — mapping each one with an owner, a needed-by date, and an honest confirmation status turns a hopeful timeline into one you can actually defend.</p>
+</div>
+
 ## Quick Reference
 
 Map every dependency explicitly before committing to a date: **what do we need, from whom, by when** — and get that team to confirm it, not just assume it. A plan with an unconfirmed external dependency isn't a plan, it's a hope with a date attached.

@@ -14,6 +14,51 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: data-visualization, storytelling, dashboards, executive-presentations, Power-BI, Tableau
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 210" role="img" aria-labelledby="mm-dataviz-title mm-dataviz-desc">
+<title id="mm-dataviz-title">Raw metrics split into two different designs depending on the audience</title>
+<desc id="mm-dataviz-desc">Raw metrics feed either a self-serve dashboard for ongoing monitoring, or a presentation built as a narrative chain: state the takeaway, show one chart proving it, then give the recommendation.</desc>
+<defs>
+  <marker id="mm-dataviz-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="300" y="15" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="38" text-anchor="middle">Raw metrics</text>
+<text class="mm-node-sub" x="390" y="54" text-anchor="middle">6 metrics, 1 audience</text>
+
+<path class="mm-arrow" d="M340,70 L150,110" marker-end="url(#mm-dataviz-arrow)"/>
+<path class="mm-arrow" d="M390,70 L355,110" marker-end="url(#mm-dataviz-arrow)"/>
+
+<rect class="mm-n5" x="20" y="110" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="135" y="136" text-anchor="middle">Dashboard</text>
+<text class="mm-node-sub" x="135" y="153" text-anchor="middle">self-serve monitoring</text>
+
+<rect class="mm-n2" x="280" y="110" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="355" y="136" text-anchor="middle">State takeaway</text>
+<text class="mm-node-sub" x="355" y="153" text-anchor="middle">the point, first</text>
+
+<path class="mm-arrow" d="M430,140 L460,140" marker-end="url(#mm-dataviz-arrow)"/>
+
+<rect class="mm-n3" x="460" y="110" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="535" y="136" text-anchor="middle">One chart</text>
+<text class="mm-node-sub" x="535" y="153" text-anchor="middle">single message</text>
+
+<path class="mm-arrow" d="M610,140 L640,140" marker-end="url(#mm-dataviz-arrow)"/>
+
+<rect class="mm-n4" x="640" y="110" width="130" height="60" rx="10"/>
+<text class="mm-node-title" x="705" y="136" text-anchor="middle">Recommendation</text>
+<text class="mm-node-sub" x="705" y="153" text-anchor="middle">drives the decision</text>
+
+<text class="mm-flow-label" x="460" y="195" text-anchor="middle">presentation: one narrative path, not a metric dump</text>
+</svg>
+
+<p class="mental-model__caption">The same raw metrics get designed two different ways depending on who's using them: a dashboard supports ongoing, self-serve exploration, while a presentation is a single narrative chain that states the takeaway first, proves it with one uncluttered chart, and ends in a concrete recommendation — mixing the two designs is why data-rich presentations often fail to drive a decision.</p>
+</div>
+
 ## Quick Reference
 
 One chart, one message — if a chart needs a paragraph to explain what it's showing, simplify the chart, not the audience. Lead every executive slide with the takeaway in a sentence, then show the supporting chart, not the reverse. Dashboards (Power BI/Tableau) are for ongoing monitoring by people who'll explore the data themselves; presentations are for a single audience making a single decision — design each differently.

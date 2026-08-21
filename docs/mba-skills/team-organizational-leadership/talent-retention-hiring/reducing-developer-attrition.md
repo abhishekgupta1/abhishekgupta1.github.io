@@ -14,6 +14,58 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: retention, attrition, engagement, career-growth
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-attrition-title mm-attrition-desc">
+<title id="mm-attrition-title">Five causes converging into attrition risk, caught early or late</title>
+<desc id="mm-attrition-desc">Five addressable causes — blocked growth, a bad manager relationship, low autonomy, lagging compensation, and burnout — converge into regretted-attrition risk, which either surfaces early in a 1-on-1 and gets addressed, or surfaces too late at the exit interview.</desc>
+<defs>
+  <marker id="mm-attrition-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="15" width="180" height="45" rx="9"/>
+<text class="mm-node-title" x="110" y="43" text-anchor="middle">Blocked growth</text>
+
+<rect class="mm-n2" x="20" y="70" width="180" height="45" rx="9"/>
+<text class="mm-node-title" x="110" y="98" text-anchor="middle">Bad manager fit</text>
+
+<rect class="mm-n3" x="20" y="125" width="180" height="45" rx="9"/>
+<text class="mm-node-title" x="110" y="153" text-anchor="middle">Low autonomy</text>
+
+<rect class="mm-n4" x="20" y="180" width="180" height="45" rx="9"/>
+<text class="mm-node-title" x="110" y="208" text-anchor="middle">Comp behind market</text>
+
+<rect class="mm-n5" x="20" y="235" width="180" height="45" rx="9"/>
+<text class="mm-node-title" x="110" y="263" text-anchor="middle">Burnout</text>
+
+<path class="mm-arrow" d="M200,37 L276,145" marker-end="url(#mm-attrition-arrow)"/>
+<path class="mm-arrow" d="M200,92 L276,152" marker-end="url(#mm-attrition-arrow)"/>
+<path class="mm-arrow" d="M200,147 L276,160" marker-end="url(#mm-attrition-arrow)"/>
+<path class="mm-arrow" d="M200,202 L276,168" marker-end="url(#mm-attrition-arrow)"/>
+<path class="mm-arrow" d="M200,257 L276,175" marker-end="url(#mm-attrition-arrow)"/>
+
+<rect class="mm-n6" x="280" y="125" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="370" y="153" text-anchor="middle">Regretted-attrition</text>
+<text class="mm-node-sub" x="370" y="170" text-anchor="middle">risk</text>
+
+<path class="mm-arrow" d="M460,140 L556,72" marker-end="url(#mm-attrition-arrow)"/>
+<path class="mm-arrow" d="M460,180 L556,228" marker-end="url(#mm-attrition-arrow)"/>
+
+<rect class="mm-n2" x="560" y="40" width="200" height="65" rx="10"/>
+<text class="mm-node-title" x="660" y="67" text-anchor="middle">Named in a 1-on-1</text>
+<text class="mm-node-sub" x="660" y="84" text-anchor="middle">acted on early</text>
+
+<rect class="mm-n1" x="560" y="195" width="200" height="65" rx="10"/>
+<text class="mm-node-title" x="660" y="222" text-anchor="middle">Surfaces at exit</text>
+<text class="mm-node-sub" x="660" y="239" text-anchor="middle">too late to fix</text>
+</svg>
+
+<p class="mental-model__caption">Regretted attrition almost always traces back to one of five addressable causes — blocked growth, a bad manager relationship, low autonomy, lagging compensation, or burnout — and nearly all of them surface in 1-on-1s months before a resignation, so the fix is noticing and acting on the early signal instead of reacting well at the exit interview.</p>
+</div>
+
 ## Quick Reference
 
 Regretted attrition is almost always driven by a small set of addressable causes: **unclear or blocked growth**, **a bad manager relationship**, **lack of autonomy/ownership**, **compensation falling behind market**, and **burnout**. Most of these show up in [1-on-1s](../situational-leadership-coaching/running-1-on-1s.md) months before someone quits — the fix is to notice and act on the early signal, not to react well at the exit interview.

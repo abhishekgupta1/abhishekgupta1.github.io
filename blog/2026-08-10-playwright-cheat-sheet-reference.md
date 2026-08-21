@@ -12,6 +12,50 @@ Every time I set up a new Playwright suite or review someone else's, I end up hu
 
 <!-- truncate -->
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 200" role="img" aria-labelledby="mm-ref-title mm-ref-desc">
+<title id="mm-ref-title">The five phases every Playwright run passes through</title>
+<desc id="mm-ref-desc">Setup and run the suite, locate an element, act on it, assert the result with an auto-retrying expectation, then read the report or CI trace.</desc>
+<defs>
+  <marker id="mm-ref-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="60" width="130" height="80" rx="10"/>
+<text class="mm-node-title" x="85" y="92" text-anchor="middle">Setup</text>
+<text class="mm-node-sub" x="85" y="109" text-anchor="middle">playwright test</text>
+
+<path class="mm-arrow" d="M150,100 L166,100" marker-end="url(#mm-ref-arrow)"/>
+
+<rect class="mm-n2" x="172" y="60" width="130" height="80" rx="10"/>
+<text class="mm-node-title" x="237" y="92" text-anchor="middle">Locate</text>
+<text class="mm-node-sub" x="237" y="109" text-anchor="middle">role / text / id</text>
+
+<path class="mm-arrow" d="M302,100 L318,100" marker-end="url(#mm-ref-arrow)"/>
+
+<rect class="mm-n4" x="324" y="60" width="130" height="80" rx="10"/>
+<text class="mm-node-title" x="389" y="92" text-anchor="middle">Act</text>
+<text class="mm-node-sub" x="389" y="109" text-anchor="middle">click, fill, hover</text>
+
+<path class="mm-arrow" d="M454,100 L470,100" marker-end="url(#mm-ref-arrow)"/>
+
+<rect class="mm-n5" x="476" y="60" width="130" height="80" rx="10"/>
+<text class="mm-node-title" x="541" y="92" text-anchor="middle">Assert</text>
+<text class="mm-node-sub" x="541" y="109" text-anchor="middle">auto-retrying expect</text>
+
+<path class="mm-arrow" d="M606,100 L622,100" marker-end="url(#mm-ref-arrow)"/>
+
+<rect class="mm-n1" x="628" y="60" width="132" height="80" rx="10"/>
+<text class="mm-node-title" x="694" y="92" text-anchor="middle">Report / CI</text>
+<text class="mm-node-sub" x="694" y="109" text-anchor="middle">trace viewer</text>
+</svg>
+
+<p class="mental-model__caption">Every section below hangs off one of these five phases — pick the phase you're stuck on and jump straight to it instead of reading top to bottom.</p>
+</div>
+
 ## CLI & Setup Commands
 
 These are the commands you reach for from init through debugging a failing run.

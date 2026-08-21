@@ -20,6 +20,68 @@ documentation before depending on it in production tooling.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-kiro-title mm-kiro-desc">
+<title id="mm-kiro-title">Kiro's spec-first pipeline</title>
+<desc id="mm-kiro-desc">An idea becomes requirements, then a design, then a checkbox task list, each behind a review gate, before any implementation code is touched. Steering, hooks, and MCP supply persistent context, automation, and tool access that feed into that same pipeline.</desc>
+<defs>
+  <marker id="mm-kiro-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="10" y="50" width="100" height="60" rx="10"/>
+<text class="mm-node-title" x="60" y="85" text-anchor="middle">Idea</text>
+
+<path class="mm-arrow" d="M110,80 L146,80" marker-end="url(#mm-kiro-arrow)"/>
+
+<rect class="mm-n5" x="150" y="40" width="140" height="80" rx="10"/>
+<text class="mm-node-title" x="220" y="75" text-anchor="middle">Requirements</text>
+<text class="mm-node-sub" x="220" y="92" text-anchor="middle">user stories, EARS</text>
+
+<path class="mm-arrow" d="M290,80 L326,80" marker-end="url(#mm-kiro-arrow)"/>
+<text class="mm-flow-label" x="308" y="68" text-anchor="middle">review gate</text>
+
+<rect class="mm-n2" x="330" y="40" width="120" height="80" rx="10"/>
+<text class="mm-node-title" x="390" y="75" text-anchor="middle">Design</text>
+<text class="mm-node-sub" x="390" y="92" text-anchor="middle">architecture, data</text>
+
+<path class="mm-arrow" d="M450,80 L486,80" marker-end="url(#mm-kiro-arrow)"/>
+<text class="mm-flow-label" x="468" y="68" text-anchor="middle">review gate</text>
+
+<rect class="mm-n1" x="490" y="40" width="120" height="80" rx="10"/>
+<text class="mm-node-title" x="550" y="75" text-anchor="middle">Tasks</text>
+<text class="mm-node-sub" x="550" y="92" text-anchor="middle">checkbox steps</text>
+
+<path class="mm-arrow" d="M610,80 L646,80" marker-end="url(#mm-kiro-arrow)"/>
+<text class="mm-flow-label" x="628" y="68" text-anchor="middle">review gate</text>
+
+<rect class="mm-n4" x="650" y="40" width="120" height="80" rx="10"/>
+<text class="mm-node-title" x="710" y="75" text-anchor="middle">Implementation</text>
+<text class="mm-node-sub" x="710" y="92" text-anchor="middle">code changes</text>
+
+<path class="mm-arrow" d="M150,210 L215,124" marker-end="url(#mm-kiro-arrow)"/>
+<path class="mm-arrow" d="M390,210 L530,124" marker-end="url(#mm-kiro-arrow)"/>
+<path class="mm-arrow" d="M630,210 L700,124" marker-end="url(#mm-kiro-arrow)"/>
+
+<rect class="mm-n6" x="60" y="210" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="150" y="240" text-anchor="middle">Steering</text>
+<text class="mm-node-sub" x="150" y="257" text-anchor="middle">persistent project context</text>
+
+<rect class="mm-n1" x="300" y="210" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="240" text-anchor="middle">Hooks</text>
+<text class="mm-node-sub" x="390" y="257" text-anchor="middle">event-triggered automations</text>
+
+<rect class="mm-n2" x="540" y="210" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="630" y="240" text-anchor="middle">MCP</text>
+<text class="mm-node-sub" x="630" y="257" text-anchor="middle">pluggable tool access</text>
+</svg>
+
+<p class="mental-model__caption">Kiro never lets the agent touch implementation code until an idea has passed through reviewed requirements, design, and task-list gates in that order, while steering context, event-triggered hooks, and MCP tool access feed into that same spec-first pipeline from below.</p>
+</div>
+
 ## 1. What Kiro Is
 
 Kiro is an agentic AI IDE from AWS built around **spec-driven development**:

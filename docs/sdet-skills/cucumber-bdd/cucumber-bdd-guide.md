@@ -14,6 +14,44 @@ as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-cucumber-title mm-cucumber-desc">
+<title id="mm-cucumber-title">The BDD loop from conversation to executable spec</title>
+<desc id="mm-cucumber-desc">The Three Amigos collaborate to write a Gherkin feature file, step definitions bind that plain text to code, execution produces a pass or fail report, and the results feed back into the next round of collaborative refinement.</desc>
+<defs>
+  <marker id="mm-cucumber-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="30" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="112" y="120" text-anchor="middle">Three Amigos</text>
+<text class="mm-node-sub" x="112" y="137" text-anchor="middle">business + dev + QA</text>
+<path class="mm-arrow" d="M195,125 L211,125" marker-end="url(#mm-cucumber-arrow)"/>
+
+<rect class="mm-n2" x="215" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="297" y="120" text-anchor="middle">Feature file</text>
+<text class="mm-node-sub" x="297" y="137" text-anchor="middle">Gherkin: Given/When/Then</text>
+<path class="mm-arrow" d="M380,125 L396,125" marker-end="url(#mm-cucumber-arrow)"/>
+
+<rect class="mm-n4" x="400" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="482" y="120" text-anchor="middle">Step definitions</text>
+<text class="mm-node-sub" x="482" y="137" text-anchor="middle">binds text to code</text>
+<path class="mm-arrow" d="M565,125 L581,125" marker-end="url(#mm-cucumber-arrow)"/>
+
+<rect class="mm-n1" x="585" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="667" y="120" text-anchor="middle">Test execution</text>
+<text class="mm-node-sub" x="667" y="137" text-anchor="middle">pass / fail report</text>
+
+<path class="mm-arrow" d="M667,160 C620,230 160,230 112,160" marker-end="url(#mm-cucumber-arrow)"/>
+<text class="mm-flow-label" x="390" y="225" text-anchor="middle">review and refine together</text>
+</svg>
+
+<p class="mental-model__caption">BDD starts as a conversation, not code: the Three Amigos agree on behavior in a Gherkin feature file written in Given/When/Then form, step definitions translate that plain English into executable code, and the resulting pass/fail report feeds back into the next round of collaborative refinement, so the feature file stays living documentation instead of a one-time spec.</p>
+</div>
+
 ## 1. What BDD Is and the Problem It Solves
 
 **Behavior-Driven Development** is a collaboration practice — not

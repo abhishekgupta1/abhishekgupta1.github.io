@@ -11,6 +11,42 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-c10-title mm-c10-desc">
+<title id="mm-c10-title">A compliance-level risk escalates through authority, not around it</title>
+<desc id="mm-c10-desc">An identified compliance risk escalates upward from the person who found it, through legal and compliance, to the real options being presented, ending in a documented decision with a named, authorized owner.</desc>
+<defs>
+  <marker id="mm-c10-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="250" y="10" width="280" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="38" text-anchor="middle">Documented decision</text>
+<text class="mm-node-sub" x="390" y="55" text-anchor="middle">owner + basis recorded</text>
+
+<rect class="mm-n2" x="250" y="95" width="280" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="123" text-anchor="middle">Real options presented</text>
+<text class="mm-node-sub" x="390" y="140" text-anchor="middle">delay, mitigate, or proceed w/ sign-off</text>
+
+<rect class="mm-n4" x="250" y="180" width="280" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="208" text-anchor="middle">Legal / compliance looped in</text>
+<text class="mm-node-sub" x="390" y="225" text-anchor="middle">not engineering's call alone</text>
+
+<rect class="mm-n3" x="250" y="260" width="280" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="288" text-anchor="middle">Risk identified</text>
+<text class="mm-node-sub" x="390" y="305" text-anchor="middle">known compliance issue, e.g. GDPR</text>
+
+<path class="mm-arrow" d="M390,260 L390,236" marker-end="url(#mm-c10-arrow)"/>
+<path class="mm-arrow" d="M390,180 L390,151" marker-end="url(#mm-c10-arrow)"/>
+<path class="mm-arrow" d="M390,95 L390,66" marker-end="url(#mm-c10-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">A serious compliance risk escalates in order — from the person who found it, through legal and compliance before any business tradeoff is discussed, to a documented decision with a named owner, because this kind of exposure sits above what any single engineer or executive can informally accept.</p>
+</div>
+
 ## 91. Executive leadership demands shipping software with known critical compliance risks (e.g., GDPR violations)
 
 **Core Objective**: Refuse to let a serious compliance risk ship silently, while giving leadership a real, informed choice with the actual legal exposure stated plainly.

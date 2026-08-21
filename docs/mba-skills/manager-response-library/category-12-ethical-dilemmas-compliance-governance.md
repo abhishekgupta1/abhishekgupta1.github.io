@@ -11,6 +11,49 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-edcg-title mm-edcg-desc">
+<title id="mm-edcg-title">The decision chain for ethical and compliance dilemmas</title>
+<desc id="mm-edcg-desc">An ethical or compliance dilemma - a risky deadline, IP theft, a leak, an ethical objection, or an accommodation conflict - is stated plainly and given real options, then either a documented decision is made or the issue is escalated to legal, security, or compliance leadership.</desc>
+<defs>
+  <marker id="mm-edcg-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="15" y="88" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="90" y="112" text-anchor="middle">Dilemma surfaces</text>
+<text class="mm-node-sub" x="90" y="128" text-anchor="middle">risk, leak, objection, conflict</text>
+
+<path class="mm-arrow" d="M165,118 L195,118" marker-end="url(#mm-edcg-arrow)"/>
+
+<rect class="mm-n2" x="200" y="88" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="275" y="112" text-anchor="middle">State it plainly</text>
+<text class="mm-node-sub" x="275" y="128" text-anchor="middle">business terms, no hedging</text>
+
+<path class="mm-arrow" d="M350,118 L380,118" marker-end="url(#mm-edcg-arrow)"/>
+
+<rect class="mm-n3" x="385" y="88" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="460" y="112" text-anchor="middle">Give real options</text>
+<text class="mm-node-sub" x="460" y="128" text-anchor="middle">delay, mitigate, or accept</text>
+
+<path class="mm-arrow" d="M535,100 L590,40" marker-end="url(#mm-edcg-arrow)"/>
+<path class="mm-arrow" d="M535,135 L590,175" marker-end="url(#mm-edcg-arrow)"/>
+
+<rect class="mm-n4" x="595" y="10" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="680" y="34" text-anchor="middle">Decision documented</text>
+<text class="mm-node-sub" x="680" y="50" text-anchor="middle">owner accepts risk in writing</text>
+
+<rect class="mm-n5" x="595" y="145" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="680" y="169" text-anchor="middle">Escalate</text>
+<text class="mm-node-sub" x="680" y="185" text-anchor="middle">legal, security, compliance</text>
+</svg>
+
+<p class="mental-model__caption">Whether the dilemma is a risky ship deadline, suspected IP theft, a pending leak, an employee's ethical objection, or a scheduling accommodation conflict, the same chain applies: state the issue plainly, lay out the real options, and either put the decision in writing or escalate it to the people whose job it is to own that risk.</p>
+</div>
+
 ## 56. An executive asks you to ship software with known severe security vulnerabilities or compliance risks to meet an artificial deadline
 
 **Core Objective**: Refuse to ship unacceptable risk while giving the executive a real, informed choice — make the risk impossible to unknowingly accept.

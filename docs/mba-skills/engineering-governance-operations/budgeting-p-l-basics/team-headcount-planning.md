@@ -14,6 +14,48 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: headcount, budgeting, hiring-plan, capacity
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-headcount-title mm-headcount-desc">
+<title id="mm-headcount-title">Headcount planning as reconciling two directions</title>
+<desc id="mm-headcount-desc">Roadmap commitments and budget reality both feed a reconciled headcount plan in the middle, which then forks into the funded ask and a fallback alternative if the heads aren't approved.</desc>
+<defs>
+  <marker id="mm-headcount-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="40" y="20" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="140" y="46" text-anchor="middle">Roadmap commitments</text>
+<text class="mm-node-sub" x="140" y="62" text-anchor="middle">what work needs doing</text>
+
+<rect class="mm-n4" x="540" y="20" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="640" y="46" text-anchor="middle">Budget reality</text>
+<text class="mm-node-sub" x="640" y="62" text-anchor="middle">what we can fund</text>
+
+<path class="mm-arrow" d="M180,80 C220,100 260,105 300,115" marker-end="url(#mm-headcount-arrow)"/>
+<path class="mm-arrow" d="M600,80 C560,100 520,105 480,115" marker-end="url(#mm-headcount-arrow)"/>
+
+<rect class="mm-n3" x="290" y="115" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">Reconciled plan</text>
+<text class="mm-node-sub" x="390" y="161" text-anchor="middle">gap sized, cost vs. return</text>
+
+<path class="mm-arrow" d="M330,185 C270,205 220,215 170,225" marker-end="url(#mm-headcount-arrow)"/>
+<path class="mm-arrow" d="M450,185 C510,205 560,215 610,225" marker-end="url(#mm-headcount-arrow)"/>
+
+<rect class="mm-n1" x="60" y="225" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="170" y="251" text-anchor="middle">The ask</text>
+<text class="mm-node-sub" x="170" y="267" text-anchor="middle">heads + cost + return</text>
+
+<rect class="mm-n5" x="500" y="225" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="610" y="251" text-anchor="middle">The alternative</text>
+<text class="mm-node-sub" x="610" y="267" text-anchor="middle">descope or extend timeline</text>
+</svg>
+
+<p class="mental-model__caption">A good headcount plan reconciles two directions explicitly — what the roadmap demands and what the budget will actually fund — and the result is presented as a real choice: the specific ask tied to an outcome, alongside the honest alternative if it isn't approved.</p>
+</div>
+
 ## Quick Reference
 
 Build a headcount plan backward from roadmap commitments and forward from budget reality, and reconcile the two explicitly. Every requested head should map to a specific outcome ("this role unblocks X, which is worth Y") — a headcount ask justified only by "the team is stretched" is the easiest kind to cut.

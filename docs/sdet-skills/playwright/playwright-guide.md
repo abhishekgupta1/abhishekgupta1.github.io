@@ -14,6 +14,56 @@ top-to-bottom as a course.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-pw-title mm-pw-desc">
+<title id="mm-pw-title">How Playwright executes a test</title>
+<desc id="mm-pw-desc">Fixtures set up context and feed test code, which asks a locator to find an element, which auto-waits until the element is actionable, then acts on it through a browser engine, which can have its network layer intercepted.</desc>
+<defs>
+  <marker id="mm-pw-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="215" y="16" width="170" height="52" rx="10"/>
+<text class="mm-node-title" x="300" y="38" text-anchor="middle">Fixtures</text>
+<text class="mm-node-sub" x="300" y="54" text-anchor="middle">inject browser / page / context</text>
+<path class="mm-arrow" d="M300,68 L300,104" marker-end="url(#mm-pw-arrow)"/>
+
+<rect class="mm-n3" x="20" y="104" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="134" text-anchor="middle">Test code</text>
+<text class="mm-node-sub" x="95" y="151" text-anchor="middle">describes intent</text>
+
+<path class="mm-arrow" d="M170,139 L206,139" marker-end="url(#mm-pw-arrow)"/>
+
+<rect class="mm-n2" x="210" y="104" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="285" y="134" text-anchor="middle">Locator</text>
+<text class="mm-node-sub" x="285" y="151" text-anchor="middle">finds the element</text>
+
+<path class="mm-arrow" d="M360,139 L396,139" marker-end="url(#mm-pw-arrow)"/>
+
+<rect class="mm-n4" x="400" y="104" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="485" y="134" text-anchor="middle">Auto-wait</text>
+<text class="mm-node-sub" x="485" y="151" text-anchor="middle">retries until actionable</text>
+
+<path class="mm-arrow" d="M570,139 L606,139" marker-end="url(#mm-pw-arrow)"/>
+
+<rect class="mm-n1" x="610" y="104" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="685" y="128" text-anchor="middle">Browser</text>
+<text class="mm-node-sub" x="685" y="145" text-anchor="middle">Chromium / Firefox</text>
+<text class="mm-node-sub" x="685" y="159" text-anchor="middle">WebKit — via CDP</text>
+
+<path class="mm-arrow" d="M685,174 L685,210" marker-end="url(#mm-pw-arrow)"/>
+
+<rect class="mm-n6" x="600" y="214" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="685" y="240" text-anchor="middle">Network layer</text>
+<text class="mm-node-sub" x="685" y="256" text-anchor="middle">route() intercepts / mocks</text>
+</svg>
+
+<p class="mental-model__caption">Everything Playwright does routes through one loop: fixtures hand a test its browser context, a locator finds an element by role or text, auto-waiting retries until that element is truly actionable, and only then does the action fire against the real browser engine — with the network layer sitting underneath, ready to intercept or mock any request the page makes.</p>
+</div>
+
 ## 1. What Playwright Is and Why It Exists
 
 Playwright is a Microsoft-built, open-source framework for reliable end-to-end

@@ -14,6 +14,44 @@ you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-aws-title mm-aws-desc">
+<title id="mm-aws-title">The AWS shared responsibility split</title>
+<desc id="mm-aws-desc">AWS owns security of the cloud, covering data centers and hardware, while the customer owns security in the cloud, covering configuration, IAM, and data.</desc>
+<defs>
+  <marker id="mm-aws-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<path class="mm-arrow" d="M390,20 L390,220"/>
+
+<rect class="mm-n3" x="30" y="30" width="330" height="60" rx="10"/>
+<text class="mm-node-title" x="195" y="56" text-anchor="middle">AWS</text>
+<text class="mm-node-sub" x="195" y="73" text-anchor="middle">security OF the cloud</text>
+
+<path class="mm-arrow" d="M195,90 L195,118" marker-end="url(#mm-aws-arrow)"/>
+
+<rect class="mm-n1" x="30" y="120" width="330" height="70" rx="10"/>
+<text class="mm-node-title" x="195" y="150" text-anchor="middle">Data centers &amp; hardware</text>
+<text class="mm-node-sub" x="195" y="167" text-anchor="middle">regions, AZs, network infra</text>
+
+<rect class="mm-n5" x="420" y="30" width="330" height="60" rx="10"/>
+<text class="mm-node-title" x="585" y="56" text-anchor="middle">Customer</text>
+<text class="mm-node-sub" x="585" y="73" text-anchor="middle">security IN the cloud</text>
+
+<path class="mm-arrow" d="M585,90 L585,118" marker-end="url(#mm-aws-arrow)"/>
+
+<rect class="mm-n4" x="420" y="120" width="330" height="70" rx="10"/>
+<text class="mm-node-title" x="585" y="150" text-anchor="middle">Your configuration</text>
+<text class="mm-node-sub" x="585" y="167" text-anchor="middle">IAM, encryption, security groups</text>
+</svg>
+
+<p class="mental-model__caption">Every architecture decision sits on one side of this line: AWS is always accountable for the physical infrastructure underneath, while the customer is always accountable for how identity, data, and configuration are set up on top of it — and that line itself shifts higher as you move from EC2 toward fully managed services like Lambda.</p>
+</div>
+
 ## 1. The Shared Responsibility Model
 
 AWS splits accountability for security and operations between itself and the

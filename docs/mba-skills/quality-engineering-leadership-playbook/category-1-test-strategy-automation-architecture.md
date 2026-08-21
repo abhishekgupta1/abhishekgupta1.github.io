@@ -11,6 +11,45 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-c1-title mm-c1-desc">
+<title id="mm-c1-title">The test pyramid as a cost-and-trust architecture</title>
+<desc id="mm-c1-desc">Fast, cheap developer-owned unit and integration tests form the base; the SDET automated suite sits above them; slow, costly manual and exploratory testing sits at the top. A flaky layer anywhere breaks trust in the whole pipeline.</desc>
+<defs>
+  <marker id="mm-c1-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n4" x="230" y="40" width="140" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="63" text-anchor="middle">Manual / Exploratory</text>
+<text class="mm-node-sub" x="300" y="80" text-anchor="middle">slowest, costliest</text>
+
+<rect class="mm-n2" x="190" y="130" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="153" text-anchor="middle">SDET Automated Suite</text>
+<text class="mm-node-sub" x="300" y="170" text-anchor="middle">framework, regression</text>
+
+<rect class="mm-n1" x="140" y="220" width="320" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="243" text-anchor="middle">Unit + Integration Tests</text>
+<text class="mm-node-sub" x="300" y="260" text-anchor="middle">dev-owned, fast &amp; cheap</text>
+
+<path class="mm-arrow" d="M300,220 L300,186" marker-end="url(#mm-c1-arrow)"/>
+<path class="mm-arrow" d="M300,130 L300,96" marker-end="url(#mm-c1-arrow)"/>
+<text class="mm-flow-label" x="470" y="118" text-anchor="middle">each layer catches</text>
+<text class="mm-flow-label" x="470" y="132" text-anchor="middle">what the last one missed</text>
+
+<rect class="mm-n5" x="540" y="150" width="210" height="60" rx="10"/>
+<text class="mm-node-title" x="645" y="175" text-anchor="middle">Ignored red builds</text>
+<text class="mm-node-sub" x="645" y="192" text-anchor="middle">flaky suite breaks CI trust</text>
+
+<path class="mm-arrow" d="M410,158 L540,180" marker-end="url(#mm-c1-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Quality is built in layers — fast, cheap unit and integration tests owned by developers should catch most bugs before the slower, costlier SDET suite and manual testing ever see them, and a flaky suite at any layer trains the team to ignore red builds, breaking trust in the whole pipeline.</p>
+</div>
+
 ## 1. Developers push feature code without unit/integration tests, treating the SDET team as a manual "safety net"
 
 **Core Objective**: Shift test ownership left to developers without it reading as SDET offloading its own job.

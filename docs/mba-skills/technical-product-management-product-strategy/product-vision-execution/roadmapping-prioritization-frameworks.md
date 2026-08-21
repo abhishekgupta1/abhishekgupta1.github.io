@@ -14,6 +14,42 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: prioritization, RICE, Kano, MoSCoW, roadmapping
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-roadmap-title mm-roadmap-desc">
+<title id="mm-roadmap-title">Three prioritization frameworks matched to three different decisions</title>
+<desc id="mm-roadmap-desc">RICE, Kano, and MoSCoW are three frameworks suited to three different prioritization decisions, and each converges on picking the framework that matches the decision actually being made, rather than treating them as interchangeable.</desc>
+<defs>
+  <marker id="mm-roadmap-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="20" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="130" y="50" text-anchor="middle">RICE</text>
+<text class="mm-node-sub" x="130" y="67" text-anchor="middle">score a long backlog</text>
+
+<rect class="mm-n3" x="280" y="20" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="50" text-anchor="middle">Kano</text>
+<text class="mm-node-sub" x="390" y="67" text-anchor="middle">balance feature types</text>
+
+<rect class="mm-n5" x="540" y="20" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="650" y="50" text-anchor="middle">MoSCoW</text>
+<text class="mm-node-sub" x="650" y="67" text-anchor="middle">scope one fixed release</text>
+
+<path class="mm-arrow" d="M150,90 L320,175" marker-end="url(#mm-roadmap-arrow)"/>
+<path class="mm-arrow" d="M390,90 L390,175" marker-end="url(#mm-roadmap-arrow)"/>
+<path class="mm-arrow" d="M630,90 L460,175" marker-end="url(#mm-roadmap-arrow)"/>
+
+<rect class="mm-n4" x="280" y="180" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="205" text-anchor="middle">Match framework</text>
+<text class="mm-node-sub" x="390" y="222" text-anchor="middle">to the decision at hand</text>
+</svg>
+
+<p class="mental-model__caption">RICE, Kano, and MoSCoW are not interchangeable — each is built for a different kind of prioritization decision, so the real skill is picking the framework that matches whether you're ranking a long backlog, balancing feature types, or scoping one fixed-deadline release.</p>
+</div>
+
 ## Quick Reference
 
 **RICE** (Reach × Impact × Confidence ÷ Effort) is best for comparing a long backlog of discrete features on relative value. **Kano** categorizes features by the type of satisfaction they drive (Must-Be, Performance, Delighter) and is best for balancing a roadmap across feature types. **MoSCoW** (Must/Should/Could/Won't) is best for scoping a single release under a fixed deadline. Pick the framework that matches the decision you're actually making — they're not interchangeable.

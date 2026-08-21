@@ -19,6 +19,55 @@ tags: [sre, incident-response, incident-management, on-call, pagerduty, opsgenie
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-imsetup-title mm-imsetup-desc">
+<title id="mm-imsetup-title">The five-stage incident lifecycle, looping back into itself</title>
+<desc id="mm-imsetup-desc">Detect leads to Triage or Declare, then Mitigate, then Resolve, then Postmortem, whose lessons feed back into how the next incident is detected and triaged.</desc>
+<defs>
+  <marker id="mm-imsetup-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="140" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="170" text-anchor="middle">Detect</text>
+<text class="mm-node-sub" x="90" y="187" text-anchor="middle">alert fires</text>
+
+<path class="mm-arrow" d="M160,175 L195,175" marker-end="url(#mm-imsetup-arrow)"/>
+
+<rect class="mm-n2" x="195" y="140" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="265" y="170" text-anchor="middle">Triage / Declare</text>
+<text class="mm-node-sub" x="265" y="187" text-anchor="middle">severity, IC assigned</text>
+
+<path class="mm-arrow" d="M335,175 L370,175" marker-end="url(#mm-imsetup-arrow)"/>
+
+<rect class="mm-n3" x="370" y="140" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="440" y="170" text-anchor="middle">Mitigate</text>
+<text class="mm-node-sub" x="440" y="187" text-anchor="middle">stop the bleeding</text>
+
+<path class="mm-arrow" d="M510,175 L545,175" marker-end="url(#mm-imsetup-arrow)"/>
+
+<rect class="mm-n4" x="545" y="140" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="615" y="170" text-anchor="middle">Resolve</text>
+<text class="mm-node-sub" x="615" y="187" text-anchor="middle">confirm normal</text>
+
+<path class="mm-arrow" d="M685,175 L720,175" marker-end="url(#mm-imsetup-arrow)"/>
+
+<rect class="mm-n5" x="620" y="20" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="690" y="50" text-anchor="middle">Postmortem</text>
+<text class="mm-node-sub" x="690" y="67" text-anchor="middle">blameless, owned actions</text>
+
+<path class="mm-arrow" d="M720,140 L690,90" marker-end="url(#mm-imsetup-arrow)"/>
+
+<path class="mm-arrow" stroke-dasharray="3,3" d="M620,45 C300,-25 60,45 90,140" marker-end="url(#mm-imsetup-arrow)"/>
+<text class="mm-flow-label" x="330" y="30" text-anchor="middle">action items feed the next incident's detection &amp; triage</text>
+</svg>
+
+<p class="mental-model__caption">Every incident runs through the same five stages — Detect, Triage/Declare, Mitigate, Resolve, Postmortem — and the postmortem is not the end of the loop but the start of the next one, since its owned action items are what make the next incident easier to detect and triage.</p>
+</div>
+
 ## Quick Reference
 
 | Concept | One-liner |

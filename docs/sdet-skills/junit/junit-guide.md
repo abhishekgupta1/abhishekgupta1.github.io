@@ -13,6 +13,47 @@ Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-junit-title mm-junit-desc">
+<title id="mm-junit-title">JUnit 5's three-module architecture</title>
+<desc id="mm-junit-desc">The JUnit Platform is the foundation that launches test engines; it hosts the JUnit Jupiter engine, which runs new JUnit 5 tests, and the JUnit Vintage engine, which runs legacy JUnit 3 and 4 tests side by side.</desc>
+<defs>
+  <marker id="mm-junit-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="80" y="10" width="220" height="50" rx="10"/>
+<text class="mm-node-title" x="190" y="32" text-anchor="middle">@Test classes</text>
+<text class="mm-node-sub" x="190" y="48" text-anchor="middle">uses Jupiter API</text>
+<path class="mm-arrow" d="M190,60 L190,80" marker-end="url(#mm-junit-arrow)"/>
+
+<rect class="mm-n6" x="480" y="10" width="220" height="50" rx="10"/>
+<text class="mm-node-title" x="590" y="32" text-anchor="middle">Legacy tests</text>
+<text class="mm-node-sub" x="590" y="48" text-anchor="middle">JUnit 3 / 4 style</text>
+<path class="mm-arrow" d="M590,60 L590,80" marker-end="url(#mm-junit-arrow)"/>
+
+<rect class="mm-n2" x="80" y="80" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="190" y="107" text-anchor="middle">JUnit Jupiter</text>
+<text class="mm-node-sub" x="190" y="123" text-anchor="middle">new programming model</text>
+
+<rect class="mm-n4" x="480" y="80" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="590" y="107" text-anchor="middle">JUnit Vintage</text>
+<text class="mm-node-sub" x="590" y="123" text-anchor="middle">runs JUnit 3/4 unchanged</text>
+
+<path class="mm-arrow" d="M330,170 L190,140" marker-end="url(#mm-junit-arrow)"/>
+<path class="mm-arrow" d="M450,170 L590,140" marker-end="url(#mm-junit-arrow)"/>
+
+<rect class="mm-n5" x="245" y="170" width="290" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="197" text-anchor="middle">JUnit Platform</text>
+<text class="mm-node-sub" x="390" y="213" text-anchor="middle">launches test engines</text>
+</svg>
+
+<p class="mental-model__caption">JUnit 5 splits into three modules stacked on one foundation: the Platform launches whichever TestEngine is registered, the Jupiter engine runs tests written against the new JUnit 5 programming model, and the Vintage engine runs old JUnit 3/4 tests unchanged — so a codebase can migrate gradually with both generations of tests executing side by side in the same run.</p>
+</div>
+
 ## 1. What JUnit Is, in Practical Terms
 
 JUnit is the de facto standard testing framework for the JVM. **JUnit 5**

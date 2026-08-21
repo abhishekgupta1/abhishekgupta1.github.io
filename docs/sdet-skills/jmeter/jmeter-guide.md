@@ -14,6 +14,49 @@ lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-jmeter-title mm-jmeter-desc">
+<title id="mm-jmeter-title">A JMeter Test Plan is a tree of load-generating elements</title>
+<desc id="mm-jmeter-desc">A Test Plan is composed of a Thread Group defining virtual users, Samplers that fire requests, Config Elements holding shared defaults, and Listeners that collect results.</desc>
+<defs>
+  <marker id="mm-jmeter-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="310" y="110" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="137" text-anchor="middle">Test Plan</text>
+<text class="mm-node-sub" x="390" y="153" text-anchor="middle">tree of elements</text>
+
+<path class="mm-arrow" d="M330,120 L150,60" marker-end="url(#mm-jmeter-arrow)"/>
+<path class="mm-arrow" d="M450,120 L630,60" marker-end="url(#mm-jmeter-arrow)"/>
+<path class="mm-arrow" d="M330,160 L150,235" marker-end="url(#mm-jmeter-arrow)"/>
+<path class="mm-arrow" d="M450,160 L630,235" marker-end="url(#mm-jmeter-arrow)"/>
+
+<rect class="mm-n3" x="20" y="20" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="110" y="47" text-anchor="middle">Thread Group</text>
+<text class="mm-node-sub" x="110" y="63" text-anchor="middle">virtual users, ramp-up</text>
+
+<rect class="mm-n4" x="580" y="20" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="670" y="47" text-anchor="middle">Sampler</text>
+<text class="mm-node-sub" x="670" y="63" text-anchor="middle">HTTP / JDBC / ... request</text>
+
+<rect class="mm-n2" x="20" y="220" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="110" y="247" text-anchor="middle">Config Element</text>
+<text class="mm-node-sub" x="110" y="263" text-anchor="middle">defaults &amp; variables</text>
+
+<rect class="mm-n6" x="580" y="220" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="670" y="247" text-anchor="middle">Listener</text>
+<text class="mm-node-sub" x="670" y="263" text-anchor="middle">collects results</text>
+
+<text class="mm-flow-label" x="390" y="300" text-anchor="middle">built in GUI, run headless</text>
+</svg>
+
+<p class="mental-model__caption">A JMeter Test Plan is a tree, not a script: the Thread Group defines how many virtual users ramp up, Samplers fire the actual requests, Config Elements hold shared defaults and variables, and Listeners collect the results — you build and debug this tree in the GUI, but real load always runs headless from the command line or CI.</p>
+</div>
+
 ## 1. What JMeter Is, in Practical Terms
 
 Apache JMeter is a **Java-based, open-source load and performance testing

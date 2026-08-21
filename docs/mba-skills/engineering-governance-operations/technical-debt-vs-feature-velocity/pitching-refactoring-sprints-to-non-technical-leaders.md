@@ -14,6 +14,48 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: technical-debt, stakeholder-communication, business-case, refactoring
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-pitch-title mm-pitch-desc">
+<title id="mm-pitch-title">Three inputs converge into one investment pitch and a decision</title>
+<desc id="mm-pitch-desc">Cost, return, and the risk of inaction each feed into a single investment-style pitch, which leads to a funding decision, framed like any other roadmap tradeoff rather than a complaint about code quality.</desc>
+<defs>
+  <marker id="mm-pitch-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="30" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="140" y="46" text-anchor="middle">Cost</text>
+<text class="mm-node-sub" x="140" y="62" text-anchor="middle">3 wks, delays a feature</text>
+
+<rect class="mm-n4" x="280" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="46" text-anchor="middle">Return</text>
+<text class="mm-node-sub" x="390" y="62" text-anchor="middle">3x faster, fewer incidents</text>
+
+<rect class="mm-n5" x="530" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="640" y="46" text-anchor="middle">Risk of inaction</text>
+<text class="mm-node-sub" x="640" y="62" text-anchor="middle">outage within 2 quarters</text>
+
+<path class="mm-arrow" d="M160,80 C220,100 300,110 350,128" marker-end="url(#mm-pitch-arrow)"/>
+<path class="mm-arrow" d="M390,80 L390,128" marker-end="url(#mm-pitch-arrow)"/>
+<path class="mm-arrow" d="M620,80 C560,100 480,110 430,128" marker-end="url(#mm-pitch-arrow)"/>
+
+<rect class="mm-n3" x="290" y="130" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="156" text-anchor="middle">The pitch</text>
+<text class="mm-node-sub" x="390" y="172" text-anchor="middle">investment case, their terms</text>
+
+<path class="mm-arrow" d="M390,190 L390,213" marker-end="url(#mm-pitch-arrow)"/>
+
+<rect class="mm-n1" x="290" y="215" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="240" text-anchor="middle">Funding decision</text>
+<text class="mm-node-sub" x="390" y="256" text-anchor="middle">yes / no / partial</text>
+</svg>
+
+<p class="mental-model__caption">A refactor pitch competes for the same budget as a feature, so it has to be built the same way — cost, return, and the risk of not acting, all in the leader's own terms — converging into one decision instead of an appeal to code quality.</p>
+</div>
+
 ## Quick Reference
 
 Pitch a refactor exactly like any other investment ask: **cost** (time, in weeks, and opportunity cost against roadmap), **return** (velocity recovered, incidents avoided, translated to dollars or roadmap capacity), and **risk of not doing it** (what gets worse, and when it becomes a crisis instead of a choice). Never lead with "the code is messy" — lead with the business consequence.

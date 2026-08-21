@@ -11,6 +11,62 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-bhw-title mm-bhw-desc">
+<title id="mm-bhw-title">How burnout and well-being scenarios route to one instinct</title>
+<desc id="mm-bhw-desc">Five different well-being situations - a personal crisis, team-wide crunch fatigue, a leave request, a manager's own boundaries, and a sudden departure - all funnel through noticing the signal early and responding with care, and converge on protecting sustainable team capacity.</desc>
+<defs>
+  <marker id="mm-bhw-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="15" y="110" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="140" text-anchor="middle">Signal noticed</text>
+<text class="mm-node-sub" x="95" y="157" text-anchor="middle">early, before it grows</text>
+
+<path class="mm-arrow" d="M175,145 L225,30" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M175,145 L225,90" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M175,145 L225,150" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M175,145 L225,210" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M175,145 L225,270" marker-end="url(#mm-bhw-arrow)"/>
+
+<rect class="mm-n1" x="225" y="6" width="210" height="48" rx="10"/>
+<text class="mm-node-title" x="330" y="24" text-anchor="middle">Personal crisis</text>
+<text class="mm-node-sub" x="330" y="40" text-anchor="middle">notice &amp; connect to support</text>
+
+<rect class="mm-n2" x="225" y="66" width="210" height="48" rx="10"/>
+<text class="mm-node-title" x="330" y="84" text-anchor="middle">Crunch-mode fatigue</text>
+<text class="mm-node-sub" x="330" y="100" text-anchor="middle">team-wide, post-launch</text>
+
+<rect class="mm-n4" x="225" y="126" width="210" height="48" rx="10"/>
+<text class="mm-node-title" x="330" y="144" text-anchor="middle">Leave request</text>
+<text class="mm-node-sub" x="330" y="160" text-anchor="middle">medical/parental, mid-project</text>
+
+<rect class="mm-n5" x="225" y="186" width="210" height="48" rx="10"/>
+<text class="mm-node-title" x="330" y="204" text-anchor="middle">Your own boundaries</text>
+<text class="mm-node-sub" x="330" y="220" text-anchor="middle">model, don't copy overwork</text>
+
+<rect class="mm-n6" x="225" y="246" width="210" height="48" rx="10"/>
+<text class="mm-node-title" x="330" y="264" text-anchor="middle">Sudden departure</text>
+<text class="mm-node-sub" x="330" y="280" text-anchor="middle">redistribute workload</text>
+
+<path class="mm-arrow" d="M435,30 L590,145" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M435,90 L590,145" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M435,150 L590,145" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M435,210 L590,145" marker-end="url(#mm-bhw-arrow)"/>
+<path class="mm-arrow" d="M435,270 L590,145" marker-end="url(#mm-bhw-arrow)"/>
+
+<rect class="mm-n3" x="590" y="110" width="175" height="70" rx="10"/>
+<text class="mm-node-title" x="677" y="140" text-anchor="middle">Sustainable capacity</text>
+<text class="mm-node-sub" x="677" y="157" text-anchor="middle">not endurance</text>
+</svg>
+
+<p class="mental-model__caption">Whether it's a personal crisis, team-wide crunch fatigue, a leave request, a manager's own overwork, or a sudden departure, every burnout scenario runs through the same instinct: notice the signal early, respond with genuine care and concrete adjustments, and protect the team's sustainable capacity rather than treating exhaustion as normal.</p>
+</div>
+
 ## 41. A high-performing employee shows subtle signs of mental health struggles or personal crisis affecting their work
 
 **Core Objective**: Support the person first, while still being honest about the impact on their work, without overstepping into a role you're not qualified for.

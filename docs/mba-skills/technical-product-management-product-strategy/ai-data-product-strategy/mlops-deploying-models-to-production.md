@@ -14,6 +14,48 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: mlops, machine-learning, model-deployment, model-monitoring
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-mlops-title mm-mlops-desc">
+<title id="mm-mlops-title">The model lifecycle as a closed loop</title>
+<desc id="mm-mlops-desc">A model cycles through training and validation, deployment to production, ongoing monitoring for drift and skew, and retraining on a planned cadence or trigger, which feeds back into training again — unlike normal code, the model can fail silently with no exception thrown.</desc>
+<defs>
+  <marker id="mm-mlops-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="290" y="16" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="41" text-anchor="middle">Train &amp; validate</text>
+<text class="mm-node-sub" x="390" y="57" text-anchor="middle">check training-serving parity</text>
+
+<path class="mm-arrow" d="M480,50 C560,60 590,90 580,128" marker-end="url(#mm-mlops-arrow)"/>
+
+<rect class="mm-n2" x="560" y="132" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="660" y="157" text-anchor="middle">Deploy to production</text>
+<text class="mm-node-sub" x="660" y="173" text-anchor="middle">CI/CD, monitoring, rollback</text>
+
+<path class="mm-arrow" d="M660,192 C650,225 520,245 500,248" marker-end="url(#mm-mlops-arrow)"/>
+
+<rect class="mm-n4" x="290" y="244" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="269" text-anchor="middle">Monitor for drift</text>
+<text class="mm-node-sub" x="390" y="285" text-anchor="middle">input, feature, outcome</text>
+
+<path class="mm-arrow" d="M290,262 C210,245 90,225 80,192" marker-end="url(#mm-mlops-arrow)"/>
+
+<rect class="mm-n5" x="20" y="132" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="120" y="157" text-anchor="middle">Retrain</text>
+<text class="mm-node-sub" x="120" y="173" text-anchor="middle">planned cadence or trigger</text>
+
+<path class="mm-arrow" d="M100,132 C90,90 200,55 290,46" marker-end="url(#mm-mlops-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="120" text-anchor="middle">a model fails silently — no exception, just quiet accuracy decay</text>
+</svg>
+
+<p class="mental-model__caption">A production model runs as a closed loop, not a one-off handoff: train and validate it, deploy it with the same rigor as any service, monitor it continuously for drift because it can degrade without ever throwing an error, and retrain it on a cadence decided in advance rather than only after something breaks.</p>
+</div>
+
 ## Quick Reference
 
 A model shipping to production needs everything a normal service needs (CI/CD, monitoring, rollback) **plus** model-specific concerns a normal service doesn't: **data/concept drift** (the world changes, the model doesn't), **training-serving skew** (the model behaves differently in production than in the notebook it was validated in), and **a retraining cadence** decided in advance, not reactively after performance degrades.

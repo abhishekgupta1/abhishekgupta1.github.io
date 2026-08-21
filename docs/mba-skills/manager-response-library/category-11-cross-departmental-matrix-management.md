@@ -11,6 +11,58 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-cdmm-title mm-cdmm-desc">
+<title id="mm-cdmm-title">How cross-departmental frictions converge on managing by influence</title>
+<desc id="mm-cdmm-desc">Five matrix-management frictions - no-authority delivery, a cross-team stalemate, public blame from another department, sales overcommitting, and stalled co-leadership - all converge on managing by influence rather than authority, which then produces an explicit process of shared stake, explicit asks, visibility, and escalation.</desc>
+<defs>
+  <marker id="mm-cdmm-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="10" y="20" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="80" y="46" text-anchor="middle">No authority</text>
+<text class="mm-node-sub" x="80" y="62" text-anchor="middle">Design/Legal/Security deps</text>
+
+<rect class="mm-n2" x="165" y="20" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="235" y="46" text-anchor="middle">Cross-team stalemate</text>
+<text class="mm-node-sub" x="235" y="62" text-anchor="middle">Eng vs Sales vs Marketing</text>
+
+<rect class="mm-n3" x="320" y="20" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="46" text-anchor="middle">Public blame</text>
+<text class="mm-node-sub" x="390" y="62" text-anchor="middle">another dept, missed target</text>
+
+<rect class="mm-n4" x="475" y="20" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="545" y="46" text-anchor="middle">Sales overcommits</text>
+<text class="mm-node-sub" x="545" y="62" text-anchor="middle">unchecked feasibility</text>
+
+<rect class="mm-n5" x="630" y="20" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="700" y="46" text-anchor="middle">Co-leadership stalls</text>
+<text class="mm-node-sub" x="700" y="62" text-anchor="middle">unclear ownership</text>
+
+<path class="mm-arrow" d="M80,80 L340,140" marker-end="url(#mm-cdmm-arrow)"/>
+<path class="mm-arrow" d="M235,80 L370,140" marker-end="url(#mm-cdmm-arrow)"/>
+<path class="mm-arrow" d="M390,80 L390,140" marker-end="url(#mm-cdmm-arrow)"/>
+<path class="mm-arrow" d="M545,80 L410,140" marker-end="url(#mm-cdmm-arrow)"/>
+<path class="mm-arrow" d="M700,80 L440,140" marker-end="url(#mm-cdmm-arrow)"/>
+
+<rect class="mm-n6" x="290" y="140" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="166" text-anchor="middle">Manage by influence</text>
+<text class="mm-node-sub" x="390" y="182" text-anchor="middle">not authority you don't have</text>
+
+<path class="mm-arrow" d="M390,200 L390,236" marker-end="url(#mm-cdmm-arrow)"/>
+
+<rect class="mm-n3" x="255" y="240" width="270" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="262" text-anchor="middle">Explicit process</text>
+<text class="mm-node-sub" x="390" y="278" text-anchor="middle">shared stake, explicit ask, visibility, escalation</text>
+</svg>
+
+<p class="mental-model__caption">Whether it's delivering without formal authority, a cross-team stalemate, being blamed publicly, an overcommitting sales team, or stalled co-leadership, every matrix-management friction converges on the same fix: manage by influence, made concrete through a shared stake, an explicit ask, visible tracking, and timely escalation.</p>
+</div>
+
 ## 51. Managing a project where you have accountability for delivery, but zero direct authority over cross-functional resources (Design, Legal, Security)
 
 **Core Objective**: Deliver the project by influence and structured process instead of authority you don't have — make the dependency visible and negotiate it explicitly rather than hoping it resolves itself.

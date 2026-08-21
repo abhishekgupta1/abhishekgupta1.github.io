@@ -14,6 +14,48 @@ top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-ca-title mm-ca-desc">
+<title id="mm-ca-title">The four concentric layers of Clean Architecture</title>
+<desc id="mm-ca-desc">Four nested rings from innermost to outermost: Entities, Use Cases, Interface Adapters, and Frameworks and Drivers. Dependencies only point inward, from an outer ring toward the ring it wraps.</desc>
+
+<circle class="mm-n1" cx="170" cy="160" r="130"/>
+<circle class="mm-n4" cx="170" cy="160" r="98"/>
+<circle class="mm-n2" cx="170" cy="160" r="66"/>
+<circle class="mm-n3" cx="170" cy="160" r="34"/>
+
+<text class="mm-ring-label" x="170" y="182" text-anchor="middle">Entities</text>
+<text class="mm-ring-label" x="170" y="214" text-anchor="middle">Use Cases</text>
+<text class="mm-ring-label" x="170" y="246" text-anchor="middle">Adapters</text>
+<text class="mm-ring-label" x="170" y="278" text-anchor="middle">Frameworks</text>
+
+<line class="mm-arrow" stroke-dasharray="3,3" x1="300" y1="160" x2="430" y2="37"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="268" y1="160" x2="430" y2="95"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="236" y1="160" x2="430" y2="153"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="204" y1="160" x2="430" y2="211"/>
+
+<rect class="mm-n1" x="430" y="30" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="41" text-anchor="start">Frameworks &amp; Drivers</text>
+<text class="mm-node-sub" x="452" y="56" text-anchor="start">web, DB, UI — outermost, most volatile</text>
+
+<rect class="mm-n4" x="430" y="88" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="99" text-anchor="start">Interface Adapters</text>
+<text class="mm-node-sub" x="452" y="114" text-anchor="start">controllers, presenters, gateways</text>
+
+<rect class="mm-n2" x="430" y="146" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="157" text-anchor="start">Use Cases</text>
+<text class="mm-node-sub" x="452" y="172" text-anchor="start">application-specific business rules</text>
+
+<rect class="mm-n3" x="430" y="204" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="215" text-anchor="start">Entities</text>
+<text class="mm-node-sub" x="452" y="230" text-anchor="start">core domain rules — innermost, most stable</text>
+</svg>
+
+<p class="mental-model__caption">Draw it as rings, not layers: the Dependency Rule says source code can only point inward, from an outer ring toward the ring it wraps — Frameworks may depend on Adapters, Adapters on Use Cases, Use Cases on Entities, but never the reverse. Entities never import a database driver; a database adapter always imports the port an inner layer defined.</p>
+</div>
+
 ## 1. What Clean Architecture Is, in Practical Terms
 
 Clean Architecture is not a library, a framework, or a folder-naming

@@ -19,6 +19,49 @@ Understand how Linux actually works before debugging it.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-kernelfund-title mm-kernelfund-desc">
+<title id="mm-kernelfund-title">User space, the syscall bridge, and kernel space</title>
+<desc id="mm-kernelfund-desc">Applications run in user space and can only reach kernel space through the narrow, controlled system call interface. Interrupts force the kernel to react to hardware, and kernel modules extend kernel space at runtime without a reboot.</desc>
+<defs>
+  <marker id="mm-kernelfund-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="40" y="20" width="560" height="70" rx="10"/>
+<text class="mm-node-title" x="320" y="50" text-anchor="middle">User Space</text>
+<text class="mm-node-sub" x="320" y="67" text-anchor="middle">applications, processes — no direct hardware access</text>
+
+<path class="mm-arrow" d="M320,90 L320,110" marker-end="url(#mm-kernelfund-arrow)"/>
+
+<rect class="mm-n4" x="240" y="110" width="160" height="50" rx="10"/>
+<text class="mm-node-title" x="320" y="132" text-anchor="middle">System Call</text>
+<text class="mm-node-sub" x="320" y="147" text-anchor="middle">the only controlled gate</text>
+
+<path class="mm-arrow" d="M320,160 L320,180" marker-end="url(#mm-kernelfund-arrow)"/>
+
+<rect class="mm-n2" x="40" y="180" width="560" height="90" rx="10"/>
+<text class="mm-node-title" x="320" y="212" text-anchor="middle">Kernel Space</text>
+<text class="mm-node-sub" x="320" y="230" text-anchor="middle">scheduler, memory management, device drivers</text>
+<text class="mm-node-sub" x="320" y="245" text-anchor="middle">full hardware access</text>
+
+<rect class="mm-n1" x="605" y="110" width="155" height="50" rx="10"/>
+<text class="mm-node-title" x="682" y="132" text-anchor="middle">Interrupts</text>
+<text class="mm-node-sub" x="682" y="147" text-anchor="middle">hardware signals in</text>
+<path class="mm-arrow" d="M660,160 L605,190" marker-end="url(#mm-kernelfund-arrow)"/>
+
+<rect class="mm-n5" x="605" y="205" width="155" height="50" rx="10"/>
+<text class="mm-node-title" x="682" y="227" text-anchor="middle">Kernel Modules</text>
+<text class="mm-node-sub" x="682" y="242" text-anchor="middle">loaded at runtime</text>
+<path class="mm-arrow" d="M605,225 L600,225" marker-end="url(#mm-kernelfund-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Every application lives in user space and can only touch hardware by crossing the narrow system-call interface into kernel space, where the scheduler, memory manager, and drivers actually run; interrupts push into the kernel from the hardware side, and kernel modules extend that same kernel space at runtime without a reboot.</p>
+</div>
+
 ## 1. What the Linux Kernel Does
 
 The Linux kernel is the core of the operating system. It acts as a bridge between hardware and user applications. It manages hardware resources and provides essential services like process scheduling, memory management, device I/O, and networking. Linux uses a **monolithic kernel** architecture, meaning most core services (drivers, filesystem, networking) run in kernel space.

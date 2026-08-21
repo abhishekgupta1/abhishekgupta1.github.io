@@ -14,6 +14,46 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: career-framework, leveling, promotion, growth
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-careerladder-title mm-careerladder-desc">
+<title id="mm-careerladder-title">A career ladder as ascending steps across shared dimensions</title>
+<desc id="mm-careerladder-desc">Four levels — Junior, Mid-level, Senior, and Staff — form an ascending staircase, each step redefining the same dimensions of scope, technical depth, mentorship, and communication with observable criteria.</desc>
+<defs>
+  <marker id="mm-careerladder-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="200" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="120" y="225" text-anchor="middle">Junior</text>
+<text class="mm-node-sub" x="120" y="242" text-anchor="middle">guided scope</text>
+
+<path class="mm-arrow" d="M200,208 L226,182" marker-end="url(#mm-careerladder-arrow)"/>
+
+<rect class="mm-n2" x="230" y="150" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="310" y="175" text-anchor="middle">Mid-level</text>
+<text class="mm-node-sub" x="310" y="192" text-anchor="middle">independent execution</text>
+
+<path class="mm-arrow" d="M390,158 L416,132" marker-end="url(#mm-careerladder-arrow)"/>
+
+<rect class="mm-n3" x="420" y="100" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="500" y="125" text-anchor="middle">Senior</text>
+<text class="mm-node-sub" x="500" y="142" text-anchor="middle">cross-team scope</text>
+
+<path class="mm-arrow" d="M580,108 L606,82" marker-end="url(#mm-careerladder-arrow)"/>
+
+<rect class="mm-n4" x="610" y="50" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="690" y="75" text-anchor="middle">Staff</text>
+<text class="mm-node-sub" x="690" y="92" text-anchor="middle">org-wide influence</text>
+
+<text class="mm-flow-label" x="390" y="265" text-anchor="middle">same dimensions each step: scope, depth, mentorship, communication</text>
+</svg>
+
+<p class="mental-model__caption">A leveling framework is a staircase, not a cliff — each step up from Junior to Mid-level to Senior to Staff redefines the same handful of dimensions, like scope of ownership, technical depth, mentorship, and communication, using concrete behavioral criteria instead of vague adjectives.</p>
+</div>
+
 ## Quick Reference
 
 A good framework defines each level along a few consistent **dimensions** (e.g., scope, technical depth, mentorship, communication) with **behavioral, observable criteria** — not vague adjectives. Engineers should be able to read their level's row and know concretely what's expected, and read the next level's row and know what changes.

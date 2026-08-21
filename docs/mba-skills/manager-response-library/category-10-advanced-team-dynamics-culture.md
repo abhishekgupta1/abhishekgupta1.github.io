@@ -11,6 +11,52 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-atdc-title mm-atdc-desc">
+<title id="mm-atdc-title">How advanced team-dynamics situations all trace back to trust</title>
+<desc id="mm-atdc-desc">A central hub of team trust and culture fans out to five situations that test it: inheriting a skeptical team, promoting a peer, a bias accusation, building psychological safety, and running a blameless post-mortem. Each is handled by the same underlying trust-building approach.</desc>
+<defs>
+  <marker id="mm-atdc-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n6" x="290" y="16" width="200" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Team trust &amp; culture</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">earned, not claimed</text>
+
+<path class="mm-arrow" d="M340,72 L80,140" marker-end="url(#mm-atdc-arrow)"/>
+<path class="mm-arrow" d="M365,72 L235,140" marker-end="url(#mm-atdc-arrow)"/>
+<path class="mm-arrow" d="M390,72 L390,140" marker-end="url(#mm-atdc-arrow)"/>
+<path class="mm-arrow" d="M415,72 L545,140" marker-end="url(#mm-atdc-arrow)"/>
+<path class="mm-arrow" d="M440,72 L700,140" marker-end="url(#mm-atdc-arrow)"/>
+
+<rect class="mm-n1" x="10" y="144" width="140" height="66" rx="10"/>
+<text class="mm-node-title" x="80" y="170" text-anchor="middle">Inherited team</text>
+<text class="mm-node-sub" x="80" y="186" text-anchor="middle">skeptical of new boss</text>
+
+<rect class="mm-n2" x="165" y="144" width="140" height="66" rx="10"/>
+<text class="mm-node-title" x="235" y="170" text-anchor="middle">Promoted peer</text>
+<text class="mm-node-sub" x="235" y="186" text-anchor="middle">now leads former peers</text>
+
+<rect class="mm-n3" x="320" y="144" width="140" height="66" rx="10"/>
+<text class="mm-node-title" x="390" y="170" text-anchor="middle">Bias accusation</text>
+<text class="mm-node-sub" x="390" y="186" text-anchor="middle">fair process, no rushed verdict</text>
+
+<rect class="mm-n4" x="475" y="144" width="140" height="66" rx="10"/>
+<text class="mm-node-title" x="545" y="170" text-anchor="middle">Psych safety</text>
+<text class="mm-node-sub" x="545" y="186" text-anchor="middle">safe to admit mistakes</text>
+
+<rect class="mm-n5" x="630" y="144" width="140" height="66" rx="10"/>
+<text class="mm-node-title" x="700" y="170" text-anchor="middle">Blameless post-mortem</text>
+<text class="mm-node-sub" x="700" y="186" text-anchor="middle">after a major incident</text>
+</svg>
+
+<p class="mental-model__caption">Inheriting a skeptical team, promoting a peer, handling a bias accusation, building psychological safety, and running a blameless post-mortem all draw on the same underlying trust: it is earned through small, consistent, fair actions rather than claimed by title or persuasion.</p>
+</div>
+
 ## 46. Inheriting an established team as a new manager where the team is loyal to their previous boss and skeptical of you
 
 **Core Objective**: Earn trust through demonstrated competence and consistency, without trying to force it or badmouth the predecessor.

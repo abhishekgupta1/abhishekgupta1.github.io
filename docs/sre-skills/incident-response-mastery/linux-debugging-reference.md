@@ -28,6 +28,51 @@ Senior engineers think in: **resource bottlenecks**, **kernel states**, **queues
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 340" role="img" aria-labelledby="mm-lindebug-title mm-lindebug-desc">
+<title id="mm-lindebug-title">The practical debugging playbook, asked in order</title>
+<desc id="mm-lindebug-desc">Before anything else, work down a fixed checklist: is the process running, is the port listening, is CPU saturated, is memory exhausted, is disk full, and are connections stuck.</desc>
+<defs>
+  <marker id="mm-lindebug-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="260" y="10" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="30" text-anchor="middle">Process running?</text>
+<text class="mm-node-sub" x="390" y="45" text-anchor="middle">ps / systemctl status</text>
+<path class="mm-arrow" d="M390,56 L390,66" marker-end="url(#mm-lindebug-arrow)"/>
+
+<rect class="mm-n2" x="260" y="66" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="86" text-anchor="middle">Port listening?</text>
+<text class="mm-node-sub" x="390" y="101" text-anchor="middle">ss -lntp</text>
+<path class="mm-arrow" d="M390,112 L390,122" marker-end="url(#mm-lindebug-arrow)"/>
+
+<rect class="mm-n3" x="260" y="122" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="142" text-anchor="middle">CPU saturated?</text>
+<text class="mm-node-sub" x="390" y="157" text-anchor="middle">top / vmstat</text>
+<path class="mm-arrow" d="M390,168 L390,178" marker-end="url(#mm-lindebug-arrow)"/>
+
+<rect class="mm-n4" x="260" y="178" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="198" text-anchor="middle">Memory exhausted?</text>
+<text class="mm-node-sub" x="390" y="213" text-anchor="middle">free / vmstat</text>
+<path class="mm-arrow" d="M390,224 L390,234" marker-end="url(#mm-lindebug-arrow)"/>
+
+<rect class="mm-n5" x="260" y="234" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="254" text-anchor="middle">Disk full?</text>
+<text class="mm-node-sub" x="390" y="269" text-anchor="middle">df / du</text>
+<path class="mm-arrow" d="M390,280 L390,290" marker-end="url(#mm-lindebug-arrow)"/>
+
+<rect class="mm-n6" x="260" y="290" width="260" height="46" rx="10"/>
+<text class="mm-node-title" x="390" y="310" text-anchor="middle">Connections stuck?</text>
+<text class="mm-node-sub" x="390" y="325" text-anchor="middle">ss / netstat</text>
+</svg>
+
+<p class="mental-model__caption">When production breaks, senior engineers don't guess — they run down this fixed order: is the process running, is the port listening, is CPU saturated, is memory exhausted, is disk full, and are connections stuck, before diving into any subsystem-specific tooling.</p>
+</div>
+
 ## Practical Debugging Playbook
 
 When prod breaks, ask, in order:

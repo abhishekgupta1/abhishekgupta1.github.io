@@ -11,6 +11,45 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-mrl-cat3-title mm-mrl-cat3-desc">
+<title id="mm-mrl-cat3-title">Retention as a continuous loop, not a rescue</title>
+<desc id="mm-mrl-cat3-desc">A cycle of four stages: ongoing one-on-ones about goals, stretch visibility through delegated high-profile work, a growth signal firing such as feeling stuck, a promotion ask, or a resignation, and addressing it head-on, which feeds back into the next round of one-on-ones.</desc>
+<defs>
+  <marker id="mm-mrl-cat3-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="300" y="20" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="44" text-anchor="middle">Ongoing 1-on-1s</text>
+<text class="mm-node-sub" x="390" y="60" text-anchor="middle">goals, growth path</text>
+
+<rect class="mm-n5" x="560" y="130" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="650" y="154" text-anchor="middle">Stretch visibility</text>
+<text class="mm-node-sub" x="650" y="170" text-anchor="middle">delegate high-profile work</text>
+
+<rect class="mm-n4" x="300" y="240" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="264" text-anchor="middle">Growth signal fires</text>
+<text class="mm-node-sub" x="390" y="280" text-anchor="middle">stuck, promo ask, or notice</text>
+
+<rect class="mm-n3" x="40" y="130" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="130" y="154" text-anchor="middle">Address head-on</text>
+<text class="mm-node-sub" x="130" y="170" text-anchor="middle">counter, path, or exit well</text>
+
+<path class="mm-arrow" d="M480,55 L556,148" marker-end="url(#mm-mrl-cat3-arrow)"/>
+<path class="mm-arrow" d="M630,190 L484,252" marker-end="url(#mm-mrl-cat3-arrow)"/>
+<path class="mm-arrow" d="M296,252 L224,168" marker-end="url(#mm-mrl-cat3-arrow)"/>
+<path class="mm-arrow" d="M136,128 L296,55" marker-end="url(#mm-mrl-cat3-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="172" text-anchor="middle">career conversations happen before the crisis, not after</text>
+</svg>
+
+<p class="mental-model__caption">Retention isn't a single save-the-day conversation — it's a loop: regular one-on-ones surface what someone wants next, stretch and visibility work gives them room to grow into it, and when a growth signal does fire, whether that's feeling stuck, demanding a promotion, or giving notice, addressing it head-on feeds straight back into the next round of ongoing conversations.</p>
+</div>
+
 ## 12. A top performer demands an immediate promotion or raise that you cannot grant right now
 
 **Core Objective**: Give a real, respectful answer that preserves trust — even though it's not the answer they want.

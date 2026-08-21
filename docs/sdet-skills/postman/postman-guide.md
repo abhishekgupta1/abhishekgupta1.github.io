@@ -14,6 +14,49 @@ can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-postman-title mm-postman-desc">
+<title id="mm-postman-title">How a Postman request becomes a CI-checked result</title>
+<desc id="mm-postman-desc">A request is organized into a collection, which can be run manually through the Collection Runner or headlessly through Newman in CI, with both paths producing the same pass or fail test report.</desc>
+<defs>
+  <marker id="mm-postman-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="95" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="125" text-anchor="middle">Request</text>
+<text class="mm-node-sub" x="95" y="142" text-anchor="middle">method, url, headers</text>
+<path class="mm-arrow" d="M170,130 L206,130" marker-end="url(#mm-postman-arrow)"/>
+
+<rect class="mm-n5" x="210" y="95" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="295" y="125" text-anchor="middle">Collection</text>
+<text class="mm-node-sub" x="295" y="142" text-anchor="middle">ordered requests</text>
+
+<path class="mm-arrow" d="M380,115 L440,60" marker-end="url(#mm-postman-arrow)"/>
+<path class="mm-arrow" d="M380,145 L440,200" marker-end="url(#mm-postman-arrow)"/>
+
+<rect class="mm-n2" x="440" y="20" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="535" y="47" text-anchor="middle">Collection Runner</text>
+<text class="mm-node-sub" x="535" y="63" text-anchor="middle">GUI, sequential run</text>
+
+<rect class="mm-n4" x="440" y="180" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="535" y="207" text-anchor="middle">Newman (CLI)</text>
+<text class="mm-node-sub" x="535" y="223" text-anchor="middle">CI pipeline</text>
+
+<path class="mm-arrow" d="M630,55 L700,95" marker-end="url(#mm-postman-arrow)"/>
+<path class="mm-arrow" d="M630,205 L700,165" marker-end="url(#mm-postman-arrow)"/>
+
+<rect class="mm-n6" x="650" y="95" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="705" y="125" text-anchor="middle">Test report</text>
+<text class="mm-node-sub" x="705" y="142" text-anchor="middle">pass/fail</text>
+</svg>
+
+<p class="mental-model__caption">A single request only proves itself once; putting it in a collection makes it repeatable — run it manually through the Collection Runner while you're building it, or headlessly through Newman in a CI pipeline once it's stable, with both paths producing the same pass/fail test report.</p>
+</div>
+
 ## 1. What Postman Is, in Practical Terms
 
 Postman is a **GUI-first API client and testing platform** — the tool most

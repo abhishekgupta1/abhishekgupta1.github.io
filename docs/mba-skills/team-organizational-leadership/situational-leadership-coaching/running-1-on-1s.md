@@ -14,6 +14,42 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: 1-on-1s, coaching, trust, feedback
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-oneonone-title mm-oneonone-desc">
+<title id="mm-oneonone-title">The default 1-on-1 agenda order, repeating on cadence</title>
+<desc id="mm-oneonone-desc">A 1-on-1 runs the engineer's agenda first, their career and growth second, and the manager's own items last if time remains, then repeats on a steady weekly or biweekly cadence.</desc>
+<defs>
+  <marker id="mm-oneonone-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="30" y="90" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="125" y="120" text-anchor="middle">Their agenda first</text>
+<text class="mm-node-sub" x="125" y="137" text-anchor="middle">blockers, frustrations,</text>
+<text class="mm-node-sub" x="125" y="150" text-anchor="middle">open questions</text>
+
+<path class="mm-arrow" d="M220,125 L296,125" marker-end="url(#mm-oneonone-arrow)"/>
+
+<rect class="mm-n2" x="300" y="90" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="395" y="120" text-anchor="middle">Career and growth</text>
+<text class="mm-node-sub" x="395" y="137" text-anchor="middle">second priority</text>
+
+<path class="mm-arrow" d="M490,125 L566,125" marker-end="url(#mm-oneonone-arrow)"/>
+
+<rect class="mm-n4" x="570" y="90" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="665" y="120" text-anchor="middle">Manager's items</text>
+<text class="mm-node-sub" x="665" y="137" text-anchor="middle">last, if time remains</text>
+
+<path class="mm-arrow" d="M650,160 C650,230 250,230 100,162" marker-end="url(#mm-oneonone-arrow)"/>
+<text class="mm-flow-label" x="375" y="222" text-anchor="middle">repeats weekly (biweekly for senior ICs)</text>
+</svg>
+
+<p class="mental-model__caption">A 1-on-1 has a strict default order — the engineer's agenda first, their career and growth second, and the manager's own items last if time allows — repeating on a steady cadence so small problems surface while they're still small.</p>
+</div>
+
 ## Quick Reference
 
 The 1-on-1 belongs to the engineer, not you. Default agenda: **their agenda first, career/growth second, your items last (if there's time)**. Cadence: weekly for most engineers, biweekly for very senior/autonomous ones. If you're doing status updates in a 1-on-1, you're wasting it — that belongs in async standups or docs.

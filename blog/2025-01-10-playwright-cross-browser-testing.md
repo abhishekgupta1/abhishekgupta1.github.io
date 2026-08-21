@@ -12,6 +12,52 @@ Cross-browser testing is one of those things that sounds straightforward until y
 
 <!-- truncate -->
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-cb-title mm-cb-desc">
+<title id="mm-cb-title">One suite, three engines, one report</title>
+<desc id="mm-cb-desc">A single test suite fans out to run unmodified against Chromium, Firefox, and WebKit as parallel projects, and the three results converge into one CI report.</desc>
+<defs>
+  <marker id="mm-cb-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="115" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="100" y="145" text-anchor="middle">One test suite</text>
+<text class="mm-node-sub" x="100" y="161" text-anchor="middle">same spec files,</text>
+<text class="mm-node-sub" x="100" y="174" text-anchor="middle">no browser branches</text>
+
+<path class="mm-arrow" d="M180,140 L296,60" marker-end="url(#mm-cb-arrow)"/>
+<path class="mm-arrow" d="M180,150 L296,150" marker-end="url(#mm-cb-arrow)"/>
+<path class="mm-arrow" d="M180,160 L296,240" marker-end="url(#mm-cb-arrow)"/>
+
+<rect class="mm-n2" x="300" y="30" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="55" text-anchor="middle">Chromium</text>
+<text class="mm-node-sub" x="385" y="71" text-anchor="middle">project config</text>
+
+<rect class="mm-n4" x="300" y="120" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="145" text-anchor="middle">Firefox</text>
+<text class="mm-node-sub" x="385" y="161" text-anchor="middle">project config</text>
+
+<rect class="mm-n5" x="300" y="210" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="385" y="235" text-anchor="middle">WebKit</text>
+<text class="mm-node-sub" x="385" y="251" text-anchor="middle">project config</text>
+
+<path class="mm-arrow" d="M470,60 L586,140" marker-end="url(#mm-cb-arrow)"/>
+<path class="mm-arrow" d="M470,150 L586,150" marker-end="url(#mm-cb-arrow)"/>
+<path class="mm-arrow" d="M470,240 L586,160" marker-end="url(#mm-cb-arrow)"/>
+
+<rect class="mm-n1" x="590" y="115" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="675" y="145" text-anchor="middle">CI report</text>
+<text class="mm-node-sub" x="675" y="161" text-anchor="middle">pass/fail per</text>
+<text class="mm-node-sub" x="675" y="174" text-anchor="middle">engine, per shard</text>
+</svg>
+
+<p class="mental-model__caption">The suite itself never knows which engine it's running on — Playwright's <code>projects</code> config runs the same spec files three times in parallel, and the structure work (fixtures, page objects, retries) all lives upstream of that fan-out, so it only has to be written once.</p>
+</div>
+
 ## Why Playwright Over Other Tools
 
 Playwright ships with built-in support for all three major browser engines. Unlike Selenium, there's no separate driver management. Unlike Cypress, you're not locked into Chromium. The auto-wait mechanism alone eliminates a huge category of flaky tests — no more sprinkling `sleep()` calls everywhere.

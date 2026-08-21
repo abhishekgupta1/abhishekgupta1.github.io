@@ -14,6 +14,54 @@ tags: [executive-communication, leadership, mba]
 **Created**: 2026-08-18
 **Tags**: personal-branding, LinkedIn, whitepapers, public-speaking, authority-building
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-brand-title mm-brand-desc">
+<title id="mm-brand-title">How a narrow positioning compounds into inbound opportunity</title>
+<desc id="mm-brand-desc">A narrow area of expertise is published consistently through a small set of formats — LinkedIn posts, one whitepaper, selective talks — which converge into a compounding reputation that generates inbound opportunity, sharpening the positioning further over time.</desc>
+<defs>
+  <marker id="mm-brand-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="290" y="16" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="41" text-anchor="middle">Narrow positioning</text>
+<text class="mm-node-sub" x="390" y="57" text-anchor="middle">one specific expertise</text>
+
+<path class="mm-arrow" d="M330,76 L110,130" marker-end="url(#mm-brand-arrow)"/>
+<path class="mm-arrow" d="M390,76 L390,130" marker-end="url(#mm-brand-arrow)"/>
+<path class="mm-arrow" d="M450,76 L670,130" marker-end="url(#mm-brand-arrow)"/>
+
+<rect class="mm-n1" x="20" y="134" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="110" y="159" text-anchor="middle">LinkedIn posts</text>
+<text class="mm-node-sub" x="110" y="175" text-anchor="middle">1-2/week, specific</text>
+
+<rect class="mm-n4" x="300" y="134" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="159" text-anchor="middle">One whitepaper</text>
+<text class="mm-node-sub" x="390" y="175" text-anchor="middle">deep, best evidence</text>
+
+<rect class="mm-n2" x="580" y="134" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="670" y="159" text-anchor="middle">Selective talks</text>
+<text class="mm-node-sub" x="670" y="175" text-anchor="middle">occasional, chosen</text>
+
+<path class="mm-arrow" d="M130,194 L330,232" marker-end="url(#mm-brand-arrow)"/>
+<path class="mm-arrow" d="M390,194 L390,232" marker-end="url(#mm-brand-arrow)"/>
+<path class="mm-arrow" d="M650,194 L450,232" marker-end="url(#mm-brand-arrow)"/>
+
+<rect class="mm-n5" x="290" y="236" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="260" text-anchor="middle">Compounding</text>
+<text class="mm-node-sub" x="390" y="276" text-anchor="middle">reputation</text>
+
+<path class="mm-arrow" d="M290,255 C150,255 40,180 40,130" marker-end="url(#mm-brand-arrow)"/>
+<text class="mm-flow-label" x="150" y="215" text-anchor="middle">each piece makes the next</text>
+<text class="mm-flow-label" x="150" y="228" text-anchor="middle">opportunity more likely</text>
+</svg>
+
+<p class="mental-model__caption">A narrow, specific positioning published consistently through a small set of formats compounds over time into a visible reputation, which then generates inbound opportunity — recruiters, consulting clients, speaking invitations — without repeated outbound effort for each one.</p>
+</div>
+
 ## Quick Reference
 
 Pick one specific, narrow area of expertise to be known for — "engineering leader" is too broad to be memorable; "helps mid-size SaaS companies fix engineering-org scaling pain" is specific enough to be referred. Publish consistently in a small number of formats (LinkedIn posts, one whitepaper, occasional talks) rather than spreading thin across every channel. Depth and consistency in a narrow lane beats breadth attempted everywhere.

@@ -11,6 +11,52 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-hybrid-title mm-hybrid-desc">
+<title id="mm-hybrid-title">How distributed-work frictions converge on the same team reality</title>
+<desc id="mm-hybrid-desc">Five distributed-work frictions - unresponsive hours, meeting fatigue, excluded remote voices, untracked relocation, and isolated disengaged team members - all feed into one central reality of a distributed team, where the same trust-building instincts apply deliberately rather than by accident.</desc>
+<defs>
+  <marker id="mm-hybrid-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="305" y="13" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="35" text-anchor="middle">Unresponsive hours</text>
+<text class="mm-node-sub" x="390" y="51" text-anchor="middle">no notice, core hours</text>
+
+<rect class="mm-n2" x="595" y="93" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="680" y="115" text-anchor="middle">Meeting fatigue</text>
+<text class="mm-node-sub" x="680" y="131" text-anchor="middle">shift toward async</text>
+
+<rect class="mm-n3" x="495" y="243" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="580" y="265" text-anchor="middle">Excluded voices</text>
+<text class="mm-node-sub" x="580" y="281" text-anchor="middle">informal in-office calls</text>
+
+<rect class="mm-n4" x="115" y="243" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="200" y="265" text-anchor="middle">Untracked relocation</text>
+<text class="mm-node-sub" x="200" y="281" text-anchor="middle">tax/legal exposure</text>
+
+<rect class="mm-n5" x="15" y="93" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="100" y="115" text-anchor="middle">Isolated &amp; silent</text>
+<text class="mm-node-sub" x="100" y="131" text-anchor="middle">disconnected from culture</text>
+
+<path class="mm-arrow" d="M390,68 L390,120" marker-end="url(#mm-hybrid-arrow)"/>
+<path class="mm-arrow" d="M595,120 L475,150" marker-end="url(#mm-hybrid-arrow)"/>
+<path class="mm-arrow" d="M580,243 L440,180" marker-end="url(#mm-hybrid-arrow)"/>
+<path class="mm-arrow" d="M200,243 L340,180" marker-end="url(#mm-hybrid-arrow)"/>
+<path class="mm-arrow" d="M185,120 L305,150" marker-end="url(#mm-hybrid-arrow)"/>
+
+<rect class="mm-n6" x="305" y="120" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="146" text-anchor="middle">Distributed team</text>
+<text class="mm-node-sub" x="390" y="162" text-anchor="middle">notice, ask, adjust — deliberately</text>
+</svg>
+
+<p class="mental-model__caption">Unresponsive hours, meeting fatigue, excluded remote voices, untracked relocation, and isolated team members are all symptoms of one distributed-team reality, where the same instincts that build trust in person - noticing, asking, and adjusting - have to be applied deliberately instead of happening by accident.</p>
+</div>
+
 ## 71. A team member is consistently unresponsive on Slack/Teams during core business hours without prior notice
 
 **Core Objective**: Restore reliable availability during agreed hours without assuming bad faith before you understand the cause.

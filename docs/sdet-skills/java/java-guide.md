@@ -13,6 +13,53 @@ Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 360" role="img" aria-labelledby="mm-java-title mm-java-desc">
+<title id="mm-java-title">From Java source to a running program</title>
+<desc id="mm-java-desc">Source code compiles to platform-independent bytecode, which the JVM loads via its classloader, executes through its execution engine, and manages via memory and garbage collection, before running on the host OS and hardware.</desc>
+<defs>
+  <marker id="mm-java-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="305" y="20" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="47" text-anchor="middle">Source code</text>
+<text class="mm-node-sub" x="390" y="63" text-anchor="middle">.java, compiled by javac</text>
+<path class="mm-arrow" d="M390,80 L390,106" marker-end="url(#mm-java-arrow)"/>
+
+<rect class="mm-n2" x="305" y="110" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="137" text-anchor="middle">Bytecode</text>
+<text class="mm-node-sub" x="390" y="153" text-anchor="middle">.class files</text>
+
+<path class="mm-arrow" d="M370,170 L155,200" marker-end="url(#mm-java-arrow)"/>
+<path class="mm-arrow" d="M390,170 L390,200" marker-end="url(#mm-java-arrow)"/>
+<path class="mm-arrow" d="M410,170 L625,200" marker-end="url(#mm-java-arrow)"/>
+
+<rect class="mm-n5" x="60" y="200" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="155" y="230" text-anchor="middle">Classloader</text>
+<text class="mm-node-sub" x="155" y="247" text-anchor="middle">loads .class files</text>
+
+<rect class="mm-n4" x="295" y="200" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="230" text-anchor="middle">Execution engine</text>
+<text class="mm-node-sub" x="390" y="247" text-anchor="middle">interprets / JIT-compiles</text>
+
+<rect class="mm-n6" x="530" y="200" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="625" y="230" text-anchor="middle">Memory &amp; GC</text>
+<text class="mm-node-sub" x="625" y="247" text-anchor="middle">heap, stack, GC</text>
+
+<path class="mm-arrow" d="M390,270 L390,300" marker-end="url(#mm-java-arrow)"/>
+
+<rect class="mm-n1" x="305" y="300" width="170" height="45" rx="10"/>
+<text class="mm-node-title" x="390" y="320" text-anchor="middle">Host OS / hardware</text>
+<text class="mm-node-sub" x="390" y="335" text-anchor="middle">write once, run anywhere</text>
+</svg>
+
+<p class="mental-model__caption">Java source compiles once to bytecode, and the JVM does the rest: the classloader brings .class files in, the execution engine interprets or JIT-compiles them, and the memory manager handles heap allocation and garbage collection — the same bytecode then runs unmodified on whatever OS and hardware host the JVM.</p>
+</div>
+
 ## 1. What Java Is, in Practical Terms
 
 Java is a **statically typed, compiled-to-bytecode, garbage-collected,

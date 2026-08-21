@@ -11,6 +11,54 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-mrl-cat2-title mm-mrl-cat2-desc">
+<title id="mm-mrl-cat2-title">Two kinds of conflict, one shared fix pattern</title>
+<desc id="mm-mrl-cat2-desc">Conflict on a team splits into a structural gap, such as architecture deadlocks or cross-team friction, and a behavioral gap, such as meeting pushback, peer complaints, or exclusion. Both are traced to the real gap underneath before either is fixed, so the fix holds without the manager acting as a permanent referee.</desc>
+<defs>
+  <marker id="mm-mrl-cat2-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="15" y="105" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="135" text-anchor="middle">Conflict surfaces</text>
+<text class="mm-node-sub" x="90" y="151" text-anchor="middle">disagreement, friction,</text>
+<text class="mm-node-sub" x="90" y="164" text-anchor="middle">pushback, exclusion</text>
+
+<path class="mm-arrow" d="M165,120 L221,52" marker-end="url(#mm-mrl-cat2-arrow)"/>
+<path class="mm-arrow" d="M165,160 L221,228" marker-end="url(#mm-mrl-cat2-arrow)"/>
+
+<rect class="mm-n2" x="225" y="20" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="335" y="46" text-anchor="middle">Structural gap</text>
+<text class="mm-node-sub" x="335" y="62" text-anchor="middle">architecture deadlock, team friction</text>
+
+<rect class="mm-n5" x="225" y="196" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="335" y="222" text-anchor="middle">Behavioral gap</text>
+<text class="mm-node-sub" x="335" y="238" text-anchor="middle">pushback, exclusion, peer conflict</text>
+
+<path class="mm-arrow" d="M445,52 L481,128" marker-end="url(#mm-mrl-cat2-arrow)"/>
+<path class="mm-arrow" d="M445,228 L481,152" marker-end="url(#mm-mrl-cat2-arrow)"/>
+
+<rect class="mm-n4" x="485" y="105" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="570" y="129" text-anchor="middle">Name the real gap</text>
+<text class="mm-node-sub" x="570" y="145" text-anchor="middle">values, process, or standard?</text>
+
+<path class="mm-arrow" d="M655,135 L671,135" marker-end="url(#mm-mrl-cat2-arrow)"/>
+
+<rect class="mm-n1" x="675" y="98" width="90" height="76" rx="10"/>
+<text class="mm-node-title" x="720" y="128" text-anchor="middle">Fix holds</text>
+<text class="mm-node-sub" x="720" y="144" text-anchor="middle">no more</text>
+<text class="mm-node-sub" x="720" y="157" text-anchor="middle">refereeing</text>
+
+<text class="mm-flow-label" x="390" y="272" text-anchor="middle">peer complaints get coached toward a direct conversation first, then escalate</text>
+</svg>
+
+<p class="mental-model__caption">Team conflict tends to be either structural — an architecture deadlock or cross-team friction wearing a personality-conflict costume — or behavioral — pushback, exclusion, or a peer complaint about conduct — and each needs a different first move, but both only resolve for good once you name the real gap underneath instead of just settling the moment in front of you.</p>
+</div>
+
 ## 7. Two senior team members disagree on architectural choices and hit a dead end
 
 **Core Objective**: Get to a decision without either engineer feeling overridden by rank — preserve both the decision quality and the relationship.

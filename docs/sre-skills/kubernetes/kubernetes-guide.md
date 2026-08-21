@@ -13,6 +13,40 @@ SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-k8s-title mm-k8s-desc">
+<title id="mm-k8s-title">The Kubernetes reconciliation loop</title>
+<desc id="mm-k8s-desc">A controller continuously compares the desired state you declare against the actual state of the cluster, and takes action to reconcile any difference.</desc>
+<defs>
+  <marker id="mm-k8s-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="90" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="140" y="118" text-anchor="middle">Desired State</text>
+<text class="mm-node-sub" x="140" y="135" text-anchor="middle">e.g. 3 replicas of v2</text>
+
+<rect class="mm-n5" x="310" y="90" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="410" y="118" text-anchor="middle">Controller</text>
+<text class="mm-node-sub" x="410" y="135" text-anchor="middle">compare &amp; reconcile</text>
+
+<rect class="mm-n3" x="580" y="90" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="680" y="118" text-anchor="middle">Actual State</text>
+<text class="mm-node-sub" x="680" y="135" text-anchor="middle">what's running now</text>
+
+<path class="mm-arrow" d="M240,125 L308,125" marker-end="url(#mm-k8s-arrow)"/>
+<path class="mm-arrow" d="M510,125 L578,125" marker-end="url(#mm-k8s-arrow)"/>
+<path class="mm-arrow" d="M680,160 C680,220 410,220 410,162" marker-end="url(#mm-k8s-arrow)"/>
+
+<text class="mm-flow-label" x="545" y="205" text-anchor="middle">continuously observes &amp; reconciles</text>
+</svg>
+
+<p class="mental-model__caption">Kubernetes is one loop running forever: a controller reads what you declared, checks it against what's actually running, and pushes the cluster toward the declared state whenever they drift apart — no single command ever "does the deployment," the loop just keeps closing the gap.</p>
+</div>
+
 ## 1. What Kubernetes Is and Why It Exists
 
 Kubernetes (K8s) is a **container orchestration platform** — it schedules

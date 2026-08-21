@@ -6,16 +6,27 @@ export default function HeroSection() {
     <section className="hero-section">
       <h1>Abhishek Gupta</h1>
       <p className="hero-tagline">
-        Exploring the World of Testing, Reliability, and AI
+        Independent Consultant — SDET · SRE · AI Systems Engineering
+      </p>
+      <p className="hero-location">
+        📍 Mumbai, India — Available for Remote &amp; Hybrid Engagements
       </p>
       <p className="hero-intro">
-        SDET III | SRE | AI Enthusiast — Building reliable, scalable systems
-        through test automation, site reliability engineering, and intelligent
-        tooling. Passionate about bridging quality and innovation.
+        I help engineering teams reduce deployment friction, lower test
+        flakiness, and improve MTTR through test automation, site reliability
+        engineering, and AI-driven systems — from a single hourly audit to a
+        fully built RAG pipeline or test framework.
       </p>
-      <Link className="hero-cta" to="/projects">
-        View My Projects
-      </Link>
+      <div className="hero-cta-group">
+        <a
+          className="hero-cta"
+          href="mailto:abhishekcgupta1@gmail.com?subject=Discovery%20Call%20Request">
+          Book a Discovery Call
+        </a>
+        <Link className="hero-cta hero-cta--outline" to="/projects">
+          View My Projects
+        </Link>
+      </div>
     </section>
   );
 }

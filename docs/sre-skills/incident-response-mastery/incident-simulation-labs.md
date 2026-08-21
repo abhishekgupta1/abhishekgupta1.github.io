@@ -36,6 +36,56 @@ For each incident:
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-simlabs-title mm-simlabs-desc">
+<title id="mm-simlabs-title">How each simulation drill is worked</title>
+<desc id="mm-simlabs-desc">Every drill starts from a single alert on a 30-minute timer, fans out into four things to identify — symptom, root cause, immediate mitigation, and long-term fix — then converges into a short written postmortem.</desc>
+<defs>
+  <marker id="mm-simlabs-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="280" y="16" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Alert</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">30-minute timer starts</text>
+
+<path class="mm-arrow" d="M340,72 L105,110" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M370,72 L290,110" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M410,72 L475,110" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M440,72 L660,110" marker-end="url(#mm-simlabs-arrow)"/>
+
+<rect class="mm-n2" x="20" y="110" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="105" y="140" text-anchor="middle">Symptom</text>
+<text class="mm-node-sub" x="105" y="157" text-anchor="middle">what's observed</text>
+
+<rect class="mm-n3" x="205" y="110" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="290" y="140" text-anchor="middle">Root Cause</text>
+<text class="mm-node-sub" x="290" y="157" text-anchor="middle">why it happened</text>
+
+<rect class="mm-n4" x="390" y="110" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="475" y="140" text-anchor="middle">Immediate Fix</text>
+<text class="mm-node-sub" x="475" y="157" text-anchor="middle">stop the bleeding</text>
+
+<rect class="mm-n5" x="575" y="110" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="660" y="140" text-anchor="middle">Long-term Fix</text>
+<text class="mm-node-sub" x="660" y="157" text-anchor="middle">prevents recurrence</text>
+
+<path class="mm-arrow" d="M105,176 L340,220" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M290,176 L370,220" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M475,176 L410,220" marker-end="url(#mm-simlabs-arrow)"/>
+<path class="mm-arrow" d="M660,176 L440,220" marker-end="url(#mm-simlabs-arrow)"/>
+
+<rect class="mm-n6" x="265" y="220" width="250" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="244" text-anchor="middle">5-Minute Postmortem</text>
+<text class="mm-node-sub" x="390" y="260" text-anchor="middle">write it down while it's fresh</text>
+</svg>
+
+<p class="mental-model__caption">Every drill in this pack follows the same shape: one alert starts a 30-minute clock, you fan out to pin down the symptom, root cause, immediate mitigation, and long-term fix, then converge everything into a short postmortem before moving to the next drill.</p>
+</div>
+
 ## 🧨 INCIDENT 1 — "API Latency Spiking"
 
 ### 🚨 Alert

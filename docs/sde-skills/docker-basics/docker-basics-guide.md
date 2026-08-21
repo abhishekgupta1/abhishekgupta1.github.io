@@ -13,6 +13,57 @@ Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-docker-title mm-docker-desc">
+<title id="mm-docker-title">How a Docker image becomes a running container</title>
+<desc id="mm-docker-desc">A Dockerfile builds a stack of cached, read-only image layers; running that image adds a writable layer on top to create a container; and images move to and from a registry through push and pull, reusing shared layers.</desc>
+<defs>
+  <marker id="mm-docker-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="105" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="135" text-anchor="middle">Dockerfile</text>
+<text class="mm-node-sub" x="95" y="152" text-anchor="middle">build instructions</text>
+
+<path class="mm-arrow" d="M170,140 L206,140" marker-end="url(#mm-docker-arrow)"/>
+<text class="mm-flow-label" x="188" y="128" text-anchor="middle">docker build</text>
+
+<rect class="mm-n5" x="210" y="50" width="190" height="180" rx="10"/>
+<text class="mm-node-title" x="305" y="75" text-anchor="middle">Image</text>
+<rect class="mm-n1" x="230" y="88" width="150" height="26" rx="6"/>
+<text class="mm-node-sub" x="305" y="105" text-anchor="middle">CMD</text>
+<rect class="mm-n2" x="230" y="118" width="150" height="26" rx="6"/>
+<text class="mm-node-sub" x="305" y="135" text-anchor="middle">COPY . .</text>
+<rect class="mm-n3" x="230" y="148" width="150" height="26" rx="6"/>
+<text class="mm-node-sub" x="305" y="165" text-anchor="middle">RUN npm install</text>
+<rect class="mm-n4" x="230" y="178" width="150" height="26" rx="6"/>
+<text class="mm-node-sub" x="305" y="195" text-anchor="middle">FROM node:20 (base)</text>
+
+<path class="mm-arrow" d="M400,140 L436,140" marker-end="url(#mm-docker-arrow)"/>
+<text class="mm-flow-label" x="418" y="128" text-anchor="middle">docker run</text>
+
+<rect class="mm-n2" x="430" y="105" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="510" y="135" text-anchor="middle">Container</text>
+<text class="mm-node-sub" x="510" y="152" text-anchor="middle">writable layer, running</text>
+
+<path class="mm-arrow" d="M515,175 L528,246" marker-end="url(#mm-docker-arrow)"/>
+<text class="mm-flow-label" x="565" y="210" text-anchor="middle">docker push</text>
+
+<rect class="mm-n6" x="450" y="250" width="170" height="55" rx="10"/>
+<text class="mm-node-title" x="535" y="273" text-anchor="middle">Registry</text>
+<text class="mm-node-sub" x="535" y="290" text-anchor="middle">push / pull</text>
+
+<path class="mm-arrow" d="M450,270 C320,300 260,290 300,234" marker-end="url(#mm-docker-arrow)"/>
+<text class="mm-flow-label" x="345" y="305" text-anchor="middle">docker pull — reuses cached layers</text>
+</svg>
+
+<p class="mental-model__caption">A Dockerfile builds cached, read-only layers into an image; running that image adds one writable layer on top as a container; and pushing or pulling through a registry moves that same image around while reusing its shared layers instead of re-copying everything.</p>
+</div>
+
 ## 1. Containers vs. Virtual Machines
 
 Both isolate workloads, but at fundamentally different layers.

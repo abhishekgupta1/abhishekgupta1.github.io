@@ -14,6 +14,47 @@ tags: [executive-communication, leadership, mba]
 **Created**: 2026-08-18
 **Tags**: stakeholder-management, cross-functional, expectations, sales, legal, C-suite
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-stake-title mm-stake-desc">
+<title id="mm-stake-title">One truth, translated into three registers</title>
+<desc id="mm-stake-desc">A single underlying fact is translated into three different registers for three stakeholder groups — sales gets a simple confident script, legal gets risk stated plainly, the C-suite gets outcome and tradeoff — while the underlying fact stays consistent across all three.</desc>
+<defs>
+  <marker id="mm-stake-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="290" y="16" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="41" text-anchor="middle">One underlying truth</text>
+<text class="mm-node-sub" x="390" y="57" text-anchor="middle">same fact, every time</text>
+
+<path class="mm-arrow" d="M330,76 L130,140" marker-end="url(#mm-stake-arrow)"/>
+<path class="mm-arrow" d="M390,76 L390,140" marker-end="url(#mm-stake-arrow)"/>
+<path class="mm-arrow" d="M450,76 L650,140" marker-end="url(#mm-stake-arrow)"/>
+
+<rect class="mm-n1" x="20" y="144" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="130" y="172" text-anchor="middle">Sales</text>
+<text class="mm-node-sub" x="130" y="189" text-anchor="middle">confident, simple,</text>
+<text class="mm-node-sub" x="130" y="202" text-anchor="middle">repeatable script</text>
+
+<rect class="mm-n4" x="280" y="144" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="390" y="172" text-anchor="middle">Legal</text>
+<text class="mm-node-sub" x="390" y="189" text-anchor="middle">precision, risk</text>
+<text class="mm-node-sub" x="390" y="202" text-anchor="middle">stated explicitly</text>
+
+<rect class="mm-n5" x="540" y="144" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="650" y="172" text-anchor="middle">C-suite</text>
+<text class="mm-node-sub" x="650" y="189" text-anchor="middle">outcome and</text>
+<text class="mm-node-sub" x="650" y="202" text-anchor="middle">tradeoff, concise</text>
+
+<text class="mm-flow-label" x="390" y="248" text-anchor="middle">never two stakeholders on quietly conflicting versions of the same fact</text>
+</svg>
+
+<p class="mental-model__caption">Stakeholder alignment means translating one consistent underlying fact into the register each group actually needs — sales a simple script, legal explicit risk, the C-suite outcome and tradeoff — without ever letting the substance drift between the versions each hears.</p>
+</div>
+
 ## Quick Reference
 
 Map stakeholders by what they actually need from you and in what register (per [Adapting Communication Tone by Audience](../../team-organizational-leadership/situational-leadership-coaching/adapting-communication-tone-by-audience.md)): sales wants a confident, simple answer they can repeat to a customer; legal wants precision and risk surfaced explicitly; the C-suite wants outcome and tradeoff. Give each the same underlying truth in the framing they can actually use — and never let two stakeholders receive quietly conflicting versions of the same fact.

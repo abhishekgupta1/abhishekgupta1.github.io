@@ -14,6 +14,62 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: technical-debt, code-quality, metrics, engineering-metrics
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-quantdebt-title mm-quantdebt-desc">
+<title id="mm-quantdebt-title">Three independent axes, each translated to a business cost</title>
+<desc id="mm-quantdebt-desc">Velocity drag, incident cost, and change risk are each measured against a baseline and translated into a business-cost statement, then kept as three separate pieces of defensible evidence rather than merged into one composite score.</desc>
+<defs>
+  <marker id="mm-quantdebt-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="20" y="20" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="135" y="46" text-anchor="middle">Velocity drag</text>
+<text class="mm-node-sub" x="135" y="62" text-anchor="middle">4.2d vs 1.1d baseline</text>
+
+<path class="mm-arrow" d="M135,80 L135,103" marker-end="url(#mm-quantdebt-arrow)"/>
+
+<rect class="mm-n1" x="20" y="105" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="135" y="128" text-anchor="middle">= 4x slower</text>
+<text class="mm-node-sub" x="135" y="144" text-anchor="middle">lost delivery time</text>
+<text class="mm-node-sub" x="135" y="157" text-anchor="middle">for leadership</text>
+
+<rect class="mm-n4" x="275" y="20" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="46" text-anchor="middle">Incident cost</text>
+<text class="mm-node-sub" x="390" y="62" text-anchor="middle">15% of hrs, 4% of code</text>
+
+<path class="mm-arrow" d="M390,80 L390,103" marker-end="url(#mm-quantdebt-arrow)"/>
+
+<rect class="mm-n3" x="275" y="105" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="128" text-anchor="middle">= outsized cost</text>
+<text class="mm-node-sub" x="390" y="144" text-anchor="middle">traced, resolvable</text>
+<text class="mm-node-sub" x="390" y="157" text-anchor="middle">reliability hit</text>
+
+<rect class="mm-n5" x="530" y="20" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="645" y="46" text-anchor="middle">Change risk</text>
+<text class="mm-node-sub" x="645" y="62" text-anchor="middle">30% failure vs 8%</text>
+
+<path class="mm-arrow" d="M645,80 L645,103" marker-end="url(#mm-quantdebt-arrow)"/>
+
+<rect class="mm-n6" x="530" y="105" width="230" height="60" rx="10"/>
+<text class="mm-node-title" x="645" y="128" text-anchor="middle">= risky to touch</text>
+<text class="mm-node-sub" x="645" y="144" text-anchor="middle">hotfixes within</text>
+<text class="mm-node-sub" x="645" y="157" text-anchor="middle">48 hours</text>
+
+<path class="mm-arrow" d="M135,165 C160,200 280,215 320,222" marker-end="url(#mm-quantdebt-arrow)"/>
+<path class="mm-arrow" d="M390,165 L390,222" marker-end="url(#mm-quantdebt-arrow)"/>
+<path class="mm-arrow" d="M645,165 C620,200 500,215 460,222" marker-end="url(#mm-quantdebt-arrow)"/>
+
+<rect class="mm-n3" x="150" y="225" width="480" height="45" rx="10"/>
+<text class="mm-node-title" x="390" y="253" text-anchor="middle">Defensible evidence — not one score</text>
+</svg>
+
+<p class="mental-model__caption">Each axis stays measured on its own terms — speed, reliability, and risk — because collapsing them into a single debt score hides which specific problem is actually driving the cost, and different problems need different fixes.</p>
+</div>
+
 ## Quick Reference
 
 Measure debt along three axes that map to business cost: **velocity drag** (how much slower is shipping in this area vs. a healthy baseline), **incident cost** (bugs/outages traced to this area, and their resolution time), and **change risk** (how often a small change here causes an unrelated break). A single "code quality" score is not actionable; these three are, because each maps to a dollar or time cost leadership already tracks.

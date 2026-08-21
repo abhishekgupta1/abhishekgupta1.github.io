@@ -13,6 +13,45 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-tf-title mm-tf-desc">
+<title id="mm-tf-title">The Terraform core workflow</title>
+<desc id="mm-tf-desc">Terraform init, plan, and apply form a repeating cycle for every change, with destroy as the separate inverse path that tears everything down.</desc>
+<defs>
+  <marker id="mm-tf-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<path class="mm-arrow" d="M505,100 C505,50 305,50 305,98" marker-end="url(#mm-tf-arrow)"/>
+<text class="mm-flow-label" x="405" y="45" text-anchor="middle">iterate for the next change</text>
+
+<rect class="mm-n1" x="20" y="100" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="105" y="128" text-anchor="middle">init</text>
+<text class="mm-node-sub" x="105" y="145" text-anchor="middle">terraform init</text>
+
+<rect class="mm-n2" x="220" y="100" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="305" y="128" text-anchor="middle">plan</text>
+<text class="mm-node-sub" x="305" y="145" text-anchor="middle">terraform plan</text>
+
+<rect class="mm-n3" x="420" y="100" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="505" y="128" text-anchor="middle">apply</text>
+<text class="mm-node-sub" x="505" y="145" text-anchor="middle">terraform apply</text>
+
+<rect class="mm-n4" x="620" y="100" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="695" y="128" text-anchor="middle">destroy</text>
+<text class="mm-node-sub" x="695" y="145" text-anchor="middle">terraform destroy</text>
+
+<path class="mm-arrow" d="M190,135 L218,135" marker-end="url(#mm-tf-arrow)"/>
+<path class="mm-arrow" d="M390,135 L418,135" marker-end="url(#mm-tf-arrow)"/>
+<path class="mm-arrow" d="M590,135 L618,135" marker-end="url(#mm-tf-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Init, plan, and apply are the loop you run for every single change — plan is the safety check you always read before apply executes it — while destroy is the separate, deliberate inverse path that tears the whole configuration back down.</p>
+</div>
+
 ## 1. Infrastructure as Code — the Philosophy
 
 Terraform (by HashiCorp) is a **declarative Infrastructure as Code (IaC)**

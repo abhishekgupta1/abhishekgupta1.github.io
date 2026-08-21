@@ -14,6 +14,47 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: cash-flow, entity-structure, contracts, tax, independent-consulting
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-finlegal-title mm-finlegal-desc">
+<title id="mm-finlegal-title">Four pillars supporting a solvent, protected consulting practice</title>
+<desc id="mm-finlegal-desc">Entity structure, contracts, cash reserve, and tax set-asides are four independent pillars that all feed into keeping the consulting practice solvent and legally protected.</desc>
+<defs>
+  <marker id="mm-finlegal-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="15" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="135" y="41" text-anchor="middle">Entity structure</text>
+<text class="mm-node-sub" x="135" y="58" text-anchor="middle">LLC before client #1</text>
+
+<rect class="mm-n2" x="560" y="15" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="655" y="41" text-anchor="middle">Contracts</text>
+<text class="mm-node-sub" x="655" y="58" text-anchor="middle">scope, IP, liability cap</text>
+
+<rect class="mm-n4" x="40" y="205" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="135" y="231" text-anchor="middle">Cash reserve</text>
+<text class="mm-node-sub" x="135" y="248" text-anchor="middle">3-6 months, net-30/60 lag</text>
+
+<rect class="mm-n5" x="560" y="205" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="655" y="231" text-anchor="middle">Tax set-aside</text>
+<text class="mm-node-sub" x="655" y="248" text-anchor="middle">25-35% per payment</text>
+
+<path class="mm-arrow" d="M220,45 L300,115" marker-end="url(#mm-finlegal-arrow)"/>
+<path class="mm-arrow" d="M570,45 L480,115" marker-end="url(#mm-finlegal-arrow)"/>
+<path class="mm-arrow" d="M220,235 L300,165" marker-end="url(#mm-finlegal-arrow)"/>
+<path class="mm-arrow" d="M570,235 L480,165" marker-end="url(#mm-finlegal-arrow)"/>
+
+<rect class="mm-n3" x="300" y="105" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="135" text-anchor="middle">Solvent, protected</text>
+<text class="mm-node-sub" x="390" y="151" text-anchor="middle">practice</text>
+</svg>
+
+<p class="mental-model__caption">A consulting practice stays solvent and legally protected by four independent pillars, not one — a formal entity limits personal liability, written contracts define scope and IP, a sized cash reserve absorbs the lag between work and payment, and tax set-asides prevent an invoice from being treated as fully spendable income.</p>
+</div>
+
 ## Quick Reference
 
 Keep 3-6 months of expenses in a cash reserve — consulting income is lumpy and client payment terms (often net-30 or net-60) mean revenue lags work by months. Set up a formal entity (e.g., an LLC or Pvt Ltd, depending on jurisdiction) to separate personal and business liability before taking on your first paid client, not after. Every engagement needs a written contract covering scope, payment terms, IP ownership, and liability — a handshake agreement is the single most common source of consulting disputes.

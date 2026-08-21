@@ -30,6 +30,57 @@ From an SRE perspective, filesystem & storage knowledge is not theoretical. It d
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-fsplaybook-title mm-fsplaybook-desc">
+<title id="mm-fsplaybook-title">Five ways filesystem knowledge shows up as SRE risk</title>
+<desc id="mm-fsplaybook-desc">Filesystem and storage knowledge fans out into five production concerns: availability, performance, security, scalability, and recovery.</desc>
+<defs>
+  <marker id="mm-fsplaybook-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="290" y="16" width="200" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Filesystem &amp; Storage</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">not theoretical — production risk</text>
+
+<path class="mm-arrow" d="M330,72 L90,138" marker-end="url(#mm-fsplaybook-arrow)"/>
+<path class="mm-arrow" d="M360,72 L240,138" marker-end="url(#mm-fsplaybook-arrow)"/>
+<path class="mm-arrow" d="M390,72 L390,138" marker-end="url(#mm-fsplaybook-arrow)"/>
+<path class="mm-arrow" d="M420,72 L540,138" marker-end="url(#mm-fsplaybook-arrow)"/>
+<path class="mm-arrow" d="M450,72 L690,138" marker-end="url(#mm-fsplaybook-arrow)"/>
+
+<rect class="mm-n2" x="20" y="138" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="166" text-anchor="middle">Availability</text>
+<text class="mm-node-sub" x="90" y="182" text-anchor="middle">disk full &#8594;</text>
+<text class="mm-node-sub" x="90" y="196" text-anchor="middle">outage</text>
+
+<rect class="mm-n3" x="170" y="138" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="240" y="166" text-anchor="middle">Performance</text>
+<text class="mm-node-sub" x="240" y="182" text-anchor="middle">I/O</text>
+<text class="mm-node-sub" x="240" y="196" text-anchor="middle">bottlenecks</text>
+
+<rect class="mm-n4" x="320" y="138" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="166" text-anchor="middle">Security</text>
+<text class="mm-node-sub" x="390" y="182" text-anchor="middle">wrong perms &#8594;</text>
+<text class="mm-node-sub" x="390" y="196" text-anchor="middle">breach</text>
+
+<rect class="mm-n5" x="470" y="138" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="540" y="166" text-anchor="middle">Scalability</text>
+<text class="mm-node-sub" x="540" y="182" text-anchor="middle">poor volume</text>
+<text class="mm-node-sub" x="540" y="196" text-anchor="middle">planning</text>
+
+<rect class="mm-n6" x="620" y="138" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="690" y="166" text-anchor="middle">Recovery</text>
+<text class="mm-node-sub" x="690" y="182" text-anchor="middle">RAID/LVM</text>
+<text class="mm-node-sub" x="690" y="196" text-anchor="middle">mismanaged</text>
+</svg>
+
+<p class="mental-model__caption">Filesystem and storage decisions are not theoretical for an SRE — the same underlying knowledge, from inodes to LVM to permission bits, is what determines availability, performance, security, scalability, and recovery outcomes in production.</p>
+</div>
+
 ## 1. Filesystem Hierarchy Standard (FHS) — Why SREs Care
 
 FHS defines where things live in Linux. As an SRE, this helps you debug systems fast.

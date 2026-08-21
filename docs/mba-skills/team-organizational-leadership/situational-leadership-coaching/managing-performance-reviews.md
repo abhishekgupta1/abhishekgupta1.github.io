@@ -14,6 +14,53 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: performance-reviews, feedback, calibration, career-growth
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-perfreview-title mm-perfreview-desc">
+<title id="mm-perfreview-title">Continuous feedback rolling into a zero-surprise review</title>
+<desc id="mm-perfreview-desc">Recurring 1-on-1 feedback across the review period feeds into a single written performance review, which in turn feeds calibration across the org and the engineer's promotion case.</desc>
+<defs>
+  <marker id="mm-perfreview-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="40" y="20" width="140" height="55" rx="10"/>
+<text class="mm-node-title" x="110" y="42" text-anchor="middle">1-on-1 feedback</text>
+<text class="mm-node-sub" x="110" y="59" text-anchor="middle">weeks 1-8</text>
+
+<rect class="mm-n2" x="220" y="20" width="140" height="55" rx="10"/>
+<text class="mm-node-title" x="290" y="42" text-anchor="middle">1-on-1 feedback</text>
+<text class="mm-node-sub" x="290" y="59" text-anchor="middle">weeks 9-16</text>
+
+<rect class="mm-n2" x="400" y="20" width="140" height="55" rx="10"/>
+<text class="mm-node-title" x="470" y="42" text-anchor="middle">1-on-1 feedback</text>
+<text class="mm-node-sub" x="470" y="59" text-anchor="middle">weeks 17-24</text>
+
+<path class="mm-arrow" d="M110,75 L280,140" marker-end="url(#mm-perfreview-arrow)"/>
+<path class="mm-arrow" d="M290,75 L370,140" marker-end="url(#mm-perfreview-arrow)"/>
+<path class="mm-arrow" d="M470,75 L500,140" marker-end="url(#mm-perfreview-arrow)"/>
+
+<rect class="mm-n4" x="220" y="140" width="340" height="65" rx="10"/>
+<text class="mm-node-title" x="390" y="167" text-anchor="middle">Written review</text>
+<text class="mm-node-sub" x="390" y="184" text-anchor="middle">zero new surprises</text>
+
+<path class="mm-arrow" d="M340,205 L200,225" marker-end="url(#mm-perfreview-arrow)"/>
+<path class="mm-arrow" d="M440,205 L600,225" marker-end="url(#mm-perfreview-arrow)"/>
+
+<rect class="mm-n1" x="80" y="225" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="170" y="247" text-anchor="middle">Calibration</text>
+<text class="mm-node-sub" x="170" y="264" text-anchor="middle">fairness across the org</text>
+
+<rect class="mm-n5" x="520" y="225" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="620" y="247" text-anchor="middle">Promotion case</text>
+<text class="mm-node-sub" x="620" y="264" text-anchor="middle">evidence trail</text>
+</svg>
+
+<p class="mental-model__caption">A good performance review contains zero surprises because it's just a written rollup of feedback already delivered across the period's 1-on-1s, and that same written record is what feeds fair calibration across the org and any future promotion case.</p>
+</div>
+
 ## Quick Reference
 
 A good performance review contains **zero surprises**. It's a written summary of feedback the engineer has already heard in [1-on-1s](./running-1-on-1s.md), backed by specific evidence tied to their [level's expectations](../talent-retention-hiring/building-career-progression-frameworks.md), not a first disclosure of concerns.

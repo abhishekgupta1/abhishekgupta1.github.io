@@ -14,6 +14,46 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: metrics, north-star-metric, LTV, CAC, retention, churn, DAU-MAU
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-northstar-title mm-northstar-desc">
+<title id="mm-northstar-title">North Star Metric with four supporting metrics around it</title>
+<desc id="mm-northstar-desc">A North Star Metric sits at the center, surrounded by four supporting metrics that each answer a different question about business health: acquisition cost, engagement stickiness, retention and churn, and lifetime value — no single metric tells the whole story.</desc>
+<defs>
+  <marker id="mm-northstar-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="300" y="115" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">North Star Metric</text>
+<text class="mm-node-sub" x="390" y="162" text-anchor="middle">value delivered to users</text>
+
+<path class="mm-arrow" d="M410,113 L440,80" marker-end="url(#mm-northstar-arrow)"/>
+<rect class="mm-n1" x="290" y="14" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="37" text-anchor="middle">Acquisition</text>
+<text class="mm-node-sub" x="390" y="53" text-anchor="middle">CAC</text>
+
+<path class="mm-arrow" d="M410,187 L440,222" marker-end="url(#mm-northstar-arrow)"/>
+<rect class="mm-n4" x="290" y="226" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="249" text-anchor="middle">Retention</text>
+<text class="mm-node-sub" x="390" y="265" text-anchor="middle">churn %</text>
+
+<path class="mm-arrow" d="M298,140 L228,140" marker-end="url(#mm-northstar-arrow)"/>
+<rect class="mm-n2" x="20" y="112" width="210" height="55" rx="10"/>
+<text class="mm-node-title" x="125" y="135" text-anchor="middle">Engagement</text>
+<text class="mm-node-sub" x="125" y="151" text-anchor="middle">DAU/MAU stickiness</text>
+
+<path class="mm-arrow" d="M482,140 L552,140" marker-end="url(#mm-northstar-arrow)"/>
+<rect class="mm-n5" x="556" y="112" width="204" height="55" rx="10"/>
+<text class="mm-node-title" x="658" y="135" text-anchor="middle">Value</text>
+<text class="mm-node-sub" x="658" y="151" text-anchor="middle">LTV, LTV:CAC ratio</text>
+</svg>
+
+<p class="mental-model__caption">The North Star Metric captures real value delivered and sits at the center of the system, but it never stands alone — acquisition cost, engagement stickiness, retention and churn, and lifetime value each answer a different question, and reading only one of them misses the full picture of product health.</p>
+</div>
+
 ## Quick Reference
 
 A North Star Metric is the single measure that best captures the value your product delivers to customers *and* correlates with business success — not a vanity metric like signups. Pair it with a small set of supporting metrics across the funnel: **acquisition** (CAC), **engagement** (DAU/MAU ratio — "stickiness"), **retention/churn**, and **value** (LTV, LTV:CAC ratio). No single metric tells the whole story; the set does.

@@ -11,6 +11,37 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-c6-title mm-c6-desc">
+<title id="mm-c6-title">Developers and SDETs converging on shared ownership</title>
+<desc id="mm-c6-desc">Developers writing and maintaining test code, and SDETs providing framework, coaching, and strategy, converge into one measured, whole-team quality practice rather than staying two separate responsibilities.</desc>
+<defs>
+  <marker id="mm-c6-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="40" y="40" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="150" y="75" text-anchor="middle">Developers</text>
+<text class="mm-node-sub" x="150" y="92" text-anchor="middle">write &amp; maintain tests</text>
+
+<rect class="mm-n5" x="520" y="40" width="220" height="80" rx="10"/>
+<text class="mm-node-title" x="630" y="75" text-anchor="middle">SDETs</text>
+<text class="mm-node-sub" x="630" y="92" text-anchor="middle">framework, coaching, strategy</text>
+
+<path class="mm-arrow" d="M150,120 L340,150" marker-end="url(#mm-c6-arrow)"/>
+<path class="mm-arrow" d="M630,120 L440,150" marker-end="url(#mm-c6-arrow)"/>
+
+<rect class="mm-n1" x="290" y="150" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="182" text-anchor="middle">Whole-team quality</text>
+<text class="mm-node-sub" x="390" y="199" text-anchor="middle">shared, measured ownership</text>
+</svg>
+
+<p class="mental-model__caption">Whole-team ownership of quality only becomes real when developers actually write and maintain test code and SDETs shift toward building frameworks, coaching, and strategy — not when either side just declares the value while the old division of labor stays exactly the same.</p>
+</div>
+
 ## 51. Establishing a culture of "Whole Team Ownership of Quality" where developers actively write and maintain test automation
 
 **Core Objective**: Make quality a shared team responsibility in practice, not just in a stated value — measured by actual developer contribution to test code.

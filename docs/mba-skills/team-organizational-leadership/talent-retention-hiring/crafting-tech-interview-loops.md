@@ -14,6 +14,59 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: hiring, interviewing, interview-design, signal
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-interviewloop-title mm-interviewloop-desc">
+<title id="mm-interviewloop-title">An interview loop as a staged pipeline of distinct signals</title>
+<desc id="mm-interviewloop-desc">A candidate moves through a recruiter screen, a technical screen, and a fan-out of onsite stages each testing one distinct signal, converging on a structured debrief with independent write-ups.</desc>
+<defs>
+  <marker id="mm-interviewloop-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="10" y="115" width="130" height="65" rx="10"/>
+<text class="mm-node-title" x="75" y="142" text-anchor="middle">Recruiter</text>
+<text class="mm-node-sub" x="75" y="159" text-anchor="middle">fit, comp,</text>
+<text class="mm-node-sub" x="75" y="172" text-anchor="middle">motivation</text>
+
+<path class="mm-arrow" d="M140,148 L166,148" marker-end="url(#mm-interviewloop-arrow)"/>
+
+<rect class="mm-n2" x="170" y="115" width="140" height="65" rx="10"/>
+<text class="mm-node-title" x="240" y="142" text-anchor="middle">Technical screen</text>
+<text class="mm-node-sub" x="240" y="159" text-anchor="middle">baseline coding</text>
+<text class="mm-node-sub" x="240" y="172" text-anchor="middle">ability</text>
+
+<path class="mm-arrow" d="M310,140 L336,48" marker-end="url(#mm-interviewloop-arrow)"/>
+<path class="mm-arrow" d="M310,148 L336,118" marker-end="url(#mm-interviewloop-arrow)"/>
+<path class="mm-arrow" d="M310,156 L336,188" marker-end="url(#mm-interviewloop-arrow)"/>
+
+<rect class="mm-n3" x="340" y="20" width="150" height="55" rx="10"/>
+<text class="mm-node-title" x="415" y="42" text-anchor="middle">System design</text>
+<text class="mm-node-sub" x="415" y="59" text-anchor="middle">architecture signal</text>
+
+<rect class="mm-n4" x="340" y="90" width="150" height="55" rx="10"/>
+<text class="mm-node-title" x="415" y="112" text-anchor="middle">Coding / debugging</text>
+<text class="mm-node-sub" x="415" y="129" text-anchor="middle">hands-on ability</text>
+
+<rect class="mm-n5" x="340" y="160" width="150" height="55" rx="10"/>
+<text class="mm-node-title" x="415" y="182" text-anchor="middle">Values / collab</text>
+<text class="mm-node-sub" x="415" y="199" text-anchor="middle">team fit signal</text>
+
+<path class="mm-arrow" d="M490,48 L556,110" marker-end="url(#mm-interviewloop-arrow)"/>
+<path class="mm-arrow" d="M490,118 L556,122" marker-end="url(#mm-interviewloop-arrow)"/>
+<path class="mm-arrow" d="M490,188 L556,140" marker-end="url(#mm-interviewloop-arrow)"/>
+
+<rect class="mm-n6" x="560" y="90" width="200" height="65" rx="10"/>
+<text class="mm-node-title" x="660" y="117" text-anchor="middle">Structured debrief</text>
+<text class="mm-node-sub" x="660" y="134" text-anchor="middle">independent write-ups</text>
+<text class="mm-node-sub" x="660" y="147" text-anchor="middle">before discussion</text>
+</svg>
+
+<p class="mental-model__caption">Each interview stage should measure exactly one signal that no other stage covers — a recruiter screen for fit, a technical screen for baseline coding, and a small set of onsite stages for system design, hands-on debugging, and values fit — converging into a structured debrief where everyone writes up independently before discussing.</p>
+</div>
+
 ## Quick Reference
 
 Design each interview stage to test **one clear signal** relevant to on-the-job success, not a general impression of "smartness." Common loop: recruiter screen → technical screen (signal: baseline coding ability) → onsite with 3-4 stages (signal: system design, collaborative coding, debugging/troubleshooting, values/collaboration fit) → debrief with structured, independent write-ups before discussion.

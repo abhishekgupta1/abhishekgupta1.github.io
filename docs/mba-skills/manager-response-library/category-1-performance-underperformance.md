@@ -11,6 +11,60 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 290" role="img" aria-labelledby="mm-mrl-cat1-title mm-mrl-cat1-desc">
+<title id="mm-mrl-cat1-title">How performance signals route to a right-fit response</title>
+<desc id="mm-mrl-cat1-desc">A performance signal can surface as silent slippage, slipping output or motivation, or an escalating reaction under stress. Every path runs through diagnosing the cause first, and the response only gets more formal, up to a documented PIP, as the pattern repeats.</desc>
+<defs>
+  <marker id="mm-mrl-cat1-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="15" y="105" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="135" text-anchor="middle">Performance signal</text>
+<text class="mm-node-sub" x="90" y="151" text-anchor="middle">something's off</text>
+<text class="mm-node-sub" x="90" y="164" text-anchor="middle">with the work</text>
+
+<path class="mm-arrow" d="M165,120 L221,49" marker-end="url(#mm-mrl-cat1-arrow)"/>
+<path class="mm-arrow" d="M165,140 L221,141" marker-end="url(#mm-mrl-cat1-arrow)"/>
+<path class="mm-arrow" d="M165,160 L221,233" marker-end="url(#mm-mrl-cat1-arrow)"/>
+
+<rect class="mm-n2" x="225" y="20" width="190" height="58" rx="10"/>
+<text class="mm-node-title" x="320" y="44" text-anchor="middle">Silent slippage</text>
+<text class="mm-node-sub" x="320" y="60" text-anchor="middle">deadlines missed, no warning</text>
+
+<rect class="mm-n4" x="225" y="112" width="190" height="58" rx="10"/>
+<text class="mm-node-title" x="320" y="136" text-anchor="middle">Output slips</text>
+<text class="mm-node-sub" x="320" y="152" text-anchor="middle">bugs, burnout, disengagement</text>
+
+<rect class="mm-n5" x="225" y="204" width="190" height="58" rx="10"/>
+<text class="mm-node-title" x="320" y="228" text-anchor="middle">Reactions escalate</text>
+<text class="mm-node-sub" x="320" y="244" text-anchor="middle">defensiveness, toxic behavior</text>
+
+<path class="mm-arrow" d="M415,49 L436,128" marker-end="url(#mm-mrl-cat1-arrow)"/>
+<path class="mm-arrow" d="M415,141 L436,140" marker-end="url(#mm-mrl-cat1-arrow)"/>
+<path class="mm-arrow" d="M415,233 L436,152" marker-end="url(#mm-mrl-cat1-arrow)"/>
+
+<rect class="mm-n6" x="440" y="110" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="515" y="134" text-anchor="middle">Diagnose the cause</text>
+<text class="mm-node-sub" x="515" y="150" text-anchor="middle">skill, process, or will?</text>
+
+<path class="mm-arrow" d="M590,140 L608,140" marker-end="url(#mm-mrl-cat1-arrow)"/>
+
+<rect class="mm-n1" x="612" y="103" width="155" height="74" rx="10"/>
+<text class="mm-node-title" x="690" y="130" text-anchor="middle">Fair response</text>
+<text class="mm-node-sub" x="690" y="146" text-anchor="middle">coaching → PIP</text>
+<text class="mm-node-sub" x="690" y="159" text-anchor="middle">if it persists</text>
+
+<text class="mm-flow-label" x="390" y="272" text-anchor="middle">formality escalates only as the pattern repeats — never on the first instance</text>
+</svg>
+
+<p class="mental-model__caption">Performance problems arrive looking very different — a quiet missed deadline, slipping output or motivation, or an emotional or toxic reaction — but every one of them needs the cause diagnosed before you respond, and the response should only get more formal, up to a documented PIP, if the pattern actually repeats.</p>
+</div>
+
 ## 1. A senior engineer is consistently missing sprint deadlines without warning
 
 **Core Objective**: Convert a recurring, silent pattern into an open one — get the engineer surfacing risk early instead of you discovering it at the deadline.

@@ -17,6 +17,55 @@ playbook on the job.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-lead-title mm-lead-desc">
+<title id="mm-lead-title">How a leadership scenario turns into a structured response</title>
+<desc id="mm-lead-desc">A scenario arrives, gets routed through the framework that fits it — STAR, SBI, or Situational Leadership plus RACI — and each produces a structured response. The outcome loops back to sharpen judgment on the next scenario.</desc>
+<defs>
+  <marker id="mm-lead-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="115" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="145" text-anchor="middle">A scenario lands</text>
+<text class="mm-node-sub" x="95" y="161" text-anchor="middle">flaky suite, deadline</text>
+<text class="mm-node-sub" x="95" y="174" text-anchor="middle">clash, low performer…</text>
+
+<path class="mm-arrow" d="M170,140 L276,60" marker-end="url(#mm-lead-arrow)"/>
+<path class="mm-arrow" d="M170,150 L276,140" marker-end="url(#mm-lead-arrow)"/>
+<path class="mm-arrow" d="M170,160 L276,220" marker-end="url(#mm-lead-arrow)"/>
+
+<rect class="mm-n2" x="280" y="30" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="375" y="55" text-anchor="middle">STAR</text>
+<text class="mm-node-sub" x="375" y="71" text-anchor="middle">tell the story with proof</text>
+
+<rect class="mm-n4" x="280" y="110" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="375" y="135" text-anchor="middle">SBI</text>
+<text class="mm-node-sub" x="375" y="151" text-anchor="middle">give the feedback</text>
+
+<rect class="mm-n5" x="280" y="190" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="375" y="215" text-anchor="middle">Situational + RACI</text>
+<text class="mm-node-sub" x="375" y="231" text-anchor="middle">adapt style, assign roles</text>
+
+<path class="mm-arrow" d="M470,60 L574,140" marker-end="url(#mm-lead-arrow)"/>
+<path class="mm-arrow" d="M470,140 L574,150" marker-end="url(#mm-lead-arrow)"/>
+<path class="mm-arrow" d="M470,220 L574,160" marker-end="url(#mm-lead-arrow)"/>
+
+<rect class="mm-n1" x="580" y="115" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="670" y="145" text-anchor="middle">Structured response</text>
+<text class="mm-node-sub" x="670" y="161" text-anchor="middle">clear, defensible,</text>
+<text class="mm-node-sub" x="670" y="174" text-anchor="middle">actionable</text>
+
+<path class="mm-arrow" d="M650,185 C650,265 140,265 110,187" marker-end="url(#mm-lead-arrow)"/>
+<text class="mm-flow-label" x="382" y="278" text-anchor="middle">outcome sharpens judgment for the next one</text>
+</svg>
+
+<p class="mental-model__caption">The frameworks aren't competing choices — they're lenses for different parts of the same scenario: STAR structures how you narrate what happened, SBI structures the feedback you give inside it, and Situational Leadership plus RACI structure who does what next. Pick the lens that fits the moment, and the response comes out structured instead of improvised.</p>
+</div>
+
 ## 1. Why SDET Management Is a Distinct Discipline
 
 An SDET (Software Development Engineer in Test) manager sits at the

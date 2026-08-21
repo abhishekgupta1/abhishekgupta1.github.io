@@ -11,6 +11,48 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-c3-title mm-c3-desc">
+<title id="mm-c3-title">Tests tiered by speed across the delivery pipeline</title>
+<desc id="mm-c3-desc">Fast checks gate every commit and PR, fuller regression runs on merge, and the full suite runs on a schedule, producing a fast and trustworthy production-ready signal, while infrastructure cost and flakiness are tracked underneath the whole pipeline.</desc>
+<defs>
+  <marker id="mm-c3-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="90" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="118" text-anchor="middle">Commit / PR</text>
+<text class="mm-node-sub" x="95" y="135" text-anchor="middle">fast smoke + unit</text>
+
+<rect class="mm-n2" x="210" y="90" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="285" y="118" text-anchor="middle">Merge</text>
+<text class="mm-node-sub" x="285" y="135" text-anchor="middle">fuller regression</text>
+
+<rect class="mm-n3" x="400" y="90" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="475" y="118" text-anchor="middle">Scheduled run</text>
+<text class="mm-node-sub" x="475" y="135" text-anchor="middle">full suite, nightly</text>
+
+<rect class="mm-n4" x="590" y="90" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="675" y="118" text-anchor="middle">Prod-ready signal</text>
+<text class="mm-node-sub" x="675" y="135" text-anchor="middle">fast + trustworthy</text>
+
+<path class="mm-arrow" d="M170,125 L210,125" marker-end="url(#mm-c3-arrow)"/>
+<path class="mm-arrow" d="M360,125 L400,125" marker-end="url(#mm-c3-arrow)"/>
+<path class="mm-arrow" d="M550,125 L590,125" marker-end="url(#mm-c3-arrow)"/>
+
+<rect class="mm-n5" x="210" y="200" width="350" height="50" rx="10"/>
+<text class="mm-node-title" x="385" y="222" text-anchor="middle">Infra cost &amp; flake tracked</text>
+<text class="mm-node-sub" x="385" y="239" text-anchor="middle">FinOps discipline on test spend</text>
+
+<path class="mm-arrow" d="M285,160 L385,200" marker-end="url(#mm-c3-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Tests are tiered by speed and risk so fast checks gate every PR while fuller regression runs on merge and full suites run on a schedule, keeping feedback fast without sacrificing coverage, while the infrastructure spend that parallel execution drives gets tracked with the same FinOps discipline as any other cloud cost.</p>
+</div>
+
 ## 21. Integrating automated test suites into CI/CD pipelines without slowing down developer build-and-PR validation times
 
 **Core Objective**: Keep the fast feedback loop developers need on every PR while still getting meaningful quality signal before merge.

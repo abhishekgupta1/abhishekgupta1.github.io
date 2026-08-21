@@ -19,6 +19,56 @@ A clean, SRE-focused mental model for debugging a slow or stuck service using on
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-procproc-title mm-procproc-desc">
+<title id="mm-procproc-title">Branching triage for a stuck or slow process</title>
+<desc id="mm-procproc-desc">A slow or stuck service is triaged down one of three branches — zombie, blocked-but-alive, or resource-starved — all of which get confirmed through /proc before deciding whether to restart, kill, or tune it.</desc>
+<defs>
+  <marker id="mm-procproc-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="290" y="10" width="200" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="30" text-anchor="middle">Service Acting Slow</text>
+<text class="mm-node-sub" x="390" y="45" text-anchor="middle">or unresponsive</text>
+
+<path class="mm-arrow" d="M340,60 L115,96" marker-end="url(#mm-procproc-arrow)"/>
+<path class="mm-arrow" d="M390,60 L390,96" marker-end="url(#mm-procproc-arrow)"/>
+<path class="mm-arrow" d="M440,60 L665,96" marker-end="url(#mm-procproc-arrow)"/>
+
+<rect class="mm-n2" x="20" y="96" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="115" y="122" text-anchor="middle">Zombie / defunct?</text>
+<text class="mm-node-sub" x="115" y="138" text-anchor="middle">ps shows Z state</text>
+
+<rect class="mm-n3" x="295" y="96" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="122" text-anchor="middle">Alive but stuck?</text>
+<text class="mm-node-sub" x="390" y="138" text-anchor="middle">blocked on I/O or lock</text>
+
+<rect class="mm-n4" x="570" y="96" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="665" y="122" text-anchor="middle">Resource starved?</text>
+<text class="mm-node-sub" x="665" y="138" text-anchor="middle">CPU / memory / FDs</text>
+
+<path class="mm-arrow" d="M115,156 L340,186" marker-end="url(#mm-procproc-arrow)"/>
+<path class="mm-arrow" d="M390,156 L390,186" marker-end="url(#mm-procproc-arrow)"/>
+<path class="mm-arrow" d="M665,156 L440,186" marker-end="url(#mm-procproc-arrow)"/>
+
+<rect class="mm-n5" x="280" y="186" width="220" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="206" text-anchor="middle">/proc Inspection</text>
+<text class="mm-node-sub" x="390" y="221" text-anchor="middle">status, fd, stack</text>
+
+<path class="mm-arrow" d="M390,236 L390,256" marker-end="url(#mm-procproc-arrow)"/>
+
+<rect class="mm-n6" x="260" y="256" width="260" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="276" text-anchor="middle">Act: Restart, Kill, or Tune</text>
+<text class="mm-node-sub" x="390" y="291" text-anchor="middle">based on the confirmed cause</text>
+</svg>
+
+<p class="mental-model__caption">A slow or stuck service gets triaged down one of three branches — zombie/defunct, alive but blocked, or resource-starved — and every branch gets confirmed through /proc before you decide whether to restart the parent, kill the process, or tune the resource it's starved of.</p>
+</div>
+
 ## 🔹 Process Lifecycle Concepts
 
 ### PID / PPID

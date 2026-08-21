@@ -13,6 +13,50 @@ as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 340" role="img" aria-labelledby="mm-chaos-title mm-chaos-desc">
+<title id="mm-chaos-title">The chaos engineering experiment loop</title>
+<desc id="mm-chaos-desc">A repeating five-step loop: define steady state, form a hypothesis, run an experiment, measure the result, and fix the gap, then repeat.</desc>
+<defs>
+  <marker id="mm-chaos-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="310" y="23" width="160" height="64" rx="10"/>
+<text class="mm-node-title" x="390" y="50" text-anchor="middle">Steady State</text>
+<text class="mm-node-sub" x="390" y="67" text-anchor="middle">healthy, measurable signal</text>
+
+<rect class="mm-n2" x="419" y="103" width="160" height="64" rx="10"/>
+<text class="mm-node-title" x="499" y="130" text-anchor="middle">Hypothesis</text>
+<text class="mm-node-sub" x="499" y="147" text-anchor="middle">falsifiable, tied to a mechanism</text>
+
+<rect class="mm-n3" x="378" y="231" width="160" height="64" rx="10"/>
+<text class="mm-node-title" x="458" y="258" text-anchor="middle">Experiment</text>
+<text class="mm-node-sub" x="458" y="275" text-anchor="middle">smallest safe blast radius</text>
+
+<rect class="mm-n4" x="242" y="231" width="160" height="64" rx="10"/>
+<text class="mm-node-title" x="322" y="258" text-anchor="middle">Measure</text>
+<text class="mm-node-sub" x="322" y="275" text-anchor="middle">did steady state hold?</text>
+
+<rect class="mm-n5" x="201" y="103" width="160" height="64" rx="10"/>
+<text class="mm-node-title" x="281" y="130" text-anchor="middle">Fix the Gap</text>
+<text class="mm-node-sub" x="281" y="147" text-anchor="middle">close the resilience gap</text>
+
+<path class="mm-arrow" d="M422,79 L467,111" marker-end="url(#mm-chaos-arrow)"/>
+<path class="mm-arrow" d="M487,173 L470,225" marker-end="url(#mm-chaos-arrow)"/>
+<path class="mm-arrow" d="M418,263 L362,263" marker-end="url(#mm-chaos-arrow)"/>
+<path class="mm-arrow" d="M310,225 L293,173" marker-end="url(#mm-chaos-arrow)"/>
+<path class="mm-arrow" d="M313,111 L358,79" marker-end="url(#mm-chaos-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="180" text-anchor="middle">repeat continuously</text>
+</svg>
+
+<p class="mental-model__caption">Chaos engineering is one loop run over and over: define what healthy looks like, guess what should happen when something breaks, break it on purpose at a contained scale, check whether the guess held, fix whatever gap the experiment exposed, and start the loop again.</p>
+</div>
+
 ## 1. What Chaos Engineering Is and Why It Exists
 
 Chaos engineering is the discipline of deliberately injecting failure into a

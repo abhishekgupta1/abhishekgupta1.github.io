@@ -13,6 +13,54 @@ into an SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-cicd-title mm-cicd-desc">
+<title id="mm-cicd-title">The CI/CD pipeline as one automated chain</title>
+<desc id="mm-cicd-desc">A commit flows through build and test, packaging, staging deployment, an optional approval gate, and finally production deployment.</desc>
+<defs>
+  <marker id="mm-cicd-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<text class="mm-flow-label" x="390" y="55" text-anchor="middle">every change runs the same chain</text>
+
+<rect class="mm-n1" x="10" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="65" y="118" text-anchor="middle">Commit</text>
+<text class="mm-node-sub" x="65" y="134" text-anchor="middle">push to branch</text>
+
+<rect class="mm-n2" x="140" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="195" y="118" text-anchor="middle">Build &amp; Test</text>
+<text class="mm-node-sub" x="195" y="134" text-anchor="middle">CI</text>
+
+<rect class="mm-n3" x="270" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="325" y="118" text-anchor="middle">Package</text>
+<text class="mm-node-sub" x="325" y="134" text-anchor="middle">build artifact</text>
+
+<rect class="mm-n4" x="400" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="455" y="118" text-anchor="middle">Deploy Stage</text>
+<text class="mm-node-sub" x="455" y="134" text-anchor="middle">automatic</text>
+
+<rect class="mm-n5" x="530" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="585" y="118" text-anchor="middle">Approve</text>
+<text class="mm-node-sub" x="585" y="134" text-anchor="middle">manual, optional</text>
+
+<rect class="mm-n6" x="660" y="90" width="110" height="70" rx="10"/>
+<text class="mm-node-title" x="715" y="118" text-anchor="middle">Deploy Prod</text>
+<text class="mm-node-sub" x="715" y="134" text-anchor="middle">live traffic</text>
+
+<path class="mm-arrow" d="M120,125 L138,125" marker-end="url(#mm-cicd-arrow)"/>
+<path class="mm-arrow" d="M250,125 L268,125" marker-end="url(#mm-cicd-arrow)"/>
+<path class="mm-arrow" d="M380,125 L398,125" marker-end="url(#mm-cicd-arrow)"/>
+<path class="mm-arrow" d="M510,125 L528,125" marker-end="url(#mm-cicd-arrow)"/>
+<path class="mm-arrow" d="M640,125 L658,125" marker-end="url(#mm-cicd-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">CI, Continuous Delivery, and Continuous Deployment are the same chain measured to different endpoints — CI stops after build and test, Continuous Delivery stops at a release-ready artifact behind a manual gate, and Continuous Deployment removes that gate so the last step to production runs automatically too.</p>
+</div>
+
 ## 1. What CI/CD Is, in Practical Terms
 
 **Continuous Integration (CI)** — every code change is automatically built,

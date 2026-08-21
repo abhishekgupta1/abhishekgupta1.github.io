@@ -11,6 +11,45 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-c9-title mm-c9-desc">
+<title id="mm-c9-title">Modernization spreads through incremental proven pilots</title>
+<desc id="mm-c9-desc">A legacy process moves to a contained pilot, skeptical stakeholders review the actual results, and the team expands incrementally, with each successful cycle looping back into a larger next pilot rather than one big overhaul.</desc>
+<defs>
+  <marker id="mm-c9-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="10" y="90" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="90" y="120" text-anchor="middle">Legacy process</text>
+<text class="mm-node-sub" x="90" y="137" text-anchor="middle">years of risk-averse history</text>
+
+<rect class="mm-n3" x="210" y="90" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="290" y="120" text-anchor="middle">Contained pilot</text>
+<text class="mm-node-sub" x="290" y="137" text-anchor="middle">low-stakes proof point</text>
+
+<rect class="mm-n4" x="410" y="90" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="495" y="120" text-anchor="middle">Skeptics review data</text>
+<text class="mm-node-sub" x="495" y="137" text-anchor="middle">included, not told after</text>
+
+<rect class="mm-n1" x="620" y="90" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="695" y="120" text-anchor="middle">Expand incrementally</text>
+<text class="mm-node-sub" x="695" y="137" text-anchor="middle">next phase, larger scope</text>
+
+<path class="mm-arrow" d="M170,120 L210,120" marker-end="url(#mm-c9-arrow)"/>
+<path class="mm-arrow" d="M370,120 L410,120" marker-end="url(#mm-c9-arrow)"/>
+<path class="mm-arrow" d="M580,120 L620,120" marker-end="url(#mm-c9-arrow)"/>
+
+<path class="mm-arrow" d="M695,90 C695,20 290,20 290,90" marker-end="url(#mm-c9-arrow)"/>
+<text class="mm-flow-label" x="490" y="35" text-anchor="middle">repeat, larger scope each cycle</text>
+</svg>
+
+<p class="mental-model__caption">Modernization spreads through the org one contained pilot at a time — skeptics review the actual results before the next phase, and each successful cycle earns the trust needed to expand further, rather than mandating a full overhaul on day one.</p>
+</div>
+
 ## 81. Overhauling a 10-year-old manual QA testing process in a conservative enterprise shifting to Agile/DevOps
 
 **Core Objective**: Modernize the testing process without triggering the organizational resistance that comes from moving too fast for a genuinely conservative culture.

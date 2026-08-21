@@ -14,6 +14,50 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: delegation, situational-leadership, coaching, autonomy
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-delegate-title mm-delegate-desc">
+<title id="mm-delegate-title">Delegation mode as a sliding scale of skill and confidence</title>
+<desc id="mm-delegate-desc">Four delegation modes — Direct, Coach, Support, and Empower — sit along a rising diagonal as an engineer's skill and confidence on a specific task increase, not as a fixed trait of their title or seniority.</desc>
+<defs>
+  <marker id="mm-delegate-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="230" width="150" height="65" rx="10"/>
+<text class="mm-node-title" x="115" y="257" text-anchor="middle">Direct</text>
+<text class="mm-node-sub" x="115" y="274" text-anchor="middle">low skill,</text>
+<text class="mm-node-sub" x="115" y="287" text-anchor="middle">low confidence</text>
+
+<path class="mm-arrow" d="M190,235 L226,192" marker-end="url(#mm-delegate-arrow)"/>
+
+<rect class="mm-n2" x="230" y="160" width="150" height="65" rx="10"/>
+<text class="mm-node-title" x="305" y="187" text-anchor="middle">Coach</text>
+<text class="mm-node-sub" x="305" y="204" text-anchor="middle">some skill,</text>
+<text class="mm-node-sub" x="305" y="217" text-anchor="middle">low confidence</text>
+
+<path class="mm-arrow" d="M380,165 L416,122" marker-end="url(#mm-delegate-arrow)"/>
+
+<rect class="mm-n3" x="420" y="90" width="150" height="65" rx="10"/>
+<text class="mm-node-title" x="495" y="117" text-anchor="middle">Support</text>
+<text class="mm-node-sub" x="495" y="134" text-anchor="middle">high skill,</text>
+<text class="mm-node-sub" x="495" y="147" text-anchor="middle">variable confidence</text>
+
+<path class="mm-arrow" d="M570,95 L606,52" marker-end="url(#mm-delegate-arrow)"/>
+
+<rect class="mm-n4" x="610" y="20" width="150" height="65" rx="10"/>
+<text class="mm-node-title" x="685" y="47" text-anchor="middle">Empower</text>
+<text class="mm-node-sub" x="685" y="64" text-anchor="middle">high skill,</text>
+<text class="mm-node-sub" x="685" y="77" text-anchor="middle">high confidence</text>
+
+<text class="mm-flow-label" x="390" y="300" text-anchor="middle">skill and confidence for this specific task rise together</text>
+</svg>
+
+<p class="mental-model__caption">Direct, Coach, Support, and Empower aren't fixed traits of a person — they're one sliding scale driven by an engineer's skill and confidence on this specific task, so a senior engineer new to a domain can need Direct-mode guidance there while a junior engineer who has shipped the same work repeatedly is ready for Support.</p>
+</div>
+
 ## Quick Reference
 
 Delegate based on the engineer's **competence and confidence for this specific task**, not their title. Use four modes: **Direct** (low skill/low confidence — tell them what to do), **Coach** (some skill, low confidence — explain the why, check in often), **Support** (high skill, variable confidence — collaborate, let them lead), **Empower** (high skill, high confidence — hand off the outcome, not the steps).

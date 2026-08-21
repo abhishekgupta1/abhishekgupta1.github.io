@@ -13,6 +13,30 @@ an SDET interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-testng-title mm-testng-desc">
+<title id="mm-testng-title">TestNG's nested execution order</title>
+<desc id="mm-testng-desc">Suite, test, class, and method-level setup/teardown annotations nest inside one another, outermost to innermost, wrapping the actual @Test methods at the center.</desc>
+
+<rect class="mm-n1" x="20" y="20" width="740" height="260" rx="12"/>
+<text class="mm-node-title" x="390" y="42" text-anchor="middle">@BeforeSuite / @AfterSuite</text>
+
+<rect class="mm-n4" x="50" y="50" width="680" height="200" rx="12"/>
+<text class="mm-node-title" x="390" y="72" text-anchor="middle">@BeforeTest / @AfterTest</text>
+
+<rect class="mm-n2" x="80" y="80" width="620" height="140" rx="12"/>
+<text class="mm-node-title" x="390" y="102" text-anchor="middle">@BeforeClass / @AfterClass</text>
+
+<rect class="mm-n3" x="110" y="110" width="560" height="80" rx="12"/>
+<text class="mm-node-title" x="390" y="140" text-anchor="middle">@BeforeMethod →</text>
+<text class="mm-node-sub" x="390" y="158" text-anchor="middle">@Test → @AfterMethod</text>
+</svg>
+
+<p class="mental-model__caption">TestNG's annotations aren't a flat list — they nest like Russian dolls: suite-level setup wraps test-level setup, which wraps class-level setup, which wraps the actual @Test method run, and each layer tears back down in reverse order once its inner layer finishes.</p>
+</div>
+
 ## 1. What TestNG Is and Why It Exists
 
 TestNG ("Testing, Next Generation") is a Java testing framework inspired by

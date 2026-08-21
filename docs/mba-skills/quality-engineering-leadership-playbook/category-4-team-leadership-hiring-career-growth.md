@@ -11,6 +11,48 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-c4-title mm-c4-desc">
+<title id="mm-c4-title">A visible career ladder with a supported on-ramp</title>
+<desc id="mm-c4-desc">A career ladder runs from junior QA through SDET, senior SDET, up to principal quality architect, and manual QA engineers without strong coding backgrounds get a structured path onto that same ladder rather than being left outside it.</desc>
+<defs>
+  <marker id="mm-c4-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="190" y="220" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="250" text-anchor="middle">Junior / QA</text>
+<text class="mm-node-sub" x="300" y="267" text-anchor="middle">domain + risk sense</text>
+
+<rect class="mm-n2" x="190" y="150" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="180" text-anchor="middle">SDET</text>
+<text class="mm-node-sub" x="300" y="197" text-anchor="middle">automation ownership</text>
+
+<rect class="mm-n4" x="190" y="80" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="110" text-anchor="middle">Senior SDET</text>
+<text class="mm-node-sub" x="300" y="127" text-anchor="middle">framework &amp; strategy</text>
+
+<rect class="mm-n5" x="190" y="10" width="220" height="56" rx="10"/>
+<text class="mm-node-title" x="300" y="40" text-anchor="middle">Principal / Quality Architect</text>
+<text class="mm-node-sub" x="300" y="57" text-anchor="middle">org-wide influence</text>
+
+<path class="mm-arrow" d="M300,220 L300,206" marker-end="url(#mm-c4-arrow)"/>
+<path class="mm-arrow" d="M300,150 L300,136" marker-end="url(#mm-c4-arrow)"/>
+<path class="mm-arrow" d="M300,80 L300,66" marker-end="url(#mm-c4-arrow)"/>
+
+<rect class="mm-n3" x="490" y="150" width="250" height="56" rx="10"/>
+<text class="mm-node-title" x="615" y="180" text-anchor="middle">Manual QA (no coding)</text>
+<text class="mm-node-sub" x="615" y="197" text-anchor="middle">structured upskilling path</text>
+
+<path class="mm-arrow" d="M490,178 L410,178" marker-end="url(#mm-c4-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Career growth runs on a visible ladder from junior QA up through SDET, senior SDET, and principal quality architect, and manual QA engineers get a real, structured on-ramp onto that same ladder — training time, pairing, and gradually increasing scope — rather than being left outside it.</p>
+</div>
+
 ## 31. An SDET feels like a "second-class citizen" compared to feature developers and demands a transition to a core SDE role
 
 **Core Objective**: Address the underlying status and growth concern honestly, whether the resolution is growing their SDET scope or genuinely supporting a transition.

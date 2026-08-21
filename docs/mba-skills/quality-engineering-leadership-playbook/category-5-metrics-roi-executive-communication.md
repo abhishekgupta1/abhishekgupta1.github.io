@@ -11,6 +11,44 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-c5-title mm-c5-desc">
+<title id="mm-c5-title">Turning a flawed activity metric into a credible ROI case</title>
+<desc id="mm-c5-desc">A flawed activity metric like bug count gets replaced with outcome metrics like defect escape rate and mean time to detect, which are translated into dollar ROI framing, tracked over time to earn executive buy-in.</desc>
+<defs>
+  <marker id="mm-c5-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="10" y="90" width="160" height="60" rx="10"/>
+<text class="mm-node-title" x="90" y="120" text-anchor="middle">Flawed metric</text>
+<text class="mm-node-sub" x="90" y="137" text-anchor="middle">rewards wrong behavior</text>
+
+<rect class="mm-n3" x="210" y="90" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="300" y="120" text-anchor="middle">Outcome metrics</text>
+<text class="mm-node-sub" x="300" y="137" text-anchor="middle">escape rate, MTTD</text>
+
+<rect class="mm-n4" x="430" y="90" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="515" y="120" text-anchor="middle">$ ROI framing</text>
+<text class="mm-node-sub" x="515" y="137" text-anchor="middle">cost avoided vs. spent</text>
+
+<rect class="mm-n1" x="630" y="90" width="140" height="60" rx="10"/>
+<text class="mm-node-title" x="700" y="120" text-anchor="middle">Exec buy-in</text>
+<text class="mm-node-sub" x="700" y="137" text-anchor="middle">documented sign-off</text>
+
+<path class="mm-arrow" d="M170,120 L210,120" marker-end="url(#mm-c5-arrow)"/>
+<path class="mm-arrow" d="M390,120 L430,120" marker-end="url(#mm-c5-arrow)"/>
+<path class="mm-arrow" d="M600,120 L630,120" marker-end="url(#mm-c5-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="190" text-anchor="middle">tracked quarter over quarter as a running, credible case</text>
+</svg>
+
+<p class="mental-model__caption">Executive credibility comes from swapping activity metrics like bug count for outcome metrics like defect escape rate and mean time to detect, then translating those into avoided cost so quality competes for budget attention the same way any other investment does.</p>
+</div>
+
 ## 41. Countering bad quality metrics imposed by executives (e.g., measuring SDET performance by "number of bugs found")
 
 **Core Objective**: Replace a metric that rewards the wrong behavior with one that actually reflects quality outcomes, without simply refusing to be measured.

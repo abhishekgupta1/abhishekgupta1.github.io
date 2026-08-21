@@ -50,13 +50,34 @@ function renderBranch(branch, index) {
       </div>`;
 }
 
+const DARK_VARS_CSS = `
+    --page-bg: #1c1a17;
+    --card-bg: #26231f;
+    --border: #3a362f;
+    --text: #ece7dd;
+    --text-muted: #a49c8d;
+    --center-bg: #0f0e0c;
+    --center-text: #f5f1ea;`;
+
 /**
  * Renders a fully self-contained interactive mind map HTML document (no
  * external assets, inline CSS/JS only) from a title/subtitle and a list of
  * branches: [{title, subtitle, color?, topics: [{name, points: [string]}]}].
+ *
+ * `theme` locks the palette to 'light' or 'dark' (used when embedding in the
+ * on-page overlay, so it matches the site's current theme). Left undefined,
+ * the document falls back to the viewer's OS/browser preference via
+ * prefers-color-scheme - the right behavior for a standalone downloaded file
+ * with no site theme to match.
  */
-export function generateMindMapHtml({title, subtitle, branches}) {
+export function generateMindMapHtml({title, subtitle, branches, theme}) {
   const branchesHtml = branches.map(renderBranch).join('\n');
+  const themeBlock =
+    theme === 'dark'
+      ? `:root { color-scheme: dark;${DARK_VARS_CSS} }`
+      : theme === 'light'
+      ? ''
+      : `@media (prefers-color-scheme: dark) { :root {${DARK_VARS_CSS} } }`;
 
   return `<!doctype html>
 <html lang="en">
@@ -183,17 +204,7 @@ export function generateMindMapHtml({title, subtitle, branches}) {
     color: var(--text-muted);
     margin-top: 1.5rem;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --page-bg: #1c1a17;
-      --card-bg: #26231f;
-      --border: #3a362f;
-      --text: #ece7dd;
-      --text-muted: #a49c8d;
-      --center-bg: #0f0e0c;
-      --center-text: #f5f1ea;
-    }
-  }
+  ${themeBlock}
 </style>
 </head>
 <body>

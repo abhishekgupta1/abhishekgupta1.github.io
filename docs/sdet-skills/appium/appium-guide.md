@@ -13,6 +13,58 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-appium-title mm-appium-desc">
+<title id="mm-appium-title">How an Appium session reaches a real device</title>
+<desc id="mm-appium-desc">Test code goes through the Appium client library to the Appium server, which routes the session to either the UiAutomator2 driver for Android or the XCUITest driver for iOS, each driving its own device or simulator.</desc>
+<defs>
+  <marker id="mm-appium-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="20" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="50" text-anchor="middle">Test code</text>
+<text class="mm-node-sub" x="95" y="67" text-anchor="middle">driver.findElement(...)</text>
+<path class="mm-arrow" d="M170,55 L206,55" marker-end="url(#mm-appium-arrow)"/>
+
+<rect class="mm-n2" x="210" y="20" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="285" y="50" text-anchor="middle">Appium client</text>
+<text class="mm-node-sub" x="285" y="67" text-anchor="middle">extends WebDriver client</text>
+<path class="mm-arrow" d="M360,55 L396,55" marker-end="url(#mm-appium-arrow)"/>
+
+<rect class="mm-n5" x="400" y="20" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="490" y="50" text-anchor="middle">Appium server</text>
+<text class="mm-node-sub" x="490" y="67" text-anchor="middle">routes to platform driver</text>
+
+<path class="mm-arrow" d="M460,90 L395,150" marker-end="url(#mm-appium-arrow)"/>
+<path class="mm-arrow" d="M520,90 L605,150" marker-end="url(#mm-appium-arrow)"/>
+
+<rect class="mm-n1" x="310" y="150" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="395" y="177" text-anchor="middle">UiAutomator2</text>
+<text class="mm-node-sub" x="395" y="193" text-anchor="middle">Android driver</text>
+
+<rect class="mm-n4" x="520" y="150" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="605" y="177" text-anchor="middle">XCUITest</text>
+<text class="mm-node-sub" x="605" y="193" text-anchor="middle">iOS driver</text>
+
+<path class="mm-arrow" d="M395,210 L395,250" marker-end="url(#mm-appium-arrow)"/>
+<path class="mm-arrow" d="M605,210 L605,250" marker-end="url(#mm-appium-arrow)"/>
+
+<rect class="mm-n6" x="310" y="250" width="170" height="50" rx="10"/>
+<text class="mm-node-title" x="395" y="272" text-anchor="middle">Android device</text>
+<text class="mm-node-sub" x="395" y="288" text-anchor="middle">or emulator</text>
+
+<rect class="mm-n3" x="520" y="250" width="170" height="50" rx="10"/>
+<text class="mm-node-title" x="605" y="272" text-anchor="middle">iOS device</text>
+<text class="mm-node-sub" x="605" y="288" text-anchor="middle">or simulator</text>
+</svg>
+
+<p class="mental-model__caption">A test talks to the Appium client library, which speaks the W3C WebDriver protocol to the Appium server; the server routes each session to the correct platform driver — UiAutomator2 for Android or XCUITest for iOS — which drives the real device or simulator directly, without recompiling the app or embedding any SDK inside it.</p>
+</div>
+
 ## 1. What Appium Is and How It Actually Works
 
 Appium is an **open-source mobile automation framework** that extends the

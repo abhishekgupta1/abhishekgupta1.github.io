@@ -14,6 +14,48 @@ top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-robot-title mm-robot-desc">
+<title id="mm-robot-title">How Robot Framework resolves keywords into a test case</title>
+<desc id="mm-robot-desc">A test case is a plain-text sequence of keywords; those keyword names are resolved against whichever libraries are imported, such as built-in keywords, a UI library, or custom Python keywords.</desc>
+<defs>
+  <marker id="mm-robot-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="20" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="120" y="47" text-anchor="middle">BuiltIn library</text>
+<text class="mm-node-sub" x="120" y="63" text-anchor="middle">core keywords</text>
+
+<rect class="mm-n2" x="290" y="20" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="47" text-anchor="middle">UI library</text>
+<text class="mm-node-sub" x="390" y="63" text-anchor="middle">SeleniumLibrary / Browser</text>
+
+<rect class="mm-n4" x="560" y="20" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="660" y="47" text-anchor="middle">Custom keywords</text>
+<text class="mm-node-sub" x="660" y="63" text-anchor="middle">your own Python @keyword</text>
+
+<path class="mm-arrow" d="M120,80 L340,130" marker-end="url(#mm-robot-arrow)"/>
+<path class="mm-arrow" d="M390,80 L390,130" marker-end="url(#mm-robot-arrow)"/>
+<path class="mm-arrow" d="M660,80 L440,130" marker-end="url(#mm-robot-arrow)"/>
+
+<rect class="mm-n5" x="290" y="130" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="157" text-anchor="middle">Keyword layer</text>
+<text class="mm-node-sub" x="390" y="173" text-anchor="middle">resolves keyword names</text>
+
+<path class="mm-arrow" d="M390,190 L390,220" marker-end="url(#mm-robot-arrow)"/>
+
+<rect class="mm-n6" x="290" y="220" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="247" text-anchor="middle">Test case (.robot)</text>
+<text class="mm-node-sub" x="390" y="263" text-anchor="middle">plain-text keyword steps</text>
+</svg>
+
+<p class="mental-model__caption">Robot Framework test cases don't call code directly — they call keyword names, and the framework resolves each one against whatever libraries are imported: built-in keywords, a UI automation library like SeleniumLibrary or Browser, or custom keywords written in Python, so a test case reads as plain instructions a non-programmer could follow and even write.</p>
+</div>
+
 ## 1. What Robot Framework Is and Why It Exists
 
 Robot Framework is a **generic, open-source, keyword-driven test automation

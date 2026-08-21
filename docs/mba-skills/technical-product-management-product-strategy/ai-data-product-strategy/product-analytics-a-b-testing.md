@@ -14,6 +14,46 @@ tags: [product-management, tpm, mba]
 **Created**: 2026-08-18
 **Tags**: A-B-testing, statistics, hypothesis-testing, sample-size, statistical-significance
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 200" role="img" aria-labelledby="mm-abtest-title mm-abtest-desc">
+<title id="mm-abtest-title">The four-step chain from hypothesis to a trustworthy result</title>
+<desc id="mm-abtest-desc">A trustworthy A/B test moves through four steps in order: write a real hypothesis, calculate the required sample size before launch, run the test for its full pre-committed duration without peeking, then read the result for both statistical significance and practical effect size.</desc>
+<defs>
+  <marker id="mm-abtest-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="10" y="65" width="175" height="75" rx="10"/>
+<text class="mm-node-title" x="97" y="97" text-anchor="middle">Write hypothesis</text>
+<text class="mm-node-sub" x="97" y="114" text-anchor="middle">X → Y because Z</text>
+
+<path class="mm-arrow" d="M185,102 L212,102" marker-end="url(#mm-abtest-arrow)"/>
+
+<rect class="mm-n3" x="216" y="65" width="175" height="75" rx="10"/>
+<text class="mm-node-title" x="303" y="97" text-anchor="middle">Size before launch</text>
+<text class="mm-node-sub" x="303" y="114" text-anchor="middle">avoid underpowered noise</text>
+
+<path class="mm-arrow" d="M391,102 L418,102" marker-end="url(#mm-abtest-arrow)"/>
+
+<rect class="mm-n4" x="422" y="65" width="175" height="75" rx="10"/>
+<text class="mm-node-title" x="509" y="97" text-anchor="middle">Run, don't peek</text>
+<text class="mm-node-sub" x="509" y="114" text-anchor="middle">fixed N and duration</text>
+
+<path class="mm-arrow" d="M597,102 L624,102" marker-end="url(#mm-abtest-arrow)"/>
+
+<rect class="mm-n5" x="628" y="65" width="152" height="75" rx="10"/>
+<text class="mm-node-title" x="704" y="97" text-anchor="middle">Read result right</text>
+<text class="mm-node-sub" x="704" y="114" text-anchor="middle">p-value + effect size</text>
+
+<text class="mm-flow-label" x="390" y="175" text-anchor="middle">skipping a step turns evidence into noise dressed as insight</text>
+</svg>
+
+<p class="mental-model__caption">A trustworthy A/B test is a strict four-step chain, not a single click of a "start test" button: a specific hypothesis, a sample size calculated before launch, a full run without early-stopping, and a result read for both statistical significance and a practically meaningful effect size.</p>
+</div>
+
 ## Quick Reference
 
 Write a real hypothesis before testing: "changing X will cause Y because Z" — not just "let's see what happens." Calculate required **sample size before launching**, not after (underpowered tests produce noise dressed as insight). A result is only trustworthy at conventional statistical significance (commonly p < 0.05) **and** a practically meaningful effect size — a statistically significant 0.1% lift may not be worth shipping even if it's "real."

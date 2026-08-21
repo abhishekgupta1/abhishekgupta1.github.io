@@ -13,6 +13,41 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-selenium-title mm-selenium-desc">
+<title id="mm-selenium-title">How a Selenium command reaches the real browser</title>
+<desc id="mm-selenium-desc">Test code calls the Selenium client library, which sends a JSON command over HTTP using the W3C WebDriver protocol to a browser-specific driver binary, which drives the actual browser.</desc>
+<defs>
+  <marker id="mm-selenium-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="80" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="110" text-anchor="middle">Test code</text>
+<text class="mm-node-sub" x="95" y="127" text-anchor="middle">driver.findElement(...)</text>
+<path class="mm-arrow" d="M170,115 L200,115" marker-end="url(#mm-selenium-arrow)"/>
+
+<rect class="mm-n2" x="204" y="80" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="299" y="110" text-anchor="middle">WebDriver client</text>
+<text class="mm-node-sub" x="299" y="127" text-anchor="middle">JSON over HTTP</text>
+<path class="mm-arrow" d="M394,115 L420,115" marker-end="url(#mm-selenium-arrow)"/>
+
+<rect class="mm-n4" x="424" y="80" width="190" height="70" rx="10"/>
+<text class="mm-node-title" x="519" y="110" text-anchor="middle">Browser driver</text>
+<text class="mm-node-sub" x="519" y="127" text-anchor="middle">chromedriver, geckodriver</text>
+<path class="mm-arrow" d="M614,115 L640,115" marker-end="url(#mm-selenium-arrow)"/>
+
+<rect class="mm-n1" x="644" y="80" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="709" y="110" text-anchor="middle">Browser</text>
+<text class="mm-node-sub" x="709" y="127" text-anchor="middle">Chrome, Firefox...</text>
+</svg>
+
+<p class="mental-model__caption">Every Selenium action makes the same trip: your test code calls the client library, which speaks the W3C WebDriver protocol as JSON over HTTP to a browser-specific driver binary — chromedriver, geckodriver, and so on — which translates that command into the browser's own native automation hooks.</p>
+</div>
+
 ## 1. What Selenium Is and How It Actually Works
 
 Selenium is an **open-source browser automation framework** — a set of

@@ -14,6 +14,44 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: conflict-resolution, cross-team, negotiation, ownership
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-interteam-title mm-interteam-desc">
+<title id="mm-interteam-title">Peeling surface friction back to its structural cause</title>
+<desc id="mm-interteam-desc">Visible inter-team friction sits on top of a structural root cause such as unclear ownership or misaligned incentives. Fixing the structure, not the relationship, is what makes the friction fade.</desc>
+<defs>
+  <marker id="mm-interteam-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="220" y="20" width="260" height="58" rx="10"/>
+<text class="mm-node-title" x="350" y="44" text-anchor="middle">Surface friction</text>
+<text class="mm-node-sub" x="350" y="61" text-anchor="middle">blame, tense meetings</text>
+
+<path class="mm-arrow" d="M350,78 L350,136" marker-end="url(#mm-interteam-arrow)"/>
+<text class="mm-flow-label" x="440" y="112" text-anchor="middle">peel back</text>
+
+<rect class="mm-n3" x="190" y="140" width="340" height="70" rx="10"/>
+<text class="mm-node-title" x="360" y="167" text-anchor="middle">Structural root cause</text>
+<text class="mm-node-sub" x="360" y="184" text-anchor="middle">unclear ownership, misaligned incentives,</text>
+<text class="mm-node-sub" x="360" y="197" text-anchor="middle">competing priorities</text>
+
+<path class="mm-arrow" d="M530,175 L606,175" marker-end="url(#mm-interteam-arrow)"/>
+
+<rect class="mm-n2" x="610" y="140" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="685" y="167" text-anchor="middle">Fix the structure</text>
+<text class="mm-node-sub" x="685" y="184" text-anchor="middle">shared doc, OKR,</text>
+<text class="mm-node-sub" x="685" y="197" text-anchor="middle">escalation path</text>
+
+<path class="mm-arrow" d="M685,138 C685,60 555,20 482,44" marker-end="url(#mm-interteam-arrow)"/>
+<text class="mm-flow-label" x="600" y="30" text-anchor="middle">friction fades</text>
+</svg>
+
+<p class="mental-model__caption">Recurring inter-team friction is almost always a structural problem — unclear ownership, misaligned incentives, or competing priorities — wearing a personal costume, so fixing the structure underneath the argument does more than trying to fix the relationship on top of it.</p>
+</div>
+
 ## Quick Reference
 
 Recurring inter-team friction is almost always a **structural** problem (unclear ownership, misaligned incentives, competing priorities) wearing a personal costume. Fix the structure — a shared doc of ownership boundaries, a joint OKR, an escalation path — before trying to fix the relationship.

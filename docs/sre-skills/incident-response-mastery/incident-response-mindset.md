@@ -31,6 +31,60 @@ Print this. Memorize it. Practice it.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-irmind-title mm-irmind-desc">
+<title id="mm-irmind-title">The senior SRE's compressed mental loop under pressure</title>
+<desc id="mm-irmind-desc">Define the problem, run the USE resource-saturation check, and weigh blast radius, then mitigate before root-causing, find the true root cause, and extract learning that loops back to sharpen the next incident's instincts.</desc>
+<defs>
+  <marker id="mm-irmind-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="20" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="130" y="48" text-anchor="middle">Define the Problem</text>
+<text class="mm-node-sub" x="130" y="65" text-anchor="middle">precisely, not vaguely</text>
+
+<path class="mm-arrow" d="M240,52 L280,52" marker-end="url(#mm-irmind-arrow)"/>
+
+<rect class="mm-n2" x="280" y="20" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="390" y="48" text-anchor="middle">USE Method</text>
+<text class="mm-node-sub" x="390" y="65" text-anchor="middle">utilization, saturation, errors</text>
+
+<path class="mm-arrow" d="M500,52 L540,52" marker-end="url(#mm-irmind-arrow)"/>
+
+<rect class="mm-n3" x="540" y="20" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="650" y="48" text-anchor="middle">Blast Radius</text>
+<text class="mm-node-sub" x="650" y="65" text-anchor="middle">who / what is impacted</text>
+
+<path class="mm-arrow" d="M650,84 L650,180" marker-end="url(#mm-irmind-arrow)"/>
+
+<rect class="mm-n4" x="540" y="180" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="650" y="208" text-anchor="middle">Mitigate First</text>
+<text class="mm-node-sub" x="650" y="225" text-anchor="middle">if impact is high</text>
+
+<path class="mm-arrow" d="M540,212 L500,212" marker-end="url(#mm-irmind-arrow)"/>
+
+<rect class="mm-n5" x="280" y="180" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="390" y="208" text-anchor="middle">Find Root Cause</text>
+<text class="mm-node-sub" x="390" y="225" text-anchor="middle">hypothesize, then test</text>
+
+<path class="mm-arrow" d="M280,212 L240,212" marker-end="url(#mm-irmind-arrow)"/>
+
+<rect class="mm-n6" x="20" y="180" width="220" height="64" rx="10"/>
+<text class="mm-node-title" x="130" y="208" text-anchor="middle">Extract Learning</text>
+<text class="mm-node-sub" x="130" y="225" text-anchor="middle">after it's fixed</text>
+
+<path class="mm-arrow" stroke-dasharray="3,3" d="M60,180 L60,84" marker-end="url(#mm-irmind-arrow)"/>
+<text class="mm-flow-label" x="10" y="132" text-anchor="start">sharpens the next</text>
+<text class="mm-flow-label" x="10" y="145" text-anchor="start">incident's instincts</text>
+</svg>
+
+<p class="mental-model__caption">This is the loop a senior SRE runs automatically under pressure: define the problem precisely, check for resource saturation with the USE method, weigh blast radius, mitigate before root-causing when impact is high, find the true root cause, and extract learning that folds straight back into how the next incident gets defined.</p>
+</div>
+
 ## 0. Stabilize Yourself First
 
 Before touching anything:

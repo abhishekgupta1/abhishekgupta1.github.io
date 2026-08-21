@@ -14,6 +14,46 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: forecasting, regression, predictive-analytics, prescriptive-analytics
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 210" role="img" aria-labelledby="mm-predpres-title mm-predpres-desc">
+<title id="mm-predpres-title">History flows through prediction and prescription into a decision</title>
+<desc id="mm-predpres-desc">Historical data feeds a predictive forecast expressed as a range with confidence, which feeds a prescriptive recommendation under real constraints, which feeds the final decision.</desc>
+<defs>
+  <marker id="mm-predpres-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="70" width="150" height="60" rx="10"/>
+<text class="mm-node-title" x="95" y="96" text-anchor="middle">Historical data</text>
+<text class="mm-node-sub" x="95" y="113" text-anchor="middle">tickets, revenue, demand</text>
+
+<path class="mm-arrow" d="M170,100 L210,100" marker-end="url(#mm-predpres-arrow)"/>
+
+<rect class="mm-n2" x="210" y="70" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="300" y="96" text-anchor="middle">Predictive forecast</text>
+<text class="mm-node-sub" x="300" y="113" text-anchor="middle">range + confidence</text>
+
+<text class="mm-flow-label" x="300" y="150" text-anchor="middle">e.g. 15.5K–20.8K, 80% confidence</text>
+
+<path class="mm-arrow" d="M390,100 L420,100" marker-end="url(#mm-predpres-arrow)"/>
+
+<rect class="mm-n3" x="420" y="70" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="515" y="96" text-anchor="middle">Prescriptive action</text>
+<text class="mm-node-sub" x="515" y="113" text-anchor="middle">optimal choice, given constraints</text>
+
+<path class="mm-arrow" d="M610,100 L640,100" marker-end="url(#mm-predpres-arrow)"/>
+
+<rect class="mm-n4" x="640" y="70" width="120" height="60" rx="10"/>
+<text class="mm-node-title" x="700" y="96" text-anchor="middle">Decision</text>
+<text class="mm-node-sub" x="700" y="113" text-anchor="middle">e.g. hire 120</text>
+</svg>
+
+<p class="mental-model__caption">Predictive analytics turns historical data into a forecast expressed as a range with a confidence level, never a single number; prescriptive analytics takes that range plus real-world constraints and recommends a specific action, so the chain only counts as decision-ready once it ends in a concrete choice, not just a chart.</p>
+</div>
+
 ## Quick Reference
 
 **Predictive** analytics answers "what's likely to happen" (regression, time-series forecasting); **prescriptive** analytics answers "what should we do about it" (optimization, scenario modeling given constraints). Always present a forecast as a range with a confidence level, not a single number — and always pair a prediction with the decision it should inform, or it's just an interesting chart.

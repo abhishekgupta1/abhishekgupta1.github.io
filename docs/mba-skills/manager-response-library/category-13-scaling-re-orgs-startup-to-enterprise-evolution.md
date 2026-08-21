@@ -11,6 +11,43 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-scale-title mm-scale-desc">
+<title id="mm-scale-title">The three layers a company moves through as it scales</title>
+<desc id="mm-scale-desc">A company evolves upward through three layers: startup chaos with founders' syndrome and informal authority, a scaling structure that merges teams and splits them into pods, and enterprise process that brings in external senior hires and retrains people for a new stack. Each transition is handled by acknowledging history, showing evidence, and involving people.</desc>
+<defs>
+  <marker id="mm-scale-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="210" width="700" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="240" text-anchor="middle">Startup chaos</text>
+<text class="mm-node-sub" x="200" y="260" text-anchor="middle">founders' syndrome</text>
+<text class="mm-node-sub" x="580" y="260" text-anchor="middle">informal authority</text>
+
+<path class="mm-arrow" d="M390,210 L390,192" marker-end="url(#mm-scale-arrow)"/>
+
+<rect class="mm-n3" x="40" y="120" width="700" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="150" text-anchor="middle">Scaling structure</text>
+<text class="mm-node-sub" x="200" y="170" text-anchor="middle">merging team cultures</text>
+<text class="mm-node-sub" x="580" y="170" text-anchor="middle">splitting into pods</text>
+
+<path class="mm-arrow" d="M390,120 L390,102" marker-end="url(#mm-scale-arrow)"/>
+
+<rect class="mm-n5" x="40" y="30" width="700" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="60" text-anchor="middle">Enterprise process</text>
+<text class="mm-node-sub" x="200" y="80" text-anchor="middle">external senior hires</text>
+<text class="mm-node-sub" x="580" y="80" text-anchor="middle">retraining for new stack</text>
+
+<text class="mm-flow-label" x="440" y="203" text-anchor="middle">acknowledge → evidence → involve → hold the line</text>
+</svg>
+
+<p class="mental-model__caption">As a company grows from startup chaos through a scaling structure to enterprise process, each transition - handling founders' syndrome, merging cultures, splitting teams, bringing in senior hires, retraining for a new stack - is handled the same way: acknowledge people's history, show the evidence for the change, involve them in shaping it, and then hold the line.</p>
+</div>
+
 ## 61. Managing "founders' syndrome" or early-employee entitlement when moving from startup chaos to structured enterprise processes
 
 **Core Objective**: Bring an early employee along into a more structured way of working without dismissing the real value of their tenure and institutional knowledge.

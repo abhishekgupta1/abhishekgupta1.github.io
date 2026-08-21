@@ -23,8 +23,51 @@ was not manually edited for typos — auto-captioning occasionally renders
 synthesized version of this same material.
 :::
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
 
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-transcript-title mm-transcript-desc">
+<title id="mm-transcript-title">The transcript's raw lecture sequence</title>
+<desc id="mm-transcript-desc">The transcript captures the masterclass lecture in the order it was taught, across its major pillars: Claude Cowork, Skills and Plugins, Claude Code, an Obsidian-based second brain, and Claude Design, kept verbatim including auto-captioning quirks.</desc>
+<defs>
+  <marker id="mm-transcript-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
 
+<rect class="mm-n3" x="20" y="90" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="85" y="120" text-anchor="middle">Cowork</text>
+<text class="mm-node-sub" x="85" y="137" text-anchor="middle">browser, autopilot</text>
+
+<path class="mm-arrow" d="M150,125 L176,125" marker-end="url(#mm-transcript-arrow)"/>
+
+<rect class="mm-n2" x="176" y="90" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="241" y="120" text-anchor="middle">Skills &amp; Plugins</text>
+<text class="mm-node-sub" x="241" y="137" text-anchor="middle">packaged recipes</text>
+
+<path class="mm-arrow" d="M306,125 L332,125" marker-end="url(#mm-transcript-arrow)"/>
+
+<rect class="mm-n4" x="332" y="90" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="397" y="120" text-anchor="middle">Code</text>
+<text class="mm-node-sub" x="397" y="137" text-anchor="middle">agentic coding</text>
+
+<path class="mm-arrow" d="M462,125 L488,125" marker-end="url(#mm-transcript-arrow)"/>
+
+<rect class="mm-n5" x="488" y="90" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="553" y="120" text-anchor="middle">Obsidian</text>
+<text class="mm-node-sub" x="553" y="137" text-anchor="middle">second brain vault</text>
+
+<path class="mm-arrow" d="M618,125 L644,125" marker-end="url(#mm-transcript-arrow)"/>
+
+<rect class="mm-n1" x="644" y="90" width="130" height="70" rx="10"/>
+<text class="mm-node-title" x="709" y="120" text-anchor="middle">Design</text>
+<text class="mm-node-sub" x="709" y="137" text-anchor="middle">UI systems, deploy</text>
+
+<text class="mm-flow-label" x="390" y="195" text-anchor="middle">auto-captions occasionally render "Claude" as "Cloud"</text>
+</svg>
+
+<p class="mental-model__caption">This file is the unedited lecture, walked through in the order it was taught — Claude Cowork, Skills and Plugins, Claude Code, an Obsidian-based second brain, then Claude Design — kept verbatim for reference, auto-captioning quirks and all, rather than cleaned up like the study guide.</p>
+</div>
 
 ## Course Introduction
 

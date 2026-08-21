@@ -4,6 +4,44 @@ A quick-reference guide to understanding and using Claude (by Anthropic) effecti
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-claude-title mm-claude-desc">
+<title id="mm-claude-title">The prompt–model–output loop</title>
+<desc id="mm-claude-desc">A prompt with context, goal, and constraints goes to a Claude model tier chosen for the task's complexity, which produces an output. That output is refined by iterating on the same prompt rather than starting over.</desc>
+<defs>
+  <marker id="mm-claude-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="30" y="60" width="190" height="80" rx="10"/>
+<text class="mm-node-title" x="125" y="90" text-anchor="middle">Your prompt</text>
+<text class="mm-node-sub" x="125" y="107" text-anchor="middle">context + goal +</text>
+<text class="mm-node-sub" x="125" y="120" text-anchor="middle">constraints + format</text>
+
+<path class="mm-arrow" d="M220,100 L286,100" marker-end="url(#mm-claude-arrow)"/>
+
+<rect class="mm-n5" x="290" y="60" width="190" height="80" rx="10"/>
+<text class="mm-node-title" x="385" y="90" text-anchor="middle">Claude</text>
+<text class="mm-node-sub" x="385" y="107" text-anchor="middle">Haiku → Sonnet → Opus</text>
+<text class="mm-node-sub" x="385" y="120" text-anchor="middle">picked by task complexity</text>
+
+<path class="mm-arrow" d="M480,100 L546,100" marker-end="url(#mm-claude-arrow)"/>
+
+<rect class="mm-n1" x="550" y="60" width="190" height="80" rx="10"/>
+<text class="mm-node-title" x="645" y="90" text-anchor="middle">Output / draft</text>
+<text class="mm-node-sub" x="645" y="107" text-anchor="middle">treat as a first pass,</text>
+<text class="mm-node-sub" x="645" y="120" text-anchor="middle">not the final word</text>
+
+<path class="mm-arrow" d="M645,140 C645,180 125,180 125,142" marker-end="url(#mm-claude-arrow)"/>
+<text class="mm-flow-label" x="385" y="196" text-anchor="middle">iterate on the same prompt — don't restart from scratch</text>
+</svg>
+
+<p class="mental-model__caption">Everything else in this cheatsheet is detail on one loop: a well-specified prompt goes to the model tier that matches the task, comes back as a draft, and gets refined by iterating — not by re-prompting cold each time.</p>
+</div>
+
 ## 1. What Claude Is
 
 Claude is a family of large language models (LLMs) built by Anthropic. It's a text-in, text-out (and now multimodal) AI assistant that can reason, write, code, analyze, and hold conversations. Think of it as a very capable, general-purpose "thinking partner" you interact with through natural language.

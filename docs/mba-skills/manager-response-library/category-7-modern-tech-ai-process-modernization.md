@@ -11,6 +11,44 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-mrl-cat7-title mm-mrl-cat7-desc">
+<title id="mm-mrl-cat7-title">Modernization as a layered stack, trust built at the top</title>
+<desc id="mm-mrl-cat7-desc">Four stacked layers from foundation to top: modern CI/CD pipelines replacing legacy process, rolling out new tools without breaking compliance, AI guardrails such as reviewing output and setting usage rules, and finally the team's trust in AI, which only holds once the layers beneath it are solid.</desc>
+<defs>
+  <marker id="mm-mrl-cat7-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="210" width="740" height="50" rx="8"/>
+<text class="mm-node-title" x="390" y="232" text-anchor="middle">Legacy → CI/CD</text>
+<text class="mm-node-sub" x="390" y="248" text-anchor="middle">modern pipelines first</text>
+
+<rect class="mm-n4" x="80" y="150" width="620" height="50" rx="8"/>
+<text class="mm-node-title" x="390" y="172" text-anchor="middle">Tooling vs. compliance</text>
+<text class="mm-node-sub" x="390" y="188" text-anchor="middle">roll out new tools safely</text>
+
+<rect class="mm-n5" x="160" y="90" width="460" height="50" rx="8"/>
+<text class="mm-node-title" x="390" y="112" text-anchor="middle">AI guardrails</text>
+<text class="mm-node-sub" x="390" y="128" text-anchor="middle">review output, set usage rules</text>
+
+<rect class="mm-n1" x="240" y="30" width="300" height="50" rx="8"/>
+<text class="mm-node-title" x="390" y="52" text-anchor="middle">Team trusts AI</text>
+<text class="mm-node-sub" x="390" y="68" text-anchor="middle">confidence, not fear</text>
+
+<path class="mm-arrow" d="M390,210 L390,203" marker-end="url(#mm-mrl-cat7-arrow)"/>
+<path class="mm-arrow" d="M390,150 L390,143" marker-end="url(#mm-mrl-cat7-arrow)"/>
+<path class="mm-arrow" d="M390,90 L390,83" marker-end="url(#mm-mrl-cat7-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="288" text-anchor="middle">fear about AI drops when the foundation underneath it is solid, not from reassurance alone</text>
+</svg>
+
+<p class="mental-model__caption">Modernization stacks: solid CI/CD pipelines are the foundation, safe tool rollout that respects compliance sits on top of that, AI guardrails like output review and usage policy sit on top of that, and only once all three are solid does the team's actual trust in AI show up — you can't reassure your way to that top layer, you have to build it.</p>
+</div>
+
 ## 31. The team is anxious that Generative AI tools (e.g., automated coding/testing) will make their jobs redundant
 
 **Core Objective**: Address the anxiety honestly without either dismissing it or overpromising certainty you don't have — redirect toward what's actually within their control.

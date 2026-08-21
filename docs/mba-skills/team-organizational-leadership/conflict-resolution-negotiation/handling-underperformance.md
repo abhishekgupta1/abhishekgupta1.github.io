@@ -14,6 +14,58 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: underperformance, difficult-conversations, PIP, feedback
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-underperf-title mm-underperf-desc">
+<title id="mm-underperf-title">Diagnosing underperformance before acting</title>
+<desc id="mm-underperf-desc">A sustained performance gap fans out into four possible root causes — skill gap, will or motivation, unclear expectations, or a situational problem — each of which converges on a different, targeted fix rather than a generic response.</desc>
+<defs>
+  <marker id="mm-underperf-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="115" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="100" y="145" text-anchor="middle">Sustained gap</text>
+<text class="mm-node-sub" x="100" y="161" text-anchor="middle">3+ missed</text>
+<text class="mm-node-sub" x="100" y="174" text-anchor="middle">commitments</text>
+
+<path class="mm-arrow" d="M180,135 L286,39" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M180,145 L286,106" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M180,155 L286,173" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M180,165 L286,240" marker-end="url(#mm-underperf-arrow)"/>
+
+<rect class="mm-n2" x="290" y="12" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="380" y="34" text-anchor="middle">Skill gap</text>
+<text class="mm-node-sub" x="380" y="51" text-anchor="middle">training, pairing</text>
+
+<rect class="mm-n4" x="290" y="79" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="380" y="101" text-anchor="middle">Will / motivation</text>
+<text class="mm-node-sub" x="380" y="118" text-anchor="middle">re-engage, listen</text>
+
+<rect class="mm-n5" x="290" y="146" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="380" y="168" text-anchor="middle">Unclear expectations</text>
+<text class="mm-node-sub" x="380" y="185" text-anchor="middle">reset the agreement</text>
+
+<rect class="mm-n6" x="290" y="213" width="180" height="55" rx="10"/>
+<text class="mm-node-title" x="380" y="235" text-anchor="middle">Situational</text>
+<text class="mm-node-sub" x="380" y="252" text-anchor="middle">support, flexibility</text>
+
+<path class="mm-arrow" d="M470,39 L596,140" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M470,106 L596,148" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M470,173 L596,158" marker-end="url(#mm-underperf-arrow)"/>
+<path class="mm-arrow" d="M470,240 L596,166" marker-end="url(#mm-underperf-arrow)"/>
+
+<rect class="mm-n1" x="600" y="115" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="680" y="145" text-anchor="middle">Targeted fix</text>
+<text class="mm-node-sub" x="680" y="161" text-anchor="middle">not a generic</text>
+<text class="mm-node-sub" x="680" y="174" text-anchor="middle">PIP by default</text>
+</svg>
+
+<p class="mental-model__caption">Underperformance has four distinct root causes — a skill gap, a will or motivation problem, unclear expectations, or something situational — and a generic "try harder" conversation only helps by accident; diagnosing which cause you're actually facing is what makes the fix land.</p>
+</div>
+
 ## Quick Reference
 
 Diagnose before you act: is this a **skill gap**, a **will/motivation problem**, an **unclear-expectations problem**, or a **situational/personal problem**? Each has a different fix. Address it directly and early via a specific, factual conversation — not through hints in a 1-on-1 or by waiting for the next review cycle.

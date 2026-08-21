@@ -14,6 +14,45 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: SWOT, PESTLE, value-chain, 5-whys, root-cause-analysis, consulting-frameworks
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-consultfw-title mm-consultfw-desc">
+<title id="mm-consultfw-title">Four frameworks narrowing from broad orientation to root cause</title>
+<desc id="mm-consultfw-desc">SWOT and PESTLE give a broad internal and external orientation, narrowing down through Value Chain analysis to find where cost or friction sits, narrowing further through 5 Whys to the actual root cause.</desc>
+<defs>
+  <marker id="mm-consultfw-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="80" y="15" width="250" height="60" rx="10"/>
+<text class="mm-node-title" x="205" y="41" text-anchor="middle">SWOT</text>
+<text class="mm-node-sub" x="205" y="58" text-anchor="middle">internal vs. external snapshot</text>
+
+<rect class="mm-n2" x="450" y="15" width="250" height="60" rx="10"/>
+<text class="mm-node-title" x="575" y="41" text-anchor="middle">PESTLE</text>
+<text class="mm-node-sub" x="575" y="58" text-anchor="middle">external macro forces</text>
+
+<path class="mm-arrow" d="M205,75 L390,115" marker-end="url(#mm-consultfw-arrow)"/>
+<path class="mm-arrow" d="M575,75 L390,115" marker-end="url(#mm-consultfw-arrow)"/>
+
+<rect class="mm-n3" x="215" y="115" width="350" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="141" text-anchor="middle">Value Chain</text>
+<text class="mm-node-sub" x="390" y="158" text-anchor="middle">where does cost/friction sit?</text>
+
+<path class="mm-arrow" d="M390,175 L390,215" marker-end="url(#mm-consultfw-arrow)"/>
+
+<rect class="mm-n4" x="290" y="215" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="241" text-anchor="middle">5 Whys</text>
+<text class="mm-node-sub" x="390" y="258" text-anchor="middle">actual root cause</text>
+
+<text class="mm-flow-label" x="390" y="295" text-anchor="middle">broad orientation narrows to a fixable root cause</text>
+</svg>
+
+<p class="mental-model__caption">The four frameworks aren't interchangeable options — they narrow in sequence: SWOT and PESTLE orient broadly across internal and external factors, Value Chain analysis narrows that to the specific spot where cost or friction actually sits, and 5 Whys drills past the visible symptom at that spot down to the root cause a recommendation should actually target.</p>
+</div>
+
 ## Quick Reference
 
 **SWOT** (Strengths/Weaknesses/Opportunities/Threats) for a quick internal-vs-external strategic snapshot. **PESTLE** (Political/Economic/Social/Technological/Legal/Environmental) for scanning external macro forces affecting a business or market. **Value Chain analysis** for finding where in a company's operations value (or cost) is actually created. **5 Whys** for tracing a specific problem back to its root cause instead of stopping at the first visible symptom. Each structures a different kind of question — using the wrong one produces a tidy-looking but unhelpful analysis.

@@ -13,6 +13,57 @@ Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-python-title mm-python-desc">
+<title id="mm-python-title">Python's five pillars, one core language</title>
+<desc id="mm-python-desc">One dynamically typed core language fans out into five practical areas covered in this guide: data and types, object-oriented and functional constructs, concurrency, testing and error handling, and ops and DevOps automation scripting.</desc>
+<defs>
+  <marker id="mm-python-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="290" y="16" width="200" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Python Core</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">one language, many jobs</text>
+
+<path class="mm-arrow" d="M330,72 L92,134" marker-end="url(#mm-python-arrow)"/>
+<path class="mm-arrow" d="M360,72 L252,134" marker-end="url(#mm-python-arrow)"/>
+<path class="mm-arrow" d="M390,72 L395,134" marker-end="url(#mm-python-arrow)"/>
+<path class="mm-arrow" d="M420,72 L537,134" marker-end="url(#mm-python-arrow)"/>
+<path class="mm-arrow" d="M450,72 L697,134" marker-end="url(#mm-python-arrow)"/>
+
+<rect class="mm-n3" x="20" y="138" width="145" height="66" rx="10"/>
+<text class="mm-node-title" x="92" y="166" text-anchor="middle">Data &amp; Types</text>
+<text class="mm-node-sub" x="92" y="182" text-anchor="middle">mutable vs</text>
+<text class="mm-node-sub" x="92" y="195" text-anchor="middle">immutable</text>
+
+<rect class="mm-n2" x="180" y="138" width="145" height="66" rx="10"/>
+<text class="mm-node-title" x="252" y="166" text-anchor="middle">OOP &amp; Functions</text>
+<text class="mm-node-sub" x="252" y="182" text-anchor="middle">classes,</text>
+<text class="mm-node-sub" x="252" y="195" text-anchor="middle">decorators, gens</text>
+
+<rect class="mm-n4" x="340" y="138" width="110" height="66" rx="10"/>
+<text class="mm-node-title" x="395" y="166" text-anchor="middle">Concurrency</text>
+<text class="mm-node-sub" x="395" y="182" text-anchor="middle">threads /</text>
+<text class="mm-node-sub" x="395" y="195" text-anchor="middle">asyncio, GIL</text>
+
+<rect class="mm-n1" x="465" y="138" width="145" height="66" rx="10"/>
+<text class="mm-node-title" x="537" y="166" text-anchor="middle">Errors &amp; Testing</text>
+<text class="mm-node-sub" x="537" y="182" text-anchor="middle">exceptions,</text>
+<text class="mm-node-sub" x="537" y="195" text-anchor="middle">pytest</text>
+
+<rect class="mm-n6" x="625" y="138" width="145" height="66" rx="10"/>
+<text class="mm-node-title" x="697" y="166" text-anchor="middle">Automation</text>
+<text class="mm-node-sub" x="697" y="182" text-anchor="middle">subprocess,</text>
+<text class="mm-node-sub" x="697" y="195" text-anchor="middle">boto3, SSH</text>
+</svg>
+
+<p class="mental-model__caption">Everything in this guide branches from one dynamically typed core language into five areas that show up together in real production code: data and types, object-oriented and functional constructs, concurrency, testing and error handling, and ops automation scripting.</p>
+</div>
+
 ## 1. What Python Is, in Practical Terms
 
 Python is a **dynamically typed, interpreted, garbage-collected,

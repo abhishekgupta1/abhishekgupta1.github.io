@@ -11,6 +11,48 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-mrl-cat4-title mm-mrl-cat4-desc">
+<title id="mm-mrl-cat4-title">The manager sits in the middle of four kinds of organizational pressure</title>
+<desc id="mm-mrl-cat4-desc">Four pressures radiate at a team from different directions: org-level shocks like layoffs and restructuring, an outage that could turn into blame, executive pressure for unrealistic dates, and scope creep eating team bandwidth. The manager's job is to absorb and translate each one rather than simply relaying it downward.</desc>
+<defs>
+  <marker id="mm-mrl-cat4-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="310" y="115" width="160" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="145" text-anchor="middle">Pressure hits</text>
+<text class="mm-node-sub" x="390" y="161" text-anchor="middle">absorb it, translate it,</text>
+<text class="mm-node-sub" x="390" y="174" text-anchor="middle">don't just relay it</text>
+
+<rect class="mm-n3" x="40" y="20" width="210" height="64" rx="10"/>
+<text class="mm-node-title" x="145" y="46" text-anchor="middle">Org-level shocks</text>
+<text class="mm-node-sub" x="145" y="62" text-anchor="middle">layoffs, restructuring, cuts</text>
+
+<rect class="mm-n2" x="530" y="20" width="210" height="64" rx="10"/>
+<text class="mm-node-title" x="635" y="46" text-anchor="middle">Outage &amp; blame</text>
+<text class="mm-node-sub" x="635" y="62" text-anchor="middle">blameless postmortems</text>
+
+<rect class="mm-n4" x="530" y="216" width="210" height="64" rx="10"/>
+<text class="mm-node-title" x="635" y="242" text-anchor="middle">Exec pressure</text>
+<text class="mm-node-sub" x="635" y="258" text-anchor="middle">unrealistic release dates</text>
+
+<rect class="mm-n5" x="40" y="216" width="210" height="64" rx="10"/>
+<text class="mm-node-title" x="145" y="242" text-anchor="middle">Scope creep</text>
+<text class="mm-node-sub" x="145" y="258" text-anchor="middle">protecting team bandwidth</text>
+
+<path class="mm-arrow" d="M320,118 L254,84" marker-end="url(#mm-mrl-cat4-arrow)"/>
+<path class="mm-arrow" d="M460,118 L526,84" marker-end="url(#mm-mrl-cat4-arrow)"/>
+<path class="mm-arrow" d="M460,182 L526,216" marker-end="url(#mm-mrl-cat4-arrow)"/>
+<path class="mm-arrow" d="M320,182 L254,216" marker-end="url(#mm-mrl-cat4-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Every one of these scenarios is pressure arriving from a different direction — a sudden org-level shock, a live outage that could turn into a blame hunt, an executive demanding an unrealistic date, or scope quietly creeping past the team's capacity — and in each case the manager's actual job is the same: absorb it, translate it honestly, and hand the team something they can act on instead of raw panic.</p>
+</div>
+
 ## 17. Communicating sudden company layoffs, budget cuts, or project cancellations to the team
 
 **Core Objective**: Deliver hard news honestly and quickly, minimizing the damage of rumor and uncertainty without overpromising what you don't control.

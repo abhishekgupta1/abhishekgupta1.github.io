@@ -12,6 +12,51 @@ Most teams start their observability journey by throwing metrics at a dashboard 
 
 <!-- truncate -->
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-slo-title mm-slo-desc">
+<title id="mm-slo-title">From measurement to a page that means something</title>
+<desc id="mm-slo-desc">An SLI measures user experience, an SLO sets a target for it, the gap to that target becomes the error budget, and burn-rate alerts watch how fast that budget is spent. The response loops back to tune the SLO or the alert, not just to silence the page.</desc>
+<defs>
+  <marker id="mm-slo-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="40" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="70" text-anchor="middle">SLI</text>
+<text class="mm-node-sub" x="90" y="87" text-anchor="middle">measured signal</text>
+<text class="mm-node-sub" x="90" y="100" text-anchor="middle">e.g. success rate</text>
+
+<path class="mm-arrow" d="M160,75 L216,75" marker-end="url(#mm-slo-arrow)"/>
+
+<rect class="mm-n2" x="220" y="40" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="290" y="70" text-anchor="middle">SLO</text>
+<text class="mm-node-sub" x="290" y="87" text-anchor="middle">target over a</text>
+<text class="mm-node-sub" x="290" y="100" text-anchor="middle">rolling window</text>
+
+<path class="mm-arrow" d="M360,75 L416,75" marker-end="url(#mm-slo-arrow)"/>
+
+<rect class="mm-n4" x="420" y="40" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="490" y="70" text-anchor="middle">Error budget</text>
+<text class="mm-node-sub" x="490" y="87" text-anchor="middle">100% − SLO,</text>
+<text class="mm-node-sub" x="490" y="100" text-anchor="middle">spend it on risk</text>
+
+<path class="mm-arrow" d="M560,75 L616,75" marker-end="url(#mm-slo-arrow)"/>
+
+<rect class="mm-n1" x="620" y="40" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="690" y="70" text-anchor="middle">Burn-rate alert</text>
+<text class="mm-node-sub" x="690" y="87" text-anchor="middle">how fast the</text>
+<text class="mm-node-sub" x="690" y="100" text-anchor="middle">budget is going</text>
+
+<path class="mm-arrow" d="M690,110 C690,175 90,175 90,112" marker-end="url(#mm-slo-arrow)"/>
+<text class="mm-flow-label" x="390" y="196" text-anchor="middle">post-incident: tune the SLO or the alert threshold, not just the noise</text>
+</svg>
+
+<p class="mental-model__caption">Each stage exists to answer one question the one before it can't: the SLI says what "good" looks like, the SLO says how good is good enough, the error budget turns that gap into a spendable allowance, and the burn-rate alert watches the spend rate — not the raw metric — so it only pages when the budget is actually at risk.</p>
+</div>
+
 ## Start with SLIs, Not Dashboards
 
 Before you build a single dashboard, define what "working" means for your service. Service Level Indicators (SLIs) are the measurable signals that tell you whether users are having a good experience.

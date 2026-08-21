@@ -11,6 +11,47 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-c8-title mm-c8-desc">
+<title id="mm-c8-title">Contractual standards radiating out to every vendor team</title>
+<desc id="mm-c8-desc">One set of standards defined upfront in the SOW radiates out to offshore vendors, contractor teams, and global QA teams, each reviewed on a regular cadence, with escalation through the account relationship if a pattern persists.</desc>
+<defs>
+  <marker id="mm-c8-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="300" y="90" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="122" text-anchor="middle">SOW + standards</text>
+<text class="mm-node-sub" x="390" y="139" text-anchor="middle">defined upfront, contractual</text>
+
+<rect class="mm-n3" x="40" y="10" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="125" y="40" text-anchor="middle">Offshore vendor A</text>
+<text class="mm-node-sub" x="125" y="57" text-anchor="middle">regular review cadence</text>
+
+<rect class="mm-n4" x="40" y="190" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="125" y="220" text-anchor="middle">Offshore vendor B</text>
+<text class="mm-node-sub" x="125" y="237" text-anchor="middle">regular review cadence</text>
+
+<rect class="mm-n5" x="570" y="10" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="655" y="40" text-anchor="middle">Contractor team</text>
+<text class="mm-node-sub" x="655" y="57" text-anchor="middle">regular review cadence</text>
+
+<rect class="mm-n2" x="570" y="190" width="170" height="60" rx="10"/>
+<text class="mm-node-title" x="655" y="220" text-anchor="middle">Global QA team</text>
+<text class="mm-node-sub" x="655" y="237" text-anchor="middle">regular review cadence</text>
+
+<path class="mm-arrow" d="M300,110 L210,40" marker-end="url(#mm-c8-arrow)"/>
+<path class="mm-arrow" d="M300,150 L210,220" marker-end="url(#mm-c8-arrow)"/>
+<path class="mm-arrow" d="M480,110 L570,40" marker-end="url(#mm-c8-arrow)"/>
+<path class="mm-arrow" d="M480,150 L570,220" marker-end="url(#mm-c8-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">One set of contractual standards, defined upfront in the SOW, radiates out to every offshore, contractor, or global QA team, with a regular review cadence catching gaps early and the account relationship as the escalation path when direct technical feedback isn't enough.</p>
+</div>
+
 ## 71. Managing deliverable quality and automation standards for an outsourced, offshore QA team or vendor
 
 **Core Objective**: Hold vendor-delivered automation to the same quality bar as internal work, enforced through the contract and defined standards, not goodwill alone.

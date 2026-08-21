@@ -17,6 +17,54 @@ you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 290" role="img" aria-labelledby="mm-usered-title mm-usered-desc">
+<title id="mm-usered-title">USE for resources, RED for services</title>
+<desc id="mm-usered-desc">The USE method checks utilization, saturation, and errors for hardware resources, while the RED method checks rate, errors, and duration for request-driven services.</desc>
+<defs>
+  <marker id="mm-usered-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="40" y="20" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="200" y="41" text-anchor="middle">USE Method</text>
+<text class="mm-node-sub" x="200" y="57" text-anchor="middle">for hardware resources</text>
+
+<path class="mm-arrow" d="M200,70 L200,88" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n1" x="40" y="90" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="200" y="120" text-anchor="middle">Utilization</text>
+
+<path class="mm-arrow" d="M200,140 L200,148" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n1" x="40" y="150" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="200" y="180" text-anchor="middle">Saturation</text>
+
+<path class="mm-arrow" d="M200,200 L200,208" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n1" x="40" y="210" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="200" y="240" text-anchor="middle">Errors</text>
+
+<rect class="mm-n5" x="420" y="20" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="580" y="41" text-anchor="middle">RED Method</text>
+<text class="mm-node-sub" x="580" y="57" text-anchor="middle">for request-driven services</text>
+
+<path class="mm-arrow" d="M580,70 L580,88" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n2" x="420" y="90" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="580" y="120" text-anchor="middle">Rate</text>
+
+<path class="mm-arrow" d="M580,140 L580,148" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n2" x="420" y="150" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="580" y="180" text-anchor="middle">Errors</text>
+
+<path class="mm-arrow" d="M580,200 L580,208" marker-end="url(#mm-usered-arrow)"/>
+<rect class="mm-n2" x="420" y="210" width="320" height="50" rx="10"/>
+<text class="mm-node-title" x="580" y="240" text-anchor="middle">Duration</text>
+</svg>
+
+<p class="mental-model__caption">USE and RED are the same checklist idea applied to two different things: walk every physical resource through utilization, saturation, and errors, and walk every service through rate, errors, and duration — between the two you can find almost any bottleneck without guessing.</p>
+</div>
+
 ## 1. The USE Method
 
 **System performance analysis** is the discipline of figuring out *which

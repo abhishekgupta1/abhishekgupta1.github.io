@@ -11,6 +11,41 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-mrl-cat6-title mm-mrl-cat6-desc">
+<title id="mm-mrl-cat6-title">Three concentric rings of stakeholder management</title>
+<desc id="mm-mrl-cat6-desc">Three nested rings from innermost to outermost: your team, which you shield from bypass; your direct boss, whose vague or shifting priorities you manage with directness; and the C-suite or board, whose delays, budget asks, and technical pitches you translate into business terms.</desc>
+
+<circle class="mm-n5" cx="170" cy="160" r="120"/>
+<circle class="mm-n4" cx="170" cy="160" r="78"/>
+<circle class="mm-n1" cx="170" cy="160" r="36"/>
+
+<text class="mm-ring-label" x="170" y="165" text-anchor="middle">Team</text>
+<text class="mm-ring-label" x="170" y="197" text-anchor="middle">Your boss</text>
+<text class="mm-ring-label" x="170" y="229" text-anchor="middle">C-suite</text>
+
+<line class="mm-arrow" stroke-dasharray="3,3" x1="290" y1="160" x2="430" y2="37"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="248" y1="160" x2="430" y2="95"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="206" y1="160" x2="430" y2="153"/>
+
+<rect class="mm-n5" x="430" y="30" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="41" text-anchor="start">C-suite / Board</text>
+<text class="mm-node-sub" x="452" y="56" text-anchor="start">delay reporting, budget ask, refactor pitch</text>
+
+<rect class="mm-n4" x="430" y="88" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="99" text-anchor="start">Your direct boss</text>
+<text class="mm-node-sub" x="452" y="114" text-anchor="start">vague, shifting priorities</text>
+
+<rect class="mm-n1" x="430" y="146" width="14" height="14" rx="3"/>
+<text class="mm-node-title" x="452" y="157" text-anchor="start">Your team</text>
+<text class="mm-node-sub" x="452" y="172" text-anchor="start">shield from CEO/VP bypass</text>
+</svg>
+
+<p class="mental-model__caption">Executive stakeholder management isn't one skill applied everywhere — it's concentric: the innermost ring is your team, which you protect with a firm boundary when a VP tries to bypass you; the middle ring is your own boss, who needs directness when priorities keep shifting; and the outer ring is the C-suite or board, who need your delays, budget asks, and technical bets translated into terms they can act on.</p>
+</div>
+
 ## 26. Pushing back against a CEO/VP who bypasses you and assigns ad-hoc work directly to your engineers
 
 **Core Objective**: Restore the chain of visibility without embarrassing the executive or putting your engineer in an awkward position — protect team capacity while staying politically intact.

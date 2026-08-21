@@ -14,6 +14,40 @@ tags: [executive-communication, leadership, mba]
 **Created**: 2026-08-18
 **Tags**: executive-presence, communication, jargon-free, elevator-pitch
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 200" role="img" aria-labelledby="mm-execpres-title mm-execpres-desc">
+<title id="mm-execpres-title">The three-part order of an executive pitch</title>
+<desc id="mm-execpres-desc">An executive pitch runs in a fixed order: the conclusion first, then why it matters framed as business impact, then the specific ask — all delivered in under two minutes.</desc>
+<defs>
+  <marker id="mm-execpres-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="65" width="200" height="75" rx="10"/>
+<text class="mm-node-title" x="120" y="97" text-anchor="middle">Conclusion first</text>
+<text class="mm-node-sub" x="120" y="114" text-anchor="middle">what you recommend</text>
+
+<path class="mm-arrow" d="M220,102 L290,102" marker-end="url(#mm-execpres-arrow)"/>
+
+<rect class="mm-n3" x="294" y="65" width="200" height="75" rx="10"/>
+<text class="mm-node-title" x="394" y="97" text-anchor="middle">Why it matters</text>
+<text class="mm-node-sub" x="394" y="114" text-anchor="middle">business impact, one line</text>
+
+<path class="mm-arrow" d="M494,102 L564,102" marker-end="url(#mm-execpres-arrow)"/>
+
+<rect class="mm-n5" x="568" y="65" width="192" height="75" rx="10"/>
+<text class="mm-node-title" x="664" y="97" text-anchor="middle">The ask</text>
+<text class="mm-node-sub" x="664" y="114" text-anchor="middle">what you need from them</text>
+
+<text class="mm-flow-label" x="390" y="175" text-anchor="middle">under two minutes, zero jargon, detail available on request</text>
+</svg>
+
+<p class="mental-model__caption">Every executive pitch follows the same fixed order — state the conclusion before the reasoning, translate the reasoning into business impact in one sentence, then name the specific ask — because a time-constrained decision-maker needs the point before they'll invest attention in the detail behind it.</p>
+</div>
+
 ## Quick Reference
 
 Structure any executive pitch as: **conclusion first** (what you recommend), **why it matters to them** (business impact, in one sentence), **the ask** (what you need from them), in that order — under two minutes, zero jargon. If a term needs a definition, either cut it or replace it with its business consequence ("this reduces the risk of an outage" instead of "this improves fault tolerance").

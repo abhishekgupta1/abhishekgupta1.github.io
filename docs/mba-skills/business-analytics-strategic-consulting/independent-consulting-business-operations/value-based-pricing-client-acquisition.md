@@ -14,6 +14,54 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: value-based-pricing, proposals, client-acquisition, retainers, negotiation
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-valuepricing-title mm-valuepricing-desc">
+<title id="mm-valuepricing-title">Reframing hourly billing into a value-based pricing chain</title>
+<desc id="mm-valuepricing-desc">Hourly billing caps income and rewards slow work; the value-based alternative is a four-step chain — quantify the client's value, price as a fraction of it, lead the proposal with the problem, and negotiate a scoped retainer.</desc>
+<defs>
+  <marker id="mm-valuepricing-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="20" y="90" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="110" y="118" text-anchor="middle">Hourly billing</text>
+<text class="mm-node-sub" x="110" y="134" text-anchor="middle">caps income,</text>
+<text class="mm-node-sub" x="110" y="147" text-anchor="middle">rewards slow work</text>
+
+<path class="mm-arrow" d="M110,90 L235,72" marker-end="url(#mm-valuepricing-arrow)"/>
+<text class="mm-flow-label" x="175" y="65" text-anchor="middle">reframe</text>
+
+<rect class="mm-n1" x="235" y="15" width="125" height="55" rx="10"/>
+<text class="mm-node-title" x="297" y="38" text-anchor="middle">Quantify value</text>
+<text class="mm-node-sub" x="297" y="54" text-anchor="middle">their data, their $</text>
+
+<path class="mm-arrow" d="M360,42 L375,42" marker-end="url(#mm-valuepricing-arrow)"/>
+
+<rect class="mm-n2" x="375" y="15" width="125" height="55" rx="10"/>
+<text class="mm-node-title" x="437" y="38" text-anchor="middle">Price vs. value</text>
+<text class="mm-node-sub" x="437" y="54" text-anchor="middle">fraction, not hours</text>
+
+<path class="mm-arrow" d="M500,42 L515,42" marker-end="url(#mm-valuepricing-arrow)"/>
+
+<rect class="mm-n3" x="515" y="15" width="135" height="55" rx="10"/>
+<text class="mm-node-title" x="582" y="38" text-anchor="middle">Problem-first</text>
+<text class="mm-node-sub" x="582" y="54" text-anchor="middle">proposal</text>
+
+<path class="mm-arrow" d="M650,42 L665,42" marker-end="url(#mm-valuepricing-arrow)"/>
+
+<rect class="mm-n4" x="665" y="15" width="105" height="55" rx="10"/>
+<text class="mm-node-title" x="717" y="38" text-anchor="middle">Retainer</text>
+<text class="mm-node-sub" x="717" y="54" text-anchor="middle">scoped</text>
+
+<text class="mm-flow-label" x="480" y="200" text-anchor="middle">each step anchors the client on outcome, not time</text>
+</svg>
+
+<p class="mental-model__caption">Value-based pricing replaces hourly billing's time-anchored frame with a four-step chain: quantify the outcome in the client's own terms, price as a defensible fraction of that value, lead every proposal with their problem instead of your process, and negotiate any follow-on retainer against an explicitly scoped outcome so it can't quietly expand.</p>
+</div>
+
 ## Quick Reference
 
 Price against the **value the client gets**, not the hours you spend — a two-week engagement that saves a client $500K is worth far more than $150/hour × 80 hours, and pricing it that way leaves money on the table while also anchoring the client's expectations on your time instead of their outcome. Structure proposals around the client's problem and outcome, not your process. Negotiate retainers around a defined scope and outcome, with explicit boundaries on what's in and out.

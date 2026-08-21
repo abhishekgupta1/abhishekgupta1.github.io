@@ -15,6 +15,48 @@ Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-aiworkflows-title mm-aiworkflows-desc">
+<title id="mm-aiworkflows-title">How AI assistance funnels into human judgment</title>
+<desc id="mm-aiworkflows-desc">Agentic tools, inline completions, and chat-based assistants all feed into a human review and decision step before a change is applied.</desc>
+<defs>
+  <marker id="mm-aiworkflows-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="130" y="46" text-anchor="middle">Agentic tools</text>
+<text class="mm-node-sub" x="130" y="62" text-anchor="middle">Claude Code, Cursor</text>
+
+<rect class="mm-n2" x="280" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="46" text-anchor="middle">Inline completions</text>
+<text class="mm-node-sub" x="390" y="62" text-anchor="middle">Copilot, autocomplete</text>
+
+<rect class="mm-n3" x="540" y="20" width="220" height="60" rx="10"/>
+<text class="mm-node-title" x="650" y="46" text-anchor="middle">Chat-based</text>
+<text class="mm-node-sub" x="650" y="62" text-anchor="middle">explain, brainstorm</text>
+
+<path class="mm-arrow" d="M130,80 L300,150" marker-end="url(#mm-aiworkflows-arrow)"/>
+<path class="mm-arrow" d="M390,80 L390,150" marker-end="url(#mm-aiworkflows-arrow)"/>
+<path class="mm-arrow" d="M650,80 L480,150" marker-end="url(#mm-aiworkflows-arrow)"/>
+
+<rect class="mm-n5" x="250" y="150" width="280" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="176" text-anchor="middle">Human judgment</text>
+<text class="mm-node-sub" x="390" y="193" text-anchor="middle">review, keep, or reject</text>
+
+<path class="mm-arrow" d="M390,210 L390,238" marker-end="url(#mm-aiworkflows-arrow)"/>
+
+<rect class="mm-n4" x="290" y="240" width="200" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="264" text-anchor="middle">Shipped change</text>
+<text class="mm-node-sub" x="390" y="280" text-anchor="middle">human stays accountable</text>
+</svg>
+
+<p class="mental-model__caption">Every AI-assisted workflow, whatever the tool, funnels through the same choke point: a human who has context about the real system reviews and decides, so the assistant proposes but never ships anything on its own.</p>
+</div>
+
 ## 1. What "AI-Assisted Engineering" Actually Means Here
 
 This is not about replacing engineering judgment — it's about using an LLM

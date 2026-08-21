@@ -11,6 +11,44 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 200" role="img" aria-labelledby="mm-mrl-cat5-title mm-mrl-cat5-desc">
+<title id="mm-mrl-cat5-title">Change management as a four-step chain of trust</title>
+<desc id="mm-mrl-cat5-desc">A linear chain: change lands, whether that is a new process, a new hire, or remote friction; you explain the why, not just the what; you build supporting structure such as a 30-60-90 plan or remote norms; and you model the standard yourself by admitting your own mistakes.</desc>
+<defs>
+  <marker id="mm-mrl-cat5-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="15" y="65" width="170" height="65" rx="10"/>
+<text class="mm-node-title" x="100" y="92" text-anchor="middle">Change lands</text>
+<text class="mm-node-sub" x="100" y="108" text-anchor="middle">new process, hire, or friction</text>
+
+<rect class="mm-n2" x="215" y="65" width="170" height="65" rx="10"/>
+<text class="mm-node-title" x="300" y="92" text-anchor="middle">Explain the why</text>
+<text class="mm-node-sub" x="300" y="108" text-anchor="middle">not just the what</text>
+
+<rect class="mm-n4" x="415" y="65" width="170" height="65" rx="10"/>
+<text class="mm-node-title" x="500" y="92" text-anchor="middle">Build the structure</text>
+<text class="mm-node-sub" x="500" y="108" text-anchor="middle">30-60-90 plan, remote norms</text>
+
+<rect class="mm-n5" x="615" y="65" width="155" height="65" rx="10"/>
+<text class="mm-node-title" x="692" y="92" text-anchor="middle">Model it yourself</text>
+<text class="mm-node-sub" x="692" y="108" text-anchor="middle">admit mistakes openly</text>
+
+<path class="mm-arrow" d="M185,97 L211,97" marker-end="url(#mm-mrl-cat5-arrow)"/>
+<path class="mm-arrow" d="M385,97 L411,97" marker-end="url(#mm-mrl-cat5-arrow)"/>
+<path class="mm-arrow" d="M585,97 L611,97" marker-end="url(#mm-mrl-cat5-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="180" text-anchor="middle">each step only works if the last one was honest</text>
+</svg>
+
+<p class="mental-model__caption">Whether the change is a new process, a new hire's first ninety days, a remote team's norms, or your own visible mistake, the same chain holds: name the change, explain why it matters instead of just announcing it, build the structure that makes it stick, and be willing to model the standard yourself — skip a link and the next one gets harder to trust.</p>
+</div>
+
 ## 22. Introducing a mandatory process change (e.g., stricter code reviews, new QA pipelines) that the team resists
 
 **Core Objective**: Get genuine buy-in, or at minimum informed compliance, rather than quiet, resentful non-adherence.

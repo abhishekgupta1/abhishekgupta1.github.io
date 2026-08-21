@@ -14,6 +14,53 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: architecture, decision-making, technical-disagreement, RFC
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-archdeadlock-title mm-archdeadlock-desc">
+<title id="mm-archdeadlock-title">Unsticking an architectural deadlock</title>
+<desc id="mm-archdeadlock-desc">A stalled decision gets unstuck by making criteria and reversibility explicit, then branching: two-way-door decisions get picked and moved on, while genuinely stuck one-way-door decisions get a single decider and a deadline. Both paths converge on the team moving forward.</desc>
+<defs>
+  <marker id="mm-archdeadlock-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="20" y="95" width="150" height="70" rx="10"/>
+<text class="mm-node-title" x="95" y="125" text-anchor="middle">Deadlock stuck</text>
+<text class="mm-node-sub" x="95" y="141" text-anchor="middle">RFC stalled</text>
+<text class="mm-node-sub" x="95" y="154" text-anchor="middle">3+ rounds</text>
+
+<path class="mm-arrow" d="M170,130 L196,130" marker-end="url(#mm-archdeadlock-arrow)"/>
+
+<rect class="mm-n4" x="200" y="95" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="285" y="122" text-anchor="middle">Make criteria and</text>
+<text class="mm-node-sub" x="285" y="139" text-anchor="middle">reversibility</text>
+<text class="mm-node-sub" x="285" y="152" text-anchor="middle">explicit</text>
+
+<path class="mm-arrow" d="M370,110 L406,55" marker-end="url(#mm-archdeadlock-arrow)"/>
+<path class="mm-arrow" d="M370,150 L406,205" marker-end="url(#mm-archdeadlock-arrow)"/>
+
+<rect class="mm-n2" x="410" y="20" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="500" y="45" text-anchor="middle">Two-way door</text>
+<text class="mm-node-sub" x="500" y="62" text-anchor="middle">pick a reasonable option now</text>
+
+<rect class="mm-n5" x="410" y="180" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="500" y="205" text-anchor="middle">One-way, still stuck</text>
+<text class="mm-node-sub" x="500" y="222" text-anchor="middle">single decider, deadline</text>
+
+<path class="mm-arrow" d="M590,55 L680,105" marker-end="url(#mm-archdeadlock-arrow)"/>
+<path class="mm-arrow" d="M590,210 L680,155" marker-end="url(#mm-archdeadlock-arrow)"/>
+
+<rect class="mm-n1" x="630" y="95" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="700" y="125" text-anchor="middle">Team moves</text>
+<text class="mm-node-sub" x="700" y="141" text-anchor="middle">forward</text>
+<text class="mm-node-sub" x="700" y="154" text-anchor="middle">no more stalling</text>
+</svg>
+
+<p class="mental-model__caption">Most architectural deadlocks are stuck because the decision criteria and the reversibility of the choice were never made explicit, not because the technical options are genuinely equal — once that's clear, two-way-door decisions get picked and moved on, and only a genuine one-way-door disagreement needs a named decider with a deadline.</p>
+</div>
+
 ## Quick Reference
 
 Most architectural deadlocks are stuck because the decision **criteria** were never made explicit, not because the technical options are genuinely equal. Force clarity on criteria and reversibility first; if genuine disagreement remains, assign a **single decider** with a time-box, disagree-and-commit, and move.

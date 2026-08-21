@@ -4,10 +4,13 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import HeroSection from '@site/src/components/HeroSection';
+import ServicesSection from '@site/src/components/ServicesSection';
+import EngagementSection from '@site/src/components/EngagementSection';
+import ContactCTA from '@site/src/components/ContactCTA';
 
-const TITLE = 'Abhishek Gupta | Portfolio';
+const TITLE = 'Abhishek Gupta | SDET, SRE & AI Systems Consulting';
 const DESCRIPTION =
-  'Portfolio of Abhishek Gupta — SDET III, SRE, and AI Enthusiast. Exploring the World of Testing, Reliability, and AI.';
+  'Abhishek Gupta — Independent Consultant specializing in SDET, SRE, and AI Systems Engineering. Test automation, site reliability, and AI-driven tooling for engineering teams.';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -25,6 +28,9 @@ export default function Home() {
       </Head>
       <main>
         <HeroSection />
+        <ServicesSection />
+        <EngagementSection />
+        <ContactCTA />
       </main>
     </Layout>
   );

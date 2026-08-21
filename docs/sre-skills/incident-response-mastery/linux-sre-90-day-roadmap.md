@@ -23,6 +23,47 @@ Each phase includes: Concepts, Commands to master, Labs, Expected outcome.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-roadmap90-title mm-roadmap90-desc">
+<title id="mm-roadmap90-title">The 90-day roadmap as one continuous timeline</title>
+<desc id="mm-roadmap90-desc">Three sequential 30-day phases carry a learner from basic Linux comfort, through performance-debugging depth, to production-grade SRE mastery, each phase building directly on the last.</desc>
+<defs>
+  <marker id="mm-roadmap90-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="40" y="30" width="210" height="66" rx="10"/>
+<text class="mm-node-title" x="145" y="58" text-anchor="middle">Phase 1: Days 1-30</text>
+<text class="mm-node-sub" x="145" y="75" text-anchor="middle">core Linux control</text>
+
+<rect class="mm-n3" x="285" y="30" width="210" height="66" rx="10"/>
+<text class="mm-node-title" x="390" y="58" text-anchor="middle">Phase 2: Days 31-60</text>
+<text class="mm-node-sub" x="390" y="75" text-anchor="middle">performance &amp; debugging depth</text>
+
+<rect class="mm-n5" x="530" y="30" width="210" height="66" rx="10"/>
+<text class="mm-node-title" x="635" y="58" text-anchor="middle">Phase 3: Days 61-90</text>
+<text class="mm-node-sub" x="635" y="75" text-anchor="middle">production-level mastery</text>
+
+<line class="mm-arrow" x1="40" y1="150" x2="760" y2="150" marker-end="url(#mm-roadmap90-arrow)"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="145" y1="96" x2="145" y2="150"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="390" y1="96" x2="390" y2="150"/>
+<line class="mm-arrow" stroke-dasharray="3,3" x1="635" y1="96" x2="635" y2="150"/>
+
+<text class="mm-flow-label" x="40" y="168" text-anchor="start">Day 1</text>
+<text class="mm-flow-label" x="700" y="168" text-anchor="end">Day 90</text>
+
+<path class="mm-arrow" d="M700,150 L635,185" marker-end="url(#mm-roadmap90-arrow)"/>
+<rect class="mm-n2" x="530" y="185" width="210" height="56" rx="10"/>
+<text class="mm-node-title" x="635" y="210" text-anchor="middle">Production-Grade SRE</text>
+<text class="mm-node-sub" x="635" y="226" text-anchor="middle">goal state</text>
+</svg>
+
+<p class="mental-model__caption">The 90 days are one continuous timeline, not three separate courses: Phase 1 builds core Linux control, Phase 2 adds performance-debugging depth on top of it, and Phase 3 turns that combination into production-grade SRE mastery.</p>
+</div>
+
 ## 🔵 PHASE 1 — Linux Foundations (Days 1–30)
 
 **Goal**: Become comfortable living inside Linux without fear.

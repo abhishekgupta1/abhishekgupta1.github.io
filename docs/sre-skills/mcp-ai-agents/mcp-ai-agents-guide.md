@@ -17,6 +17,44 @@ on, see the
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-mcp-title mm-mcp-desc">
+<title id="mm-mcp-title">How MCP connects a host to a tool</title>
+<desc id="mm-mcp-desc">A host application talks through a client to a server, which wraps one external tool or data source, turning what used to be a custom integration per pairing into one standard protocol.</desc>
+<defs>
+  <marker id="mm-mcp-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<text class="mm-flow-label" x="390" y="55" text-anchor="middle">N + M integrations, not N × M</text>
+
+<rect class="mm-n1" x="20" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="102" y="118" text-anchor="middle">Host</text>
+<text class="mm-node-sub" x="102" y="135" text-anchor="middle">Claude Code, IDE, app</text>
+
+<rect class="mm-n2" x="215" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="297" y="118" text-anchor="middle">Client</text>
+<text class="mm-node-sub" x="297" y="135" text-anchor="middle">1:1 protocol link</text>
+
+<rect class="mm-n3" x="410" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="492" y="118" text-anchor="middle">Server</text>
+<text class="mm-node-sub" x="492" y="135" text-anchor="middle">wraps one tool</text>
+
+<rect class="mm-n4" x="605" y="90" width="165" height="70" rx="10"/>
+<text class="mm-node-title" x="687" y="118" text-anchor="middle">Tool / Data</text>
+<text class="mm-node-sub" x="687" y="135" text-anchor="middle">DB, API, files</text>
+
+<path class="mm-arrow" d="M185,125 L213,125" marker-end="url(#mm-mcp-arrow)"/>
+<path class="mm-arrow" d="M380,125 L408,125" marker-end="url(#mm-mcp-arrow)"/>
+<path class="mm-arrow" d="M575,125 L603,125" marker-end="url(#mm-mcp-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Every MCP-compatible host can talk to every MCP-compatible server through the same client protocol, so adding a new tool means writing one server, not one custom integration per application that wants to use it.</p>
+</div>
+
 ## 1. The Problem MCP Solves
 
 Before MCP, every application that wanted an LLM to *do* something beyond

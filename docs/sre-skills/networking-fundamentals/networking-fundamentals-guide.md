@@ -14,6 +14,41 @@ you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-netosi-title mm-netosi-desc">
+<title id="mm-netosi-title">The networking stack as ordered layers</title>
+<desc id="mm-netosi-desc">A request passes down through application, transport, network, and link/physical layers to send, and back up through the same layers on the receiving end.</desc>
+<defs>
+  <marker id="mm-netosi-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="190" y="20" width="400" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="41" text-anchor="middle">Application (7)</text>
+<text class="mm-node-sub" x="390" y="57" text-anchor="middle">HTTP, DNS, SSH, TLS</text>
+
+<rect class="mm-n2" x="190" y="80" width="400" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="101" text-anchor="middle">Transport (4)</text>
+<text class="mm-node-sub" x="390" y="117" text-anchor="middle">TCP, UDP</text>
+
+<rect class="mm-n3" x="190" y="140" width="400" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="161" text-anchor="middle">Network (3)</text>
+<text class="mm-node-sub" x="390" y="177" text-anchor="middle">IP, ICMP, routing</text>
+
+<rect class="mm-n4" x="190" y="200" width="400" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="221" text-anchor="middle">Link / Physical (1-2)</text>
+<text class="mm-node-sub" x="390" y="237" text-anchor="middle">Ethernet, MAC, cables</text>
+
+<path class="mm-arrow" d="M650,30 L650,245" marker-end="url(#mm-netosi-arrow)"/>
+<text class="mm-flow-label" x="650" y="265" text-anchor="middle">each layer wraps the one above it</text>
+</svg>
+
+<p class="mental-model__caption">A layer never needs to know how the layer below it works, only that it works — which is exactly why "DNS resolves but the connection times out" points below layer 4 while "connects fine but returns a 500" is purely a layer 7 problem, and the model tells you where to stop looking once a layer is confirmed healthy.</p>
+</div>
+
 ## 1. The OSI and TCP/IP Models
 
 The **OSI model** is the conceptual 7-layer teaching framework; the

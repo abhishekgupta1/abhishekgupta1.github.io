@@ -14,6 +14,56 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: capacity-planning, bandwidth, sprint-planning, resourcing
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 380" role="img" aria-labelledby="mm-bandwidth-title mm-bandwidth-desc">
+<title id="mm-bandwidth-title">Nominal capacity minus real overhead equals effective capacity</title>
+<desc id="mm-bandwidth-desc">Nominal capacity cascades down through subtractions for meetings and reviews, on-call, onboarding ramp, and buffer for interviews and unplanned work, landing on a much smaller effective capacity number.</desc>
+<defs>
+  <marker id="mm-bandwidth-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="15" y="15" width="150" height="55" rx="10"/>
+<text class="mm-node-title" x="90" y="38" text-anchor="middle">Nominal capacity</text>
+<text class="mm-node-sub" x="90" y="54" text-anchor="middle">240 hrs/week</text>
+
+<path class="mm-arrow" d="M165,60 L185,70" marker-end="url(#mm-bandwidth-arrow)"/>
+
+<rect class="mm-n2" x="188" y="60" width="150" height="50" rx="10"/>
+<text class="mm-node-title" x="263" y="82" text-anchor="middle">− Meetings/review</text>
+<text class="mm-node-sub" x="263" y="98" text-anchor="middle">-42 hrs</text>
+
+<path class="mm-arrow" d="M338,105 L358,115" marker-end="url(#mm-bandwidth-arrow)"/>
+
+<rect class="mm-n3" x="361" y="115" width="140" height="50" rx="10"/>
+<text class="mm-node-title" x="431" y="137" text-anchor="middle">− On-call</text>
+<text class="mm-node-sub" x="431" y="153" text-anchor="middle">-16 hrs</text>
+
+<path class="mm-arrow" d="M501,160 L521,170" marker-end="url(#mm-bandwidth-arrow)"/>
+
+<rect class="mm-n4" x="524" y="170" width="150" height="50" rx="10"/>
+<text class="mm-node-title" x="599" y="192" text-anchor="middle">− Onboarding ramp</text>
+<text class="mm-node-sub" x="599" y="208" text-anchor="middle">-20 hrs</text>
+
+<path class="mm-arrow" d="M599,220 C560,255 480,258 420,258" marker-end="url(#mm-bandwidth-arrow)"/>
+
+<rect class="mm-n5" x="150" y="230" width="270" height="55" rx="10"/>
+<text class="mm-node-title" x="285" y="255" text-anchor="middle">− Interviews &amp; buffer</text>
+<text class="mm-node-sub" x="285" y="271" text-anchor="middle">-29 hrs</text>
+
+<path class="mm-arrow" d="M285,285 L285,308" marker-end="url(#mm-bandwidth-arrow)"/>
+
+<rect class="mm-n6" x="165" y="310" width="240" height="60" rx="10"/>
+<text class="mm-node-title" x="285" y="336" text-anchor="middle">Effective capacity</text>
+<text class="mm-node-sub" x="285" y="352" text-anchor="middle">~133 hrs (~55%)</text>
+</svg>
+
+<p class="mental-model__caption">Nominal capacity looks fixed on paper, but meetings, on-call, code review, onboarding ramp, interviews, and an honest unplanned-work buffer each take a real bite out of it — the effective number left over is often barely half of what the headcount count implies.</p>
+</div>
+
 ## Quick Reference
 
 Plan against **effective capacity**, not headcount × hours. Effective capacity subtracts meetings, on-call, code review load, interviews, onboarding of new hires, and a realistic (not zero) buffer for unplanned work — commonly 60-75% of nominal hours for a healthy team, lower for teams carrying heavy on-call or interview load.

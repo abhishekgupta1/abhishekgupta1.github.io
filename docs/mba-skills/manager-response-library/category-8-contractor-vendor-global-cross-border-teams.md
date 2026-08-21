@@ -11,6 +11,58 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 290" role="img" aria-labelledby="mm-mrl-cat8-title mm-mrl-cat8-desc">
+<title id="mm-mrl-cat8-title">Four pressures of a global, mixed-employment team, one shared standard</title>
+<desc id="mm-mrl-cat8-desc">A global team of contractors and multiple sites faces four distinct pressures: vendor and contractor lifecycle management, timezone load without burnout, cultural gaps in communication style, and offshore-onshore trust gaps. All four converge on applying one consistent standard regardless of location or employment type.</desc>
+<defs>
+  <marker id="mm-mrl-cat8-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n3" x="15" y="100" width="150" height="64" rx="10"/>
+<text class="mm-node-title" x="90" y="127" text-anchor="middle">Global, mixed team</text>
+<text class="mm-node-sub" x="90" y="143" text-anchor="middle">contractors + multiple sites</text>
+
+<path class="mm-arrow" d="M165,110 L221,37" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M165,122 L221,101" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M165,142 L221,165" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M165,154 L221,229" marker-end="url(#mm-mrl-cat8-arrow)"/>
+
+<rect class="mm-n2" x="225" y="10" width="210" height="54" rx="10"/>
+<text class="mm-node-title" x="330" y="32" text-anchor="middle">Vendor lifecycle</text>
+<text class="mm-node-sub" x="330" y="48" text-anchor="middle">performance, offboarding</text>
+
+<rect class="mm-n4" x="225" y="74" width="210" height="54" rx="10"/>
+<text class="mm-node-title" x="330" y="96" text-anchor="middle">Timezone load</text>
+<text class="mm-node-sub" x="330" y="112" text-anchor="middle">distributed without burnout</text>
+
+<rect class="mm-n5" x="225" y="138" width="210" height="54" rx="10"/>
+<text class="mm-node-title" x="330" y="160" text-anchor="middle">Cultural style gap</text>
+<text class="mm-node-sub" x="330" y="176" text-anchor="middle">direct vs. indirect feedback</text>
+
+<rect class="mm-n6" x="225" y="202" width="210" height="54" rx="10"/>
+<text class="mm-node-title" x="330" y="224" text-anchor="middle">Site trust gap</text>
+<text class="mm-node-sub" x="330" y="240" text-anchor="middle">offshore / onshore friction</text>
+
+<path class="mm-arrow" d="M435,37 L466,120" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M435,101 L466,128" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M435,165 L466,136" marker-end="url(#mm-mrl-cat8-arrow)"/>
+<path class="mm-arrow" d="M435,229 L466,144" marker-end="url(#mm-mrl-cat8-arrow)"/>
+
+<rect class="mm-n1" x="470" y="100" width="170" height="64" rx="10"/>
+<text class="mm-node-title" x="555" y="127" text-anchor="middle">One consistent standard</text>
+<text class="mm-node-sub" x="555" y="143" text-anchor="middle">same bar, same respect</text>
+
+<text class="mm-flow-label" x="390" y="278" text-anchor="middle">location and employment type don't change the standard you hold people to</text>
+</svg>
+
+<p class="mental-model__caption">A distributed, mixed-employment team creates four distinct pressure points — managing vendors and contractors through their lifecycle, timezone load without burning anyone out, cultural gaps in how feedback gets given, and trust gaps between offshore and onshore sites — but the fix in every case is the same: apply one consistent standard, regardless of where someone sits or how they're employed.</p>
+</div>
+
 ## 36. Managing performance and deliverable quality for third-party vendors or external contractors
 
 **Core Objective**: Hold external work to the same quality bar as internal work, using the contract itself as the enforcement mechanism rather than relationship goodwill alone.

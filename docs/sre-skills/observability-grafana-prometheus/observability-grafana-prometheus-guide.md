@@ -16,6 +16,42 @@ this doc focuses on Prometheus and Grafana specifically.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-promgraf-title mm-promgraf-desc">
+<title id="mm-promgraf-title">How metrics flow from exporters to dashboards and alerts</title>
+<desc id="mm-promgraf-desc">Exporters expose metrics that Prometheus scrapes and stores, which then fans out to Alertmanager for alerting and to Grafana for dashboards and queries.</desc>
+<defs>
+  <marker id="mm-promgraf-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="90" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="110" y="118" text-anchor="middle">Exporters</text>
+<text class="mm-node-sub" x="110" y="135" text-anchor="middle">/metrics endpoints</text>
+
+<rect class="mm-n5" x="300" y="90" width="200" height="70" rx="10"/>
+<text class="mm-node-title" x="400" y="118" text-anchor="middle">Prometheus</text>
+<text class="mm-node-sub" x="400" y="135" text-anchor="middle">scrape, store, evaluate</text>
+
+<rect class="mm-n4" x="590" y="20" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="680" y="46" text-anchor="middle">Alertmanager</text>
+<text class="mm-node-sub" x="680" y="62" text-anchor="middle">dedupe &amp; route alerts</text>
+
+<rect class="mm-n2" x="590" y="160" width="180" height="60" rx="10"/>
+<text class="mm-node-title" x="680" y="186" text-anchor="middle">Grafana</text>
+<text class="mm-node-sub" x="680" y="202" text-anchor="middle">dashboards &amp; queries</text>
+
+<path class="mm-arrow" d="M200,125 L298,125" marker-end="url(#mm-promgraf-arrow)"/>
+<path class="mm-arrow" d="M500,110 L588,60" marker-end="url(#mm-promgraf-arrow)"/>
+<path class="mm-arrow" d="M500,140 L588,180" marker-end="url(#mm-promgraf-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">Prometheus sits in the middle of a pull-based pipeline: it scrapes every exporter on its own schedule, stores the result as time series, and that one store is what both Alertmanager evaluates for alerting rules and Grafana queries for every dashboard.</p>
+</div>
+
 ## 1. Where This Fits: Metrics in the Observability Stack
 
 Prometheus is the de facto standard **metrics** database and alerting engine

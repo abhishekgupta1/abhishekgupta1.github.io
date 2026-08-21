@@ -23,6 +23,40 @@ knowledge base:
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 200" role="img" aria-labelledby="mm-course-overview-title mm-course-overview-desc">
+<title id="mm-course-overview-title">This page's two derived artifacts</title>
+<desc id="mm-course-overview-desc">The course overview indexes two documents built from the same underlying lecture: the raw transcript, kept as reference, and the study guide, a synthesized version summarized from that transcript.</desc>
+<defs>
+  <marker id="mm-course-overview-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n4" x="290" y="16" width="200" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Course Overview</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">navigation map</text>
+
+<path class="mm-arrow" d="M330,72 L250,106" marker-end="url(#mm-course-overview-arrow)"/>
+<path class="mm-arrow" d="M450,72 L530,106" marker-end="url(#mm-course-overview-arrow)"/>
+
+<rect class="mm-n2" x="140" y="110" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="250" y="140" text-anchor="middle">Transcript</text>
+<text class="mm-node-sub" x="250" y="157" text-anchor="middle">raw lecture, reference</text>
+
+<rect class="mm-n1" x="420" y="110" width="220" height="70" rx="10"/>
+<text class="mm-node-title" x="530" y="140" text-anchor="middle">Study Guide</text>
+<text class="mm-node-sub" x="530" y="157" text-anchor="middle">synthesized — start here</text>
+
+<path class="mm-arrow" d="M360,145 L416,145" marker-end="url(#mm-course-overview-arrow)"/>
+<text class="mm-flow-label" x="388" y="133" text-anchor="middle">summarized into</text>
+</svg>
+
+<p class="mental-model__caption">This overview page is a map to two documents built from the same course material — the raw transcript, kept for reference, and the study guide, which summarizes that transcript into an onboarding-ready form — so start with the study guide and drop into the transcript only when you need the original wording.</p>
+</div>
+
 ## Course Index
 
 ### Section 1: Course Introduction

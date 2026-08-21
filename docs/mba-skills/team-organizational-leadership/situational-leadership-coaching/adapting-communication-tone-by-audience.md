@@ -14,6 +14,51 @@ tags: [leadership, management, mba]
 **Created**: 2026-08-18
 **Tags**: communication, tone, audience, stakeholder-management, executive-communication
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 240" role="img" aria-labelledby="mm-tone-title mm-tone-desc">
+<title id="mm-tone-title">One message, four audience-shaped framings</title>
+<desc id="mm-tone-desc">The same underlying message fans out into four different framings depending on the audience: peer managers, direct reports, stakeholders, and upper management, each with its own register.</desc>
+<defs>
+  <marker id="mm-tone-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="290" y="16" width="200" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Same message</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">one underlying fact</text>
+
+<path class="mm-arrow" d="M330,72 L95,134" marker-end="url(#mm-tone-arrow)"/>
+<path class="mm-arrow" d="M365,72 L280,134" marker-end="url(#mm-tone-arrow)"/>
+<path class="mm-arrow" d="M400,72 L475,134" marker-end="url(#mm-tone-arrow)"/>
+<path class="mm-arrow" d="M440,72 L675,134" marker-end="url(#mm-tone-arrow)"/>
+
+<rect class="mm-n3" x="10" y="138" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="95" y="164" text-anchor="middle">Peer managers</text>
+<text class="mm-node-sub" x="95" y="180" text-anchor="middle">collaborative,</text>
+<text class="mm-node-sub" x="95" y="193" text-anchor="middle">joint problem-solving</text>
+
+<rect class="mm-n2" x="195" y="138" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="280" y="164" text-anchor="middle">Direct reports</text>
+<text class="mm-node-sub" x="280" y="180" text-anchor="middle">supportive,</text>
+<text class="mm-node-sub" x="280" y="193" text-anchor="middle">open-ended</text>
+
+<rect class="mm-n4" x="390" y="138" width="170" height="66" rx="10"/>
+<text class="mm-node-title" x="475" y="164" text-anchor="middle">Stakeholders</text>
+<text class="mm-node-sub" x="475" y="180" text-anchor="middle">reassuring,</text>
+<text class="mm-node-sub" x="475" y="193" text-anchor="middle">tradeoff-explicit</text>
+
+<rect class="mm-n5" x="580" y="138" width="190" height="66" rx="10"/>
+<text class="mm-node-title" x="675" y="164" text-anchor="middle">Upper management</text>
+<text class="mm-node-sub" x="675" y="180" text-anchor="middle">concise, data-driven,</text>
+<text class="mm-node-sub" x="675" y="193" text-anchor="middle">outcome-first</text>
+</svg>
+
+<p class="mental-model__caption">The underlying facts don't change across a peer manager, a direct report, a stakeholder, and upper management — but what gets foregrounded and how much context is assumed should shift deliberately for each, or the same message either buries the signal or fails to land.</p>
+</div>
+
 ## Quick Reference
 
 The same message needs a different shape for each audience. **Peer managers**: collaborative, joint problem-solving ("How can we align our roadmaps to unblock both teams?"). **Direct reports**: supportive, developmental, open-ended ("What options are you considering, and what support do you need from me?"). **Stakeholders**: reassuring, business-translated, tradeoff-explicit ("To deliver A by next month, we adjust scope on B or accept temporary technical debt"). **Upper management**: concise, data-driven, outcome-first, solution-alongside-problem ("Project X is on track to improve latency by 20%, though we're monitoring a dependency risk").

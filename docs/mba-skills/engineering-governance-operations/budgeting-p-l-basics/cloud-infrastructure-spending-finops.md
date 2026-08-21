@@ -14,6 +14,45 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: finops, cloud-spend, cost-optimization, licenses
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 320" role="img" aria-labelledby="mm-finops-title mm-finops-desc">
+<title id="mm-finops-title">The FinOps loop: attribute, diagnose, fix, prevent</title>
+<desc id="mm-finops-desc">FinOps runs as a continuous four-step loop: attribute spend by tag, diagnose the cause of any spike, fix and quantify it, then add a guardrail to prevent recurrence, which feeds back into the next attribution pass.</desc>
+<defs>
+  <marker id="mm-finops-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="310" y="20" width="180" height="64" rx="10"/>
+<text class="mm-node-title" x="400" y="48" text-anchor="middle">Attribute spend</text>
+<text class="mm-node-sub" x="400" y="64" text-anchor="middle">tag by team/service</text>
+
+<rect class="mm-n2" x="560" y="120" width="180" height="64" rx="10"/>
+<text class="mm-node-title" x="650" y="148" text-anchor="middle">Diagnose cause</text>
+<text class="mm-node-sub" x="650" y="164" text-anchor="middle">find the recent change</text>
+
+<rect class="mm-n3" x="310" y="220" width="180" height="64" rx="10"/>
+<text class="mm-node-title" x="400" y="248" text-anchor="middle">Fix &amp; quantify</text>
+<text class="mm-node-sub" x="400" y="264" text-anchor="middle">before/after cost</text>
+
+<rect class="mm-n4" x="40" y="120" width="180" height="64" rx="10"/>
+<text class="mm-node-title" x="130" y="148" text-anchor="middle">Prevent recurrence</text>
+<text class="mm-node-sub" x="130" y="164" text-anchor="middle">add a budget alert</text>
+
+<path class="mm-arrow" d="M490,52 C560,60 610,90 650,120" marker-end="url(#mm-finops-arrow)"/>
+<path class="mm-arrow" d="M650,184 C610,220 560,240 490,252" marker-end="url(#mm-finops-arrow)"/>
+<path class="mm-arrow" d="M310,252 C230,260 160,230 130,184" marker-end="url(#mm-finops-arrow)"/>
+<path class="mm-arrow" d="M130,120 C160,70 230,40 310,52" marker-end="url(#mm-finops-arrow)"/>
+
+<text class="mm-flow-label" x="400" y="305" text-anchor="middle">most of the value is in attribution and prevention, not one-time cleanup</text>
+</svg>
+
+<p class="mental-model__caption">FinOps isn't a one-time cost-cutting exercise — it's a loop that runs every month: attribute the spend so it's traceable to a team or service, diagnose what caused any spike, fix and quantify the specific issue, then add a guardrail so the same spike catches itself next time.</p>
+</div>
+
 ## Quick Reference
 
 Treat cloud and license spend as an ongoing discipline, not an annual surprise: **tag everything** by team/service so cost is attributable, **review monthly** against budget and trend, and **right-size before you scale down** — most savings come from eliminating waste (idle resources, oversized instances, unused licenses), not from cutting things that are actually needed.

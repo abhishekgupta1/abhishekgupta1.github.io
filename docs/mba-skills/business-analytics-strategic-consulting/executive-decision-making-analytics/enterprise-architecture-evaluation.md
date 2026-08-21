@@ -14,6 +14,54 @@ tags: [business-analytics, consulting, mba]
 **Created**: 2026-08-18
 **Tags**: enterprise-architecture, DevOps-assessment, QA-assessment, process-bottlenecks, due-diligence
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-eaeval-title mm-eaeval-desc">
+<title id="mm-eaeval-title">Four lenses converging on the root bottleneck</title>
+<desc id="mm-eaeval-desc">Deployment practices, testing and QA maturity, incident response, and team structure are each assessed, and small seams connect adjacent lenses because bottlenecks usually show up between them, converging in a synthesis of the root bottleneck.</desc>
+<defs>
+  <marker id="mm-eaeval-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="10" width="210" height="55" rx="10"/>
+<text class="mm-node-title" x="125" y="33" text-anchor="middle">Deployment</text>
+<text class="mm-node-sub" x="125" y="49" text-anchor="middle">frequency, safety, automation</text>
+
+<text class="mm-flow-label" x="125" y="73" text-anchor="middle">seam</text>
+
+<rect class="mm-n2" x="20" y="78" width="210" height="55" rx="10"/>
+<text class="mm-node-title" x="125" y="101" text-anchor="middle">Testing / QA</text>
+<text class="mm-node-sub" x="125" y="117" text-anchor="middle">coverage, flakiness</text>
+
+<text class="mm-flow-label" x="125" y="141" text-anchor="middle">seam</text>
+
+<rect class="mm-n4" x="20" y="146" width="210" height="55" rx="10"/>
+<text class="mm-node-title" x="125" y="169" text-anchor="middle">Incident response</text>
+<text class="mm-node-sub" x="125" y="185" text-anchor="middle">detection, resolution time</text>
+
+<text class="mm-flow-label" x="125" y="209" text-anchor="middle">seam</text>
+
+<rect class="mm-n5" x="20" y="214" width="210" height="55" rx="10"/>
+<text class="mm-node-title" x="125" y="237" text-anchor="middle">Team structure</text>
+<text class="mm-node-sub" x="125" y="253" text-anchor="middle">ownership clarity</text>
+
+<path class="mm-arrow" d="M230,37 L580,140" marker-end="url(#mm-eaeval-arrow)"/>
+<path class="mm-arrow" d="M230,105 L580,148" marker-end="url(#mm-eaeval-arrow)"/>
+<path class="mm-arrow" d="M230,173 L580,162" marker-end="url(#mm-eaeval-arrow)"/>
+<path class="mm-arrow" d="M230,241 L580,170" marker-end="url(#mm-eaeval-arrow)"/>
+
+<rect class="mm-n3" x="580" y="120" width="180" height="70" rx="10"/>
+<text class="mm-node-title" x="670" y="150" text-anchor="middle">Root bottleneck</text>
+<text class="mm-node-sub" x="670" y="166" text-anchor="middle">found at the seams,</text>
+<text class="mm-node-sub" x="670" y="179" text-anchor="middle">not within one lens</text>
+</svg>
+
+<p class="mental-model__caption">Each lens is assessed with objective evidence on its own, but the most consequential findings live at the seams between them — unclear ownership forcing coordination into every deploy, or missing test automation slowing the whole release cycle — so the synthesis step connects the four lenses rather than scoring each in isolation.</p>
+</div>
+
 ## Quick Reference
 
 Evaluate a company's engineering operations across four lenses: **deployment practices** (how often, how safely, how automated), **testing/QA maturity** (coverage, flakiness, manual vs. automated), **incident response** (detection time, resolution time, postmortem discipline), and **team structure/ownership** (is ownership clear, or is everything tangled). Bottlenecks usually show up at the seams between these, not within any single one.

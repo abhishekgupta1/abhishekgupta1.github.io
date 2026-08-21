@@ -13,6 +13,51 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 210" role="img" aria-labelledby="mm-linuxfs-title mm-linuxfs-desc">
+<title id="mm-linuxfs-title">The Linux filesystem as one rooted tree</title>
+<desc id="mm-linuxfs-desc">Everything on a Linux host hangs off a single root directory, with config, logs, live kernel state, temporary files, and user data each in their own conventional branch.</desc>
+<defs>
+  <marker id="mm-linuxfs-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="320" y="14" width="140" height="50" rx="10"/>
+<text class="mm-node-title" x="390" y="44" text-anchor="middle">/ (root)</text>
+
+<path class="mm-arrow" d="M340,64 L95,116" marker-end="url(#mm-linuxfs-arrow)"/>
+<path class="mm-arrow" d="M365,64 L240,116" marker-end="url(#mm-linuxfs-arrow)"/>
+<path class="mm-arrow" d="M390,64 L390,116" marker-end="url(#mm-linuxfs-arrow)"/>
+<path class="mm-arrow" d="M415,64 L540,116" marker-end="url(#mm-linuxfs-arrow)"/>
+<path class="mm-arrow" d="M440,64 L685,116" marker-end="url(#mm-linuxfs-arrow)"/>
+
+<rect class="mm-n1" x="20" y="120" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="90" y="150" text-anchor="middle">/etc</text>
+<text class="mm-node-sub" x="90" y="167" text-anchor="middle">config files</text>
+
+<rect class="mm-n2" x="170" y="120" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="240" y="150" text-anchor="middle">/var</text>
+<text class="mm-node-sub" x="240" y="167" text-anchor="middle">logs, spool</text>
+
+<rect class="mm-n3" x="320" y="120" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="390" y="150" text-anchor="middle">/proc</text>
+<text class="mm-node-sub" x="390" y="167" text-anchor="middle">live kernel state</text>
+
+<rect class="mm-n4" x="470" y="120" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="540" y="150" text-anchor="middle">/tmp</text>
+<text class="mm-node-sub" x="540" y="167" text-anchor="middle">ephemeral</text>
+
+<rect class="mm-n6" x="620" y="120" width="140" height="70" rx="10"/>
+<text class="mm-node-title" x="690" y="150" text-anchor="middle">/home</text>
+<text class="mm-node-sub" x="690" y="167" text-anchor="middle">user directories</text>
+</svg>
+
+<p class="mental-model__caption">There is no drive-letter concept — everything lives under one root, and knowing which conventional branch a thing lives in is most of what it takes to navigate an unfamiliar box fast: config in /etc, logs in /var, live kernel/process data in /proc, throwaway files in /tmp.</p>
+</div>
+
 ## 1. The Filesystem Hierarchy
 
 Linux presents a single unified tree rooted at `/` — no drive letters;

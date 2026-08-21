@@ -15,6 +15,47 @@ tags: [sre, devops, interview, scenarios, aws, kubernetes, incident-response]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 260" role="img" aria-labelledby="mm-devopsq-title mm-devopsq-desc">
+<title id="mm-devopsq-title">Four practice domains, one evaluation signal</title>
+<desc id="mm-devopsq-desc">Interview prep spans Linux troubleshooting, combined AWS and Linux incidents, Kubernetes scenarios, and a 15-pattern incident catalog, all ultimately judged by the same signal: structured, calm, evidence-driven troubleshooting.</desc>
+<defs>
+  <marker id="mm-devopsq-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="20" y="20" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="105" y="52" text-anchor="middle">Linux Scenarios</text>
+<text class="mm-node-sub" x="105" y="69" text-anchor="middle">core troubleshooting</text>
+
+<rect class="mm-n2" x="205" y="20" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="290" y="52" text-anchor="middle">AWS + Linux</text>
+<text class="mm-node-sub" x="290" y="69" text-anchor="middle">combined incidents</text>
+
+<rect class="mm-n3" x="390" y="20" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="475" y="52" text-anchor="middle">Kubernetes</text>
+<text class="mm-node-sub" x="475" y="69" text-anchor="middle">pod / cluster failures</text>
+
+<rect class="mm-n4" x="575" y="20" width="170" height="70" rx="10"/>
+<text class="mm-node-title" x="660" y="45" text-anchor="middle">Incident Pattern</text>
+<text class="mm-node-sub" x="660" y="61" text-anchor="middle">15-pattern catalog</text>
+
+<path class="mm-arrow" d="M105,90 L330,175" marker-end="url(#mm-devopsq-arrow)"/>
+<path class="mm-arrow" d="M290,90 L365,175" marker-end="url(#mm-devopsq-arrow)"/>
+<path class="mm-arrow" d="M475,90 L415,175" marker-end="url(#mm-devopsq-arrow)"/>
+<path class="mm-arrow" d="M660,90 L450,175" marker-end="url(#mm-devopsq-arrow)"/>
+
+<rect class="mm-n5" x="240" y="175" width="300" height="60" rx="10"/>
+<text class="mm-node-title" x="390" y="200" text-anchor="middle">What Interviewers Look For</text>
+<text class="mm-node-sub" x="390" y="217" text-anchor="middle">stabilize, evidence, priority, communication</text>
+</svg>
+
+<p class="mental-model__caption">The four practice domains here — Linux, AWS+Linux, Kubernetes, and the broader incident-pattern catalog — are just different surfaces for testing the same underlying signal: can you stabilize first, reason from evidence, prioritize correctly, and communicate clearly under pressure.</p>
+</div>
+
 ## 🚀 DevOps / SRE Scenario-Based Interview Q&A
 
 ### 1️⃣ Production API Latency Suddenly Increased

@@ -11,6 +11,43 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 280" role="img" aria-labelledby="mm-c7-title mm-c7-desc">
+<title id="mm-c7-title">AI testing tools stay inside a human-verified loop</title>
+<desc id="mm-c7-desc">An AI-generated test or locator goes through a human review gate, gets merged and piloted on a low-risk suite, and its outcomes are monitored for false positives and negatives before the cycle repeats and trust expands.</desc>
+<defs>
+  <marker id="mm-c7-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n4" x="60" y="30" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="155" y="60" text-anchor="middle">AI generates test</text>
+<text class="mm-node-sub" x="155" y="77" text-anchor="middle">locator, script, case</text>
+
+<rect class="mm-n2" x="520" y="30" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="620" y="60" text-anchor="middle">Human review gate</text>
+<text class="mm-node-sub" x="620" y="77" text-anchor="middle">same rigor as any PR</text>
+
+<rect class="mm-n3" x="520" y="190" width="200" height="60" rx="10"/>
+<text class="mm-node-title" x="620" y="220" text-anchor="middle">Merge &amp; pilot</text>
+<text class="mm-node-sub" x="620" y="237" text-anchor="middle">low-risk suite first</text>
+
+<rect class="mm-n5" x="60" y="190" width="190" height="60" rx="10"/>
+<text class="mm-node-title" x="155" y="220" text-anchor="middle">Monitor outcomes</text>
+<text class="mm-node-sub" x="155" y="237" text-anchor="middle">false pos/neg tracked</text>
+
+<path class="mm-arrow" d="M250,60 L520,60" marker-end="url(#mm-c7-arrow)"/>
+<path class="mm-arrow" d="M620,90 L620,190" marker-end="url(#mm-c7-arrow)"/>
+<path class="mm-arrow" d="M520,220 L250,220" marker-end="url(#mm-c7-arrow)"/>
+<path class="mm-arrow" d="M155,190 L155,90" marker-end="url(#mm-c7-arrow)"/>
+</svg>
+
+<p class="mental-model__caption">AI testing tools accelerate the loop but never replace it — a generated test or self-healing locator still goes through the same human review as any other code, gets merged and piloted on a lower-risk suite, and its real-world outcomes get monitored before the team trusts it more broadly.</p>
+</div>
+
 ## 61. Evaluating and onboarding Generative AI testing tools (e.g., self-healing locator scripts, AI test generators) safely
 
 **Core Objective**: Get real productivity gains from AI testing tools without blindly trusting output that needs the same scrutiny as any other generated code.

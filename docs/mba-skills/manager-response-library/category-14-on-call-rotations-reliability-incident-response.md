@@ -11,6 +11,49 @@ tags: [management, playbook, mba]
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 300" role="img" aria-labelledby="mm-oncall-title mm-oncall-desc">
+<title id="mm-oncall-title">The reliability loop behind every on-call scenario</title>
+<desc id="mm-oncall-desc">A four-step loop - pages fire, triage and tune the noisy ones, fix the root cause as real roadmap work, and track page volume as a metric - repeats continuously to reduce alert burden, and the same loop underlies related situations like on-call refusal, customer-facing data incidents, tooling investment, and legacy release pipelines.</desc>
+<defs>
+  <marker id="mm-oncall-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n1" x="295" y="10" width="190" height="64" rx="10"/>
+<text class="mm-node-title" x="390" y="36" text-anchor="middle">Pages fire</text>
+<text class="mm-node-sub" x="390" y="52" text-anchor="middle">off-hours alerts, prod fires</text>
+
+<path class="mm-arrow" d="M485,42 L595,110" marker-end="url(#mm-oncall-arrow)"/>
+
+<rect class="mm-n2" x="560" y="118" width="190" height="64" rx="10"/>
+<text class="mm-node-title" x="655" y="144" text-anchor="middle">Triage &amp; tune</text>
+<text class="mm-node-sub" x="655" y="160" text-anchor="middle">cut low-signal noise</text>
+
+<path class="mm-arrow" d="M655,182 L485,232" marker-end="url(#mm-oncall-arrow)"/>
+
+<rect class="mm-n3" x="295" y="226" width="190" height="64" rx="10"/>
+<text class="mm-node-title" x="390" y="252" text-anchor="middle">Fix root cause</text>
+<text class="mm-node-sub" x="390" y="268" text-anchor="middle">real roadmap priority</text>
+
+<path class="mm-arrow" d="M295,232 L185,182" marker-end="url(#mm-oncall-arrow)"/>
+
+<rect class="mm-n4" x="30" y="118" width="190" height="64" rx="10"/>
+<text class="mm-node-title" x="125" y="144" text-anchor="middle">Track page volume</text>
+<text class="mm-node-sub" x="125" y="160" text-anchor="middle">ongoing reliability metric</text>
+
+<path class="mm-arrow" d="M125,118 L295,46" marker-end="url(#mm-oncall-arrow)"/>
+
+<text class="mm-flow-label" x="390" y="153" text-anchor="middle">reduce the burden,</text>
+<text class="mm-flow-label" x="390" y="167" text-anchor="middle">don't just endure it</text>
+</svg>
+
+<p class="mental-model__caption">Every on-call and reliability scenario runs the same loop: pages fire, get triaged and tuned, their root causes get fixed as real roadmap work, and page volume gets tracked as an ongoing metric - the same discipline that also underlies on-call refusal, customer-facing data incidents, tooling investment, and legacy release pipelines.</p>
+</div>
+
 ## 66. Managing high team anxiety and fatigue caused by frequent off-hours PagerDuty alerts and production fires
 
 **Core Objective**: Reduce the actual alert burden, not just the complaints about it — treat high page volume as a system health signal to fix, not an inconvenience to tolerate.

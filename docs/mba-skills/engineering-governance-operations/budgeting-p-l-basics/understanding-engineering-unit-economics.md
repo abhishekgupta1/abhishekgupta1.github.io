@@ -14,6 +14,54 @@ tags: [engineering-management, operations, mba]
 **Created**: 2026-08-18
 **Tags**: unit-economics, finance, budgeting, cost-per-output
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 330" role="img" aria-labelledby="mm-unitecon-title mm-unitecon-desc">
+<title id="mm-unitecon-title">Two cost inputs collapsed into two business ratios</title>
+<desc id="mm-unitecon-desc">Fully-loaded headcount cost and infrastructure cost combine into total team cost, which is then divided by business output to produce cost as a percentage of revenue and cost per transaction.</desc>
+<defs>
+  <marker id="mm-unitecon-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n2" x="40" y="15" width="220" height="55" rx="10"/>
+<text class="mm-node-title" x="150" y="40" text-anchor="middle">Headcount cost</text>
+<text class="mm-node-sub" x="150" y="56" text-anchor="middle">salary × 1.3-1.5x loaded</text>
+
+<rect class="mm-n4" x="520" y="15" width="220" height="55" rx="10"/>
+<text class="mm-node-title" x="630" y="40" text-anchor="middle">Infra cost</text>
+<text class="mm-node-sub" x="630" y="56" text-anchor="middle">cloud + licenses</text>
+
+<path class="mm-arrow" d="M180,70 C220,80 260,85 340,95" marker-end="url(#mm-unitecon-arrow)"/>
+<path class="mm-arrow" d="M600,70 C560,80 520,85 440,95" marker-end="url(#mm-unitecon-arrow)"/>
+
+<rect class="mm-n3" x="290" y="95" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="120" text-anchor="middle">Total team cost</text>
+<text class="mm-node-sub" x="390" y="136" text-anchor="middle">e.g. $2.6M/year</text>
+
+<path class="mm-arrow" d="M390,150 L390,173" marker-end="url(#mm-unitecon-arrow)"/>
+
+<rect class="mm-n5" x="290" y="175" width="200" height="55" rx="10"/>
+<text class="mm-node-title" x="390" y="200" text-anchor="middle">÷ business output</text>
+<text class="mm-node-sub" x="390" y="216" text-anchor="middle">revenue or transactions</text>
+
+<path class="mm-arrow" d="M330,230 C270,245 220,250 190,255" marker-end="url(#mm-unitecon-arrow)"/>
+<path class="mm-arrow" d="M450,230 C520,245 570,250 610,255" marker-end="url(#mm-unitecon-arrow)"/>
+
+<rect class="mm-n1" x="60" y="255" width="260" height="55" rx="10"/>
+<text class="mm-node-title" x="190" y="280" text-anchor="middle">% of revenue</text>
+<text class="mm-node-sub" x="190" y="296" text-anchor="middle">52%, trending down</text>
+
+<rect class="mm-n6" x="460" y="255" width="260" height="55" rx="10"/>
+<text class="mm-node-title" x="590" y="280" text-anchor="middle">Cost / transaction</text>
+<text class="mm-node-sub" x="590" y="296" text-anchor="middle">$0.26, trending to $0.20</text>
+</svg>
+
+<p class="mental-model__caption">Unit economics is a two-stage funnel — headcount and infrastructure cost first combine into one total, and that total is then divided by a business output to produce the ratios finance actually compares against benchmarks, quarter over quarter.</p>
+</div>
+
 ## Quick Reference
 
 Know your team's **fully-loaded cost** (salary + benefits + overhead, roughly 1.3-1.5x base salary) and connect it to a business unit of output — cost per customer served, cost per transaction processed, or cost as a percentage of revenue for the product the team supports. This is the language finance and leadership use to evaluate every other function; engineering needs to speak it too, or its budget gets evaluated by someone else's guesswork.

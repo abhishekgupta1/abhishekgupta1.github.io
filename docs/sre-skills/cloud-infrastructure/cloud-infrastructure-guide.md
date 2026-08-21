@@ -22,6 +22,52 @@ is organized around those five ideas.
 
 ---
 
+<div class="mental-model">
+<span class="mental-model__label">🧭 Mental model</span>
+
+<svg viewBox="0 0 780 220" role="img" aria-labelledby="mm-cloudinfra-title mm-cloudinfra-desc">
+<title id="mm-cloudinfra-title">The five ideas cloud infrastructure design is organized around</title>
+<desc id="mm-cloudinfra-desc">Cloud infrastructure design fans out into five recurring concerns: failure domains, blast radius, RTO and RPO, stateless versus stateful, and cost per unit of reliability.</desc>
+<defs>
+  <marker id="mm-cloudinfra-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" class="mm-arrowhead"/>
+  </marker>
+</defs>
+
+<rect class="mm-n5" x="270" y="16" width="240" height="56" rx="10"/>
+<text class="mm-node-title" x="390" y="40" text-anchor="middle">Infrastructure Design</text>
+<text class="mm-node-sub" x="390" y="56" text-anchor="middle">provider-agnostic patterns</text>
+
+<path class="mm-arrow" d="M320,72 L110,134" marker-end="url(#mm-cloudinfra-arrow)"/>
+<path class="mm-arrow" d="M355,72 L255,134" marker-end="url(#mm-cloudinfra-arrow)"/>
+<path class="mm-arrow" d="M390,72 L390,134" marker-end="url(#mm-cloudinfra-arrow)"/>
+<path class="mm-arrow" d="M425,72 L535,134" marker-end="url(#mm-cloudinfra-arrow)"/>
+<path class="mm-arrow" d="M460,72 L680,134" marker-end="url(#mm-cloudinfra-arrow)"/>
+
+<rect class="mm-n1" x="20" y="138" width="150" height="66" rx="10"/>
+<text class="mm-node-title" x="95" y="166" text-anchor="middle">Failure Domains</text>
+<text class="mm-node-sub" x="95" y="182" text-anchor="middle">what fails together</text>
+
+<rect class="mm-n2" x="180" y="138" width="150" height="66" rx="10"/>
+<text class="mm-node-title" x="255" y="166" text-anchor="middle">Blast Radius</text>
+<text class="mm-node-sub" x="255" y="182" text-anchor="middle">how much breaks</text>
+
+<rect class="mm-n3" x="340" y="138" width="100" height="66" rx="10"/>
+<text class="mm-node-title" x="390" y="166" text-anchor="middle">RTO / RPO</text>
+<text class="mm-node-sub" x="390" y="182" text-anchor="middle">recovery targets</text>
+
+<rect class="mm-n4" x="460" y="138" width="150" height="66" rx="10"/>
+<text class="mm-node-title" x="535" y="166" text-anchor="middle">Stateless vs.</text>
+<text class="mm-node-sub" x="535" y="182" text-anchor="middle">Stateful</text>
+
+<rect class="mm-n6" x="620" y="138" width="150" height="66" rx="10"/>
+<text class="mm-node-title" x="695" y="166" text-anchor="middle">Cost per</text>
+<text class="mm-node-sub" x="695" y="182" text-anchor="middle">reliability unit</text>
+</svg>
+
+<p class="mental-model__caption">Senior infrastructure design decisions all trace back to one of these five questions, regardless of which cloud provider's console you're looking at — the primitives are the same, only the names change.</p>
+</div>
+
 ## 1. High Availability Design
 
 **Availability Zones (AZs)** are isolated physical locations within a
