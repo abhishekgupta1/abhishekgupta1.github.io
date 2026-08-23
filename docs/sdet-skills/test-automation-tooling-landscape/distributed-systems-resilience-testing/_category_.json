@@ -1,0 +1,8 @@
+{
+  "label": "Distributed Systems & Resilience Testing",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Messaging/event systems, distributed and microservices testing, and chaos engineering — validating systems that fail in production, on purpose, in a controlled way."
+  }
+}

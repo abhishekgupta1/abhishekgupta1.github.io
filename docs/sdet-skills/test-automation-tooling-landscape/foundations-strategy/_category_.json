@@ -1,0 +1,8 @@
+{
+  "label": "Foundations & Strategy",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "The conceptual layer underneath every tool choice in this domain — what test automation is, how the pyramid shapes investment, and how continuous/shift-left/shift-right/quality-gate practices turn individual tests into an organizational strategy."
+  }
+}

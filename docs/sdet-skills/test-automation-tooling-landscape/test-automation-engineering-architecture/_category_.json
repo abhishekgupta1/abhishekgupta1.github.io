@@ -1,0 +1,8 @@
+{
+  "label": "Test Automation Engineering & Architecture",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Framework architecture, design patterns, platform engineering, and how to actually choose between tools."
+  }
+}

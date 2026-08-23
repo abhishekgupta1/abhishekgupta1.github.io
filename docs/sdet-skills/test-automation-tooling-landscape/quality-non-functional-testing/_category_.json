@@ -1,0 +1,8 @@
+{
+  "label": "Quality & Non-Functional Testing",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Performance, load, stress, scalability, visual regression, accessibility, security, and database testing — the \"works, but is it good\" layer."
+  }
+}

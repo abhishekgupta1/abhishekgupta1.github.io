@@ -1,0 +1,8 @@
+{
+  "label": "Observability & Test Governance",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Proving reliability with telemetry, and making test results legible to a team and to leadership."
+  }
+}

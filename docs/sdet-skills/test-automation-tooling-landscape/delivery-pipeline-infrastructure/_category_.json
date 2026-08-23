@@ -1,0 +1,8 @@
+{
+  "label": "Delivery Pipeline & Infrastructure",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "CI/CD, infrastructure, IaC, cloud, and Kubernetes testing — where automation meets the path to production."
+  }
+}
