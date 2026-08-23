@@ -42,3 +42,18 @@ reliability:
   label: Reliability
   permalink: /reliability
   description: Building and maintaining reliable systems
+
+engineering-management:
+  label: Engineering Management
+  permalink: /engineering-management
+  description: EM frameworks, team operations, and leadership growth
+
+leadership:
+  label: Leadership
+  permalink: /leadership
+  description: Leading engineering teams and organizations
+
+career:
+  label: Career
+  permalink: /career
+  description: Career growth, paths, and decision-making for engineers
