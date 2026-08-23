@@ -84,7 +84,7 @@ If shift-left moves testing earlier, shift-right moves it later — deliberately
 
 Synthetic smoke tests + canary analysis in the deployment pipeline, [Chaos & Resilience Testing](../distributed-systems-resilience-testing/chaos-resilience-testing.md) on a schedule, and [Observability-Driven Testing](../observability-test-governance/observability-driven-testing.md) (OpenTelemetry/Prometheus/Grafana) as the backbone all of it reads from.
 
-## Key Takeaways
+## Summary
 
 - 💡 Shift-right exists because pre-production environments cannot fully replicate production's scale, traffic patterns, or data
 - 🔥 Canary releases turn "did the deploy work" into a gradual, measured question instead of an all-or-nothing bet

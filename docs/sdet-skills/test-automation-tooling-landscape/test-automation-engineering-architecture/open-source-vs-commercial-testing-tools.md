@@ -81,7 +81,7 @@ Nearly every category in this domain has both open-source and commercial options
 
 Default to open source (Playwright, Testcontainers, k6, OpenTelemetry, Prometheus, Grafana, LitmusChaos) for engine-level tooling given team capacity to operate it; layer in commercial tools (Applitools, BrowserStack, Datadog) specifically where the managed experience or specialized capability has proven ROI over the free alternative — see [Tool Selection & Evaluation](./test-tool-selection-evaluation.md) for the decision framework.
 
-## Key Takeaways
+## Summary
 
 - 💡 "Free" isn't the same as "cheap" — an open-source tool that requires significant engineering time to operate can cost more in TCO than a commercial alternative, depending on team size and capacity
 - 🔥 Commercial tools earn their cost specifically where they solve a problem open source solves poorly — Applitools' Visual AI reducing false positives, or a device farm's hardware you'd rather not own

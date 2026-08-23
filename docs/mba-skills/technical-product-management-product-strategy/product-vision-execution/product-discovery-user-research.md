@@ -96,7 +96,7 @@ Persona implication: this points to a specific segment (technical
 
 The repeated, unprompted signal (6 of 8, without being asked directly about integrations) is the real finding — the two individual complaints are noise, not a second problem to chase.
 
-## Key Takeaways
+## Summary
 
 - 💡 Ask about the last specific instance, not general opinion — "tell me about the last time this happened" produces concrete, honest detail; "do you usually struggle with X" invites a vague, agreeable answer
 - 🔥 Weight unprompted, repeated mentions far above anything said only in response to a direct, leading question — the former is real signal, the latter is often just politeness

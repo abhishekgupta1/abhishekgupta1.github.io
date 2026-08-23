@@ -78,7 +78,7 @@ The "left" refers to the traditional left-to-right timeline (design → code →
 
 Unit tests (Jest/Pytest/JUnit) and component tests owned by developers, SAST (Semgrep) and SCA (Snyk/OWASP Dependency-Check) on every PR, contract tests (Pact) before shared environments are needed — see [Security Testing](../quality-non-functional-testing/security-testing.md) and [Contract Testing](../functional-test-automation/contract-testing.md).
 
-## Key Takeaways
+## Summary
 
 - 💡 Shift-left is a cost curve argument, not a philosophy — the earlier a defect is caught, the cheaper it is to fix
 - 🔥 Making unit and component testing a developer default (not a QA handoff) is the single highest-leverage shift-left move most teams can make

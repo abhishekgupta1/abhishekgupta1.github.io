@@ -92,7 +92,7 @@ Strong version (conclusion, impact, ask):
   with detail available on request rather than delivered by default.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Lead with the conclusion, not the reasoning that led to it — executives can ask for the reasoning if they want it; they can't un-hear ten minutes of buildup to get to a point they needed thirty seconds in
 - 🔥 Translate every technical term into its business consequence — "fault tolerance" becomes "risk of an outage," "technical debt" becomes "this makes changes here slower and riskier" — the translation, not the term, is what the audience needs

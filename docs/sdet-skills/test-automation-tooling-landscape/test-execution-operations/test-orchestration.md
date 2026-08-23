@@ -88,7 +88,7 @@ A single team running a single test framework locally doesn't need orchestration
 
 Most teams' CI/CD platform (GitLab CI/GitHub Actions) is sufficient orchestration until test framework and environment diversity genuinely outgrows it; Testkube for Kubernetes-native teams wanting centralized, in-cluster test execution across multiple frameworks; Argo Workflows for complex, DAG-based execution logic beyond simple sequential/parallel CI stages.
 
-## Key Takeaways
+## Summary
 
 - 💡 Orchestration is a scaling problem, not a starting-point problem — most teams don't need a dedicated orchestration tool until multiple frameworks and environments genuinely require centralized coordination
 - 🔥 Testkube's value proposition is specifically running heterogeneous test frameworks (not just one) as first-class Kubernetes jobs with unified results — a single-framework team gets little from it beyond what their CI platform already provides

@@ -90,7 +90,7 @@ Kubernetes introduces a distinct testing surface beyond application logic: corre
 
 kubeconform + kube-score (or Polaris) as fast, PR-blocking manifest validation; `helm test` and scripted `kubectl` checks as the first line of post-deploy verification; Testkube once test execution volume across a team justifies centralized, in-cluster orchestration; kube-bench on a schedule for security posture; LitmusChaos/Chaos Mesh for resilience validation — see [Chaos & Resilience Testing](../distributed-systems-resilience-testing/chaos-resilience-testing.md).
 
-## Key Takeaways
+## Summary
 
 - 💡 Manifest validation (kubeconform, kube-score) is the cheapest, fastest Kubernetes testing investment available — it catches a meaningful class of misconfiguration before anything is ever deployed
 - 🔥 A liveness/readiness probe misconfiguration is one of the most common, highest-impact Kubernetes bugs — it causes either premature restarts or traffic sent to unready pods, and it's entirely catchable with static analysis (kube-score/Polaris) before deploy

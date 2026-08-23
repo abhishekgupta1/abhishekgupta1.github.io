@@ -77,7 +77,7 @@ A microservices architecture trades a monolith's in-process function calls for n
 
 Unit/component tests per service, Pact for cross-service contract verification, Testcontainers for each service's own real dependencies, and mesh-level testing (verifying Istio/Envoy routing and resilience policies) as a distinct concern from application-level testing — see [Microservices Testing Architecture](../test-automation-tools-technology-landscape.md#21-test-automation-architecture) for how these compose.
 
-## Key Takeaways
+## Summary
 
 - 💡 Microservices shift risk from "one team's code" to "the compatibility of many teams' independently-deployed code" — contract testing exists specifically to make that risk visible before it reaches production
 - 🔥 A service mesh (Istio/Envoy) adds a genuinely new testable layer — traffic routing, retries, and circuit breakers are now configuration, not code, and configuration needs verification too

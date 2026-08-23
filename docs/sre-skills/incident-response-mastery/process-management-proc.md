@@ -407,7 +407,7 @@ Check `/proc/<pid>/limits` and count `/proc/<pid>/fd`.
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 A running process is not a healthy process — always check state (`D`/`Z`/`R`), not just existence.
 - 🔥 `/proc/<pid>/limits` + `/proc/<pid>/fd` is the fastest way to confirm FD exhaustion before it becomes an outage.

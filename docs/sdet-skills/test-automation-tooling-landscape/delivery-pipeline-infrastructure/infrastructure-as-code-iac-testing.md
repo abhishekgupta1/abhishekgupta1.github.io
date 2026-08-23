@@ -86,7 +86,7 @@ IaC testing validates infrastructure-as-code (Terraform, CloudFormation, CDK) th
 
 **TFLint + Checkov (or tfsec)** as a fast, PR-blocking static gate; **Terratest** for the modules that matter most — shared/reusable modules, anything provisioning security-sensitive resources — run against a real throwaway environment; **LocalStack** where a full `apply` against real cloud infrastructure is too slow or costly for the feedback loop needed.
 
-## Key Takeaways
+## Summary
 
 - 💡 Static analysis and real-apply testing catch different bug classes — Checkov/TFLint/tfsec catch known-bad patterns, Terratest catches "the plan looked fine but the actual deployed resource doesn't behave as expected"
 - 🔥 Testing a shared/reusable Terraform module with the same rigor as a shared code library is non-negotiable once more than one team consumes it

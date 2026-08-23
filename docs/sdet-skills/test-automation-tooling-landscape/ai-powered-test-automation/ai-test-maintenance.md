@@ -81,7 +81,7 @@ As an application evolves, tests break for reasons unrelated to real bugs — a 
 
 Self-healing platforms (Mabl, Testim, Autify) specifically for UI suites with high cosmetic churn; Applitools for visual-diff noise reduction; coding-agent-assisted assertion review for suites the team wants to keep fully owned and readable rather than delegated to a platform's internal healing logic.
 
-## Key Takeaways
+## Summary
 
 - 💡 Self-healing solves cosmetic churn (a renamed class, a reordered element) well — it does not solve "did the application's actual behavior change correctly"
 - 🔥 A healed locator that silently points at the wrong element produces a false sense of coverage that's worse than an honest test failure, because nobody investigates a still-green test

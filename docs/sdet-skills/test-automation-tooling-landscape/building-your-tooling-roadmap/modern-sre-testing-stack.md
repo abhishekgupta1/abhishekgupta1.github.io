@@ -80,7 +80,7 @@ Where a modern SDET stack ([Modern SDET Technology Stack](./modern-sdet-technolo
 
 Prometheus/Grafana/OpenTelemetry as the observability backbone (shared with the SDET stack, but operated continuously rather than invoked per test run); PagerDuty or equivalent for incident response; Terraform for infrastructure-as-code ownership at production scale; recurring chaos game days (not one-off experiments) as standing SRE practice.
 
-## Key Takeaways
+## Summary
 
 - 💡 The SRE stack largely reuses the same underlying tools as the SDET stack (Prometheus, Grafana, OpenTelemetry, Terraform, chaos tooling) — the difference is operational cadence and stakes, not a different toolset entirely
 - 🔥 SLOs and error budgets are the SRE-native version of a test assertion — the same "define correct, verify continuously" instinct applied to the live system's reliability target

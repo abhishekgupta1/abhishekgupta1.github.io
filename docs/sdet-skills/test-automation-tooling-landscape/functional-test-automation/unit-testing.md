@@ -81,7 +81,7 @@ A unit test exercises one unit of logic with all external dependencies stubbed, 
 
 Match the framework to the language already in production: Jest or Vitest for JS/TS, Pytest for Python, JUnit 5 for Java, xUnit for .NET — cross-language unit testing defeats the tight feedback loop unit tests exist to provide.
 
-## Key Takeaways
+## Summary
 
 - 💡 Unit tests are a developer responsibility by default — an SDET's job is enabling and extending that practice, not being the sole author of it
 - 🔥 Vitest is increasingly the default for new Vite-based frontend projects given near drop-in Jest compatibility with meaningfully faster execution

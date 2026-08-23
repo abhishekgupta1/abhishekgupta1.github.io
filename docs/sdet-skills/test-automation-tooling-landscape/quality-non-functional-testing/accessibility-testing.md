@@ -78,7 +78,7 @@ Accessibility testing checks whether an interface can actually be used by people
 
 Integrate **axe-core directly into the existing Playwright E2E suite** (via `@axe-core/playwright`) so accessibility assertions run on every page the suite already visits, at effectively zero extra infrastructure cost. Use **Lighthouse** in CI as a lightweight secondary signal (it also covers performance and SEO in the same run) and reserve a **manual pass with actual assistive technology** (VoiceOver, NVDA, keyboard-only) for critical flows before major releases — automated coverage catches roughly a third to half of WCAG success criteria; the rest genuinely requires a human.
 
-## Key Takeaways
+## Summary
 
 - 💡 axe-core powers a large share of the accessibility tooling ecosystem (Lighthouse's a11y audit uses it under the hood) — learning it once transfers directly to understanding most other tools' output
 - 🔥 Integrating axe checks into an existing Playwright/Selenium suite costs almost nothing incrementally — the browser session and page navigation are already happening; you're just adding an assertion

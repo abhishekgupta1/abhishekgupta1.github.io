@@ -83,7 +83,7 @@ A single test failure can require checking logs, a screenshot, a stack trace, an
 
 ReportPortal for automated, ongoing failure classification integrated into the reporting pipeline; a coding agent (Claude Code) for ad hoc, deep-dive analysis of a specific complex failure pulling together logs/traces/screenshots the agent can access directly.
 
-## Key Takeaways
+## Summary
 
 - 💡 This is one of the highest-value, lowest-risk current AI testing applications — it doesn't change test behavior, it accelerates triage, and a human still makes the final call
 - 🔥 Correlating multiple signal types (logs + trace + screenshot) in one pass is exactly the kind of synthesis work that's slow for a human doing it manually across separate tools, and fast for a model with access to all of them at once

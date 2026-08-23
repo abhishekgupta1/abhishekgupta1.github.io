@@ -93,7 +93,7 @@ The classic four-layer pyramid has expanded in modern systems to include compone
 
 The pyramid isn't tool-specific, but a modern default stack maps cleanly onto it: unit (Jest/Pytest/JUnit) → API (Playwright API/REST Assured) → integration (Testcontainers) → E2E (Playwright/Selenium). See [Modern SDET Technology Stack](../building-your-tooling-roadmap/modern-sdet-technology-stack.md).
 
-## Key Takeaways
+## Summary
 
 - 💡 The pyramid's shape describes cost and stability, not "how many of these tests are worth writing overall"
 - 🔥 Push each verification down to the cheapest layer that can actually catch the bug — a missing null check belongs in a unit test, not an E2E click-through

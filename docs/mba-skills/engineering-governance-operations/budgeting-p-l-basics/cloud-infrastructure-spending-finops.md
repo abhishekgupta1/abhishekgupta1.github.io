@@ -95,7 +95,7 @@ Step 4 — Prevent recurrence
 
 Note the pattern: attribute → diagnose → fix → prevent recurrence. Most FinOps value comes from steps 1 and 4 — visibility and guardrails — not from one-time heroic cost-cutting efforts.
 
-## Key Takeaways
+## Summary
 
 - 💡 Tag every resource by team and service from the start — untagged spend is invisible spend, and retrofitting tags after the fact is far more work than tagging as you provision
 - 🔥 Set proactive budget alerts (percentage-based, not just absolute dollar thresholds) so anomalies are caught within days, not discovered a full billing cycle later in a finance review

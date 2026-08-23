@@ -99,7 +99,7 @@ AI              → Coding Agents + AI Test Analysis
 
 This record *is* the recommended stack — see the table above. The reasoning behind each choice is what makes it defensible rather than arbitrary; see Key Takeaways.
 
-## Key Takeaways
+## Summary
 
 - 💡 TypeScript/Python have the deepest tooling coverage across every category in this guide, minimizing language context-switching
 - 🔥 Playwright covering both UI and API means one tool spans the top and a meaningful slice of the middle of the pyramid

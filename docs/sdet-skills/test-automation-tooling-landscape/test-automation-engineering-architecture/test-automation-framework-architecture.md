@@ -86,7 +86,7 @@ A framework is the reusable structure a team's tests are built on: how tests are
 
 Layered architecture with Page Object Model (or an equivalent abstraction) for UI, a dedicated API client layer for backend tests, and a shared data layer — see [Test Automation Design Patterns](./test-automation-design-patterns.md) for the specific patterns that implement this.
 
-## Key Takeaways
+## Summary
 
 - 💡 The core architectural principle — separate what from how — applies identically whether the framework is UI, API, or mobile
 - 🔥 A framework's real cost isn't writing the first ten tests, it's whether writing the thousandth test is still as easy as the first — architecture is what determines that

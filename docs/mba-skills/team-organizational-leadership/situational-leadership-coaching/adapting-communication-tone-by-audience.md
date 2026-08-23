@@ -93,7 +93,7 @@ A backend service has a latency regression traced to a risky dependency, and the
 > "Latency regression is diagnosed and contained. We're proposing a 2-week extension to fix it cleanly rather than ship a workaround we'd have to revisit under worse conditions later. Net effect on the roadmap is minor; flagging now so it's not a surprise later."
 *(Concise, leads with status and resolution, states the recommendation, quantifies impact, no root-cause detail unless asked.)*
 
-## Key Takeaways
+## Summary
 
 - 💡 Same facts, different foregrounding — peers get the joint tradeoff, reports get the coaching question, stakeholders get the business impact, executives get the outcome and the ask
 - 🔥 Always pair a problem with a proposed path forward when speaking to stakeholders or upper management — "here's the issue" alone reads as unmanaged; "here's the issue and here's the plan" reads as in control

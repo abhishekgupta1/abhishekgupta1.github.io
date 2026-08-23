@@ -105,7 +105,7 @@ Writing a review for a mid-level engineer, using a level-anchored structure:
 
 Note what's absent: nothing here is news. If "proactively flagging scope risk" only appears for the first time in the written review, that's a process failure that happened months earlier, not in the writing of this document.
 
-## Key Takeaways
+## Summary
 
 - 💡 Use specific, dated, falsifiable evidence — "shipped X, which did Y" — not adjectives like "strong" or "solid"
 - 🔥 Calibrate against the level's actual bar, not against the rest of the team informally — otherwise reviews drift with whoever happens to be on the team that cycle

@@ -91,7 +91,7 @@ AI-assisted test automation covers everything from an agent helping write a Play
 
 For an engineer who already owns a Playwright/TypeScript codebase, a coding agent (Claude Code, Cursor, or Copilot) integrated into the existing workflow delivers most of the value with the least new risk. AI-native platforms are worth adopting selectively, not as a wholesale replacement — Applitools specifically for visual regression, rather than a full self-healing E2E platform replacing a Playwright suite you already trust.
 
-## Key Takeaways
+## Summary
 
 - 💡 A coding agent's output is a PR you review like any other — the risk profile is close to a junior engineer's contribution, not a black box
 - 🔥 Self-healing is genuinely useful for surviving cosmetic UI churn but can silently mask a real regression if the "healed" locator now points at the wrong element and the test still passes

@@ -107,7 +107,7 @@ Critical consistency check: all three versions state the SAME
   the actual crisis, not the rate-limit reduction itself.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Map each stakeholder group by what decision or action they need to take, then frame the message around enabling that action — sales needs a script, legal needs a risk assessment, the C-suite needs a go/no-go level summary
 - 🔥 Keep the underlying facts identical across every audience even as the framing changes — inconsistency between what different stakeholders were told is what turns a manageable issue into a trust crisis when it surfaces

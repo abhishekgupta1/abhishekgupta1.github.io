@@ -89,7 +89,7 @@ Flaky tests erode the core value proposition of a test suite: that red means bro
 
 ReportPortal for teams wanting AI-assisted failure classification alongside general reporting; a dedicated tool (BuildPulse, Trunk) for teams specifically prioritizing flaky test detection and automatic quarantine workflows integrated with existing CI.
 
-## Key Takeaways
+## Summary
 
 - 💡 A flaky test is a specific signal, not a nuisance to dismiss — it means either a race condition in the application, a race condition in the test itself, or unreliable test infrastructure, all of which are worth knowing about
 - 🔥 Silent retries that make flaky tests "pass eventually" hide the exact signal a team needs to act on — visible quarantine (tracked, not deleted or silently retried) preserves the signal while unblocking the pipeline

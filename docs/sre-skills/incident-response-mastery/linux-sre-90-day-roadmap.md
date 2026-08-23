@@ -268,7 +268,7 @@ You won't just "know Linux." You will:
 - Understand kernel states
 - Debug calmly under pressure
 
-## Key Takeaways
+## Summary
 
 - 💡 Each phase builds on the last — don't skip to containers/cgroups (Week 10) before internalizing CPU/memory/disk fundamentals (Weeks 1–8).
 - 🔥 The daily `/proc` habit is what converts memorized commands into intuition.

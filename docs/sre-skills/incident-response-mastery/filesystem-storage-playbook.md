@@ -447,7 +447,7 @@ Always design for: separate OS and data disks; separate logs from DB; RAID + bac
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 **"If it fills, you fail."** Treat disk like memory — monitor it before it becomes an outage.
 - 🔥 Disk-full with `df -h` showing free space almost always means either a deleted-but-open file (`lsof | grep deleted`) or inode exhaustion (`df -i`), not a `du` measurement error.

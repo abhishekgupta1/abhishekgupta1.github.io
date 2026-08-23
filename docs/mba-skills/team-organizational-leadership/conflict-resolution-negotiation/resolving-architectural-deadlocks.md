@@ -88,7 +88,7 @@ Two senior engineers disagree on whether a new service should own its own data s
 4. **Use disagree-and-commit explicitly.** The engineer who didn't get their preferred outcome should say, out loud, that they'll commit to the decision — this is a real ask, and naming it directly makes it more likely to actually happen rather than quietly resurfacing as passive resistance during implementation.
 5. **Write the decision and its rationale down** (a lightweight ADR — Architecture Decision Record) so it doesn't get re-litigated from scratch in three months by someone who wasn't in the room.
 
-## Key Takeaways
+## Summary
 
 - 💡 Ask "what would change your mind?" before asking "who's right?" — it surfaces whether the disagreement is about facts, values, or unstated risk tolerance
 - 🔥 Reversible decisions should be made fast by whoever's closest to the work; irreversible decisions deserve more process, not more debate time from more people

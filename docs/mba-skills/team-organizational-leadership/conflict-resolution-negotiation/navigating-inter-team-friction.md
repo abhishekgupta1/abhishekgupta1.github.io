@@ -79,7 +79,7 @@ Two teams — Platform and Checkout — keep clashing. Checkout says Platform's 
 3. **Negotiate a concrete, written agreement** in a joint session, e.g.: "Platform gives 2 weeks' notice via a specific channel for breaking changes; Checkout designates one on-call engineer to review that channel weekly." Put it in a doc both leads sign off on.
 4. **Set a review date** (e.g., in 6 weeks) to check whether the agreement is actually holding, rather than assuming one meeting fixed it permanently.
 
-## Key Takeaways
+## Summary
 
 - 💡 Ask "what would need to be true for this to stop happening?" — it moves the conversation from blame to design
 - 🔥 Get agreements in writing; verbal "let's do better" resolutions evaporate within a sprint

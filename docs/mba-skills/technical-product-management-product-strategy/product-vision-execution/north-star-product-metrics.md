@@ -106,7 +106,7 @@ Reading them together: strong LTV:CAC (efficient growth) combined
   problem were on the acquisition side.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 A North Star Metric should represent value delivered to the customer, not just product activity — if it can go up while customers are getting less value, it's the wrong metric
 - 🔥 Never read LTV, CAC, retention, or DAU/MAU in isolation — each answers a different question, and a product can look healthy on one while being unhealthy on another (e.g., great acquisition efficiency masking a retention problem)

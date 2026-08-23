@@ -87,7 +87,7 @@ A serial test suite's runtime scales directly with how many tests exist, which e
 
 Playwright's built-in test sharding for E2E suites; CI-provider-native matrix/parallel jobs (GitHub Actions matrix, GitLab CI parallel keyword) for language-agnostic parallelization; balance shards by historical duration data rather than even test count once suite runtime becomes uneven across shards.
 
-## Key Takeaways
+## Summary
 
 - 💡 Parallelization only works safely if tests are actually isolated — parallelizing a suite with shared mutable state converts "slow but reliable" into "fast but flaky," which is a worse trade
 - 🔥 Suite runtime is usually the first thing that erodes CI trust as a suite grows — parallelizing early, before it becomes painful, is cheaper than retrofitting isolation onto an already-interdependent suite later

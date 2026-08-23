@@ -267,7 +267,7 @@ Modes, troubleshooting denials
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 The 10-question Practical Debugging Playbook is the fastest triage sequence — run it top to bottom before diving deep anywhere.
 - 🔥 USE (resource-first) and RED (service-first) are complementary, not competing — USE finds *what's* saturated, RED finds *what users feel*.

@@ -85,7 +85,7 @@ Web UI/E2E automation drives a real (or real-enough) browser through the same in
 
 Given a Playwright + TypeScript + Robot Framework background: keep **Playwright** as the E2E backbone (auto-waiting, trace viewer, parallel execution, built-in test runner), use **Robot Framework** where a non-engineer stakeholder needs to read or author keyword-driven tests, and reserve **Selenium** knowledge for interfacing with legacy grids or enterprise environments that haven't migrated. Adding **Cypress** on top of an already-solid Playwright stack is rarely worth it — the two solve the same problem, and depth in one beats shallow coverage of both.
 
-## Key Takeaways
+## Summary
 
 - 💡 Playwright's auto-waiting eliminates most of the `sleep()`/explicit-wait flakiness that made Selenium suites brittle — most "flaky test" complaints in legacy Selenium suites are really synchronization bugs, not tool limitations
 - 🔥 Cross-browser coverage matters most for consumer-facing products with real Safari/Firefox traffic — an internal enterprise tool with 100% Chrome usage doesn't need the same investment

@@ -110,7 +110,7 @@ Could have:   New integration (nice if time allows)
 Won't have (this release): UI polish — explicitly deferred, not forgotten
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 RICE's "Confidence" factor exists specifically to prevent high-uncertainty, high-reach ideas from crowding out well-validated ones — don't skip filling it in honestly just because it's the hardest number to estimate
 - 🔥 Kano is best used qualitatively as a portfolio-balance check, not as a precise scoring exercise — the value is noticing "we have no Delighters this quarter," not computing a Kano score to the decimal

@@ -96,7 +96,7 @@ CI/CD automation is the orchestration layer that runs builds, tests, and deploym
 
 **GitLab CI + Playwright + Docker + AWS** is already a strong, coherent stack — GitLab CI's native Docker integration and built-in container registry remove a lot of the pipeline glue work other platforms need bolted on. The next-highest-leverage addition isn't a different CI platform; it's tightening what already exists: parallelized/sharded test stages, environment-specific gates (fast unit+API gate on every PR, full E2E+performance gate pre-merge-to-main), and explicit rollback automation rather than a manual rollback runbook.
 
-## Key Takeaways
+## Summary
 
 - 💡 Pipeline platform choice is mostly a wash between the major options (GitLab CI, GitHub Actions, CircleCI) for most teams — the leverage is in what gates are enforced and how fast feedback comes back, not which YAML dialect you write
 - 🔥 GitOps tools (Argo CD, Tekton) invert the traditional push-based deploy model: the cluster continuously reconciles to match what's declared in Git, which makes "what's actually running" always auditable against a single source of truth

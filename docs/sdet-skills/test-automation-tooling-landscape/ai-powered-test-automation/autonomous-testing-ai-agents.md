@@ -102,7 +102,7 @@ flowchart LR
 
 Not a recommended default stack yet — this is explicitly the emerging tier. Where piloted, keep a human review gate on the "fix test" and "file bug" steps specifically, since those are where an autonomous loop's mistakes compound fastest and are hardest to catch after the fact.
 
-## Key Takeaways
+## Summary
 
 - 💡 Autonomous testing is the least mature capability covered in this domain — treat vendor claims with proportionate skepticism and pilot narrowly before trusting broadly
 - 🔥 Coverage illusion is the central risk — an agent that autonomously generates a large volume of tests can create the appearance of thorough coverage while testing shallow, low-value paths

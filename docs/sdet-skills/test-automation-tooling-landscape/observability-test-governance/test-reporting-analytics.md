@@ -81,7 +81,7 @@ Test reporting turns raw pass/fail/skip output into something with history, tren
 
 Allure on top of Playwright/Pytest/JUnit for rich, historical reporting (screenshots, steps, trends, flaky-test tracking); ReportPortal once triage volume at scale justifies AI-assisted failure clustering; always emit JUnit XML alongside any human-facing report as the lowest-common-denominator interoperability format.
 
-## Key Takeaways
+## Summary
 
 - 💡 A CI log is not a report — it disappears the moment the build is cleaned up, while Allure/ReportPortal retain history that makes flaky-test trends and regression patterns visible over time
 - 🔥 ReportPortal's failure-clustering (grouping similar failures automatically) is genuinely useful once a suite is large enough that triaging failures one-by-one after every run becomes the bottleneck

@@ -100,7 +100,7 @@ Mid-sprint burndown check (day 6 of 10):
   sprint's goal we can still hit?"
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Use a range, not a single number, when forecasting — "we can likely deliver 25-34 points" is more honest and more useful than a false-precision "32"
 - 🔥 A burndown that's flattening mid-sprint is the highest-leverage moment to act — replanning on day 6 preserves options that don't exist on day 9

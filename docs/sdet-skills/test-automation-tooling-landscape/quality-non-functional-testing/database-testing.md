@@ -89,7 +89,7 @@ Database testing validates the data layer directly — schema constraints, query
 
 Default to **Testcontainers** for any test that touches the database layer — a mocked database can't catch a real constraint violation, a broken foreign key, or a query that's syntactically valid but semantically wrong, and the container startup cost is trivial against the false confidence a mock provides. For analytics/warehouse work, layer **dbt tests** (schema tests: not-null, unique, relationships) directly into the transformation pipeline so data quality is validated at build time, not discovered downstream by a confused stakeholder looking at a dashboard.
 
-## Key Takeaways
+## Summary
 
 - 💡 A mocked database can't enforce real constraints (foreign keys, unique indexes, check constraints) — tests against a mock can pass while the same code would fail against a real database, which is exactly the false-confidence Testcontainers exists to eliminate
 - 🔥 Testing a migration against a Testcontainers instance loaded with production-shaped (not just empty-schema) data catches issues an empty-database migration test misses — a migration that works on an empty table can still fail or corrupt data at real scale

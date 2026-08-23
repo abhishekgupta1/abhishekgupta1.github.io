@@ -111,7 +111,7 @@ Value Chain (where's the cost/friction?):
 
 Note how the frameworks build on each other: SWOT orients broadly, Value Chain narrows to the specific bottleneck, and 5 Whys drives past the surface symptom (manual process) to the actual root cause (no owner) — a recommendation based only on the surface symptom (build tooling) would likely under-deliver without also fixing the ownership gap.
 
-## Key Takeaways
+## Summary
 
 - 💡 Match the framework to the question — SWOT for orientation, PESTLE for external forces, Value Chain for where cost/value sits, 5 Whys for root-causing a specific problem; using all four on every engagement regardless of fit produces bloated, unfocused analysis
 - 🔥 5 Whys is only as good as the honesty of each answer — stopping at "it's a tooling problem" instead of continuing to "no one owns this" produces a recommendation that treats the symptom, not the cause

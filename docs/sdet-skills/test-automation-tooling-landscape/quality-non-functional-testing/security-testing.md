@@ -87,7 +87,7 @@ Security testing automates the search for exploitable weaknesses — insecure co
 
 Wire dependency and container scanning (Snyk or Trivy) directly into CI/CD as a hard gate — this is the highest-value, lowest-effort layer, since most real-world breaches trace back to a known, already-patched CVE in a dependency nobody updated. Add Semgrep for SAST on every PR (fast, low false-positive rate compared to older-generation SAST tools). Reserve OWASP ZAP for scheduled DAST runs against staging rather than every PR — it's slower and needs a running environment, so it fits a nightly or pre-release cadence better than a per-commit gate.
 
-## Key Takeaways
+## Summary
 
 - 💡 SAST, dependency scanning, and DAST catch different vulnerability classes — a team running only one has a real, specific blind spot, not just "less coverage"
 - 🔥 Most real-world breaches involve a known, already-disclosed CVE in an unpatched dependency, not a novel zero-day — dependency scanning with an actual patch/upgrade process is disproportionately high-leverage for the effort

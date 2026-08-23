@@ -110,7 +110,7 @@ What a proactive team would have done differently:
 
 The resignation wasn't really about the "new opportunity" — it was about a year of small, unaddressed signals that ownership and growth were stalled here.
 
-## Key Takeaways
+## Summary
 
 - 💡 The five biggest addressable drivers: blocked growth, manager relationship quality, lack of autonomy, below-market compensation, and burnout — most exits are some combination of these, not one dramatic event
 - 🔥 By the time someone resigns, you're usually 6-12 months too late to act on the actual cause — the leverage point is noticing the signal in 1-on-1s much earlier

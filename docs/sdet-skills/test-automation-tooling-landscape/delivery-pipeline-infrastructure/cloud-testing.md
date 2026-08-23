@@ -77,7 +77,7 @@ Beyond generic infrastructure-as-code testing, cloud testing addresses the provi
 
 LocalStack for fast local/CI iteration on AWS-dependent code; AWS FIS or Azure Chaos Studio for managed, provider-native fault injection against real (non-production or carefully scoped production) resources; provider-native load testing services when staying within one cloud's billing/tooling ecosystem is preferred over a separate k6/JMeter setup.
 
-## Key Takeaways
+## Summary
 
 - 💡 LocalStack's fidelity varies by service — core services (S3, SQS, DynamoDB) are well-emulated, but newer or more complex services may have partial coverage worth verifying before relying on it fully
 - 🔥 Provider-native fault injection (AWS FIS, Azure Chaos Studio) integrates directly with existing IAM/RBAC and resource targeting, lowering the setup barrier compared to a third-party chaos platform

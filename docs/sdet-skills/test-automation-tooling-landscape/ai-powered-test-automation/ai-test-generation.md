@@ -89,7 +89,7 @@ AI test generation uses a model's understanding of code, requirements, or a runn
 
 General-purpose coding agents (Claude Code, Copilot, Cursor) operating directly on the codebase for most generation needs, since they have full project context; purpose-built AI test platforms (Mabl, Testim) specifically where UI-flow generation from exploration (not code) is the primary need.
 
-## Key Takeaways
+## Summary
 
 - 💡 AI-generated tests are a strong starting draft, not a substitute for review — they reliably produce syntactically correct tests that assert on the wrong thing if a human doesn't validate intent
 - 🔥 Generating tests for legacy, untested code is one of the highest-leverage current use cases, since the alternative (a human manually reading and testing unfamiliar legacy logic) is slow and often skipped entirely

@@ -110,7 +110,7 @@ Change risk:
 
 This turns "the code is messy" into: "This service is 4% of our codebase but 15% of our incident time, ships 4x slower than average, and has a 30% change failure rate versus an 8% baseline." That's a business case, not a complaint.
 
-## Key Takeaways
+## Summary
 
 - 💡 Anchor every metric to a comparison — "4x slower than baseline" is meaningful; "4.2 days average cycle time" alone is not
 - 🔥 Incident-hours and change-failure-rate are the two metrics that translate most directly into dollars and are hardest for a non-technical leader to dismiss

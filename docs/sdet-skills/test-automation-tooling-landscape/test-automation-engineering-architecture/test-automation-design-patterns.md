@@ -79,7 +79,7 @@ Design patterns in test automation are the same idea as in application code: pro
 
 POM as the default starting pattern for UI automation given its ubiquity and low learning curve; Screenplay once a POM-based framework's class-per-page structure becomes a genuine bottleneck (very large suites, many cross-cutting actor behaviors); Test Data Builder for any non-trivial test data construction, regardless of layer.
 
-## Key Takeaways
+## Summary
 
 - 💡 Patterns exist to be applied where they solve a real problem, not adopted wholesale as a checklist — POM is close to universally useful for UI tests, Screenplay is a deliberate upgrade for specific scale problems
 - 🔥 The Screenplay Pattern's actor/task/question model composes better than POM at scale because behaviors (not pages) become the reusable unit — a login "task" can be reused across contexts a page-object method can't cleanly express

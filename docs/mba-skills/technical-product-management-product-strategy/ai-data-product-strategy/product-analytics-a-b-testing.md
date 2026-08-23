@@ -104,7 +104,7 @@ Step 4 — Read the result correctly
   meaningful, which is the bar, not either alone
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Calculate sample size and test duration before launch, using the smallest effect size you'd actually care about — this prevents both underpowered tests (too little data to detect anything) and wasted time running tests longer than necessary
 - 🔥 Never stop a test early because it "looks significant" partway through — repeatedly checking and stopping at the first significant-looking result dramatically inflates the true false-positive rate, a well-known statistical trap (sometimes called "peeking")

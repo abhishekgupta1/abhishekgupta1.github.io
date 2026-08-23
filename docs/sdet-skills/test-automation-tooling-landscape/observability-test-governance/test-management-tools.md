@@ -81,7 +81,7 @@ Where [Test Reporting & Analytics](./test-reporting-analytics.md) makes one run'
 
 Skip a dedicated test management tool entirely for engineering-led teams with no manual-testing or compliance-traceability driver — [Test Reporting & Analytics](./test-reporting-analytics.md) (Allure) covers most needs. Adopt Xray/Zephyr specifically when already living in Jira and needing formal traceability; consider Qase/Testmo as lighter, more modern alternatives to TestRail for teams not tied to Jira.
 
-## Key Takeaways
+## Summary
 
 - 💡 Test-case-management tools earn their cost in environments with real manual-test coverage or compliance traceability requirements — introducing one to a fully-automated engineering team with no such requirement is usually pure process overhead
 - 🔥 Jira-native options (Xray, Zephyr) reduce context-switching for teams already living in Jira for requirements and defects

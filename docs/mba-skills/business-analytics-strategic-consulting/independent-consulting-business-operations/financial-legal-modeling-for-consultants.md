@@ -116,7 +116,7 @@ Tax basics:
   costly mistake for new independent consultants.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Set up a formal legal entity before your first paid engagement — the liability protection it provides doesn't apply retroactively, so delaying setup leaves early work personally exposed
 - 🔥 Size your cash reserve for consulting-specific lumpiness (payment lags, gaps between engagements), not a generic personal-finance rule of thumb — 3-6 months is a reasonable starting point, more if client concentration is high (one client is a large share of income)

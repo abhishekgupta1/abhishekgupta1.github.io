@@ -216,7 +216,7 @@ Commands and locators get individual tests passing. What keeps a suite maintaina
 npx playwright show-trace trace.zip
 ```
 
-## Key Takeaways
+## Summary
 
 - Prefer semantic, user-facing locators (`getByRole`, `getByLabel`, `getByText`) over CSS/XPath — they're more resilient to markup changes and closer to how users actually find elements.
 - Auto-retrying, web-first assertions (`expect(locator).toBeVisible()`) exist specifically to remove the need for manual waits — use them instead of polling or fixed timeouts.

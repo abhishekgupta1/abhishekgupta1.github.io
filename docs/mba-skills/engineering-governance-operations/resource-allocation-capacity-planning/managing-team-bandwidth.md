@@ -99,7 +99,7 @@ Effective capacity:          ~133 hours/week (~55% of nominal)
 
 The team was planning as if they had 240 hours and actually had ~133 — a gap of nearly half, which fully explains the pattern of missed commitments without anyone needing to work harder or be a stronger performer.
 
-## Key Takeaways
+## Summary
 
 - 💡 Measure your own team's actual overhead ratio over 2-3 sprints rather than assuming a generic percentage — on-call-heavy or interview-heavy teams can be well below 60%
 - 🔥 Treat the unplanned-work buffer as a real, named line item in planning, not a hidden assumption — a team with historically 15% unplanned work that plans at 100% commitment will reliably miss, regardless of how good the plan looks on paper

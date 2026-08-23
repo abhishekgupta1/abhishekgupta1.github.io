@@ -80,7 +80,7 @@ Shared staging environments have two structural problems at scale: contention (o
 
 Terraform or Kubernetes namespace-based ephemeral environments provisioned per PR for teams with the infrastructure maturity to support it; a well-maintained shared staging environment with active drift monitoring ([Infrastructure Testing](../delivery-pipeline-infrastructure/infrastructure-testing.md)) for teams not yet there.
 
-## Key Takeaways
+## Summary
 
 - 💡 Environment drift is one of the most common, hardest-to-diagnose root causes of "it worked in every test but failed in production"
 - 🔥 Ephemeral, per-PR environments eliminate cross-team contention entirely — a real environment problem doesn't have to wait its turn behind another team's testing

@@ -461,7 +461,7 @@ You are operating at:
 - Strong mid-level SRE
 - Possibly senior, depending on speed and clarity
 
-## Key Takeaways
+## Summary
 
 - 💡 Always read only the alert first — resist the urge to peek at the "expected discovery" before investigating.
 - 🔥 Time-box each incident to 30 minutes to simulate real production pressure.

@@ -119,7 +119,7 @@ Compounding effect: over 12-18 months of consistent output on one
   speaking invitations, without direct solicitation for any of them.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Narrow positioning beats broad positioning — "I help X do Y" is memorable and referable; "experienced leader" is not, no matter how accomplished the underlying experience actually is
 - 🔥 Consistency compounds — a sporadic post every few months rarely builds recognition; a steady, predictable cadence over many months is what actually builds an audience and a reputation

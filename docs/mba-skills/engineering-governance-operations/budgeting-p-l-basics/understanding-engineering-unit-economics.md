@@ -106,7 +106,7 @@ Unit economics:
 
 This reframes "our team costs $2.6M" (a number with no context) into "we cost 52% of the revenue we support, and $0.26 per transaction, trending toward $0.20 as we scale" — a story finance can actually evaluate and compare against benchmarks.
 
-## Key Takeaways
+## Summary
 
 - 💡 Fully-loaded cost is always higher than base salary — use the ~1.3-1.5x multiplier (varies by company/region) so cost comparisons are apples-to-apples with how finance already calculates it
 - 🔥 Track the trend of your unit economics over time, not just a single snapshot — a high cost ratio for a growing product is often fine; a rising cost ratio for a mature product is a signal worth investigating

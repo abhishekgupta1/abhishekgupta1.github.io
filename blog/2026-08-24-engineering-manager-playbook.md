@@ -8,7 +8,18 @@ description: "A practical playbook for Engineering Managers: the resources worth
 image: "/img/og-image.png"
 ---
 
+import KeyTakeaways from '@site/src/components/KeyTakeaways';
+
 Transitioning into or scaling as an Engineering Manager (EM) requires a fundamental mindset shift. Unlike Individual Contributors (ICs), who focus on writing code and solving direct technical tasks, an EM's output is measured by the leverage, efficiency, and growth of their entire team.
+
+<KeyTakeaways>
+
+- The IC-to-EM shift is about trading code output for team leverage.
+- DORA metrics and the SBI framework give you an operational way to run and coach a team.
+- Big Tech and startup EM roles trade off differently on scope, process, and pace.
+- A 4-week blueprint can get you interview-ready for Big Tech EM loops.
+
+</KeyTakeaways>
 
 <!-- truncate -->
 
@@ -107,7 +118,7 @@ Big Tech interview loops evaluate High-Level System Design (HLD), leadership pri
 - **Week 3 — Engineering Execution & Delivery**: Prepare for scenarios addressing delayed milestones, production incidents, post-mortems, and resource planning under tight deadlines.
 - **Week 4 — Leadership Strategy & Mock Practice**: Run active mock interviews focusing on company-specific values (e.g., Amazon Leadership Principles or Meta's Core Values) to refine delivery and build confidence. This is also where pacing and conciseness problems — usually the real weak point, not content — actually surface.
 
-## Key Takeaways
+## Summary
 
 - An EM's learning stack needs three layers: system design references, an industry-culture source, and a small canonical reading list — used on demand, triggered by real situations, not consumed passively
 - Compare Big Tech and startup offers on liquidity and risk, not headline total comp — a liquid RSU grant and a notional equity grant aren't the same offer

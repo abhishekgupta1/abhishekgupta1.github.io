@@ -89,7 +89,7 @@ Tool selection is a recurring decision every SDET and Test Automation Architect 
 
 Not tool-specific — this is a repeatable process. Apply it explicitly (even as a quick checklist) rather than defaulting to whichever tool a team member has used before, which is the most common informal decision process and the one most likely to miss a real constraint.
 
-## Key Takeaways
+## Summary
 
 - 💡 "Which tool is better" is usually the wrong question — "which tool fits our actual constraints" is the answerable one
 - 🔥 Team skill and existing language fit are frequently underweighted relative to a tool's theoretical technical merits — a "better" tool the team doesn't know well often loses to a "good enough" tool they're fluent in, especially under deadline pressure

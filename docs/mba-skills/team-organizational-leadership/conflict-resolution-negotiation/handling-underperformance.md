@@ -103,7 +103,7 @@ Not: "You've seemed kind of behind lately." Vague framing invites a vague respon
 
 **Step 5 — If it continues, escalate to a formal process** (PIP or equivalent) with HR involved, using the documented pattern from steps 1-4 as evidence. By this point nothing in the formal process should be new information to the engineer.
 
-## Key Takeaways
+## Summary
 
 - 💡 Diagnose the cause before choosing the fix — a skill-gap problem treated as a motivation problem (or vice versa) wastes the conversation and damages trust
 - 🔥 Address it within 1-2 weeks of the pattern becoming clear — delay reads as either not noticing or not caring, both of which are worse than an early, direct conversation

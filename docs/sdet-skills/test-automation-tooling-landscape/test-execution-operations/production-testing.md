@@ -88,7 +88,7 @@ Production testing is [Shift-Right Testing](../foundations-strategy/shift-right-
 
 Checkly or self-hosted Playwright scripts for synthetic transaction monitoring of critical journeys; a broader synthetic monitoring platform (Datadog/New Relic Synthetics) when already standardized on that observability vendor; pair with [Observability-Driven Testing](../observability-test-governance/observability-driven-testing.md) so synthetic check failures correlate directly with real telemetry.
 
-## Key Takeaways
+## Summary
 
 - 💡 Synthetic monitoring is outside-in verification — it tests the system the way a real user (or an external dependency) experiences it, catching issues internal monitoring alone might miss (a broken CDN config, a DNS issue, a third-party integration outage)
 - 🔥 Playwright-based synthetic checks (Checkly or self-hosted) let a team reuse existing E2E test-writing skill directly for production monitoring, rather than learning a separate synthetic-monitoring DSL

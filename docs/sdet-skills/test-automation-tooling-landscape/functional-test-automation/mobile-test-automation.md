@@ -87,7 +87,7 @@ Mobile automation splits along platform (Android vs iOS) and app type (native, h
 
 Use **Espresso**/**XCUITest** for platform teams owning native code who want the fastest unit-adjacent UI checks, and **Appium or Maestro** for cross-platform E2E journeys. Pair with a device farm (see [Device & Browser Farm Testing](./device-browser-farm-testing.md)) for OS/device-version coverage beyond local emulators.
 
-## Key Takeaways
+## Summary
 
 - 💡 Appium's protocol-proxy architecture makes it slower than native frameworks but gives it the broadest cross-platform and device-farm ecosystem support
 - 🔥 Maestro's built-in retry/wait tuning is specifically designed for mobile's inherent flakiness (animations, network variance) — a real reliability advantage over hand-rolled Appium waits

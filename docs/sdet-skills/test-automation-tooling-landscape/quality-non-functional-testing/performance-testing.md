@@ -89,7 +89,7 @@ Performance testing measures how a system behaves under load — throughput, lat
 
 For an SRE-facing path, the stack is bigger than the load-generation tool itself: **k6 → Grafana → Prometheus → OpenTelemetry**. Running k6 without correlating results against the system's own telemetry only tells you "requests succeeded or failed" — pairing it with dashboards and traces reveals *why* latency degraded under load.
 
-## Key Takeaways
+## Summary
 
 - 💡 A performance test without an SLO to compare against is just a number — define the acceptable p95/p99 latency and error-rate threshold before running the test
 - 🔥 k6's JS-based scripting means the same engineers writing Playwright/API tests can write performance tests without a second DSL — the main reason it's displaced JMeter on JS-native teams

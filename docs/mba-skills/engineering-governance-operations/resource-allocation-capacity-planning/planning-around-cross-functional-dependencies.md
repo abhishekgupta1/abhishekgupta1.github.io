@@ -101,7 +101,7 @@ dependencies that need to be actively managed starting now, not
 tracked passively.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 An unconfirmed dependency is a risk, not a plan input — don't build a committed timeline on top of an assumption you haven't verified with the owning team
 - 🔥 Request the longest-lead-time dependencies (legal, security review, procurement) first, even before the work that depends on them is fully scoped — their turnaround time often doesn't compress no matter how urgently you ask later

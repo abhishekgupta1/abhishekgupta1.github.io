@@ -84,7 +84,7 @@ Where [Load Testing](./load-testing.md) confirms the system meets its SLA at exp
 
 k6 or Gatling with a ramping-past-capacity profile, run against a production-equivalent (or clearly scaled and understood) environment, paired with observability (Prometheus/Grafana) to see *how* the system fails, not just *when*.
 
-## Key Takeaways
+## Summary
 
 - 💡 The goal of stress testing isn't to pass — it's to learn exactly where and how the system fails, so that information can inform capacity planning and resilience engineering
 - 🔥 Graceful degradation (returning 429s, shedding low-priority requests) under stress is a sign of good resilience engineering — a stress test that reveals total failure instead is a genuine finding worth acting on

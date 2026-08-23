@@ -76,7 +76,7 @@ Unit and component tests isolate a part from its dependencies; integration tests
 
 Testcontainers as the default for any test needing a real database/broker/cache; LocalStack for AWS-service-dependent integration tests; reserve full staging-environment tests for cross-service E2E scenarios integration tests alone can't cover.
 
-## Key Takeaways
+## Summary
 
 - 💡 Mocking a database means testing your assumptions about its behavior — Testcontainers tests the real engine instead, closing a fidelity gap that quietly causes production surprises
 - 🔥 Disposable, per-run containers avoid both shared-test-database pollution and "works on my machine" environment drift

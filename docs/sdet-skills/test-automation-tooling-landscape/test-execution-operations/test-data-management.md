@@ -83,7 +83,7 @@ Test data management covers how tests get the data they need: realistic, varied,
 
 Faker/Factory Boy (or language-equivalent) for per-test generated fixtures as the default; Mockaroo for bulk structured dataset seeding; a masking/synthesis platform (Tonic.ai, Delphix) once regulatory requirements (PII, HIPAA, GDPR) make using real production data in test environments a genuine compliance risk.
 
-## Key Takeaways
+## Summary
 
 - 💡 Shared, hand-maintained test datasets are a recurring, underestimated source of flaky, order-dependent test failures — generating data per run eliminates the problem structurally rather than patching around it
 - 🔥 Data masking/synthesis platforms exist because "just use a copy of production data" is a compliance risk, not a shortcut, once PII/regulatory requirements apply

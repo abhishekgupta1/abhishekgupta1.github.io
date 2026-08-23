@@ -103,7 +103,7 @@ Step 4 — Present both the ask and the alternative
 
 Presenting the alternative alongside the ask turns the conversation from "approve or deny" into a real tradeoff decision, which is both more honest and more likely to get a favorable outcome.
 
-## Key Takeaways
+## Summary
 
 - 💡 Every headcount ask should trace to a specific roadmap commitment or a quantified gap — "the team is stretched" is real but not fundable on its own; pair it with the bandwidth math that shows the specific shortfall
 - 🔥 Always present the alternative (descope, extend timeline, or delay something else) alongside the ask — it shows you've thought about the tradeoff rather than just asking for more, and gives the decision-maker a real choice

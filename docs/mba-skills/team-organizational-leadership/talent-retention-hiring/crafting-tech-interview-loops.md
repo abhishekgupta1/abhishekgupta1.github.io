@@ -116,7 +116,7 @@ Stage 4 — Debrief
   speaks first or most confidently in the group discussion.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Every stage should answer: "what does this stage tell us that no other stage does?" — if you can't answer that, cut or redesign the stage
 - 🔥 A debugging/troubleshooting stage is one of the most underused, highest-signal formats — it mirrors real work far more than algorithm puzzles do

@@ -99,7 +99,7 @@ Prescriptive step — Staffing recommendation given the forecast:
 
 The prescriptive layer turns "demand will likely be around 18K, could be as high as 20.8K" into an actual staffing decision with an explicit, named risk — which is what a decision-maker actually needs, not just the forecast on its own.
 
-## Key Takeaways
+## Summary
 
 - 💡 Always present forecasts as a range with an associated confidence level — a single point number invites false precision and makes it impossible to plan for the reasonable range of outcomes
 - 🔥 Pair every prediction with a recommended action (the prescriptive layer) — a forecast without a "so what do we do" is informative but not decision-ready, and executives are evaluating you on decision support, not just analysis

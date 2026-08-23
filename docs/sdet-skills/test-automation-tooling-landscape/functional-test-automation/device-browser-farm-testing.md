@@ -77,7 +77,7 @@ Local emulators and simulators are fast but imperfect substitutes for real hardw
 
 BrowserStack or Sauce Labs for teams needing both web and mobile real-device coverage with mature CI integration; AWS Device Farm for AWS-native teams wanting device testing without a separate vendor relationship; scope usage to pre-release/nightly runs rather than every PR, given per-minute cost.
 
-## Key Takeaways
+## Summary
 
 - 💡 Device farms exist to solve a cost problem, not a capability problem — everything they test could theoretically be tested on owned hardware, just at prohibitive procurement and maintenance cost at scale
 - 🔥 Real-device coverage catches classes of bugs (thermal throttling, low-memory kills, real carrier network behavior) that emulators structurally cannot reproduce

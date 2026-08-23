@@ -105,7 +105,7 @@ Dimension: Communication
 
 The key test of a good framework: two different managers, given the same engineer's actual work, should land on roughly the same level assessment. If they wouldn't, the criteria are still too vague.
 
-## Key Takeaways
+## Summary
 
 - 💡 Use observable, behavioral language ("proactively raises risk before being asked") instead of trait language ("is a strong communicator") — behaviors can be evidenced; traits can only be asserted
 - 🔥 Keep the number of dimensions small (4-6) — more granularity feels rigorous but becomes unusable in practice and encourages box-checking over holistic judgment

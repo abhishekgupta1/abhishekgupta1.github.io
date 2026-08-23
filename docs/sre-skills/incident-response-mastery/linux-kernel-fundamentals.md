@@ -272,7 +272,7 @@ When answering: start with a definition, add 1–2 technical details, then menti
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 The kernel/user-space split is the single most important Linux architectural fact — it explains why a crashing app doesn't take down the system, but a kernel bug does.
 - 🔥 System calls are the *only* sanctioned path from user space into kernel space — every I/O, process, or memory operation eventually goes through one.

@@ -103,7 +103,7 @@ Name the risk of not doing it:
 
 Note the structure mirrors any other investment pitch: cost, return, opportunity cost, and downside risk — deliberately, because that's the frame the decision-maker is already using for every other request they're evaluating.
 
-## Key Takeaways
+## Summary
 
 - 💡 Always state the ask as a tradeoff against something specific ("this moves feature X by 2 weeks"), not as free-floating time — vague asks are easy to defer indefinitely
 - 🔥 The "risk of not doing it" framing is usually the most persuasive part of the pitch — it reframes the refactor from a nice-to-have into risk management, which non-technical leaders are used to funding

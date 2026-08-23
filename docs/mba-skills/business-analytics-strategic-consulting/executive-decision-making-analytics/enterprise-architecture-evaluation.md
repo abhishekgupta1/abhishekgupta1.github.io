@@ -120,7 +120,7 @@ Synthesis: the root bottleneck isn't any single lens — it's that
   of a straightforward technical fix.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Look for bottlenecks at the seams between the four lenses, not just within each one in isolation — the most consequential findings are often causal connections across lenses (unclear ownership driving deploy friction), not a single isolated weak spot
 - 🔥 Use objective, measurable evidence (deploy frequency, test coverage percentage, detection/resolution time) rather than interviewing engineers about how they feel the process works — self-reported process maturity is notoriously optimistic compared to what the data shows

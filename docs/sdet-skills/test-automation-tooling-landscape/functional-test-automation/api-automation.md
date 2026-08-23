@@ -88,7 +88,7 @@ API automation exercises HTTP/RPC endpoints directly: sending requests, assertin
 
 Playwright API or Pytest+Requests for teams already using those ecosystems elsewhere; REST Assured for Java shops; Karate where BDD-readable tests matter more than raw language flexibility. Pair with schema validation (OpenAPI/JSON Schema) and [Contract Testing](./contract-testing.md) for cross-service compatibility.
 
-## Key Takeaways
+## Summary
 
 - 💡 Authorization testing (can user A see user B's data?) is one of the most commonly under-tested, highest-impact areas in API suites
 - 🔥 Negative testing — invalid input, missing fields, malformed auth — is the class of test most often skipped under deadline pressure and most correlated with production incidents

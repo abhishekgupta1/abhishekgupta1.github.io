@@ -84,7 +84,7 @@ A weekly 30-minute 1-on-1 with a mid-level engineer, structured:
 
 If in week 3 the engineer mentions offhand that a teammate keeps rewriting their PRs without discussion, that's the actual content of the meeting — drop the rest of the agenda and dig in. That thread, left unaddressed, becomes [inter-team or interpersonal friction](../conflict-resolution-negotiation/navigating-inter-team-friction.md) three months later.
 
-## Key Takeaways
+## Summary
 
 - 💡 If you find yourself talking more than the engineer, invert the ratio — your job in this meeting is to listen and unblock, not report
 - 🔥 Keep a running doc per engineer; patterns across weeks (recurring frustration, repeated blockers) are more informative than any single meeting

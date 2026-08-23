@@ -83,7 +83,7 @@ The definition has expanded well past "a script that clicks a browser." Modern s
 
 There's no tool stack for an introduction — the recommended first move is conceptual: learn the [Test Automation Pyramid](./test-automation-pyramid.md) before any specific tool, since it determines where every subsequent tool choice belongs.
 
-## Key Takeaways
+## Summary
 
 - 💡 Test automation today spans unit, API, UI, performance, security, infrastructure, and production validation — not just browser scripts
 - 🔥 The shift is from "testing the application" to "testing the system" — app, pipeline, infrastructure, and runtime together

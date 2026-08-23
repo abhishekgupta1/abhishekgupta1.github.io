@@ -180,7 +180,7 @@ An error budget is only useful if the team agrees on what happens when it's exha
 
 This turns reliability from a vague aspiration into a concrete, measurable constraint that product and engineering can negotiate around.
 
-## Key Takeaways
+## Summary
 
 - Measure what matters to users, not what's easy to instrument
 - Set SLOs based on real data, not aspirations

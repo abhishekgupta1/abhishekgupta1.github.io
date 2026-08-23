@@ -85,7 +85,7 @@ A distributed system's correctness depends on more than each node's individual l
 
 Toxiproxy for precise, scriptable network-fault injection in integration tests; Testcontainers for real multi-node dependency behavior; escalate to full chaos engineering ([LitmusChaos](./chaos-resilience-testing.md)/Chaos Mesh) for infrastructure-level node and network failures beyond what a single test's proxy layer can simulate.
 
-## Key Takeaways
+## Summary
 
 - 💡 Distributed systems fail in ways single-process systems structurally cannot — partial failure, network partition, and clock skew all require deliberate, dedicated test scenarios
 - 🔥 A retry mechanism's safety depends entirely on idempotency — testing retries without also testing idempotency verifies the wrong half of the property

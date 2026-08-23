@@ -81,7 +81,7 @@ Platform engineering applies internal-product thinking to test automation: inste
 
 Not tool-specific — platform engineering is an organizational investment decision. See [Test Automation Platform vs Framework](../test-automation-tools-technology-landscape.md#test-framework-vs-test-platform) for the concrete distinction and [Enterprise Test Automation Strategy](../foundations-strategy/enterprise-test-automation-strategy.md) for how a platform fits the broader org strategy.
 
-## Key Takeaways
+## Summary
 
 - 💡 A platform team's value proposition is eliminating duplicated effort across teams — that value doesn't exist yet with a single consumer, which is the most common maturity mistake in building one too early
 - 🔥 Self-service is the defining property of a platform versus a service team — if every team still needs to file a ticket and wait, it's not actually a platform yet

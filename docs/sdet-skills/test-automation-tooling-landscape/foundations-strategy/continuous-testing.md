@@ -87,7 +87,7 @@ Where traditional testing treats "test" as a phase after "build" and before "rel
 
 Continuous testing isn't one tool — it's the orchestration of the whole stack across a pipeline: unit/API/integration tests as fast PR gates, full regression and performance smoke tests post-merge, and observability-based validation post-deploy. See the [example pipeline architecture](../test-automation-tools-technology-landscape.md#15-cicd-test-automation).
 
-## Key Takeaways
+## Summary
 
 - 💡 Continuous testing is what turns CI/CD from "continuously deploying" into "continuously deploying safely"
 - 🔥 The goal is fast, trustworthy feedback at every stage — not running every test everywhere, which just makes every stage slow

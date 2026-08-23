@@ -80,7 +80,7 @@ Infrastructure can drift from its declared state — a manual console change, an
 
 InSpec run on a schedule against production (not just at deploy time) to catch drift from manual changes; Kitchen-Terraform where a full provision-verify-destroy cycle is needed to validate both the IaC and the resulting real infrastructure together.
 
-## Key Takeaways
+## Summary
 
 - 💡 IaC testing verifies the *code*; infrastructure testing verifies the *deployed reality* — a system can pass every IaC test and still drift out of compliance later via a manual change
 - 🔥 Scheduled, deploy-independent compliance scans are what catch "someone clicked a change in the console" before it causes a surprising `apply` diff or a real security gap

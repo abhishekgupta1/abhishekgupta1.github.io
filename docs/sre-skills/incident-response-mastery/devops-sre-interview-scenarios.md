@@ -376,7 +376,7 @@ That structured, calm thinking is the signal interviewers look for.
 - Tradeoff decisions
 - Prevention mindset (not just fixing)
 
-## Key Takeaways
+## Summary
 
 - 💡 Every answer should follow the same shape: identify → check resources/dependencies → verify recent changes → mitigate → root-cause → prevent.
 - 🔥 "Health check passing" and "service actually working" are different claims — probes must exercise the real dependency chain, not just a liveness ping.

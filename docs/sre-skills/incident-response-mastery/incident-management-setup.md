@@ -333,7 +333,7 @@ Design principles:
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 Severity criteria must be written down and criteria-based — ambiguity about "is this a SEV1?" burns more time than most actual mitigations.
 - 🔥 Role separation (IC / Comms / Scribe / SMEs) exists to protect cognitive bandwidth under pressure, not to add ceremony — never let one person hold two of these seats in a SEV1 if headcount allows avoiding it.

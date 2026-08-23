@@ -83,7 +83,7 @@ Applications built with a cross-platform framework (React Native, Flutter, Elect
 
 Appium or Maestro for mobile cross-platform parity (see [Mobile Test Automation](./mobile-test-automation.md)); Playwright for Electron app testing (it has first-party Electron support); platform-specific manual/exploratory spot checks for OS-native integrations that automation covers poorly (native notification behavior, OS-level permission prompts).
 
-## Key Takeaways
+## Summary
 
 - 💡 Shared cross-platform code doesn't guarantee shared behavior — platform-specific rendering and OS integration are real, recurring sources of divergence
 - 🔥 Playwright has first-party Electron support, making it a strong default for cross-platform desktop app testing without adopting a separate tool

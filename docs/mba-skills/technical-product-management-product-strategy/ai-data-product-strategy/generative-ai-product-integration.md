@@ -111,7 +111,7 @@ Step 4 — Privacy and safety guardrails
   review is the guardrail, not a nice-to-have
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Evaluate models on your own task-specific test set, not general leaderboard rankings — a model that's state-of-the-art generally can underperform a cheaper model on your specific, narrow use case
 - 🔥 Model-tiering (routing easy requests to cheap models, hard ones to expensive models) is usually the single highest-leverage cost control — most requests are easier than the hardest case you're optimizing accuracy for

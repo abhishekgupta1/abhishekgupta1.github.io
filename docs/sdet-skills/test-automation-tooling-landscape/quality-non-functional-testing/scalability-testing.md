@@ -73,7 +73,7 @@ A system that handles 2x traffic on 2x infrastructure isn't guaranteed by having
 
 Run identical load profiles at multiple instance counts/sizes with k6 or Gatling, observe via Prometheus/Grafana whether throughput scales proportionally and whether autoscaling reacts within an acceptable time window; combine with [Stress Testing](./stress-testing.md) to find the point where scaling stops helping.
 
-## Key Takeaways
+## Summary
 
 - 💡 "Scales" means throughput improves proportionally with added resources — a system that needs 4x resources for 2x throughput has a real scalability problem worth investigating
 - 🔥 Autoscaling reaction time matters as much as its eventual correctness — a system that scales up 5 minutes after a spike started still failed users during those 5 minutes

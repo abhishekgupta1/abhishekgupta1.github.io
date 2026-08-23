@@ -329,7 +329,7 @@ But:
 
 ---
 
-## Key Takeaways
+## Summary
 
 - 💡 First understand, then act — never restart blindly before preserving evidence.
 - 🔥 Check resource saturation (USE method) before anything else.

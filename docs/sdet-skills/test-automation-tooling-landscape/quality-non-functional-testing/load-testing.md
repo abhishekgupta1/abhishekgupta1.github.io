@@ -81,7 +81,7 @@ A load test applies a realistic, sustained traffic profile — matching expected
 
 k6 scripted against expected peak concurrent users/RPS, run in CI on a schedule (not just pre-launch), with results compared against a stored baseline — see [Performance Testing](./performance-testing.md) for the full observability-paired stack.
 
-## Key Takeaways
+## Summary
 
 - 💡 Load testing verifies "does it meet the SLA at expected traffic," which is a narrower and more common question than "where does it break" (stress testing)
 - 🔥 A realistic traffic *profile* (request mix, think-time between actions) matters as much as raw request volume — a load test using unrealistic uniform request patterns can pass while missing real bottlenecks

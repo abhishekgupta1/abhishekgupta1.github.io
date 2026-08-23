@@ -86,7 +86,7 @@ At single-team scale, "test strategy" can live in one person's head. At enterpri
 
 Not tool-specific — the strategy layer sits above tool choice, but a concrete example cadence (every PR / after merge / nightly / pre-production / in production) is detailed in the [example enterprise test strategy](../test-automation-tools-technology-landscape.md#29-example-enterprise-test-strategy).
 
-## Key Takeaways
+## Summary
 
 - 💡 Strategy is about sequencing and ownership, not just "which tools" — the same tools poorly sequenced still produce a slow, low-trust pipeline
 - 🔥 The expensive checks (full performance suites, DAST, chaos game days) belong off the PR critical path so they don't become the friction people route around

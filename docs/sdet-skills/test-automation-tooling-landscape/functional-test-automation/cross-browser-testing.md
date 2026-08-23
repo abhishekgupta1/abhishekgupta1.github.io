@@ -78,7 +78,7 @@ Different browser engines implement CSS, JavaScript, and layout with subtle diff
 
 Playwright's built-in multi-engine support for most teams' day-to-day cross-browser coverage; a cloud grid (BrowserStack/Sauce Labs/LambdaTest) when real OS/browser-version combinations beyond what Playwright ships locally are needed, or when Selenium is the existing framework.
 
-## Key Takeaways
+## Summary
 
 - 💡 Cross-browser coverage value is proportional to real traffic diversity — an internal enterprise tool with 100% Chrome usage doesn't need the same investment as a public consumer site
 - 🔥 Playwright's native WebKit support removes the historical need for a cloud grid just to get baseline Safari coverage

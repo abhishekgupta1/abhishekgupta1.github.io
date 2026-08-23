@@ -117,7 +117,7 @@ Value-based framing (stronger):
     most common source of retainer relationships going sour.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 Quantify the client's value before naming a price — a number grounded in their own data (churn cost, revenue impact) is both a stronger pricing anchor and a stronger proposal argument than a generic day-rate
 - 🔥 Lead every proposal with the client's problem and the outcome you'll deliver, not your process or credentials — clients buy outcomes; process detail belongs in an appendix, not the opening page

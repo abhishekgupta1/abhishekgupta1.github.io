@@ -109,7 +109,7 @@ Likely Root Cause
 
 An AI agent (Claude Code or a purpose-built root-cause tool) with API access to the observability platform (Prometheus/Grafana/OpenTelemetry) and deployment history (CI/CD system, GitOps tooling) — the quality of root cause analysis is bounded by how well-instrumented and how clean the underlying deployment history already is.
 
-## Key Takeaways
+## Summary
 
 - 💡 Root-cause agents represent the leading edge of AI testing maturity — genuinely valuable, but their output quality depends heavily on how clean the underlying commit history, deployment tracking, and observability instrumentation already are
 - 🔥 Correlating a failure against deployment history specifically (not just logs/traces) is what turns "the system got slow" into "this specific deploy is the likely cause" — a directly actionable finding

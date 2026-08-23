@@ -77,7 +77,7 @@ In a consumer-driven contract test, the consumer team writes tests against a moc
 
 Pact for most microservice architectures, with a shared Pact Broker for contract publishing/verification across teams; Specmatic where OpenAPI is already the enforced source of truth and a lighter-weight, spec-driven approach is preferred over Pact's consumer-test-authoring model.
 
-## Key Takeaways
+## Summary
 
 - 💡 Contract testing exists specifically to solve a problem integration testing scales poorly for: N teams' cross-dependencies, verified without N teams needing a shared deployed environment
 - 🔥 A single team owning both sides of an integration often doesn't need contract testing yet — the coordination cost contract testing solves doesn't exist when one team can just coordinate the change directly

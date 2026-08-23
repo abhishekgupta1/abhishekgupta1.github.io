@@ -84,7 +84,7 @@ BDD testing separates a scenario's human-readable specification (a `.feature` fi
 
 Cucumber (or its ecosystem-specific equivalent — SpecFlow for .NET, Behave for Python) where non-engineer readability is a genuine, active requirement; Karate specifically for API testing wanting Gherkin-style structure with minimal step-definition boilerplate; skip BDD frameworks entirely when the team is purely engineers and the extra syntax layer adds translation overhead without a real readability payoff.
 
-## Key Takeaways
+## Summary
 
 - 💡 BDD's value is fundamentally about communication, not test execution — the Gherkin layer doesn't make tests more powerful, it makes them more legible to non-engineers
 - 🔥 Karate is worth a specific look for API-heavy teams since it collapses "readable specification" and "test implementation" into one file, avoiding the step-definition indirection Cucumber requires

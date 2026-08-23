@@ -123,7 +123,7 @@ k6, Testcontainers, WireMock, Pact, Terraform + Terratest, Kubernetes testing, O
 
 AI coding agents, AI test generation, AI visual testing, self-healing automation, test failure/root-cause agents. This tier is an accelerant, not a foundation — see [AI-Powered Test Automation](../ai-powered-test-automation/ai-powered-test-automation.md).
 
-## Key Takeaways
+## Summary
 
 - 💡 Depth in Tier 1 beats breadth across all three tiers — a technical interview or a real incident exposes shallow tool familiarity fast
 - 🔥 Tier 2 tools only compound once Tier 1 is solid — chaos engineering, IaC testing, and observability all assume a working CI/CD and infrastructure foundation

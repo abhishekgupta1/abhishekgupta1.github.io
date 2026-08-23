@@ -81,7 +81,7 @@ A component test mounts or instantiates one real component (a React/Vue componen
 
 Playwright or Cypress component testing for UI-heavy frontends already using either tool for E2E; Spring Boot Test slices for Java/Spring backends; Pytest module-scoped fixtures for Python backends needing the same isolated-but-real testing pattern.
 
-## Key Takeaways
+## Summary
 
 - 💡 Component testing catches UI logic bugs faster and more reliably than full E2E while still exercising real rendering, unlike a pure unit test with a mocked DOM
 - 🔥 Spring Boot's test slices (`@WebMvcTest`, `@DataJpaTest`) load only the relevant application context, dramatically faster than a full `@SpringBootTest`

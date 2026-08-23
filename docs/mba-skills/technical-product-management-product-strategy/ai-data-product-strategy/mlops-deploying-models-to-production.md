@@ -113,7 +113,7 @@ Step 4 — Plan rollback
   rather than waiting for a full retrain cycle to fix it.
 ```
 
-## Key Takeaways
+## Summary
 
 - 💡 A model can degrade with zero errors thrown — production monitoring needs to track prediction and outcome distributions specifically, not just standard uptime/error-rate metrics
 - 🔥 Training-serving skew (the model behaving differently live than in validation) is one of the most common and hardest-to-detect production ML failures — sharing feature-computation code between training and serving is the most reliable fix

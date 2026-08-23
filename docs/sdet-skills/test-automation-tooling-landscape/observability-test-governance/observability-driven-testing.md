@@ -102,7 +102,7 @@ Observability is the practice of instrumenting a system (traces, metrics, logs) 
 
 **OpenTelemetry** is the right investment regardless of backend — instrument once with a vendor-neutral SDK, then send data to whichever backend fits (self-hosted Prometheus/Grafana/Loki/Jaeger for cost control and portability, or Datadog/New Relic/Dynatrace for a managed experience with less operational overhead).
 
-## Key Takeaways
+## Summary
 
 - 💡 Instrument with OpenTelemetry even if you're currently on a single managed backend — the SDK is vendor-neutral, so switching backends later doesn't mean re-instrumenting the whole codebase
 - 🔥 A trace connecting a test run to its resulting spans is far more useful for diagnosing an intermittent failure than logs alone — logs tell you what happened in one service, a trace tells you what happened across all of them for one request

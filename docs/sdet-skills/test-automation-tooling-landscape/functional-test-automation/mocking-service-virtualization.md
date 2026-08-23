@@ -84,7 +84,7 @@ Mocking replaces a real dependency with a controlled substitute. At the unit-tes
 
 MSW for frontend unit/component tests (network-level, framework-agnostic), WireMock for backend integration tests needing HTTP-level dependency simulation, Mockito/language-native mocks for pure unit tests — reserve [Testcontainers](./integration-testing.md) for cases where the real engine's behavior (not just its HTTP shape) actually matters.
 
-## Key Takeaways
+## Summary
 
 - 💡 Mocking and Testcontainers solve different problems — mocking simulates a dependency's *interface*, Testcontainers exercises the dependency's *real engine*; picking the wrong one for the risk you're testing wastes effort either way
 - 🔥 MockServer's call-verification capability (not just response-stubbing) matters when the test needs to prove your service called a dependency correctly, not just that it handled a response

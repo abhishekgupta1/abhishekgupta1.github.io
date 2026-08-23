@@ -84,7 +84,7 @@ Without gates, passing tests are advisory — a human can merge or deploy despit
 
 Implement gates natively in CI/CD (GitLab CI/GitHub Actions required-status-checks, SonarQube quality gates for code metrics) rather than as an informal team norm — see [CI/CD Test Automation](../delivery-pipeline-infrastructure/ci-cd-automation.md).
 
-## Key Takeaways
+## Summary
 
 - 💡 A gate is only as strong as its enforcement — a "gate" a human can override at will is a suggestion, not a gate
 - 🔥 Not every check needs to be a blocking gate — some belong as visible, non-blocking reports (informational) until the team trusts the signal enough to block on it

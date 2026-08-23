@@ -87,7 +87,7 @@ Event-driven and messaging testing validates the parts of a system that don't fi
 
 **Testcontainers + Pact** is the highest-leverage pairing: Testcontainers gives integration tests a real, ephemeral broker so serialization and consumer-group behavior are tested against the genuine thing, while Pact validates the message *contract* between producer and consumer teams without either side needing the other's full service running. LocalStack fills the same real-dependency role specifically for AWS-native messaging (SQS/SNS/EventBridge).
 
-## Key Takeaways
+## Summary
 
 - 💡 A mocked message broker proves your client-library calls are shaped correctly — it proves nothing about serialization compatibility, partition behavior, or what happens when the real broker is slow or unavailable
 - 🔥 Consumer-driven contract testing (Pact) catches breaking producer changes *before* they reach a consumer team, dramatically cheaper than catching it in a shared staging environment or production

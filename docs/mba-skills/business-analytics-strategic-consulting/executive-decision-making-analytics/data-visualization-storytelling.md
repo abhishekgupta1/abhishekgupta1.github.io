@@ -104,7 +104,7 @@ Better version:
 
 The weak version is technically more complete; the better version is far more likely to actually drive a decision, because it isolates one clear, actionable story instead of asking the audience to synthesize six charts themselves.
 
-## Key Takeaways
+## Summary
 
 - 💡 State the takeaway before showing the chart — "churn is up 40%, driven by X" first, then the chart that proves it — rather than making the audience derive the conclusion themselves from a raw visual
 - 🔥 One chart, one message — a chart trying to show multiple things at once usually shows none of them clearly; split it into multiple simple charts rather than one complex one

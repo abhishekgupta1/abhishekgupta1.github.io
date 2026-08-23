@@ -89,7 +89,7 @@ Visual regression testing captures a screenshot of a UI state and compares it ag
 
 Layer it: use **Playwright screenshot assertions** for cheap, in-suite visual checks on critical pages as part of the existing E2E run, and add **Applitools** (or **Chromatic** if the team already uses Storybook) specifically for the component library or design-system layer, where cross-browser rendering differences and dynamic content make raw pixel diffing too noisy to trust. Don't adopt a paid visual-testing platform before raw screenshot comparison has actually proven insufficient — it often hasn't.
 
-## Key Takeaways
+## Summary
 
 - 💡 Raw pixel-diff tools (Playwright, BackstopJS) produce false positives from anti-aliasing and font rendering differences between CI and local environments — pin rendering environments (same OS/browser version in CI) before blaming the tool
 - 🔥 Applitools' "Visual AI" specifically targets the false-positive problem — it distinguishes a meaningful layout shift from a 1px anti-aliasing difference, which is the main reason teams pay for it over free alternatives

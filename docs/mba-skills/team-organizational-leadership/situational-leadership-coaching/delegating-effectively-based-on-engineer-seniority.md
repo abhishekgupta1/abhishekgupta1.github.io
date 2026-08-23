@@ -87,7 +87,7 @@ A senior engineer, strong generally, joins your team and is assigned to build a 
 
 Contrast with a mid-level engineer doing their tenth iteration on a well-understood service: assign the outcome ("reduce p99 latency by 30%"), skip the design review, and only step in if they ask or if delivery risk shows up. Treating them like the caching-layer scenario above would read as micromanagement and erode trust.
 
-## Key Takeaways
+## Summary
 
 - 💡 Delegation style is per-task, not per-person — the same engineer can be in Direct mode on one project and Empower mode on another
 - 🔥 The failure mode of over-delegating (Empower mode on a low-competence task) looks like missed deadlines and rework; the failure mode of under-delegating (Direct mode on a high-competence task) looks like disengagement and attrition

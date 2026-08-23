@@ -93,7 +93,7 @@ flowchart TD
 
 Each stage's tooling depends on comfort with the one before it — chaos engineering without observability fluency produces experiments nobody can interpret; observability without Kubernetes/cloud fluency produces dashboards nobody can act on.
 
-## Key Takeaways
+## Summary
 
 - 💡 SDET and SRE aren't different disciplines wearing different job titles — they're the same underlying instinct (define correct, verify continuously) applied to different points in the system's lifecycle
 - 🔥 Chaos engineering is the clearest overlap point — it's simultaneously an advanced test automation practice and a core SRE discipline, making it a natural bridge skill to prioritize

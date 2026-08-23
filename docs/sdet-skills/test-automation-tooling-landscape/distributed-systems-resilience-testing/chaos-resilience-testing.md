@@ -90,7 +90,7 @@ Chaos and resilience testing deliberately injects failure into a system — kill
 
 For a Kubernetes-based environment, **Chaos Mesh** (CNCF project, broad fault-type coverage, native Kubernetes CRDs) is the strongest general-purpose starting point; for AWS-native infrastructure, **AWS Fault Injection Service** integrates directly with existing infra without standing up a separate chaos platform. **Toxiproxy** is worth learning independently of either — it's lightweight enough to drop into any service-to-service test (not just full chaos experiments) to simulate latency, timeouts, and connection drops at the network layer.
 
-## Key Takeaways
+## Summary
 
 - 💡 A steady-state hypothesis defined and measured *before* the experiment is the difference between chaos engineering and just breaking things — without it, you can't distinguish the experiment's effect from unrelated noise
 - 🔥 Start with the smallest blast radius that still tells you something real (one pod, one AZ, one dependency) — jumping straight to a full-region failure test both risks a real incident and makes the result harder to interpret
