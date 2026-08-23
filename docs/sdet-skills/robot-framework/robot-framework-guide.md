@@ -12,6 +12,8 @@ keyword-driven test suite from scratch, wire up custom keywords in Python,
 or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/robot-framework">📋 Quick reference: Robot Framework →</a>
+
 ---
 
 <div class="mental-model">

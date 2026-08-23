@@ -9,6 +9,8 @@ tags: [management, playbook, mba]
 
 **Part of**: Manager Response Library
 
+<a class="topic-crosslink" href="/cheatsheets/manager-response-library">📋 Quick reference: Manager Response Library →</a>
+
 ---
 
 <div class="mental-model">

@@ -12,6 +12,8 @@ API workspace, script request chaining and assertions, run a collection
 headlessly in CI, or walk into an SDET interview. Organized as a lookup you
 can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/postman">📋 Quick reference: Postman →</a>
+
 ---
 
 <div class="mental-model">

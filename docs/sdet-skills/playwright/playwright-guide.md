@@ -12,6 +12,8 @@ automation codebase, design a framework from scratch, or walk into an SDET
 interview. Organized so you can jump to any section as a lookup, or read
 top-to-bottom as a course.
 
+<a class="topic-crosslink" href="/cheatsheets/playwright">📋 Quick reference: Playwright →</a>
+
 ---
 
 <div class="mental-model">

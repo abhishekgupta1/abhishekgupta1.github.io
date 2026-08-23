@@ -10,6 +10,8 @@ image: "/img/og-image.png"
 
 Cross-browser testing is one of those things that sounds straightforward until you actually try to maintain a stable suite across Chromium, Firefox, and WebKit. After spending months refining a Playwright framework that runs hundreds of tests across all three engines, here are the patterns that made the biggest difference.
 
+<a class="topic-crosslink" href="/cheatsheets/playwright-cross-browser-testing">📋 Quick reference: Cross-Browser Playwright →</a>
+
 <!-- truncate -->
 
 <div class="mental-model">

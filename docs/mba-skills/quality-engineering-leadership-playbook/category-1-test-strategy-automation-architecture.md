@@ -9,6 +9,8 @@ tags: [sdet, quality-engineering, playbook, mba]
 
 **Part of**: Quality Engineering Leadership Playbook
 
+<a class="topic-crosslink" href="/cheatsheets/quality-engineering-leadership-playbook">📋 Quick reference: Quality Engineering Leadership →</a>
+
 ---
 
 <div class="mental-model">

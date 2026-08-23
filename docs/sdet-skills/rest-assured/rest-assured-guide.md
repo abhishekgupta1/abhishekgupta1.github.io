@@ -12,6 +12,8 @@ new API test suite, write idiomatic assertions against a JSON/XML response,
 or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/rest-assured">📋 Quick reference: Rest Assured →</a>
+
 ---
 
 <div class="mental-model">

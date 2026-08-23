@@ -66,6 +66,8 @@ tags: [leadership, management, mba]
 <p class="mental-model__caption">Underperformance has four distinct root causes — a skill gap, a will or motivation problem, unclear expectations, or something situational — and a generic "try harder" conversation only helps by accident; diagnosing which cause you're actually facing is what makes the fix land.</p>
 </div>
 
+<a class="topic-crosslink" href="/cheatsheets/team-organizational-leadership">📋 Quick reference: Team & Organizational Leadership →</a>
+
 ## Quick Reference
 
 Diagnose before you act: is this a **skill gap**, a **will/motivation problem**, an **unclear-expectations problem**, or a **situational/personal problem**? Each has a different fix. Address it directly and early via a specific, factual conversation — not through hints in a 1-on-1 or by waiting for the next review cycle.

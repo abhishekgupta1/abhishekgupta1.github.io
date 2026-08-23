@@ -56,6 +56,19 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'cheatsheets',
+        path: 'cheatsheets',
+        routeBasePath: 'cheatsheets',
+        sidebarPath: './sidebarsCheatsheets.js',
+      }),
+    ],
+  ],
+
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
@@ -63,6 +76,7 @@ const config = {
         indexDocs: true,
         indexBlog: true,
         indexPages: true,
+        docsRouteBasePath: ['docs', 'cheatsheets'],
         blogRouteBasePath: '/articles',
       },
     ],
@@ -86,6 +100,7 @@ const config = {
           {to: '/projects', label: 'Projects', position: 'left'},
           {to: '/articles', label: 'Articles', position: 'left'},
           {type: 'docSidebar', sidebarId: 'docs', label: 'Docs', position: 'left'},
+          {type: 'docSidebar', docsPluginId: 'cheatsheets', sidebarId: 'cheatsheets', label: 'Cheat Sheets', position: 'left'},
           {to: '/resume', label: 'Resume', position: 'left'},
           {to: '/certificates', label: 'Certificates', position: 'left'},
           {

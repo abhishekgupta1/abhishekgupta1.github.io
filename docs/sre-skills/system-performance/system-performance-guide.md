@@ -15,6 +15,8 @@ is actually the bottleneck, the toolkit that answers each question in that
 method, and a worked example that ties it together. Organized as a lookup
 you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/system-performance">📋 Quick reference: System Performance →</a>
+
 ---
 
 <div class="mental-model">

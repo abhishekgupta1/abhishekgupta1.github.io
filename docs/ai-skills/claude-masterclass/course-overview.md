@@ -21,6 +21,8 @@ knowledge base:
   kept as backing reference material for anything the study guide
   summarizes.
 
+<a class="topic-crosslink" href="/cheatsheets/claude-masterclass">📋 Quick reference: Claude Masterclass →</a>
+
 ---
 
 <div class="mental-model">

@@ -18,6 +18,8 @@ flows below as illustrative of the underlying concepts rather than a
 permanently fixed spec — verify exact syntax against current AWS
 documentation before depending on it in production tooling.
 
+<a class="topic-crosslink" href="/cheatsheets/kiro">📋 Quick reference: Kiro →</a>
+
 ---
 
 <div class="mental-model">

@@ -658,3 +658,165 @@ a:hover {
   font-size: 11px;
   font-weight: 700;
 }
+
+/* ============================================
+   Cheat Sheet Styles
+   Dense, masonry-style quick-reference pages
+   (devhints.io-inspired), plus the topic-tile
+   landing grid and the docs<->cheatsheet
+   cross-link pill.
+   ============================================ */
+/* One accent per Knowledge Base track (matches the sidebar categories) —
+   used by every cheat sheet and tile regardless of topic count, so adding
+   a new topic never needs a new color. */
+:root {
+  --cheat-sdet: #3f6fb0;   /* slate blue */
+  --cheat-sre: #2f8f92;    /* teal */
+  --cheat-sde: #b8860b;    /* ochre */
+  --cheat-mba: #8a4fae;    /* plum */
+  --cheat-ai: #3f8f5c;     /* pine */
+}
+
+[data-theme='dark'] {
+  --cheat-sdet: #6f9bd8;
+  --cheat-sre: #4bb3b6;
+  --cheat-sde: #e8c168;
+  --cheat-mba: #b37fd1;
+  --cheat-ai: #6fbf8a;
+}
+
+/* Landing page: colored topic tiles */
+.cheat-landing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.cheat-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #ffffff;
+  background: var(--tile-accent, var(--ifm-color-primary));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cheat-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cheat-tile--sdet { --tile-accent: var(--cheat-sdet); }
+.cheat-tile--sre { --tile-accent: var(--cheat-sre); }
+.cheat-tile--sde { --tile-accent: var(--cheat-sde); }
+.cheat-tile--mba { --tile-accent: var(--cheat-mba); }
+.cheat-tile--ai { --tile-accent: var(--cheat-ai); }
+
+/* Landing page: category group headers */
+.cheat-category-heading {
+  margin: 2.5rem 0 0.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200, #e3e3e3);
+}
+
+.cheat-category-heading:first-of-type {
+  margin-top: 1rem;
+}
+
+/* Cheat sheet page: masonry card layout */
+.cheat-sheet {
+  --sheet-accent: var(--ifm-color-primary);
+  column-count: 2;
+  column-gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.cheat-sheet--sdet { --sheet-accent: var(--cheat-sdet); }
+.cheat-sheet--sre { --sheet-accent: var(--cheat-sre); }
+.cheat-sheet--sde { --sheet-accent: var(--cheat-sde); }
+.cheat-sheet--mba { --sheet-accent: var(--cheat-mba); }
+.cheat-sheet--ai { --sheet-accent: var(--cheat-ai); }
+
+@media (max-width: 768px) {
+  .cheat-sheet { column-count: 1; }
+}
+
+.cheat-card {
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  background: var(--ifm-card-background-color, #ffffff);
+  border: 1px solid var(--ifm-color-emphasis-200, #e3e3e3);
+  border-top: 3px solid var(--sheet-accent);
+  border-radius: 8px;
+  padding: 1rem 1.1rem 1.1rem;
+  margin: 0 0 1.25rem;
+}
+
+.cheat-card h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sheet-accent);
+}
+
+.cheat-card pre {
+  margin-bottom: 0.5rem;
+  overflow-x: hidden;
+}
+
+.cheat-card pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.cheat-card p:last-child {
+  margin-bottom: 0;
+}
+
+.cheat-see {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Cross-link pill: docs guide <-> cheat sheet */
+.topic-crosslink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0 0 1.5rem;
+}
+
+[data-theme='dark'] .topic-crosslink {
+  background: rgba(128, 0, 255, 0.18);
+  color: var(--ifm-color-primary-lightest);
+}
+
+.topic-crosslink:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .topic-crosslink:hover {
+  color: var(--ifm-color-primary-lightest);
+}

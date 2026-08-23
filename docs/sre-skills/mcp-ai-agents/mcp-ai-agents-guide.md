@@ -15,6 +15,8 @@ For the human-in-the-loop and guardrail discipline this guide's agents rely
 on, see the
 [AI-Assisted Engineering Workflows guide](/docs/sre-skills/ai-assisted-engineering-workflows/ai-assisted-engineering-workflows-guide).
 
+<a class="topic-crosslink" href="/cheatsheets/mcp-ai-agents">📋 Quick reference: MCP & AI Agents →</a>
+
 ---
 
 <div class="mental-model">

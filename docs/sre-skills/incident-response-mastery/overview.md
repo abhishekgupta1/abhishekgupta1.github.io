@@ -8,6 +8,8 @@ tags: [sre, linux, incident-response, index]
 A complete SRE and Linux debugging knowledge base, organized by depth:
 mindset → practice → structured learning → reference.
 
+<a class="topic-crosslink" href="/cheatsheets/incident-response-mastery">📋 Quick reference: Incident Response →</a>
+
 <div class="mental-model">
 <span class="mental-model__label">🧭 Mental model</span>
 

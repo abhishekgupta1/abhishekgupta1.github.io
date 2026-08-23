@@ -11,6 +11,8 @@ A single-read, end-to-end reference for OpenTelemetry (OTel): enough to
 instrument a new service, design a Collector pipeline, or walk into an SRE
 interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/opentelemetry">📋 Quick reference: OpenTelemetry →</a>
+
 ---
 
 <div class="mental-model">

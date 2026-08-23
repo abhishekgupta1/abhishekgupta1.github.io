@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Selenium: enough to build a
 maintainable automation framework, debug a flaky suite, or walk into an SDET
 interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/selenium">📋 Quick reference: Selenium →</a>
+
 ---
 
 <div class="mental-model">

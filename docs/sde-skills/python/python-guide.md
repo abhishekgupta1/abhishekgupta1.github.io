@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Python: enough to onboard onto a new
 codebase, write idiomatic production code, or walk into an SDE interview.
 Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/python">📋 Quick reference: Python →</a>
+
 ---
 
 <div class="mental-model">

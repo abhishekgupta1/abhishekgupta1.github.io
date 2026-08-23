@@ -20,6 +20,8 @@ Senior engineers think in **failure domains**, **blast radius**, **RTO/RPO**,
 **stateless vs. stateful**, and **cost per unit of reliability** — this guide
 is organized around those five ideas.
 
+<a class="topic-crosslink" href="/cheatsheets/cloud-infrastructure">📋 Quick reference: Cloud Infrastructure →</a>
+
 ---
 
 <div class="mental-model">

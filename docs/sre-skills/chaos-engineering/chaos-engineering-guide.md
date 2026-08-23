@@ -11,6 +11,8 @@ A single-read, end-to-end reference for chaos engineering: enough to design
 a safe experiment, run a Game Day, or walk into an SRE interview. Organized
 as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/chaos-engineering">📋 Quick reference: Chaos Engineering →</a>
+
 ---
 
 <div class="mental-model">

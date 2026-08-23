@@ -11,6 +11,8 @@ A single-read, end-to-end reference for JUnit: enough to write idiomatic
 JUnit 5 tests, build a custom extension, or walk into an SDET interview.
 Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/junit">📋 Quick reference: JUnit →</a>
+
 ---
 
 <div class="mental-model">

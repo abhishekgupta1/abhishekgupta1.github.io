@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Git: enough to reason about what's
 actually happening under the hood, work a feature branch confidently, or walk
 into an SDE interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/git">📋 Quick reference: Git →</a>
+
 ---
 
 <div class="mental-model">

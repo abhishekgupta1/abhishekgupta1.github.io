@@ -13,6 +13,8 @@ and engineering work: enough to use them productively, know where to draw the
 line, and walk into an interview that touches on AI-assisted development.
 Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/ai-assisted-engineering-workflows">📋 Quick reference: AI-Assisted Engineering →</a>
+
 ---
 
 <div class="mental-model">

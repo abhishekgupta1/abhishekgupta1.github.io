@@ -11,6 +11,8 @@ A single-read, end-to-end reference for TestNG: enough to wire up a Java test
 suite from scratch, configure parallel/cross-browser execution, or walk into
 an SDET interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/testng">📋 Quick reference: TestNG →</a>
+
 ---
 
 <div class="mental-model">

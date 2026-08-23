@@ -50,6 +50,8 @@ tags: [product-management, tpm, mba]
 <p class="mental-model__caption">RICE, Kano, and MoSCoW are not interchangeable — each is built for a different kind of prioritization decision, so the real skill is picking the framework that matches whether you're ranking a long backlog, balancing feature types, or scoping one fixed-deadline release.</p>
 </div>
 
+<a class="topic-crosslink" href="/cheatsheets/technical-product-management-product-strategy">📋 Quick reference: Technical Product Management →</a>
+
 ## Quick Reference
 
 **RICE** (Reach × Impact × Confidence ÷ Effort) is best for comparing a long backlog of discrete features on relative value. **Kano** categorizes features by the type of satisfaction they drive (Must-Be, Performance, Delighter) and is best for balancing a roadmap across feature types. **MoSCoW** (Must/Should/Could/Won't) is best for scoping a single release under a fixed deadline. Pick the framework that matches the decision you're actually making — they're not interchangeable.

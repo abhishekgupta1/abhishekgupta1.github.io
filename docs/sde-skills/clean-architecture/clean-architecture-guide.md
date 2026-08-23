@@ -12,6 +12,8 @@ it correctly on a real codebase, defend the tradeoffs in a design review, or
 walk into an SDE interview. Organized as a lookup you can also read
 top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/clean-architecture">📋 Quick reference: Clean Architecture →</a>
+
 ---
 
 <div class="mental-model">

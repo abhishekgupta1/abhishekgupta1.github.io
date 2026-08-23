@@ -12,6 +12,8 @@ how a request actually travels from client to server, debug connectivity
 issues under pressure, or walk into an SRE interview. Organized as a lookup
 you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/networking-fundamentals">📋 Quick reference: Networking →</a>
+
 ---
 
 <div class="mental-model">

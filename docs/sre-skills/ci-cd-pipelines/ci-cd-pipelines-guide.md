@@ -11,6 +11,8 @@ A single-read, end-to-end reference for CI/CD: enough to design a pipeline
 from scratch, read/modify one in any of the three dominant tools, or walk
 into an SRE interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/ci-cd-pipelines">📋 Quick reference: CI/CD →</a>
+
 ---
 
 <div class="mental-model">

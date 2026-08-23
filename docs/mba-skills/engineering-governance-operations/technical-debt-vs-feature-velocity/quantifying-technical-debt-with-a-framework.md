@@ -70,6 +70,8 @@ tags: [engineering-management, operations, mba]
 <p class="mental-model__caption">Each axis stays measured on its own terms — speed, reliability, and risk — because collapsing them into a single debt score hides which specific problem is actually driving the cost, and different problems need different fixes.</p>
 </div>
 
+<a class="topic-crosslink" href="/cheatsheets/engineering-governance-operations">📋 Quick reference: Engineering Governance & Operations →</a>
+
 ## Quick Reference
 
 Measure debt along three axes that map to business cost: **velocity drag** (how much slower is shipping in this area vs. a healthy baseline), **incident cost** (bugs/outages traced to this area, and their resolution time), and **change risk** (how often a small change here causes an unrelated break). A single "code quality" score is not actionable; these three are, because each maps to a dollar or time cost leadership already tracks.

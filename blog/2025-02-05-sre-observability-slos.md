@@ -10,6 +10,8 @@ image: "/img/og-image.png"
 
 Most teams start their observability journey by throwing metrics at a dashboard and hoping the right alert fires at the right time. That approach leads to alert fatigue, missed incidents, and on-call engineers who dread their rotation. Here's a more structured way to think about it.
 
+<a class="topic-crosslink" href="/cheatsheets/sre-observability-slos">📋 Quick reference: SLOs & Observability →</a>
+
 <!-- truncate -->
 
 <div class="mental-model">

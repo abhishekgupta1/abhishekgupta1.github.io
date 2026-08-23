@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Appium: enough to stand up a mobile
 automation framework, debug flaky device tests, or walk into an SDET
 interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/appium">📋 Quick reference: Appium →</a>
+
 ---
 
 <div class="mental-model">

@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Kubernetes: enough to operate a
 cluster in production, debug a broken deployment at 2am, or walk into an
 SRE interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/kubernetes">📋 Quick reference: Kubernetes →</a>
+
 ---
 
 <div class="mental-model">

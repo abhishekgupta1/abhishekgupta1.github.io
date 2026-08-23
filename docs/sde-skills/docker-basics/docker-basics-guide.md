@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Docker: enough to containerize a
 service correctly, run and debug it locally, or walk into an SDE interview.
 Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/docker">📋 Quick reference: Docker →</a>
+
 ---
 
 <div class="mental-model">

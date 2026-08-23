@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Linux administration: enough to
 operate, debug, and harden a production Linux host, or walk into an SRE
 interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/linux-administration">📋 Quick reference: Linux Administration →</a>
+
 ---
 
 <div class="mental-model">

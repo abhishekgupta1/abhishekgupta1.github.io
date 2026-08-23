@@ -11,6 +11,8 @@ A single-read, end-to-end reference for Terraform: enough to stand up real
 infrastructure safely, reason about state, or walk into an SRE/infra
 interview. Organized as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/terraform">📋 Quick reference: Terraform →</a>
+
 ---
 
 <div class="mental-model">

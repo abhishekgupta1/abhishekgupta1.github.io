@@ -12,6 +12,8 @@ new performance test plan, run it correctly in CI, interpret the results
 correctly, or walk into an SDET/performance interview. Organized as a
 lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/jmeter">📋 Quick reference: JMeter →</a>
+
 ---
 
 <div class="mental-model">

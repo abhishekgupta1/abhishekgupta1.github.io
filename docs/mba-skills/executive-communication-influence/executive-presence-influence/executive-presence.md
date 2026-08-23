@@ -48,6 +48,8 @@ tags: [executive-communication, leadership, mba]
 <p class="mental-model__caption">Every executive pitch follows the same fixed order — state the conclusion before the reasoning, translate the reasoning into business impact in one sentence, then name the specific ask — because a time-constrained decision-maker needs the point before they'll invest attention in the detail behind it.</p>
 </div>
 
+<a class="topic-crosslink" href="/cheatsheets/executive-communication-influence">📋 Quick reference: Executive Communication & Influence →</a>
+
 ## Quick Reference
 
 Structure any executive pitch as: **conclusion first** (what you recommend), **why it matters to them** (business impact, in one sentence), **the ask** (what you need from them), in that order — under two minutes, zero jargon. If a term needs a definition, either cut it or replace it with its business consequence ("this reduces the risk of an outage" instead of "this improves fault tolerance").

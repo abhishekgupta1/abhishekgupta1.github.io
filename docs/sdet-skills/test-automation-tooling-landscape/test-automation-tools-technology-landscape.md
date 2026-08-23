@@ -15,6 +15,8 @@ tags: [test-automation, sdet, tooling]
 **Audience**: SDETs, QA Engineers, Automation Engineers, Test Automation Architects, SREs, DevOps Engineers, Engineering Managers, developers new to testing, and engineers planning an SDET → SRE transition
 **Created**: 2026-08-23
 
+<a class="topic-crosslink" href="/cheatsheets/test-automation-tooling-landscape">📋 Quick reference: Tooling Landscape →</a>
+
 ---
 
 <div class="mental-model">

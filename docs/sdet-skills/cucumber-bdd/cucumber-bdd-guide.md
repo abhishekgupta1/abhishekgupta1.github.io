@@ -12,6 +12,8 @@ Cucumber: enough to write a feature file that survives a "three amigos"
 review, wire up step definitions, or walk into an SDET interview. Organized
 as a lookup you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/cucumber-bdd">📋 Quick reference: Cucumber & BDD →</a>
+
 ---
 
 <div class="mental-model">

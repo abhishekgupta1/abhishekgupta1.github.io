@@ -53,6 +53,8 @@ tags: [business-analytics, consulting, mba]
 <p class="mental-model__caption">The four frameworks aren't interchangeable options — they narrow in sequence: SWOT and PESTLE orient broadly across internal and external factors, Value Chain analysis narrows that to the specific spot where cost or friction actually sits, and 5 Whys drills past the visible symptom at that spot down to the root cause a recommendation should actually target.</p>
 </div>
 
+<a class="topic-crosslink" href="/cheatsheets/business-analytics-strategic-consulting">📋 Quick reference: Business Analytics & Strategic Consulting →</a>
+
 ## Quick Reference
 
 **SWOT** (Strengths/Weaknesses/Opportunities/Threats) for a quick internal-vs-external strategic snapshot. **PESTLE** (Political/Economic/Social/Technological/Legal/Environmental) for scanning external macro forces affecting a business or market. **Value Chain analysis** for finding where in a company's operations value (or cost) is actually created. **5 Whys** for tracing a specific problem back to its root cause instead of stopping at the first visible symptom. Each structures a different kind of question — using the wrong one produces a tidy-looking but unhelpful analysis.

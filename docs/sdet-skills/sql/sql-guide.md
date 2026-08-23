@@ -12,6 +12,8 @@ test data against a database, write backend assertions in an API/E2E test,
 or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/sql">📋 Quick reference: SQL →</a>
+
 ---
 
 <div class="mental-model">

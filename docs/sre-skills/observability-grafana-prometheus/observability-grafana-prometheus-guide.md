@@ -14,6 +14,8 @@ For how OpenTelemetry traces/logs/metrics reach this stack via OTLP, see the
 [OpenTelemetry guide](/docs/sre-skills/opentelemetry/opentelemetry-guide) —
 this doc focuses on Prometheus and Grafana specifically.
 
+<a class="topic-crosslink" href="/cheatsheets/observability-grafana-prometheus">📋 Quick reference: Prometheus & Grafana →</a>
+
 ---
 
 <div class="mental-model">

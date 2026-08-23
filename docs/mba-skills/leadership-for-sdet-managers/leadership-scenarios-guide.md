@@ -15,6 +15,8 @@ deadline pressure, low performers, cross-team friction, and more — each with
 a worked answer usable directly in a management interview or as a real
 playbook on the job.
 
+<a class="topic-crosslink" href="/cheatsheets/leadership-for-sdet-managers">📋 Quick reference: Leadership for SDET Managers →</a>
+
 ---
 
 <div class="mental-model">

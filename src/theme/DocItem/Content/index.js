@@ -3,6 +3,9 @@
  * doc content, powered by the browser's Web Speech API (see
  * src/components/ListenButton). Keep this in sync with upstream
  * DocItem/Content if Docusaurus is upgraded.
+ *
+ * Cheat Sheets (/cheatsheets/*) opt out of Listen/Mind map — they're dense
+ * lookup pages, not narrative content those features are meant for.
  */
 import React, {useRef} from 'react';
 import clsx from 'clsx';
@@ -26,15 +29,18 @@ export default function DocItemContent({children}) {
   const syntheticTitle = useSyntheticTitle();
   const {metadata, frontMatter} = useDoc();
   const contentRef = useRef(null);
+  const isCheatSheet = metadata.permalink.startsWith('/cheatsheets');
 
   return (
     <>
-      <ListenButton targetRef={contentRef} />
-      <MindMapButton
-        targetRef={contentRef}
-        title={syntheticTitle || metadata.title}
-        subtitle={frontMatter.description || metadata.description}
-      />
+      {!isCheatSheet && <ListenButton targetRef={contentRef} />}
+      {!isCheatSheet && (
+        <MindMapButton
+          targetRef={contentRef}
+          title={syntheticTitle || metadata.title}
+          subtitle={frontMatter.description || metadata.description}
+        />
+      )}
       <div ref={contentRef} className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
         {syntheticTitle && (
           <header>

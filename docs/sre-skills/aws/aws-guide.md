@@ -12,6 +12,8 @@ Associate-level depth: enough to design a production architecture, operate
 it as an SRE, or walk into an AWS-focused interview. Organized as a lookup
 you can also read top-to-bottom.
 
+<a class="topic-crosslink" href="/cheatsheets/aws">📋 Quick reference: AWS →</a>
+
 ---
 
 <div class="mental-model">

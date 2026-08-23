@@ -2,6 +2,8 @@
 
 A quick-reference guide to understanding and using Claude (by Anthropic) effectively.
 
+<a class="topic-crosslink" href="/cheatsheets/using-claude">📋 Quick reference: Claude →</a>
+
 ---
 
 <div class="mental-model">
