@@ -69,7 +69,7 @@ tags: [test-automation, sdet, tooling]
 <text class="mm-node-title" x="285" y="223" text-anchor="middle">AI</text>
 <text class="mm-node-sub" x="285" y="239" text-anchor="middle">generation, triage, root cause</text>
 
-<path class="mm-arrow" d="M285,200 L285,90" style="stroke-dasharray:4,3" marker-end="url(#mm-landscape-arrow)"/>
+<path class="mm-arrow" d="M285,200 L285,90" stroke-dasharray="4,3" marker-end="url(#mm-landscape-arrow)"/>
 <text class="mm-flow-label" x="330" y="145" text-anchor="middle">feedback:</text>
 <text class="mm-flow-label" x="330" y="158" text-anchor="middle">AI feeds back into automation</text>
 </svg>
