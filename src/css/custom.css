@@ -68,6 +68,15 @@ a:hover {
 }
 
 /* ============================================
+   Page-bottom breathing room
+   No site footer — give every page's last section
+   soft, rounded closure instead of an abrupt cutoff.
+   ============================================ */
+.main-wrapper {
+  padding-bottom: 4rem;
+}
+
+/* ============================================
    Hero Section Styles
    ============================================ */
 .hero-section {

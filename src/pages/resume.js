@@ -9,6 +9,33 @@ const OG_TITLE = 'Resume | Abhishek Gupta';
 const DESCRIPTION =
   'View or download the professional resume of Abhishek Gupta — SDET III, SRE, and AI Enthusiast.';
 
+const HIGHLIGHTS = [
+  {
+    title: 'SDET',
+    points: [
+      'End-to-end automation frameworks (Playwright, Selenium, Appium) cutting regression time by up to 60%',
+      'CI/CD integration across GitHub Actions, Jenkins, and Travis CI',
+      'API & BDD test automation with REST Assured and Cucumber',
+    ],
+  },
+  {
+    title: 'SRE',
+    points: [
+      'Observability stacks with Prometheus & Grafana, cutting MTTD by 45%',
+      'SLI/SLO tracking and blameless postmortem practices',
+      'Kubernetes reliability and Infrastructure as Code with Terraform',
+    ],
+  },
+  {
+    title: 'AI Systems Engineering',
+    points: [
+      'AI-powered test generation, improving code coverage from 40% to 78%',
+      'RAG pipelines and agentic workflows with LangChain, OpenAI & Anthropic APIs',
+      'Prompt engineering frameworks and AI observability',
+    ],
+  },
+];
+
 export default function Resume() {
   const {siteConfig} = useDocusaurusContext();
   const pdfUrl = useBaseUrl('/resume.pdf');
@@ -26,6 +53,21 @@ export default function Resume() {
       </Head>
       <main style={{padding: '2rem', maxWidth: '1440px', margin: '0 auto'}}>
         <h1 style={{textAlign: 'center', marginBottom: '1.5rem'}}>Resume</h1>
+
+        <div className="services-grid" style={{marginBottom: '2.5rem'}}>
+          {HIGHLIGHTS.map((domain) => (
+            <div className="service-card" key={domain.title}>
+              <h3>{domain.title}</h3>
+              <ul style={{margin: 0, paddingLeft: '1.1rem'}}>
+                {domain.points.map((point) => (
+                  <li key={point} style={{marginBottom: '0.4rem'}}>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
         <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
           <a

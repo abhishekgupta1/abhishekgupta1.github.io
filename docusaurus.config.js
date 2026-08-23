@@ -102,36 +102,6 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Navigation',
-            items: [
-              {label: 'Home', to: '/'},
-              {label: 'Projects', to: '/projects'},
-              {label: 'Articles', to: '/articles'},
-              {label: 'Docs', to: '/docs/intro'},
-              {label: 'Resume', to: '/resume'},
-              {label: 'Certificates', to: '/certificates'},
-            ],
-          },
-          {
-            title: 'Connect',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/abhishekgupta1',
-              },
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/abhishekcgupta1/',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Abhishek Gupta. Built with Docusaurus.`,
-      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
