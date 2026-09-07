@@ -5,7 +5,8 @@
  * DocItem/Content if Docusaurus is upgraded.
  *
  * Cheat Sheets (/cheatsheets/*) opt out of Listen/Mind map — they're dense
- * lookup pages, not narrative content those features are meant for.
+ * lookup pages, not narrative content those features are meant for. They get
+ * a ProgressTracker toggle instead (see src/components/ProgressTracker).
  */
 import React, {useRef} from 'react';
 import clsx from 'clsx';
@@ -15,6 +16,8 @@ import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
 import ListenButton from '@site/src/components/ListenButton';
 import MindMapButton from '@site/src/components/MindMapButton';
+import ProgressTracker from '@site/src/components/ProgressTracker';
+import {topics} from '@site/src/data/topics';
 
 function useSyntheticTitle() {
   const {metadata, frontMatter, contentTitle} = useDoc();
@@ -30,6 +33,8 @@ export default function DocItemContent({children}) {
   const {metadata, frontMatter} = useDoc();
   const contentRef = useRef(null);
   const isCheatSheet = metadata.permalink.startsWith('/cheatsheets');
+  const sheetId = metadata.permalink.replace(/^\/cheatsheets\/?/, '');
+  const isTrackedSheet = isCheatSheet && topics.some((t) => t.id === sheetId);
 
   return (
     <>
@@ -41,6 +46,7 @@ export default function DocItemContent({children}) {
           subtitle={frontMatter.description || metadata.description}
         />
       )}
+      {isTrackedSheet && <ProgressTracker id={sheetId} />}
       <div ref={contentRef} className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
         {syntheticTitle && (
           <header>

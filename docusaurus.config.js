@@ -52,6 +52,18 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml',
+        },
+        // Google Analytics (GA4). Uncomment and set trackingID once you have a
+        // property. Left off until then because an invalid ID fails the build.
+        // gtag: {
+        //   trackingID: 'G-XXXXXXXXXX',
+        //   anonymizeIP: true,
+        // },
       }),
     ],
   ],
@@ -85,9 +97,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/og-image.png',
       metadata: [
         {name: 'twitter:card', content: 'summary_large_image'},
         {property: 'og:type', content: 'website'},
+        // Google Search Console verification. Replace the content value with the
+        // token from Search Console (Settings -> Ownership verification -> HTML tag),
+        // or drop Google's verification HTML file into static/ instead.
+        {name: 'google-site-verification', content: 'REPLACE_WITH_SEARCH_CONSOLE_TOKEN'},
       ],
       colorMode: {
         defaultMode: 'dark',
@@ -116,6 +133,48 @@ const config = {
             'aria-label': 'LinkedIn',
           },
         ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Content',
+            items: [
+              {label: 'Articles', to: '/articles'},
+              {label: 'Docs', to: '/docs/intro'},
+              {label: 'Cheat Sheets', to: '/cheatsheets'},
+              {label: 'Projects', to: '/projects'},
+              {label: 'Dashboard', to: '/dashboard'},
+            ],
+          },
+          {
+            title: 'Site',
+            items: [
+              {label: 'About', to: '/about'},
+              {label: 'Contact', to: '/contact'},
+              {label: 'Resume', to: '/resume'},
+              {label: 'Certificates', to: '/certificates'},
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {label: 'Privacy Policy', to: '/privacy'},
+              {label: 'Terms of Service', to: '/terms'},
+              {label: 'Cookie Policy', to: '/cookie-policy'},
+              {label: 'Disclaimer', to: '/disclaimer'},
+            ],
+          },
+          {
+            title: 'Connect',
+            items: [
+              {label: 'GitHub', href: 'https://github.com/abhishekgupta1'},
+              {label: 'LinkedIn', href: 'https://www.linkedin.com/in/abhishekcgupta1/'},
+              {label: 'RSS', href: 'https://abhishekgupta1.github.io/articles/rss.xml'},
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Abhishek Gupta. Content is original work; third-party names and trademarks belong to their owners.`,
       },
       prism: {
         theme: prismThemes.github,

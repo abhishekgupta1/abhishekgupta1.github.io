@@ -15,6 +15,8 @@ one-page reference — commands, snippets, and gotchas at a glance, with no
 narrative in between. Read the full guide first to build the mental model;
 come back here when you just need the syntax.
 
+New here? [Pick your focus →](/start) · Already browsing? [Track your progress →](/dashboard)
+
 ## SDET Skills
 
 <div class="cheat-landing-grid">

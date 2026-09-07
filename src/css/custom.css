@@ -820,3 +820,127 @@ a:hover {
 [data-theme='dark'] .topic-crosslink:hover {
   color: var(--ifm-color-primary-lightest);
 }
+
+/* Progress dashboard */
+.progress-dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.progress-summary {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200, #e3e3e3);
+  border-radius: 10px;
+  background: var(--ifm-card-background-color, #ffffff);
+}
+
+.progress-summary-stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.75rem;
+}
+
+.progress-summary-stats strong {
+  font-size: 1.2rem;
+  color: var(--ifm-font-color-base);
+}
+
+.progress-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200, #e3e3e3);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--cheat-sre);
+  transition: width 0.2s ease;
+}
+
+.progress-clear-btn {
+  margin-top: 1rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300, #d3d3d3);
+  background: transparent;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.progress-clear-btn:hover {
+  border-color: var(--ifm-color-danger, #e03131);
+  color: var(--ifm-color-danger, #e03131);
+}
+
+.progress-clear-confirm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.progress-clear-btn--danger {
+  border-color: var(--ifm-color-danger, #e03131);
+  color: var(--ifm-color-danger, #e03131);
+}
+
+.progress-tile {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.progress-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.progress-badge--none {
+  opacity: 0.65;
+}
+
+/* Start / focus picker */
+.start-picker {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.start-picker-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.start-picker-option {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300, #d3d3d3);
+  background: var(--ifm-card-background-color, #ffffff);
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.start-picker-option--sdet.start-picker-option--active { border-color: var(--cheat-sdet); color: var(--cheat-sdet); }
+.start-picker-option--sre.start-picker-option--active { border-color: var(--cheat-sre); color: var(--cheat-sre); }
+.start-picker-option--sde.start-picker-option--active { border-color: var(--cheat-sde); color: var(--cheat-sde); }
+.start-picker-option--mba.start-picker-option--active { border-color: var(--cheat-mba); color: var(--cheat-mba); }
+.start-picker-option--ai.start-picker-option--active { border-color: var(--cheat-ai); color: var(--cheat-ai); }
+
+.start-picker-result {
+  margin-top: 1rem;
+}
