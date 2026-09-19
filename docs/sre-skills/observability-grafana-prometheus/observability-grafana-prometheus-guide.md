@@ -2,6 +2,7 @@
 title: "Observability (Grafana & Prometheus): The Complete Guide"
 description: "End-to-end reference for Observability (Grafana & Prometheus) — Prometheus architecture and PromQL, SLIs/SLOs and error budgets, alerting and dashboards, long-term storage, ELK/EFK and commercial APM tradeoffs, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [observability, grafana, prometheus, sre, sli, slo, error-budget, elk, datadog]
 ---
 
@@ -15,6 +16,17 @@ For how OpenTelemetry traces/logs/metrics reach this stack via OTLP, see the
 this doc focuses on Prometheus and Grafana specifically.
 
 <a class="topic-crosslink" href="/cheatsheets/observability-grafana-prometheus">📋 Quick reference: Prometheus & Grafana →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn how Prometheus scrapes, stores, and queries metrics
+2. Write three PromQL queries: a rate, a ratio, and a percentile
+3. Define one SLI/SLO and compute its error budget
+4. Wire an alert through Alertmanager and read Common Pitfalls
+
+</TenMinute>
 
 ---
 

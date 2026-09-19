@@ -2,6 +2,7 @@
 title: "CI/CD (Jenkins, GitLab CI & GitHub Actions): The Complete Guide"
 description: "End-to-end reference for CI/CD — pipeline concepts, deployment strategies, side-by-side Jenkins/GitLab CI/GitHub Actions syntax, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [ci-cd, jenkins, gitlab-ci, github-actions, sre]
 ---
 
@@ -12,6 +13,17 @@ from scratch, read/modify one in any of the three dominant tools, or walk
 into an SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/ci-cd-pipelines">📋 Quick reference: CI/CD →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the pipeline stages: build → test → scan → deploy
+2. Compare rolling, blue-green, and canary deployments
+3. Pick one tool (Jenkins, GitLab CI, or GitHub Actions) and read its section
+4. Read Secrets Management and Common Pitfalls before wiring credentials
+
+</TenMinute>
 
 ---
 

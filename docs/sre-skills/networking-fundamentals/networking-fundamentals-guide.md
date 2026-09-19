@@ -2,6 +2,7 @@
 title: "Networking Fundamentals: The Complete Guide"
 description: "End-to-end reference for Networking Fundamentals — OSI/TCP-IP model, addressing, DNS/TLS, load balancing, troubleshooting tools, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [networking, sre, tcp-ip, dns]
 ---
 
@@ -13,6 +14,17 @@ issues under pressure, or walk into an SRE interview. Organized as a lookup
 you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/networking-fundamentals">📋 Quick reference: Networking →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Trace one request through the layers: DNS → TCP handshake → TLS → HTTP
+2. Practise CIDR: work out the size of a `/24` and a `/16`
+3. Run `dig`, `curl -v`, and `ss` against a real service
+4. Read Common Failure Scenarios to see how each layer breaks
+
+</TenMinute>
 
 ---
 

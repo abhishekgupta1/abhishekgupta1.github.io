@@ -2,6 +2,7 @@
 title: "AI-Assisted Engineering Workflows: The Complete Guide"
 description: "End-to-end reference for AI-Assisted Engineering Workflows — where coding assistants fit in SRE work, prompt engineering basics, guardrails for production changes, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [ai, sre, developer-productivity, automation]
 ---
 
@@ -14,6 +15,17 @@ line, and walk into an interview that touches on AI-assisted development.
 Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/ai-assisted-engineering-workflows">📋 Quick reference: AI-Assisted Engineering →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Read where AI assistants help SRE work and where they don't
+2. Learn the prompt structure: context, task, constraints, output format
+3. Study the Guardrails section — what never to automate blindly
+4. Adopt the Practical Workflow Checklist for your next AI-assisted change
+
+</TenMinute>
 
 ---
 

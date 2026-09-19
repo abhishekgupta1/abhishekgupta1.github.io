@@ -2,6 +2,7 @@
 title: "AWS: The Complete Guide"
 description: "End-to-end reference for AWS — compute, storage, networking, IAM, databases, high availability, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [aws, sre, cloud, solutions-architect, aws-cli]
 ---
 
@@ -13,6 +14,17 @@ it as an SRE, or walk into an AWS-focused interview. Organized as a lookup
 you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/aws">📋 Quick reference: AWS →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the Shared Responsibility Model — what AWS secures vs what you do
+2. Understand VPC, subnets, security groups, and IAM roles at a high level
+3. Read High Availability and Cost Optimization for the design trade-offs
+4. Skim the CLI Essentials for the commands you'll use daily
+
+</TenMinute>
 
 ---
 

@@ -2,6 +2,7 @@
 title: "System Performance: The Complete Guide"
 description: "End-to-end reference for diagnosing Linux system performance with the USE and RED methods — CPU, memory, disk I/O, network, the standard toolkit, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [system-performance, sre, linux, troubleshooting, use-method]
 ---
 
@@ -16,6 +17,17 @@ method, and a worked example that ties it together. Organized as a lookup
 you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/system-performance">📋 Quick reference: System Performance →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the USE method: Utilisation, Saturation, Errors for every resource
+2. Run the toolkit in order: `uptime`, `vmstat`, `iostat`, `ss`, `top`
+3. Follow the worked "the server is slow" example end to end
+4. Read Common Mistakes so you don't blame CPU by default
+
+</TenMinute>
 
 ---
 

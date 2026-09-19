@@ -2,6 +2,7 @@
 title: "MCP & AI Agents: The Complete Guide"
 description: "End-to-end reference for MCP & AI Agents — the Model Context Protocol's architecture, agent design patterns, dev-automation use cases, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [mcp, ai-agents, llm, automation]
 ---
 
@@ -16,6 +17,17 @@ on, see the
 [AI-Assisted Engineering Workflows guide](/docs/sre-skills/ai-assisted-engineering-workflows/ai-assisted-engineering-workflows-guide).
 
 <a class="topic-crosslink" href="/cheatsheets/mcp-ai-agents">📋 Quick reference: MCP & AI Agents →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Understand the Host / Client / Server split in MCP
+2. Learn how an agent differs from a single-shot LLM call
+3. Read the agent design patterns and pick one for a dev-automation task
+4. Review Safety & Guardrails before giving an agent any write access
+
+</TenMinute>
 
 ---
 

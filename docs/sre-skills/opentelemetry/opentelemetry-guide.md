@@ -2,6 +2,7 @@
 title: "OpenTelemetry: The Complete Guide"
 description: "End-to-end reference for OpenTelemetry — traces, metrics, logs, SDK/Collector architecture, instrumentation, sampling, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [opentelemetry, observability, sre, tracing, metrics]
 ---
 
@@ -12,6 +13,17 @@ instrument a new service, design a Collector pipeline, or walk into an SRE
 interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/opentelemetry">📋 Quick reference: OpenTelemetry →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the three signals — traces, metrics, logs — and how they correlate
+2. Understand API vs SDK vs Collector, and what each is responsible for
+3. Try auto-instrumentation on one service before writing manual spans
+4. Read the Sampling section before turning on tracing in production
+
+</TenMinute>
 
 ---
 

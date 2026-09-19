@@ -2,6 +2,7 @@
 title: "Terraform: The Complete Guide"
 description: "End-to-end reference for Terraform — IaC philosophy, core workflow, HCL syntax, state management, modules, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [terraform, sre, infrastructure-as-code]
 ---
 
@@ -12,6 +13,17 @@ infrastructure safely, reason about state, or walk into an SRE/infra
 interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/terraform">📋 Quick reference: Terraform →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Understand the loop: `init` → `plan` → `apply` — and why you read the plan every time
+2. Learn where state lives and why it must be remote and locked in a team
+3. Read the Common Pitfalls section before touching a shared workspace
+4. Use the Safe Apply checklist for your next change
+
+</TenMinute>
 
 ---
 

@@ -2,6 +2,7 @@
 title: "Linux Administration: The Complete Guide"
 description: "End-to-end reference for Linux Administration — filesystem, permissions, process/service management, networking, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [linux, sre, sysadmin]
 ---
 
@@ -12,6 +13,17 @@ operate, debug, and harden a production Linux host, or walk into an SRE
 interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/linux-administration">📋 Quick reference: Linux Administration →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Walk the filesystem hierarchy (`/etc`, `/var`, `/proc`) and read a file's permissions with `ls -l`
+2. Find and inspect a running process with `ps`, then stop it with `kill`
+3. Tail a service's logs with `journalctl -u <svc> -f`
+4. Skim the Interview-Ready Q&A at the bottom to see what's expected
+
+</TenMinute>
 
 ---
 

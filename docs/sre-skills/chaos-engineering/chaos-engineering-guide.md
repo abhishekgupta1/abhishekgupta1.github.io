@@ -2,6 +2,7 @@
 title: "Chaos Engineering: The Complete Guide"
 description: "End-to-end reference for chaos engineering — the steady-state hypothesis, the experiment lifecycle, failure injection types, tools, Game Days, blast-radius safety, and interview-ready Q&A."
 sidebar_position: 1
+level: advanced
 tags: [chaos-engineering, sre, reliability, resilience]
 ---
 
@@ -12,6 +13,17 @@ a safe experiment, run a Game Day, or walk into an SRE interview. Organized
 as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/chaos-engineering">📋 Quick reference: Chaos Engineering →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={10}>
+
+1. Define a steady-state hypothesis before injecting anything
+2. Follow the lifecycle: hypothesis → experiment → observe → learn
+3. Set blast-radius limits and a stop condition first
+4. Study the LitmusChaos pod-delete example as your first experiment
+
+</TenMinute>
 
 ---
 

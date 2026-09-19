@@ -2,6 +2,7 @@
 title: "Cloud Infrastructure: The Complete Guide"
 description: "Provider-agnostic architecture patterns — HA design, network topology, compute choice, load balancing, autoscaling, and DR — complementing the AWS-specific and Terraform-specific guides elsewhere in this site."
 sidebar_position: 1
+level: intermediate
 tags: [cloud-infrastructure, sre, architecture, high-availability]
 ---
 
@@ -21,6 +22,17 @@ Senior engineers think in **failure domains**, **blast radius**, **RTO/RPO**,
 is organized around those five ideas.
 
 <a class="topic-crosslink" href="/cheatsheets/cloud-infrastructure">📋 Quick reference: Cloud Infrastructure →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn HA design: multiple AZs, no single point of failure
+2. Understand RTO and RPO and pick a DR pattern to match
+3. Compare VMs, containers, and serverless for one workload
+4. Read the 3-tier reference architecture end to end
+
+</TenMinute>
 
 ---
 

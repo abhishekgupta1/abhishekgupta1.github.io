@@ -2,6 +2,7 @@
 title: "Kubernetes: The Complete Guide"
 description: "End-to-end reference for Kubernetes — architecture, core objects, networking, scheduling, health checks, rollouts, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [kubernetes, sre, containers, orchestration]
 ---
 
@@ -12,6 +13,17 @@ cluster in production, debug a broken deployment at 2am, or walk into an
 SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/kubernetes">📋 Quick reference: Kubernetes →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the architecture: control plane vs worker nodes
+2. Understand Pod, Deployment, and Service, and how they relate
+3. Practise `kubectl get`, `describe`, `logs`, and `rollout undo`
+4. Read the Troubleshooting section for CrashLoopBackOff and Pending pods
+
+</TenMinute>
 
 ---
 
