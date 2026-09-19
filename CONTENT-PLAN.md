@@ -10,15 +10,15 @@ Scope rules from `CLAUDE.md` apply: this is **content work only**. Do not touch
 
 ---
 
-## 1. Where things stand (as of 2026-09-19)
+## 1. Where things stand (Phase 0 finished; Phase 1 not started)
 
 | Page type | Pages | Done | Still missing |
 |---|---|---|---|
 | Topic guide (`*-guide.md`) | 31 | `level`, `LevelBadge`, `TenMinute`, outcomes (`KeyTakeaways`) on 30–31 | `Exercises`, `CaseStudy`, `AISpark` |
 | Deep subtopic (short SDET / MBA / incident pages) | 133 | `TenMinute` on 132, `LevelBadge` on 107 | intentionally out of scope (see §6) |
-| Cheat sheet (`cheatsheets/`) | 45 | nothing | `level`, `TenMinute` |
-| Article (`blog/`) | 5 | 1 has `KeyTakeaways` | `KeyTakeaways` on the other 4 |
-| Other | 2 | — | `docs/intro.md` fast path; badge on `leadership-scenarios-guide.md` |
+| Cheat sheet (`cheatsheets/`) | 45 | `TenMinute` on 44 (not the `intro.md` index); `level` + badge on 31 | nothing further planned (Phase 2 is optional) |
+| Article (`blog/`) | 5 | `KeyTakeaways` on 4; the 5th (draft) has a plain-markdown Key Takeaways section | — |
+| Other | 2 | `docs/intro.md` has a "Start here" fast path | `leadership-scenarios-guide.md` has no level (none justified) |
 
 **Decisions already made**
 
