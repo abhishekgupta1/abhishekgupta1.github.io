@@ -214,7 +214,6 @@ const config = {
             items: [
               {to: '/roadmap', label: 'Skill Roadmap'},
               {to: '/skills', label: 'Skills Matrix'},
-              {to: '/quiz', label: 'Quiz'},
               {to: '/dashboard', label: 'Progress Dashboard'},
               {to: '/start', label: 'Pick Your Focus'},
             ],
@@ -253,7 +252,6 @@ const config = {
             items: [
               {label: 'Skill Roadmap', to: '/roadmap'},
               {label: 'Skills Matrix', to: '/skills'},
-              {label: 'Quiz', to: '/quiz'},
               {label: 'Progress Dashboard', to: '/dashboard'},
               {label: 'Pick Your Focus', to: '/start'},
             ],

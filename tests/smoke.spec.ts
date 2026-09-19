@@ -18,7 +18,6 @@ const ROUTES = [
   ['Start', '/start'],
   ['Roadmap', '/roadmap'],
   ['Skills', '/skills'],
-  ['Quiz', '/quiz'],
   ['About', '/about'],
   ['Uses', '/uses'],
   ['Now', '/now'],

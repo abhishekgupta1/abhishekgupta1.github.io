@@ -5,7 +5,7 @@
 
 Personal portfolio + knowledge base built with [Docusaurus](https://docusaurus.io/).
 Reference guides (`/docs`), quick-lookup cheat sheets (`/cheatsheets`), articles
-(`/articles`), and learning tools (`/roadmap`, `/skills`, `/quiz`, `/dashboard`).
+(`/articles`), and learning tools (`/roadmap`, `/skills`, `/dashboard`).
 
 ## Develop
 
