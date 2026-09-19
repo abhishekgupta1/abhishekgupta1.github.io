@@ -856,7 +856,7 @@ kubectl apply --dry-run=client -f deploy.yaml
 **Done when:** the dry run reports `deployment.apps/web created (dry run)`, and you can state what each probe's failure does: readiness removes the Pod from Service endpoints without restarting it, liveness makes the kubelet restart the container.
 
 </Exercises.Task>
-<Exercises.Task title="Follow the CrashLoopBackOff walkthrough" level="advanced" stretch="Add a failing readinessProbe to a Pod that stays Running, and confirm it is not restarted.">
+<Exercises.Task title="Follow the CrashLoopBackOff walkthrough" level="advanced">
 
 On any local cluster, create a Pod that crashes on purpose, then run the guide's steps in order:
 

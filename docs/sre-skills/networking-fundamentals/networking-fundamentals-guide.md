@@ -485,7 +485,7 @@ python3 -c "import ipaddress; print([str(s) for s in ipaddress.ip_network('192.1
 **Done when:** your list has 8 subnets from `192.168.10.0/27` to `192.168.10.224/27`, each with 30 usable hosts, and it matches the script's output.
 
 </Exercises.Task>
-<Exercises.Task title="Walk the diagnostic order against a real host" level="intermediate" stretch="Compare a refused connection (nc -zv localhost 9) with a timeout (nc -zv -w 3 10.255.255.1 80, an address that typically goes unanswered) and say what each means.">
+<Exercises.Task title="Walk the diagnostic order against a real host" level="intermediate">
 
 Pick any public HTTPS site and run the guide's tools in its order: `ping -c 4`, `dig`, `nc -zv HOST 443`, then `curl -o /dev/null -s -w "%{time_total}\n" https://HOST`. Finish by reading the certificate expiry:
 

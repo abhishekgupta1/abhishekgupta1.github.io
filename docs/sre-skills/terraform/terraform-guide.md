@@ -1089,7 +1089,7 @@ cat note.txt
 **Done when:** the file contains the content from the plan you saved, not the newer edit in `main.tf`, and a fresh `terraform plan` proposes the newer change. That gap is why CI applies a saved plan artifact.
 
 </Exercises.Task>
-<Exercises.Task title="Gate a plan on its JSON" level="advanced" stretch="Extend the gate to also fail on any resource whose actions include update, and report which address triggered it.">
+<Exercises.Task title="Gate a plan on its JSON" level="advanced">
 
 Write a one-line check that fails a plan containing any destroy or forced replacement:
 

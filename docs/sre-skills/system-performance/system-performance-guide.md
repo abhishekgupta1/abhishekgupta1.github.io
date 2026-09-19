@@ -711,7 +711,7 @@ kill %1
 **Done when:** `vmstat` shows the overall CPU still mostly idle (`id` high), while `mpstat -P ALL` shows one core near 100% busy. That is the situation the guide says an aggregate average hides.
 
 </Exercises.Task>
-<Exercises.Task title="Run USE over a table of readings" level="advanced" stretch="Which RED signal would you check first to learn whether users are affected?">
+<Exercises.Task title="Run USE over a table of readings" level="advanced">
 
 Classify each resource as utilization, saturation, or errors, and decide whether it is the bottleneck:
 

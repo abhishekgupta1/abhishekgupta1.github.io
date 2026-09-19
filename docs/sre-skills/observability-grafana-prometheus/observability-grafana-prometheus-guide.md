@@ -979,7 +979,7 @@ histogram_quantile(0.99,
 **Done when:** both queries return one series per handler, and you can explain why the second sums `rate()` of the `_bucket` series by `le` before the quantile, instead of using raw bucket counts.
 
 </Exercises.Task>
-<Exercises.Task title="Turn a 99.95% SLO into numbers" level="advanced" stretch="Explain in one sentence why a static alert on error rate above 5% cannot tell these burn rates apart.">
+<Exercises.Task title="Turn a 99.95% SLO into numbers" level="advanced">
 
 A service has a 99.95% availability SLO over 30 days. Write its availability SLI in the guide's PromQL shape, then work out by hand: the error budget in minutes, the budget left after one 9-minute full outage, and how long the budget lasts at a 14.4x burn and at a 3x burn.
 

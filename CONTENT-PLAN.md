@@ -178,8 +178,8 @@ Update the boxes as batches land, and record the commit hash.
 
 **Phase 1**
 
-- [x] Batch 1 — SRE infra (6) — commit: see `git log` ("batch 1")
-- [x] Batch 2 — SRE reliability (5) — commit: see `git log` ("batch 2")
+- [x] Batch 1 — SRE infra (6) — commit: `51eda9a`
+- [x] Batch 2 — SRE reliability (5) — commit: `441996b` (+ stretch fix)
 - [ ] Batch 3 — AI (3) — commit: ______
 - [ ] Batch 4 — SDET Java stack (6) — commit: ______
 - [ ] Batch 5 — SDET API/perf/data (6) — commit: ______
