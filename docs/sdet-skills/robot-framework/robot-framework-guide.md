@@ -2,6 +2,7 @@
 title: "Robot Framework: The Complete Guide"
 description: "End-to-end reference for Robot Framework — keyword-driven testing, .robot suite structure, built-in libraries, custom keywords, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [robot-framework, sdet, automation, bdd]
 ---
 
@@ -13,6 +14,17 @@ or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/robot-framework">📋 Quick reference: Robot Framework →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn the `.robot` file structure: settings, variables, test cases, keywords
+2. Try the built-in libraries, then write one custom keyword
+3. Use data-driven templates to run one test with many inputs
+4. Read When to Choose Robot Framework to decide if it fits your team
+
+</TenMinute>
 
 ---
 

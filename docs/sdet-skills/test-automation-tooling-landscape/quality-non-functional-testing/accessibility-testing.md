@@ -2,6 +2,7 @@
 title: "Accessibility Testing"
 description: "**axe-core** is the tool to standardize on — it's the underlying engine behind most other accessibility tools on this list (including Lighthouse's a11y audit), it's free, and it integrates directly into a Playwright/Selenium suite so accessibility checks run as part of the normal test cycle instead of a separate audit pass."
 sidebar_position: 6
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -46,6 +47,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">WCAG conformance splits in two: automated scanners like axe-core reliably catch a meaningful slice of violations (contrast, missing labels, bad ARIA), but structurally can't judge whether a screen reader's reading order makes sense or a widget traps keyboard focus — that half still needs a human with assistive technology.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Integrating axe checks into an existing Playwright/Selenium suite costs almost nothing incrementally — the browser session and page navigation are already happening; you're just adding an assertion
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

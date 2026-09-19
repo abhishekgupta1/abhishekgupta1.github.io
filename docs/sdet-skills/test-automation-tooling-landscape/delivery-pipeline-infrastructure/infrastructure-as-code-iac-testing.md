@@ -2,6 +2,7 @@
 title: "Infrastructure as Code (IaC) Testing"
 description: "Static analysis (**Checkov**, **TFLint**, **tfsec**) catches misconfigurations and policy violations *before* `apply` — cheap, fast, no real infrastructure involved."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -54,6 +55,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">IaC code first passes cheap, fast static analysis that catches known-bad patterns before anything real exists, then the modules that matter get a real apply against a throwaway environment to catch what static analysis structurally can't — and every provisioned resource is torn down afterward, even on failure.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Testing a shared/reusable Terraform module with the same rigor as a shared code library is non-negotiable once more than one team consumes it
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Test Automation Framework Architecture"
 description: "A test automation framework's architecture determines whether a suite scales gracefully to thousands of tests or collapses under its own maintenance burden at a few hundred — the core principle across every good framework is separating **what a test verifies** from **how it interacts with the system**, so a UI change updates one place, not every test that touches it."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -57,6 +58,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A good framework separates what a test verifies from how it interacts with the system: business-readable tests sit above an abstraction layer that hides selectors and endpoints, which sits above a data layer and the driver/runner layer that actually executes — so a UI or API change updates one abstraction, not every test that touches it — while a reporting layer captures results, screenshots, and traces alongside the whole stack.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A framework's real cost isn't writing the first ten tests, it's whether writing the thousandth test is still as easy as the first — architecture is what determines that
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Test Reporting & Analytics"
 description: "A test suite that only reports pass/fail in a CI log is invisible to anyone who isn't currently staring at that log."
 sidebar_position: 2
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -51,6 +52,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A CI log is invisible to anyone not staring at it the moment it runs, and it disappears when the build is cleaned up — feeding results through Allure or ReportPortal instead turns a single ephemeral run into a persistent, historical report the whole team and stakeholders can actually see.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: ReportPortal's failure-clustering (grouping similar failures automatically) is genuinely useful once a suite is large enough that triaging failures one-by-one after every run becomes the bottleneck
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Kubernetes Testing"
 description: "Kubernetes testing spans manifest validation (**kubeval**, **kubeconform**, **kube-score**, **Polaris**), in-cluster test execution (**Testkube**, `helm test`), security posture (**kube-bench**), and chaos/resilience (**LitmusChaos**, **Chaos Mesh**) — each solving a different layer of 'is this cluster actually healthy and correctly configured.'."
 sidebar_position: 5
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -54,6 +55,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Kubernetes testing builds upward — cheap manifest validation catches misconfiguration before anything deploys, post-deploy verification checks the running workload, and chaos testing proves resilience actually holds — while a security posture scan (kube-bench) runs on a recurring schedule alongside the whole stack rather than once at cluster setup.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A liveness/readiness probe misconfiguration is one of the most common, highest-impact Kubernetes bugs — it causes either premature restarts or traffic sent to unready pods, and it's entirely catchable with static analysis (kube-score/Polaris) before deploy
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

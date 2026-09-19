@@ -2,6 +2,7 @@
 title: "AI Root Cause Analysis"
 description: "AI root cause analysis correlates a test failure with everything that changed around it — application logs, traces, infrastructure metrics, and recent deployments — to surface a ranked hypothesis of the likely cause, compressing manual correlation work an on-call engineer would otherwise do by hand across multiple dashboards."
 sidebar_position: 5
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -67,6 +68,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A failure's timestamp gets correlated against logs, traces, infrastructure metrics, and deployment history all at once, compressing what an on-call engineer would otherwise piece together by hand — the output is a ranked starting hypothesis, not a confirmed diagnosis.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Correlating a failure against deployment history specifically (not just logs/traces) is what turns "the system got slow" into "this specific deploy is the likely cause" — a directly actionable finding
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

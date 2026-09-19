@@ -2,6 +2,7 @@
 title: "API Automation"
 description: "API testing verifies a service's behavior at its contract boundary (REST, GraphQL, SOAP, gRPC) without paying the cost of rendering a UI — it's faster, more stable, and closer to actual business logic than E2E testing, which is why it sits below UI/E2E in the pyramid."
 sidebar_position: 3
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A UI test and an API test can end up verifying the same business logic, but a UI test gets there through a browser rendering a full page, so a failure could mean a real bug, a selector change, or a timing issue; an API test hits the endpoint directly, so when it fails, the layer at fault is never in question.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Negative testing — invalid input, missing fields, malformed auth — is the class of test most often skipped under deadline pressure and most correlated with production incidents
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

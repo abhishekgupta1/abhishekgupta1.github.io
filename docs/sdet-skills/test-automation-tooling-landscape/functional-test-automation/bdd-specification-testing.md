@@ -2,6 +2,7 @@
 title: "BDD & Specification Testing"
 description: "Behavior-Driven Development (BDD) testing frameworks express test scenarios in structured, natural-language syntax (Gherkin's `Given/When/Then`) so non-engineers can read — and sometimes author — test specifications, with **Cucumber** as the long-standing standard and **Karate** as a modern alternative purpose-built for API testing specifically."
 sidebar_position: 12
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">BDD's Gherkin file is the same artifact for two different readers: a non-engineer reads it directly to validate intent, while step definitions translate that same plain-language scenario into code that drives the real underlying automation tool — the readability doesn't make the test more powerful, it makes it legible to people who don't read code.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Karate is worth a specific look for API-heavy teams since it collapses "readable specification" and "test implementation" into one file, avoiding the step-definition indirection Cucumber requires
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

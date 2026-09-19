@@ -2,6 +2,7 @@
 title: "Test Automation Pyramid"
 description: "The pyramid is a cost-and-stability model, not a build order: write more tests at cheap, fast, stable layers (unit) and fewer at slow, expensive, flakier layers (E2E)."
 sidebar_position: 2
+level: beginner
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -55,6 +56,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The pyramid's shape is a cost-and-stability model, not a priority order: write proportionally more tests at the fast, cheap, stable base layers and fewer at the slow, expensive, flakier top layer - every layer still matters, but each one should carry a proportionate share of the suite.</p>
 </div>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Push each verification down to the cheapest layer that can actually catch the bug — a missing null check belongs in a unit test, not an E2E click-through
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

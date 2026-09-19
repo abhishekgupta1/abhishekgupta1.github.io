@@ -2,6 +2,7 @@
 title: "Security Testing"
 description: "Security testing splits into distinct categories that get conflated as one thing: **SAST** (Semgrep, SonarQube — scan source code for vulnerable patterns), **dependency scanning** (Snyk, OWASP Dependency-Check, Trivy — find known CVEs in third-party packages/images), and **DAST** (OWASP ZAP, Burp Suite — attack a running app like an external actor would)."
 sidebar_position: 7
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -49,6 +50,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Security testing isn't one tool — SAST, dependency scanning, and DAST each catch a genuinely different class of vulnerability, and a team running only one of the three has a real, specific blind spot, not just "less coverage."</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Most real-world breaches involve a known, already-disclosed CVE in an unpatched dependency, not a novel zero-day — dependency scanning with an actual patch/upgrade process is disproportionately high-leverage for the effort
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

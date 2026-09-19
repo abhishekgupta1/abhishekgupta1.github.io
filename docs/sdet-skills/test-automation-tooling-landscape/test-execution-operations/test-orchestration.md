@@ -2,6 +2,7 @@
 title: "Test Orchestration"
 description: "Test orchestration is the layer that decides which tests run, where, in what order, and how results are aggregated across potentially many frameworks and runners — a genuine problem once a team runs more than one test framework (Playwright, k6, Postman) across more than one execution environment (local, CI, Kubernetes)."
 sidebar_position: 5
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -60,6 +61,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Once a team runs several test frameworks across several environments, an orchestration layer decides what runs where and aggregates all of it into one unified, consistently gated view - a problem a single framework running locally never needs to solve.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Testkube's value proposition is specifically running heterogeneous test frameworks (not just one) as first-class Kubernetes jobs with unified results — a single-framework team gets little from it beyond what their CI platform already provides
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

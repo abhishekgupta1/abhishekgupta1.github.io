@@ -2,6 +2,7 @@
 title: "AI-Powered Test Automation"
 description: "Two different categories get called 'AI testing' and they carry opposite risk profiles: **coding agents** (GitHub Copilot, Cursor, Claude Code, OpenAI Codex) accelerate a human who still authors, reviews, and owns the test; **AI-native platforms** (Mabl, Testim, Functionize, Autify, Momentic, Reflect, testRigor) generate and self-heal tests with less human authorship, trading control for maintenance speed."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Both count as "AI testing," but authorship decides the risk: a coding agent's output is a PR a human reviews and owns, while an AI-native platform can keep a test green even after it starts checking the wrong thing.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Self-healing is genuinely useful for surviving cosmetic UI churn but can silently mask a real regression if the "healed" locator now points at the wrong element and the test still passes
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

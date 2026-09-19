@@ -2,6 +2,7 @@
 title: "Observability-Driven Testing"
 description: "Observability tooling isn't traditional test automation — it's what lets you keep asserting on a system after the deploy boundary, where a test suite stops looking."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -65,6 +66,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Observability-driven testing turns telemetry into an automated pass/fail chain — run the test, pull the resulting trace, and verify latency, errors, logs, and SLO in sequence — so a deploy that passes every functional test but degrades in production still gets caught, without a human staring at a dashboard.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A trace connecting a test run to its resulting spans is far more useful for diagnosing an intermittent failure than logs alone — logs tell you what happened in one service, a trace tells you what happened across all of them for one request
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Postman: The Complete Guide"
 description: "End-to-end reference for Postman — collections, environments, pre-request/test scripts, Newman CI execution, mock servers, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [postman, sdet, api-testing]
 ---
 
@@ -13,6 +14,17 @@ headlessly in CI, or walk into an SDET interview. Organized as a lookup you
 can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/postman">📋 Quick reference: Postman →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Create a collection and send your first request
+2. Add a test script using the `pm.*` API and an environment variable
+3. Chain two requests by passing a value between them
+4. Run the collection in CI with Newman
+
+</TenMinute>
 
 ---
 

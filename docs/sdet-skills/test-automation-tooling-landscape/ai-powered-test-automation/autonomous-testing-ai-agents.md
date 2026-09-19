@@ -2,6 +2,7 @@
 title: "Autonomous Testing & AI Agents"
 description: "Autonomous testing — an AI agent that explores an application, generates a test, executes it, analyzes the result, fixes the test or files a bug, and re-runs, with minimal human involvement — is the frontier and the least mature capability in this domain."
 sidebar_position: 6
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -62,6 +63,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The loop explores, generates, executes, and analyzes with little human involvement, but the fix-or-file step feeds back into execution and is where an unsupervised mistake compounds fastest — which is why it stays behind a human gate even in an otherwise automated pipeline.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Coverage illusion is the central risk — an agent that autonomously generates a large volume of tests can create the appearance of thorough coverage while testing shallow, low-value paths
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

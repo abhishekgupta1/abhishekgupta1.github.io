@@ -2,6 +2,7 @@
 title: "Contract Testing"
 description: "Contract testing verifies that a consumer's expectations of a producer's API stay compatible, without needing both sides deployed together — **Pact**'s consumer-driven model is the dominant approach, and its value scales with the number of services and teams that depend on each other's APIs."
 sidebar_position: 7
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -48,6 +49,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Instead of both teams deploying together to find breakage, the consumer publishes its expectations as a contract to a broker, and the producer verifies its real implementation against that same contract in CI — catching a breaking change in seconds, without a slow, shared, fully-deployed integration environment.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A single team owning both sides of an integration often doesn't need contract testing yet — the coordination cost contract testing solves doesn't exist when one team can just coordinate the change directly
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

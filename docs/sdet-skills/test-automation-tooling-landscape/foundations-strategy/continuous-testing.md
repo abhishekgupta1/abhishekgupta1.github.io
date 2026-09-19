@@ -2,6 +2,7 @@
 title: "Continuous Testing"
 description: "Continuous testing is the practice of executing the right automated tests at every stage of the delivery pipeline — not just at the end — so quality risk is assessed continuously as code moves toward production, rather than in a single pre-release testing phase."
 sidebar_position: 3
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -59,6 +60,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Continuous testing runs a different, appropriately-sized set of tests at every pipeline stage - fast checks on commit, deeper checks on merge and deploy, and live validation in production - instead of concentrating all verification into one pre-release testing phase.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: The goal is fast, trustworthy feedback at every stage — not running every test everywhere, which just makes every stage slow
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

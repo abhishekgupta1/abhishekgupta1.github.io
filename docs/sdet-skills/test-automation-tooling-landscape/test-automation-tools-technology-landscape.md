@@ -2,6 +2,7 @@
 title: "Test Automation Tools & Technology Landscape"
 description: "Test automation stopped being 'write Selenium scripts against the UI' a long time ago."
 sidebar_position: 0
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -16,6 +17,17 @@ tags: [test-automation, sdet, tooling]
 **Created**: 2026-08-23
 
 <a class="topic-crosslink" href="/cheatsheets/test-automation-tooling-landscape">📋 Quick reference: Tooling Landscape →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={15}>
+
+1. Read the Introduction and the Test Automation Pyramid first
+2. Pick the section for the kind of testing you do: UI, API, mobile, or performance
+3. Scan the CI/CD and Observability-Driven Testing sections to see the wider picture
+4. Use the topic pages linked from each section for deeper reading
+
+</TenMinute>
 
 ---
 

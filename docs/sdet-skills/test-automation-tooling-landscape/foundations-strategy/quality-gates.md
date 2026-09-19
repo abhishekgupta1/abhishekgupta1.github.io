@@ -2,6 +2,7 @@
 title: "Quality Gates"
 description: "A quality gate is a pipeline checkpoint that blocks progression (merge, deploy, release) unless defined, measurable criteria are met — test pass rate, coverage threshold, security scan results, performance baseline — turning 'quality' from a subjective judgment call into an enforced, automatable rule."
 sidebar_position: 6
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -56,6 +57,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A quality gate turns "should we ship this?" into an enforced rule: a change that meets defined criteria proceeds toward deploy automatically, while one that doesn't is blocked and sent back to be fixed - not merged on a human's judgment call.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Not every check needs to be a blocking gate — some belong as visible, non-blocking reports (informational) until the team trusts the signal enough to block on it
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "SQL: The Complete Guide"
 description: "End-to-end reference for SQL — DML/DDL, joins, aggregates, subqueries vs CTEs vs window functions, indexes, transactions, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [sql, sdet, database]
 ---
 
@@ -13,6 +14,17 @@ or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/sql">📋 Quick reference: SQL →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Run `SELECT` with `WHERE`, `ORDER BY`, and `LIMIT`
+2. Learn INNER vs LEFT joins with a small example
+3. Use `GROUP BY` and `HAVING` for aggregates
+4. Read How SDETs Actually Use SQL for test-data and validation queries
+
+</TenMinute>
 
 ---
 

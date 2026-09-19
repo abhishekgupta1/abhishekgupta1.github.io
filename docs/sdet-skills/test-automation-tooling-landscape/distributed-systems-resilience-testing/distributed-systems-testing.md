@@ -2,6 +2,7 @@
 title: "Distributed Systems Testing"
 description: "Distributed systems testing verifies properties that only exist because a system spans multiple independent nodes/services — network partitions, partial failures, eventual consistency, and clock/ordering issues — problems a single-process test structurally cannot reproduce."
 sidebar_position: 2
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -55,6 +56,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Two independent nodes only ever talk through the network between them, and that network is the thing distributed systems testing deliberately breaks (latency, drops, a full partition) — when it fails, the system has to pick a side of the CAP trade-off, either rejecting the request to stay consistent or serving stale data to stay available, and a test suite that never exercises this partial-failure path can't tell you which one your system actually does.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A retry mechanism's safety depends entirely on idempotency — testing retries without also testing idempotency verifies the wrong half of the property
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

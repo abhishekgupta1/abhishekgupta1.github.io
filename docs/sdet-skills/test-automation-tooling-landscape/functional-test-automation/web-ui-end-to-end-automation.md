@@ -2,6 +2,7 @@
 title: "Web UI & End-to-End Automation"
 description: "For new work, **Playwright** is the default choice — auto-waiting, native cross-browser support (Chromium, Firefox, WebKit), and a first-class TypeScript API remove most of the flakiness that plagued the previous generation of tools."
 sidebar_position: 1
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -49,6 +50,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Web UI/E2E automation drives a real browser through the same interactions a user performs and asserts on what actually renders, which makes it the most convincing evidence a release works — and, because that fidelity is expensive to run and maintain, why the pyramid keeps it as the smallest layer by count rather than the primary one.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Cross-browser coverage matters most for consumer-facing products with real Safari/Firefox traffic — an internal enterprise tool with 100% Chrome usage doesn't need the same investment
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

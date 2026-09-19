@@ -2,6 +2,7 @@
 title: "Scalability Testing"
 description: "Scalability testing verifies that adding resources — horizontal (more instances) or vertical (bigger instances) — actually improves throughput proportionally, and that autoscaling mechanisms react correctly under real load."
 sidebar_position: 4
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -46,6 +47,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Doubling infrastructure doesn't guarantee doubled throughput — a shared, non-scaling bottleneck (a single database, a serialized queue) can quietly cap capacity well below the naive expectation, and scalability testing is what surfaces which outcome you actually get before it becomes a production incident.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Autoscaling reaction time matters as much as its eventual correctness — a system that scales up 5 minutes after a spike started still failed users during those 5 minutes
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

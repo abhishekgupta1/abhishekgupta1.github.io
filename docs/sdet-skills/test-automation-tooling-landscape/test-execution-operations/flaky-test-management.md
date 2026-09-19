@@ -2,6 +2,7 @@
 title: "Flaky Test Management"
 description: "A flaky test — one that fails intermittently without a corresponding code change — should be tracked and quarantined visibly, not silently retried or ignored."
 sidebar_position: 3
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -59,6 +60,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">When a test fails intermittently with no matching code change, silently retrying or ignoring it hides the exact signal a team needs and slowly erodes trust in "red means broken" - visibly quarantining it instead preserves that signal, keeps the pipeline moving, and turns the flake into a tracked fix-or-remove item.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Silent retries that make flaky tests "pass eventually" hide the exact signal a team needs to act on — visible quarantine (tracked, not deleted or silently retried) preserves the signal while unblocking the pipeline
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

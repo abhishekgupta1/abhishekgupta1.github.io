@@ -2,6 +2,7 @@
 title: "Mocking & Service Virtualization"
 description: "Mocking and service virtualization simulate a dependency's behavior — a specific response, a latency profile, a failure mode — so tests don't depend on that dependency being live, stable, or cheap to call repeatedly."
 sidebar_position: 8
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -52,6 +53,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Mocking and service virtualization replace a real, unreliable dependency with a controlled stand-in that the test fully owns: instead of inheriting a third-party API's real slowness, flakiness, and rate limits, the service under test talks to a double that returns fast, deterministic responses and can simulate specific failure modes on demand.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: MockServer's call-verification capability (not just response-stubbing) matters when the test needs to prove your service called a dependency correctly, not just that it handled a response
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

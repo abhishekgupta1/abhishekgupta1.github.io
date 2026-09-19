@@ -2,6 +2,7 @@
 title: "SDET → SRE Transition"
 description: "The core transferable instinct is the same in both roles: define what 'correct/healthy' means precisely enough to verify it automatically, then build the tooling and telemetry to check it continuously."
 sidebar_position: 2
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -47,6 +48,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The transition isn't a pivot into an unrelated discipline — it's the same "define correct, verify continuously" instinct redirected from pre-production assertions to a live system's SLIs, with chaos engineering as the practice that bridges both.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Chaos engineering is the clearest overlap point — it's simultaneously an advanced test automation practice and a core SRE discipline, making it a natural bridge skill to prioritize
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

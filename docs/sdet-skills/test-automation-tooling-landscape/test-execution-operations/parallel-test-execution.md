@@ -2,6 +2,7 @@
 title: "Parallel Test Execution"
 description: "Parallel test execution splits a suite across multiple workers/runners so total wall-clock time approaches (suite time ÷ worker count) rather than growing linearly with test count — the highest-leverage fix for a CI pipeline that's become slow enough to erode developer trust and behavior."
 sidebar_position: 4
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -59,6 +60,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Running a suite serially means total time scales with test count; splitting the same suite into independent, isolated shards that run at the same time - then merging results - drops wall-clock time toward suite time divided by the number of workers, provided the tests don't share mutable state.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Suite runtime is usually the first thing that erodes CI trust as a suite grows — parallelizing early, before it becomes painful, is cheaper than retrofitting isolation onto an already-interdependent suite later
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

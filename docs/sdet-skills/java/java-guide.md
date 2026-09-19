@@ -2,6 +2,7 @@
 title: "Java: The Complete Guide"
 description: "End-to-end reference for Java — JVM internals, OOP and generics, collections/streams, concurrency, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [java, sdet, programming-language]
 ---
 
@@ -12,6 +13,17 @@ codebase, write idiomatic production code, or walk into an SDET interview.
 Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/java">📋 Quick reference: Java →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn how source becomes bytecode and runs on the JVM
+2. Review OOP basics: classes, interfaces, and inheritance
+3. Get comfortable with collections and streams — you'll use them in every test
+4. Read Why Java Underpins the Mainstream SDET Stack to see how it maps to tools
+
+</TenMinute>
 
 ---
 

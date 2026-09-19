@@ -2,6 +2,7 @@
 title: "Microservices Testing"
 description: "Microservices testing verifies correctness across a system decomposed into many independently deployable services communicating over the network — the layer where contract testing carries proportionally more of the risk than it would in a monolith, since no single team can see or coordinate every consumer of their API."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -47,6 +48,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Each service stays independently testable — that independence is the whole point of the architecture — and instead of standing up the full system to check compatibility, a consumer-driven contract test verifies the API boundary between two teams' services directly; underneath both, the service mesh's routing, retry, and circuit-breaker configuration is its own testable layer, and a routing rule that looks correct in YAML can still misroute traffic in practice.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A service mesh (Istio/Envoy) adds a genuinely new testable layer — traffic routing, retries, and circuit breakers are now configuration, not code, and configuration needs verification too
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

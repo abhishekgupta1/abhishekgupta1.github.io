@@ -2,6 +2,7 @@
 title: "Cucumber & BDD: The Complete Guide"
 description: "End-to-end reference for Cucumber and BDD — Gherkin syntax, feature files, step definitions, hooks, data tables, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [cucumber, bdd, sdet, gherkin]
 ---
 
@@ -13,6 +14,17 @@ review, wire up step definitions, or walk into an SDET interview. Organized
 as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/cucumber-bdd">📋 Quick reference: Cucumber & BDD →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn the Given / When / Then structure of Gherkin
+2. Write one feature file and match it to step definitions
+3. Use Scenario Outlines and data tables to avoid duplicated scenarios
+4. Read Common Anti-Patterns so scenarios stay readable to non-engineers
+
+</TenMinute>
 
 ---
 

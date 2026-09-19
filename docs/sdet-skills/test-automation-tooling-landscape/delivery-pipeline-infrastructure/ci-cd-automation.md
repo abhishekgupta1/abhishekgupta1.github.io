@@ -2,6 +2,7 @@
 title: "CI/CD Automation"
 description: "**GitLab CI/CD** and **GitHub Actions** are the strongest defaults for most teams today — config-as-code, tight integration with the repo host, and no separate server to maintain, unlike **Jenkins**, which remains the most flexible and most operationally heavy option, still common in large enterprises with deep customization needs."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -63,6 +64,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A code change moves through graduated gates — a fast, cheap gate on every push, then a slower, deeper gate before merge — before deploying; when a deploy breaks, rollback is a wired-in pipeline capability, not a manual step someone has to remember under pressure.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: GitOps tools (Argo CD, Tekton) invert the traditional push-based deploy model: the cluster continuously reconciles to match what's declared in Git, which makes "what's actually running" always auditable against a single source of truth
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

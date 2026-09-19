@@ -2,6 +2,7 @@
 title: "Event-Driven & Messaging Testing"
 description: "Test event-driven boundaries against **real infrastructure in a disposable container** (Testcontainers running an actual Kafka/RabbitMQ broker), not a mocked producer/consumer — a mock proves your code calls the client library correctly, not that your serialization, partitioning, or consumer-group behavior actually works against the real thing."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -54,6 +55,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A producer and consumer never call each other directly — they only meet through a real, disposable broker, which is why testing against a mock proves nothing about serialization or consumer-group behavior; a Pact contract test validates the shape both sides agree on without either running the other's full service, and the dead-letter/retry path needs its own explicit test since a silently dropped malformed message never throws an exception a synchronous test would catch.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Consumer-driven contract testing (Pact) catches breaking producer changes *before* they reach a consumer team, dramatically cheaper than catching it in a shared staging environment or production
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

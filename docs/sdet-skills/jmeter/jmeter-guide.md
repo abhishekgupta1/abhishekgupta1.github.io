@@ -2,6 +2,7 @@
 title: "JMeter: The Complete Guide"
 description: "End-to-end reference for JMeter — test plan structure, load/stress/spike/soak testing, correlation, distributed testing, key metrics, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [jmeter, sdet, performance-testing]
 ---
 
@@ -13,6 +14,17 @@ correctly, or walk into an SDET/performance interview. Organized as a
 lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/jmeter">📋 Quick reference: JMeter →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the test plan structure: thread group, samplers, listeners
+2. Set threads, ramp-up, and loop count for a small load test
+3. Know the difference between load, stress, spike, and soak tests
+4. Run in non-GUI mode for CI and read the key metrics
+
+</TenMinute>
 
 ---
 

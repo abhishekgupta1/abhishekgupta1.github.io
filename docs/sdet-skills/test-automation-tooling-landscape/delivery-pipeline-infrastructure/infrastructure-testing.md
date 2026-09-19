@@ -2,6 +2,7 @@
 title: "Infrastructure Testing"
 description: "Infrastructure testing is the umbrella discipline of verifying that provisioned infrastructure — however it was created — actually matches its intended, secure, compliant configuration."
 sidebar_position: 2
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -52,6 +53,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Declared IaC configuration and the infrastructure's deployed reality can silently diverge — a manual console change or out-of-band hotfix drifts the running state away from what's in Git — so a scheduled, deploy-independent compliance scan checks the actual state directly and flags the gap before it causes a surprising diff or a real security incident.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Scheduled, deploy-independent compliance scans are what catch "someone clicked a change in the console" before it causes a surprising `apply` diff or a real security gap
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

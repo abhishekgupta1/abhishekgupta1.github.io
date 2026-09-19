@@ -2,6 +2,7 @@
 title: "AI Test Maintenance"
 description: "AI test maintenance covers self-healing locators (Mabl, Testim, Autify, Applitools) that adapt when a UI element's selector changes, plus AI-assisted flagging of outdated assertions and flaky tests — a genuinely mature, valuable capability that still requires review discipline, since 'still passing' isn't the same as 'still correct.'."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Self-healing solves cosmetic churn well, but it can't tell the difference between "the button moved" and "the button now does the wrong thing" — a healed locator that keeps a test green is a false sense of coverage nobody investigates.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A healed locator that silently points at the wrong element produces a false sense of coverage that's worse than an honest test failure, because nobody investigates a still-green test
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

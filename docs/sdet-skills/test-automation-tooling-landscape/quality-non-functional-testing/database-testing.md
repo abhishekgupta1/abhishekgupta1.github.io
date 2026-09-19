@@ -2,6 +2,7 @@
 title: "Database Testing"
 description: "**Testcontainers** is the highest-leverage tool here — it spins up a real, disposable database (Postgres, MySQL, whatever the service actually uses) in a container for each test run, replacing the false confidence of mocked SQL with a real engine that enforces real constraints."
 sidebar_position: 8
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -52,6 +53,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A mocked database lets a test pass while proving nothing about real constraint enforcement, foreign keys, or transaction behavior — Testcontainers swaps in a real, disposable engine so the same test catches the bug (a broken constraint, a bad join) before it ever reaches production.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Testing a migration against a Testcontainers instance loaded with production-shaped (not just empty-schema) data catches issues an empty-database migration test misses — a migration that works on an empty table can still fail or corrupt data at real scale
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

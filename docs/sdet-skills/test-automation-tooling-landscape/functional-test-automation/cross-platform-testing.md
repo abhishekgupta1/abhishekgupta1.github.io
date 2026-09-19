@@ -2,6 +2,7 @@
 title: "Cross-Platform Testing"
 description: "Cross-platform testing verifies an application behaves consistently across the different operating systems or runtimes it ships to — Android/iOS for mobile, Windows/macOS/Linux for desktop — distinct from cross-browser testing, which is scoped to browser engines within one OS."
 sidebar_position: 10
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -56,6 +57,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Identical source code doesn't guarantee identical behavior: cross-platform testing runs the same test suite against every target platform, because rendering, OS permission dialogs, and native integration live outside the shared code and can silently diverge — this is a different failure mode than cross-browser testing, which is scoped to browser engines within a single OS.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Playwright has first-party Electron support, making it a strong default for cross-platform desktop app testing without adopting a separate tool
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

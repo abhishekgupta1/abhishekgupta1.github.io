@@ -2,6 +2,7 @@
 title: "Selenium: The Complete Guide"
 description: "End-to-end reference for Selenium — WebDriver architecture, locators, waits, Page Object Model, Grid, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [selenium, sdet, automation, web-testing]
 ---
 
@@ -12,6 +13,17 @@ maintainable automation framework, debug a flaky suite, or walk into an SDET
 interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/selenium">📋 Quick reference: Selenium →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Understand WebDriver: how a script talks to the browser
+2. Learn locator strategies and prefer stable ones
+3. Replace `sleep` with explicit waits — the classic flakiness fix
+4. Structure tests with the Page Object Model, then scale with Grid
+
+</TenMinute>
 
 ---
 

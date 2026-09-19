@@ -2,6 +2,7 @@
 title: "Integration Testing"
 description: "Integration testing verifies that multiple real collaborating parts — a service and its real database, two services communicating — work together correctly, using **Testcontainers** for disposable real infrastructure wherever the alternative would be mocking away the exact behavior you need to verify."
 sidebar_position: 6
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -48,6 +49,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Integration testing deliberately gives up isolation for fidelity: instead of mocking the database or message broker, Testcontainers spins up the real thing as a disposable container for the run, so the test catches whatever the real engine actually does — including the SQL dialect quirks and serialization mismatches a mock would quietly hide.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Disposable, per-run containers avoid both shared-test-database pollution and "works on my machine" environment drift
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

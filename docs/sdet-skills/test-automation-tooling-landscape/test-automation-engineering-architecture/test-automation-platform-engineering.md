@@ -2,6 +2,7 @@
 title: "Test Automation Platform Engineering"
 description: "A test **framework** is a library for *writing* tests; a test **platform** is the full ecosystem *around* writing, running, reporting, and maintaining tests across multiple teams — shared environments, data, CI/CD templates, reporting, and execution infrastructure."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -51,6 +52,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A framework is a library for writing tests; a platform is what stops every team from separately solving the same environment, CI, and reporting problems — once more than one team is duplicating that effort, a dedicated platform provides it as shared, self-service infrastructure, and its value only exists once that duplication is real, not before.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Self-service is the defining property of a platform versus a service team — if every team still needs to file a ticket and wait, it's not actually a platform yet
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

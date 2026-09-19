@@ -2,6 +2,7 @@
 title: "SDET Career & Skill Roadmap"
 description: "The test automation landscape spans dozens of tool categories — trying to learn all of them at once produces shallow familiarity with twenty tools instead of real depth in the ones that compound."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -48,6 +49,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Each tier only compounds once the one below it is solid — a wide, mastered Tier 1 foundation is what makes Tier 2's SRE-adjacent tools and Tier 3's AI accelerant actually pay off, instead of sitting on ground that shifts underneath them.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Tier 2 tools only compound once Tier 1 is solid — chaos engineering, IaC testing, and observability all assume a working CI/CD and infrastructure foundation
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

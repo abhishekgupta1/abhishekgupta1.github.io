@@ -2,6 +2,7 @@
 title: "AI Test Generation"
 description: "AI coding agents (GitHub Copilot, Cursor, Claude Code, OpenAI Codex) can generate test cases, test data, API tests, UI tests, and unit tests directly from a codebase, a requirement, or an OpenAPI spec — a strong first draft that still needs human review against *intended* behavior, not just syntactic correctness."
 sidebar_position: 2
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -60,6 +61,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">An AI agent drafts a syntactically correct test fast from whatever source it's given, but the review gate is what catches the one failure mode generation can't check itself: an assertion that matches current, possibly buggy behavior instead of intended behavior.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Generating tests for legacy, untested code is one of the highest-leverage current use cases, since the alternative (a human manually reading and testing unfamiliar legacy logic) is slow and often skipped entirely
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

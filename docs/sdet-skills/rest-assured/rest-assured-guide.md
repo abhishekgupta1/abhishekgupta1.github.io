@@ -2,6 +2,7 @@
 title: "Rest Assured: The Complete Guide"
 description: "End-to-end reference for Rest Assured — given/when/then DSL, request specs, JSON/XML assertions, auth, schema validation, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [rest-assured, sdet, api-testing, java]
 ---
 
@@ -13,6 +14,17 @@ or walk into an SDET interview. Organized as a lookup you can also read
 top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/rest-assured">📋 Quick reference: Rest Assured →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the `given() / when() / then()` DSL
+2. Assert on a JSON response using JSON Path and Hamcrest matchers
+3. Move shared setup into a request specification
+4. Add JSON schema validation to catch contract drift
+
+</TenMinute>
 
 ---
 

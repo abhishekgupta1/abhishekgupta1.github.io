@@ -2,6 +2,7 @@
 title: "Enterprise Test Automation Strategy"
 description: "An enterprise test strategy defines what runs on every PR, after merge, nightly, before production, and in production — for the whole organization, not just one team — so investment in testing scales with risk and delivery cadence instead of being reinvented per team."
 sidebar_position: 7
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -57,6 +58,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">An enterprise strategy sits above individual teams, setting shared cadence, tool standardization, and governance rules that apply org-wide, while each team still runs its own pipeline against the same shared environments, test data, and reporting infrastructure instead of duplicating it.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: The expensive checks (full performance suites, DAST, chaos game days) belong off the PR critical path so they don't become the friction people route around
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

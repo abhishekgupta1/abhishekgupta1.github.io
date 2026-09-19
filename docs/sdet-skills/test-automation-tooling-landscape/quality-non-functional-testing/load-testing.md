@@ -2,6 +2,7 @@
 title: "Load Testing"
 description: "Load testing answers one specific question: does the system meet its SLA/SLO under expected, normal traffic — not extreme or spike conditions, which are the domain of Stress Testing and Scalability Testing."
 sidebar_position: 2
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Load testing answers one narrow question: at realistic, expected traffic — sourced from real historical data, not a guess — does latency and error rate stay inside the defined SLA? Anything past that expected level is a different test.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: A realistic traffic *profile* (request mix, think-time between actions) matters as much as raw request volume — a load test using unrealistic uniform request patterns can pass while missing real bottlenecks
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

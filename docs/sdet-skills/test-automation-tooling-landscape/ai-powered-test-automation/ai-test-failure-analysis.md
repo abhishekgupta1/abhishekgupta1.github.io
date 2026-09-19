@@ -2,6 +2,7 @@
 title: "AI Test Failure Analysis"
 description: "Given a failed test, AI tools/agents can analyze logs, stack traces, screenshots, video recordings, trace data, and full CI failure context together — faster than a human manually correlating five different tabs — to produce a first-pass hypothesis of *why* it failed."
 sidebar_position: 4
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -54,6 +55,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Feeding logs, traces, screenshots, and CI metadata to a model in one pass produces a ranked, human-checkable hypothesis for why a test failed — a starting point for investigation, not a final verdict.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Correlating multiple signal types (logs + trace + screenshot) in one pass is exactly the kind of synthesis work that's slow for a human doing it manually across separate tools, and fast for a model with access to all of them at once
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

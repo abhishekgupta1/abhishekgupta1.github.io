@@ -2,6 +2,7 @@
 title: "Unit Testing"
 description: "Unit tests verify a single function, method, or class in isolation from its dependencies."
 sidebar_position: 4
+level: beginner
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A unit test isolates one function or class by replacing every dependency it touches with a stub or fake, so a failure points precisely at the logic under test rather than a database, network, or environment issue — that isolation is also what makes unit tests fast enough to run on every save, the tightest feedback loop in the pyramid.</p>
 </div>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Vitest is increasingly the default for new Vite-based frontend projects given near drop-in Jest compatibility with meaningfully faster execution
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

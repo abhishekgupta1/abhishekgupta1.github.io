@@ -2,6 +2,7 @@
 title: "Test Data Management"
 description: "Generate test data programmatically per test run (**Faker**, **Factory Boy**, **Mockaroo**) rather than relying on a shared, hand-maintained dataset — shared mutable test data is one of the most common sources of order-dependent, intermittently failing tests."
 sidebar_position: 2
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -51,6 +52,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A shared, hand-maintained dataset that other tests and engineers mutate concurrently is one of the most common sources of order-dependent, flaky tests; generating realistic data programmatically for each test run instead gives every test its own isolated, repeatable data.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Data masking/synthesis platforms exist because "just use a copy of production data" is a compliance risk, not a shortcut, once PII/regulatory requirements apply
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

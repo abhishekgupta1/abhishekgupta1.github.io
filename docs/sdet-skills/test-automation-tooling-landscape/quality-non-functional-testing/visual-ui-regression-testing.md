@@ -2,6 +2,7 @@
 title: "Visual & UI Regression Testing"
 description: "Start with **Playwright's built-in screenshot comparison** — it's free, already in the stack, and catches the majority of layout regressions."
 sidebar_position: 5
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -55,6 +56,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Every diff engine faces the same fork: a raw pixel or AI comparison between baseline and current screenshots either surfaces noise (anti-aliasing, unmasked timestamps) that erodes trust in the suite, or catches a genuine visual regression — masking known-noisy regions is what keeps the signal trustworthy.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Applitools' "Visual AI" specifically targets the false-positive problem — it distinguishes a meaningful layout shift from a 1px anti-aliasing difference, which is the main reason teams pay for it over free alternatives
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

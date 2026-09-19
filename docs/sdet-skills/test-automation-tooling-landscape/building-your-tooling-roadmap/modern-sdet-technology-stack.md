@@ -2,6 +2,7 @@
 title: "Modern SDET Technology Stack"
 description: "A concrete, defensible modern SDET stack: **TypeScript/Python** as languages, **Playwright** for UI and API, **Jest/Pytest** for unit, **Testcontainers** for integration, **WireMock** for mocking, **Pact** for contracts, **k6** for performance, **OWASP ZAP/Trivy** for security, **axe-core** for accessibility, **GitLab CI** for delivery, **Docker/AWS/Terraform/EKS** for platform, **OpenTelemetry + Prometheus + Grafana** for observability, **LitmusChaos/AWS FIS** for chaos, and coding agents for AI assistance."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -57,6 +58,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Five layers, each covering a distinct category with no redundant overlap — the stack is a complete reference to build toward, not a checklist to complete before it counts as "modern."</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Playwright covering both UI and API means one tool spans the top and a meaningful slice of the middle of the pyramid
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Test Tool Selection & Evaluation"
 description: "Every tool comparison in this domain reduces to the same criteria: team skills, programming language, application architecture, scale, cost, maintenance, CI/CD fit, cloud environment, community, enterprise support, and learning curve — apply them explicitly rather than searching for a universal 'best' tool ranking."
 sidebar_position: 5
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -54,6 +55,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">"Which tool is better" is the wrong question; the same fixed set of criteria — team skill, cost, scale, CI/CD fit, and more — applies to every tool comparison in this domain, and running them explicitly turns a case-by-case guess into a repeatable, documented decision that a future re-evaluation can start from instead of institutional memory.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Team skill and existing language fit are frequently underweighted relative to a tool's theoretical technical merits — a "better" tool the team doesn't know well often loses to a "good enough" tool they're fluent in, especially under deadline pressure
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

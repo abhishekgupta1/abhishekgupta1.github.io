@@ -2,6 +2,7 @@
 title: "Introduction to Test Automation"
 description: "Test automation is the practice of using code and tooling — not manual clicking — to verify a system behaves correctly, performs acceptably, stays secure, remains accessible, and recovers from failure, continuously, at every layer from a single function up through live production."
 sidebar_position: 1
+level: beginner
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Modern test automation is not one layer clicking through a UI - it verifies the whole system by reaching into unit code, API and contract boundaries, infrastructure definitions, and the live production system itself, because risk now lives at all of those layers.</p>
 </div>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: The shift is from "testing the application" to "testing the system" — app, pipeline, infrastructure, and runtime together
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

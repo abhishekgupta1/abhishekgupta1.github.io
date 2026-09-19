@@ -2,6 +2,7 @@
 title: "Performance Testing"
 description: "**k6** is the modern default for API/service-level performance testing — JS-based scripting, code-as-config, and native Grafana/Prometheus integration make it the natural fit for a team already living in CI/CD and observability tooling."
 sidebar_position: 1
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -57,6 +58,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Performance testing is the umbrella term; load, stress, and scalability testing are its three specific test types, each answering a different question — and all three only become truly diagnostic once paired with an observability stack that shows which downstream call actually degraded under load.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: k6's JS-based scripting means the same engineers writing Playwright/API tests can write performance tests without a second DSL — the main reason it's displaced JMeter on JS-native teams
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

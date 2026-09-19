@@ -2,6 +2,7 @@
 title: "Mobile Test Automation"
 description: "**Appium** is the default choice for cross-platform (Android + iOS) automation across native, hybrid, and cross-platform-framework apps."
 sidebar_position: 2
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -55,6 +56,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The same mobile testing goal splits two ways: Appium or Maestro cover both Android and iOS from one framework at the cost of speed and stability, while Espresso and XCUITest give the fastest, most reliable native testing per platform at the cost of maintaining two separate suites — the right default depends on whether cross-platform reuse or native speed matters more.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Maestro's built-in retry/wait tuning is specifically designed for mobile's inherent flakiness (animations, network variance) — a real reliability advantage over hand-rolled Appium waits
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

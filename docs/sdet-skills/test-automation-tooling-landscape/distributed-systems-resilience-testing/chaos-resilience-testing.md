@@ -2,6 +2,7 @@
 title: "Chaos & Resilience Testing"
 description: "Chaos engineering only works with a **steady-state hypothesis defined before the experiment**: 'under normal load, p99 latency stays under 300ms and error rate stays under 0.1%.' Without that baseline, injecting failure just produces noise — you can't tell if a spike was caused by your experiment or by something else."
 sidebar_position: 4
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -56,6 +57,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Chaos engineering only works as a hypothesis test: define what "healthy" looks like before touching anything, inject failure with the smallest blast radius that still tells you something real, then compare against that baseline — a clean recovery confirms the resilience design, and a surprising break is the most valuable outcome of all, since it feeds directly into a fix instead of getting discarded as noise.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Start with the smallest blast radius that still tells you something real (one pod, one AZ, one dependency) — jumping straight to a full-region failure test both risks a real incident and makes the result harder to interpret
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "JUnit: The Complete Guide"
 description: "End-to-end reference for JUnit — JUnit 5 architecture, annotations, assertions, extensions, tagging, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [junit, sdet, java, testing-framework]
 ---
 
@@ -12,6 +13,17 @@ JUnit 5 tests, build a custom extension, or walk into an SDET interview.
 Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/junit">📋 Quick reference: JUnit →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn the core annotations: `@Test`, `@BeforeEach`, `@AfterEach`
+2. Write assertions and one `@ParameterizedTest`
+3. Use `@Tag` to filter which tests run
+4. Skim JUnit 5 vs TestNG to know which fits your project
+
+</TenMinute>
 
 ---
 

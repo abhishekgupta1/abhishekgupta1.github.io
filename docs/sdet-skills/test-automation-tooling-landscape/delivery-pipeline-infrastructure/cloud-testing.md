@@ -2,6 +2,7 @@
 title: "Cloud Testing"
 description: "Cloud testing verifies application and infrastructure behavior against cloud-provider-specific services and failure modes — **LocalStack** for fast, free local AWS-service emulation, and each provider's native fault-injection/load-testing service (**AWS FIS**, **Azure Chaos Studio**, **Azure Load Testing**) for provider-native resilience and performance validation."
 sidebar_position: 4
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -47,6 +48,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The same cloud-dependent code gets validated two different ways: LocalStack gives fast, free local iteration with partial emulation fidelity, while a provider's own fault-injection service (AWS FIS, Azure Chaos Studio) validates against real infrastructure — relying on only one of the two leaves a gap the other would have caught.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Provider-native fault injection (AWS FIS, Azure Chaos Studio) integrates directly with existing IAM/RBAC and resource targeting, lowering the setup barrier compared to a third-party chaos platform
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

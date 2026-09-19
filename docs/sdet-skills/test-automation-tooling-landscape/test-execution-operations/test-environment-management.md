@@ -2,6 +2,7 @@
 title: "Test Environment Management"
 description: "Test environment management is the practice of provisioning, configuring, and tearing down the environments tests run against — increasingly via ephemeral, on-demand environments (spun up per PR or per test run) rather than a small number of shared, long-lived staging environments that become contention points and drift from production."
 sidebar_position: 1
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -52,6 +53,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">A shared, long-lived staging environment accumulates contention between teams and slow configuration drift from production; an ephemeral environment provisioned fresh per PR and torn down afterward avoids both, spinning up again identically for the next PR, at the cost of provisioning speed and infrastructure cost.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Ephemeral, per-PR environments eliminate cross-team contention entirely — a real environment problem doesn't have to wait its turn behind another team's testing
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

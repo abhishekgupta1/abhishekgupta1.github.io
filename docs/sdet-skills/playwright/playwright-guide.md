@@ -2,6 +2,7 @@
 title: "Playwright: The Complete Guide"
 description: "End-to-end reference for Playwright — architecture, locators, waiting, fixtures, network mocking, CI, debugging, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [playwright, sdet, test-automation, e2e]
 ---
 
@@ -13,6 +14,17 @@ interview. Organized so you can jump to any section as a lookup, or read
 top-to-bottom as a course.
 
 <a class="topic-crosslink" href="/cheatsheets/playwright">📋 Quick reference: Playwright →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Install, then run your first test and open the HTML report
+2. Learn locators (`getByRole`, `getByText`) and why they beat CSS selectors
+3. Understand auto-waiting so you never need `sleep()`
+4. Read Fixtures and the Page Object Model before growing the suite
+
+</TenMinute>
 
 ---
 

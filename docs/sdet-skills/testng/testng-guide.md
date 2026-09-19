@@ -2,6 +2,7 @@
 title: "TestNG: The Complete Guide"
 description: "End-to-end reference for TestNG — annotations, testng.xml suite configuration, parallel execution, data providers, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [testng, sdet, java, testing-framework]
 ---
 
@@ -12,6 +13,17 @@ suite from scratch, configure parallel/cross-browser execution, or walk into
 an SDET interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/testng">📋 Quick reference: TestNG →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Learn the core annotations and their execution order
+2. Configure a suite in `testng.xml`
+3. Use `@DataProvider` for data-driven tests and groups to select tests
+4. Understand soft vs hard assertions and parallel execution
+
+</TenMinute>
 
 ---
 

@@ -2,6 +2,7 @@
 title: "Modern SRE Testing Stack"
 description: "An SRE's 'testing' stack extends an SDET's with production-facing tools: **Prometheus/Grafana** at depth for SLO tracking, **PagerDuty**-style incident response tooling, **Kubernetes operations** fluency (not just testing manifests but operating clusters), **Terraform** for infrastructure ownership, and **chaos engineering at production scale** (LitmusChaos/Chaos Mesh/AWS FIS/Gremlin run as standing practice, not one-off experiments)."
 sidebar_position: 4
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -50,6 +51,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">The SRE stack largely reuses SDET tooling at a different cadence and stakes — the same observability and chaos tools, run continuously instead of per test run — with incident response and postmortem discipline as the one genuinely new layer.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: SLOs and error budgets are the SRE-native version of a test assertion — the same "define correct, verify continuously" instinct applied to the live system's reliability target
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

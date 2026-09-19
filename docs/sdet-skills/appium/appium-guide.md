@@ -2,6 +2,7 @@
 title: "Appium: The Complete Guide"
 description: "End-to-end reference for Appium — architecture, capabilities, Android vs iOS drivers, mobile locators, device farms, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [appium, sdet, automation, mobile-testing]
 ---
 
@@ -12,6 +13,17 @@ automation framework, debug flaky device tests, or walk into an SDET
 interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/appium">📋 Quick reference: Appium →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Understand the architecture: client → Appium server → platform driver → device
+2. Learn the capabilities object and how it selects device, OS, and app
+3. Compare UiAutomator2 (Android) and XCUITest (iOS), and the mobile locator strategies
+4. Read Common Flakiness Pitfalls before running on real devices or a cloud farm
+
+</TenMinute>
 
 ---
 

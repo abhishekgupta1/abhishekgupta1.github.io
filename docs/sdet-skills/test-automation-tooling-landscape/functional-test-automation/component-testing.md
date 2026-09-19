@@ -2,6 +2,7 @@
 title: "Component Testing"
 description: "Component testing verifies a single module — often a UI component, sometimes a backend module — with its real internals but isolated from the rest of the system: deeper than a unit test (real rendering, real dependency wiring within the module), cheaper than a full integration test."
 sidebar_position: 5
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Component testing sits deliberately in the middle of the isolation spectrum: it mounts one real component with real rendering, unlike a unit test's fully mocked internals, but keeps the rest of the system isolated, unlike an integration or end-to-end test — catching real rendering and wiring bugs without paying full integration setup cost.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Spring Boot's test slices (`@WebMvcTest`, `@DataJpaTest`) load only the relevant application context, dramatically faster than a full `@SpringBootTest`
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

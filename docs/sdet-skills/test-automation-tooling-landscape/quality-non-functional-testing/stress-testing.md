@@ -2,6 +2,7 @@
 title: "Stress Testing"
 description: "Stress testing deliberately pushes load well beyond expected levels to find the system's actual breaking point and observe *how* it fails — gracefully (rejecting excess requests, shedding load) or catastrophically (cascading failure, data corruption)."
 sidebar_position: 3
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -56,6 +57,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Stress testing isn't about passing — it deliberately ramps load past the point load testing confirms is fine, to find the actual breaking point and learn which way the system fails: gracefully shedding excess requests, or failing catastrophically.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Graceful degradation (returning 429s, shedding low-priority requests) under stress is a sign of good resilience engineering — a stress test that reveals total failure instead is a genuine finding worth acting on
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

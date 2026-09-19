@@ -2,6 +2,7 @@
 title: "Production Testing"
 description: "Production testing runs synthetic checks and monitors against the live system continuously — **Checkly**, **Datadog Synthetic Monitoring**, **New Relic Synthetics**, **Grafana Synthetic Monitoring**, **Pingdom**, and **Catchpoint** are the standard tools — verifying real, deployed behavior that no amount of pre-production testing can fully guarantee."
 sidebar_position: 6
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -57,6 +58,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Production testing runs scripted checks from outside the system - the way a real user or external dependency experiences it - continuously against the live, deployed system, feeding results into the same alerting and dashboards as real telemetry rather than testing only before release.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Playwright-based synthetic checks (Checkly or self-hosted) let a team reuse existing E2E test-writing skill directly for production monitoring, rather than learning a separate synthetic-monitoring DSL
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

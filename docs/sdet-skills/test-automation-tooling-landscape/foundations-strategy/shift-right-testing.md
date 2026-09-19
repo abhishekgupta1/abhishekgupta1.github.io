@@ -2,6 +2,7 @@
 title: "Shift-Right Testing"
 description: "Shift-right testing extends verification into and beyond production — synthetic monitoring, canary analysis, chaos experiments, and observability-based assertions — because pre-production testing alone cannot reproduce real traffic, real scale, or real infrastructure drift."
 sidebar_position: 5
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -55,6 +56,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Shift-right deliberately extends verification past deploy into the live system: canary analysis, synthetic checks, chaos experiments, and observability keep testing the real thing against real traffic and real failure, because pre-production environments can't fully replicate either.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Canary releases turn "did the deploy work" into a gradual, measured question instead of an all-or-nothing bet
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

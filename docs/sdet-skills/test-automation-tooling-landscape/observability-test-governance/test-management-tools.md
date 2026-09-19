@@ -2,6 +2,7 @@
 title: "Test Management Tools"
 description: "Test management tools matter once test *case* management — traceability to requirements, manual + automated coverage in one place — becomes a real organizational need, not just a reporting one."
 sidebar_position: 3
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -50,6 +51,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Where a reporting tool just makes one run's results legible, a test management tool exists to merge manual and automated test cases into a single catalog that documents traceability back to a requirement — value that only justifies the maintenance overhead once real manual coverage or a compliance mandate demands it.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Jira-native options (Xray, Zephyr) reduce context-switching for teams already living in Jira for requirements and defects
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

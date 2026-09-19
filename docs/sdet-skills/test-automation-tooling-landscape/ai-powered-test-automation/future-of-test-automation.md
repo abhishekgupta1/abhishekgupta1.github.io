@@ -2,6 +2,7 @@
 title: "Future of Test Automation"
 description: "The trajectory across this entire domain points one direction: testing keeps moving closer to production (shift-right, observability-driven assertions), keeps getting more AI-assisted at every layer (generation, maintenance, root cause analysis), and keeps consolidating fragmented tooling into platforms — not toward any single new 'must-learn' tool, but toward engineers who can reason across the whole stack."
 sidebar_position: 7
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -53,6 +54,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">No single trend is the story — testing moving toward production, AI assisting at every layer, and tooling consolidating into platforms are three waypoints on the same trajectory, which rewards an engineer who can reason across the whole stack over anyone chasing this year's new tool.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: AI is consistently more mature as an assistant (generation, maintenance, analysis) than as an autonomous replacement — betting a strategy on near-term full autonomy is premature given current maturity
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

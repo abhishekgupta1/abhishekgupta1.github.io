@@ -2,6 +2,7 @@
 title: "Cross-Browser Testing"
 description: "Cross-browser testing verifies a web application renders and behaves correctly across the browser engines your real users actually use (Chromium, Firefox, WebKit/Safari) — high-value for consumer-facing products with real multi-browser traffic, low-value for internal tools with 100% single-browser usage."
 sidebar_position: 9
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -49,6 +50,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Cross-browser testing runs the exact same suite against multiple rendering engines instead of just one, because subtle CSS and JavaScript differences between Chromium, Firefox, and WebKit can produce real user-facing bugs that a single-browser run would never surface — value that scales with how much real traffic each engine actually carries.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Playwright's native WebKit support removes the historical need for a cloud grid just to get baseline Safari coverage
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

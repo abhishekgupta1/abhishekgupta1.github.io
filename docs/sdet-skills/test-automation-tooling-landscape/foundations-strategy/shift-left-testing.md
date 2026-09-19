@@ -2,6 +2,7 @@
 title: "Shift-Left Testing"
 description: "Shift-left testing means moving verification as early as possible in the development lifecycle — into the IDE, the commit, and the pull request — so defects are caught when they're cheapest to fix, not after they've reached a shared environment."
 sidebar_position: 4
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -49,6 +50,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Shift-left doesn't change what gets verified, it changes when: instead of waiting for a late QA phase near release, unit tests, static analysis, and contract checks run at code and PR time, when the same defect is far cheaper to fix.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Making unit and component testing a developer default (not a QA handoff) is the single highest-leverage shift-left move most teams can make
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

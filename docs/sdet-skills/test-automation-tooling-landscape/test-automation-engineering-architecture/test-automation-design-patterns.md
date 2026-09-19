@@ -2,6 +2,7 @@
 title: "Test Automation Design Patterns"
 description: "**Page Object Model (POM)** is the standard pattern for UI test abstraction; the **Screenplay Pattern** is a more composable, actor-centric alternative worth adopting once POM's class-per-page structure starts feeling rigid at scale; the **Builder Pattern** (via a Test Data Builder) is the standard for constructing complex test data readably."
 sidebar_position: 2
+level: advanced
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -49,6 +50,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Design patterns are proven, reusable answers to the same recurring structural problems every test suite runs into: Page Object Model encapsulates UI elements behind business-meaningful methods, Test Data Builder makes complex test data readable under change, and the Screenplay Pattern is the deliberate upgrade once POM's class-per-page structure becomes a genuine bottleneck at scale.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: The Screenplay Pattern's actor/task/question model composes better than POM at scale because behaviors (not pages) become the reusable unit — a login "task" can be reused across contexts a page-object method can't cleanly express
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

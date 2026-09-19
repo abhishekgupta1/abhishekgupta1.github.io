@@ -2,6 +2,7 @@
 title: "Open-Source vs Commercial Testing Tools"
 description: "Prefer open source where a tool's value is mostly in the engine (test runners, load generators, instrumentation) and the team has capacity to operate it; prefer commercial where the value is a managed experience, specialized algorithms (visual AI), or infrastructure you'd rather not own (device farms, global synthetic-monitoring vantage points)."
 sidebar_position: 4
+level: intermediate
 tags: [test-automation, sdet, tooling]
 ---
 
@@ -51,6 +52,17 @@ tags: [test-automation, sdet, tooling]
 
 <p class="mental-model__caption">Nearly every category has two paths to the same problem: open source, where the value is mostly the engine and the team carries the operating cost, or commercial, where the value is a managed experience or a specialized capability the team would rather not build itself — the right answer isn't universal, it comes from weighing total cost of ownership, not just the license's sticker price.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current project
+3. Take away this rule of thumb: Commercial tools earn their cost specifically where they solve a problem open source solves poorly — Applitools' Visual AI reducing false positives, or a device farm's hardware you'd rather not own
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 
