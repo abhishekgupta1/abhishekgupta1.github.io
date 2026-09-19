@@ -505,6 +505,105 @@ definition's pattern.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Run one Scenario Outline as three scenarios" level="intermediate" stretch="Rewrite this imperative scenario declaratively: open /cart, click the element with id checkout, type 4111 into the field with id card, click the element with id pay, expect the text Thank you.">
+
+Create a Maven project with these test dependencies: `io.cucumber:cucumber-java` and `io.cucumber:cucumber-junit-platform-engine` (7.20.x), `org.junit.platform:junit-platform-suite`, and `org.junit.jupiter:junit-jupiter`. Add the runner class from the guide's setup section, pointing its glue at your own package. Then add this class and feature file (in `src/test/resources/features`):
+
+```java
+public class Shipping {
+    /** Domestic parcels cost 5 + 2 per kg; international cost 15 + 4 per kg. */
+    public static double cost(double kg, String zone) {
+        return zone.equals("international") ? 15 + 4 * kg : 5 + 2 * kg;
+    }
+}
+```
+
+```gherkin
+Feature: Shipping cost
+
+  @smoke
+  Scenario Outline: Cost depends on weight and zone
+    Given a parcel weighing <kg> kilograms
+    When it is shipped <zone>
+    Then the cost is <cost>
+
+    Examples:
+      | kg | zone          | cost |
+      | 1  | domestic      | 7.0  |
+      | 2  | domestic      | 9.0  |
+      | 1  | international | 19.0 |
+```
+
+Write the step definitions using Cucumber Expressions (`{double}` and `{word}`), and run `mvn test`.
+
+**Done when:** `mvn test` reports `Tests run: 3` with no failures. Then change one cost in the table to a wrong value and confirm exactly one of the three rows fails while the other two still pass.
+
+</Exercises.Task>
+<Exercises.Task title="Scope a hook to a tag and filter the run" level="advanced">
+
+Add a hook that runs only for smoke scenarios, and add these two scenarios to the same feature:
+
+```java
+@Before("@smoke")
+public void smokeSetUp(Scenario scenario) {
+    System.out.println("SMOKE HOOK: " + scenario.getName());
+}
+```
+
+```gherkin
+  @smoke
+  Scenario: Heavy parcels still get a price
+    Given a parcel weighing 10 kilograms
+    When it is shipped domestic
+    Then the cost is 25.0
+
+  @wip @smoke
+  Scenario: Same-day delivery is not built yet
+    Given a parcel weighing 1 kilograms
+    When it is shipped domestic
+    Then the cost is 0.0
+```
+
+Run `mvn test`, then run it again with a tag expression:
+
+```bash
+mvn test -Dcucumber.filter.tags="@smoke and not @wip"
+```
+
+**Done when:** the first run executes 5 scenarios, prints the hook line 5 times, and reports 1 failure. The filtered run passes, prints the hook line 4 times, and reports the `@wip` scenario as skipped.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The feature file only developers could read">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A team's feature files spell out every UI action: navigate to a URL, type into the field with a given id, click the element with another id. The product owner stopped reading them months ago.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+A front-end refactor renamed a handful of element ids, and dozens of scenarios broke even though no behaviour had changed. The same steps were copy-pasted across scenarios, so each rename meant editing the feature files themselves instead of one place in the code.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Write declarative steps that describe intent, such as "a registered user logs in", and keep the mechanics inside step definitions or page objects. The scenarios stay readable to non-programmers and a UI change touches one class instead of every scenario.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to turn a user story into Gherkin scenarios, then rewrite any step that mentions UI mechanics (ids, clicks, URLs) into intent, and have a non-programmer read the result.
+- Have it draft step definitions for a feature file, then run the suite and check that unmatched or ambiguous steps are reported instead of silently accepted.
+- Ask it to propose tags such as smoke, regression, and wip for existing scenarios, and verify each tag expression selects the scenarios you expect by counting the results.
+
+</AISpark>
+
+---
+
 ## 10. One-Line Summary
 
 **Cucumber's real value is upstream of the code — Gherkin scenarios written

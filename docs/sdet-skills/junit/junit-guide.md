@@ -560,6 +560,67 @@ regression run without maintaining separate test classes.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Test a discount method with one parameterized test" level="intermediate" stretch="Group the tests into @Nested classes with @DisplayName and read the hierarchical report.">
+
+In a Maven project with `org.junit.jupiter:junit-jupiter` 5.10.x as a test dependency, add this method:
+
+```java
+public class Price {
+    /** Returns the price in cents after taking percent off; the discount is rounded down. */
+    public static int applyDiscount(int cents, int percent) {
+        return cents - (cents * percent / 100);
+    }
+}
+```
+
+Write one `@ParameterizedTest` with `@CsvSource` and at least four rows: no discount, half off, full discount, and an odd amount where the discount does not divide evenly. Run `mvn test`, then change the method to subtract one extra cent and run again.
+
+**Done when:** all rows pass first, and after the change the report lists each failing row separately, by its position, instead of stopping at the first.
+
+</Exercises.Task>
+<Exercises.Task title="Run only the smoke tests" level="advanced">
+
+Add one test tagged `@Tag("smoke")` and one tagged `@Tag("flaky")` next to your parameterized test. Then compare the two runs:
+
+```bash
+mvn test
+mvn test -Dgroups=smoke -DexcludedGroups=flaky
+```
+
+**Done when:** the first run executes every test, and the second reports `Tests run: 1`, and you can say why a pipeline would run `smoke` on every pull request and keep `flaky` out entirely.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The test that only makes sense on staging">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A suite includes tests that need a staging environment. The nightly build runs on a runner that cannot reach it, and those tests fail every night.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The red builds were not real regressions, but they looked identical to real ones. The team began to skim past red results, and eventually a genuine failure sat unnoticed among the expected ones.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Environment-dependent tests should declare their precondition with an assumption such as `assumeTrue`, so they end up aborted rather than failed when the environment is wrong. Combined with tags, that keeps a red build meaning something.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to generate `@CsvSource` rows for a method's edge cases (zero, boundaries, rounding), then run them and read every failure yourself, because a generated expected value can simply be wrong.
+- Have it merge a set of copy-pasted similar tests into one parameterized test, and confirm the report still identifies each case individually.
+- Ask it to suggest `@Tag` groupings such as smoke and regression, then count the results to check that the Surefire filters select exactly the tests you intend.
+
+</AISpark>
+
+---
+
 ## 11. One-Line Summary
 
 **JUnit 5's Platform/Jupiter/Vintage split and composable extension model

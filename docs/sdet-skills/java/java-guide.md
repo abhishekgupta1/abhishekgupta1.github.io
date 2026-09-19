@@ -611,6 +611,80 @@ readability more than it helps.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Reproduce and fix ConcurrentModificationException" level="beginner">
+
+Save this as `Cme.java` and run it with `java Cme.java` (Java 11 or newer):
+
+```java
+import java.util.*;
+
+public class Cme {
+    public static void main(String[] args) {
+        List<String> tests = new ArrayList<>(List.of("legacy-a", "checkout", "legacy-b", "search"));
+        for (String t : tests) {
+            if (t.startsWith("legacy")) {
+                tests.remove(t);
+            }
+        }
+        System.out.println(tests);
+    }
+}
+```
+
+It should fail. Fix it using the safe pattern from the guide.
+
+**Done when:** you first saw a `ConcurrentModificationException`, and the fixed version prints `[checkout, search]`.
+
+</Exercises.Task>
+<Exercises.Task title="Summarise test results with streams" level="intermediate" stretch="Call a terminal operation twice on the same stream and read the exception it throws.">
+
+Given this data, use one stream pipeline per output. Print the count of results per status (sorted by key), the average duration of the passing tests, and the name of the slowest test:
+
+```java
+record Result(String name, String status, long ms) {}
+
+List<Result> results = List.of(
+    new Result("login", "PASS", 120),
+    new Result("checkout", "PASS", 300),
+    new Result("search", "FAIL", 90),
+    new Result("profile", "PASS", 180),
+    new Result("export", "FAIL", 400));
+```
+
+**Done when:** the program prints `{FAIL=2, PASS=3}`, then `200.0`, then `export`.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The NullPointerException three layers away">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A lookup method returns `null` when a user is not found. Several layers up, a caller assumes a user always comes back and reads a field from it.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The failure surfaced as a `NullPointerException` in a place far from the lookup, so the stack trace pointed at the symptom, not the cause. Engineers spent their time working backwards through the call chain to find where the `null` had come from.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Returning `Optional` forces every caller to decide explicitly what to do when a value is absent, using `orElse`, `orElseThrow`, or `ifPresent`. That moves the failure to the point where the decision belongs, instead of some distant call site.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to turn a nested loop into a stream pipeline, then run both versions on the same data and check that order, nulls, and the single-use stream rule behave identically.
+- Have it explain a compiler error involving generics or wildcards using PECS, and confirm the explanation by compiling a minimal example yourself.
+- Ask it to review a class for resources that should use try-with-resources, and verify each finding by reading the code.
+
+</AISpark>
+
+---
+
 ## 13. One-Line Summary
 
 **Java's static typing, mature JVM tooling, and object-oriented model are
