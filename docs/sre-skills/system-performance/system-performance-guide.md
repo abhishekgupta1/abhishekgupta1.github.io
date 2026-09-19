@@ -696,6 +696,63 @@ reaching for expensive, narrow tools like `perf`, `strace`, or `bpftrace`.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Catch a single pinned core" level="intermediate" stretch="Start a second yes process and see how the per-CPU picture changes.">
+
+On a multi-core Linux machine or VM, load exactly one core, then compare the aggregate view with the per-CPU view:
+
+```bash
+yes > /dev/null &
+vmstat 1 5
+mpstat -P ALL 1 5
+kill %1
+```
+
+**Done when:** `vmstat` shows the overall CPU still mostly idle (`id` high), while `mpstat -P ALL` shows one core near 100% busy. That is the situation the guide says an aggregate average hides.
+
+</Exercises.Task>
+<Exercises.Task title="Run USE over a table of readings" level="advanced" stretch="Which RED signal would you check first to learn whether users are affected?">
+
+Classify each resource as utilization, saturation, or errors, and decide whether it is the bottleneck:
+
+- **CPU:** 95% utilised, run queue of 1 on an 8-core machine, no errors.
+- **Disk:** 60% utilised, `await` around 400 ms, queue depth climbing.
+- **Network interface:** 20% utilised, no queueing, 500 CRC errors.
+- **Memory:** 70% used, no swap in or out.
+
+**Done when:** you name the disk as the bottleneck, explain why the busy CPU is fine (high utilization without saturation), and report the network errors as a separate finding rather than the cause.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The disk that looked healthy on average">
+<CaseStudy.Context>
+
+*Illustrative scenario.* An application's p99 latency spikes intermittently. `iostat` reports an `await` of about 2 ms, which looks perfectly healthy, and every dashboard is green.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+An engineer took a block-I/O latency histogram with a low-overhead tracing tool. Most I/O finished in 1 to 2 ms, but a distinct second cluster sat at 16 to 32 ms. That two-peaked shape is invisible in a single averaged number, and it lined up with the latency spikes. Tracing every call with `strace -T` would have slowed the process enough to distort the result.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Averages hide multi-modal behaviour. When the average looks fine but the tail hurts, look at the distribution, and use low-overhead tracing to get it.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Paste `vmstat 1` and `iostat -xz 1` output and ask an assistant to walk USE for each resource. Verify its claims about saturation (run queue, `await`, queue depth) yourself before acting.
+- Ask it to turn the 60-second checklist into a runbook script that saves each command's output to a timestamped file. Review by hand that it does not run anything expensive, such as `perf record`, by default on a struggling machine.
+- Have it explain a `perf` summary in plain language, and treat that as a hypothesis to confirm with a second signal such as `pidstat`.
+
+</AISpark>
+
+---
+
 ## 11. One-Line Summary
 
 **System performance diagnosis is USE (Utilization, Saturation, Errors) run
