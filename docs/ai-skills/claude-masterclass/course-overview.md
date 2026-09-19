@@ -2,6 +2,7 @@
 title: "Course Overview & Index"
 description: "Section-by-section index for the Udemy course: Use Claude Cowork, Claude Code, Claude Design with 70+ Resources, 200+ Prompts, 20+ Claude Skills, 10+ Claude Plugins."
 sidebar_position: 1
+level: beginner
 tags: [claude, udemy, course-index]
 ---
 
@@ -22,6 +23,16 @@ knowledge base:
   summarizes.
 
 <a class="topic-crosslink" href="/cheatsheets/claude-masterclass">📋 Quick reference: Claude Masterclass →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={5}>
+
+1. Skim the Course Index and pick the section that matches your goal
+2. Open the Cheat Sheet for the quick reference
+3. Return to the Transcript only for detail the cheat sheet skips
+
+</TenMinute>
 
 ---
 

@@ -2,6 +2,7 @@
 title: "Clean Architecture: The Complete Guide"
 description: "End-to-end reference for Clean Architecture — the Dependency Rule, the four concentric layers, Hexagonal/Onion equivalence, worked Python and Go examples with ports and adapters, tradeoffs, DDD-lite integration, and interview-ready Q&A."
 sidebar_position: 1
+level: advanced
 tags: [clean-architecture, sde, software-design, hexagonal-architecture]
 ---
 
@@ -13,6 +14,17 @@ walk into an SDE interview. Organized as a lookup you can also read
 top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/clean-architecture">📋 Quick reference: Clean Architecture →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={10}>
+
+1. Learn the Dependency Rule: source dependencies point only inward
+2. Map the four concentric layers to a service you know
+3. See how dependency inversion enforces the rule, using the worked Python example
+4. Read Common Mistakes to avoid over-layering a simple CRUD app
+
+</TenMinute>
 
 ---
 

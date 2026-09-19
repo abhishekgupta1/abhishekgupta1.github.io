@@ -2,6 +2,7 @@
 title: "Docker Basics: The Complete Guide"
 description: "End-to-end reference for Docker — images and layers, Dockerfile essentials, the container lifecycle, networking and volumes, docker-compose, a debugging playbook, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [docker, sde, containers]
 ---
 
@@ -12,6 +13,17 @@ service correctly, run and debug it locally, or walk into an SDE interview.
 Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/docker">📋 Quick reference: Docker →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn containers vs VMs and how images are built from layers
+2. Write a minimal Dockerfile, then shrink it with a multi-stage build
+3. Run a container with a volume and a published port
+4. Use the Debugging Playbook the next time a container won't start
+
+</TenMinute>
 
 ---
 

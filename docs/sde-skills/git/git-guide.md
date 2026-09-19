@@ -2,6 +2,7 @@
 title: "Git: The Complete Guide"
 description: "End-to-end reference for Git — the object model, branching/merging vs rebasing, staging, conflict resolution, safely undoing things, and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [git, sde, version-control]
 ---
 
@@ -12,6 +13,17 @@ actually happening under the hood, work a feature branch confidently, or walk
 into an SDE interview. Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/git">📋 Quick reference: Git →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn the three trees: working directory, staging area, repository
+2. Branch, merge, and see how rebase differs
+3. Practise Undoing Things Safely: `restore`, `reset`, `revert`, `reflog`
+4. Skim Common Gotchas before your next merge conflict
+
+</TenMinute>
 
 ---
 

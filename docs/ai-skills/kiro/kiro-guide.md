@@ -2,6 +2,7 @@
 title: "Kiro: The Complete Guide"
 description: "End-to-end reference for Kiro, AWS's spec-driven agentic IDE — the requirements/design/tasks workflow, steering, hooks, MCP integration, and interview-ready Q&A."
 sidebar_position: 1
+level: intermediate
 tags: [kiro, ai-ide, aws, spec-driven-development, agentic-coding]
 ---
 
@@ -19,6 +20,17 @@ permanently fixed spec — verify exact syntax against current AWS
 documentation before depending on it in production tooling.
 
 <a class="topic-crosslink" href="/cheatsheets/kiro">📋 Quick reference: Kiro →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={10}>
+
+1. Understand spec-driven development vs vibe coding
+2. Write one requirement using EARS-format acceptance criteria
+3. Add steering files so the agent knows your project context
+4. Read Common Mistakes before adding hooks or MCP servers
+
+</TenMinute>
 
 ---
 

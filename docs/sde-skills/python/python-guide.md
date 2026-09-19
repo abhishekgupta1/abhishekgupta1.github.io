@@ -2,6 +2,7 @@
 title: "Python: The Complete Guide"
 description: "End-to-end reference for Python — core language, data structures, OOP, concurrency, decorators/generators, error handling, testing, ops/DevOps automation scripting (subprocess, argparse, requests, boto3, SSH fleets), and interview-ready Q&A."
 sidebar_position: 1
+level: beginner
 tags: [python, sde, programming-language, automation, devops]
 ---
 
@@ -12,6 +13,17 @@ codebase, write idiomatic production code, or walk into an SDE interview.
 Organized as a lookup you can also read top-to-bottom.
 
 <a class="topic-crosslink" href="/cheatsheets/python">📋 Quick reference: Python →</a>
+
+<LevelBadge level="beginner" />
+
+<TenMinute minutes={10}>
+
+1. Learn the core data types and comprehensions
+2. Write functions with closures, then a decorator
+3. Understand the GIL and when to use threads, processes, or asyncio
+4. Write a `pytest` test and set up a virtual environment
+
+</TenMinute>
 
 ---
 
