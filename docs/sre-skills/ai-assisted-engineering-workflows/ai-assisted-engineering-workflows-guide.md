@@ -444,6 +444,62 @@ win, regardless of how fast the first draft felt.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Rewrite a weak prompt with the five techniques" level="intermediate" stretch="Run both prompts on an assistant and note where the weaker one guessed.">
+
+Take this weak prompt: **"Make the pipeline faster."** Rewrite it for a real pipeline of yours, applying the guide's techniques: concrete context, explicit constraints, a plan before code, a specified output shape, and permission to flag uncertainty.
+
+**Done when:** your prompt pastes actual data (timings or a log), states what must not change, asks for an outline before any code, names the output format (for example a unified diff), and tells the assistant to say so when it is unsure a config option exists.
+
+</Exercises.Task>
+<Exercises.Task title="Review an AI-generated IAM policy like a junior's pull request" level="advanced">
+
+An assistant was asked to let a reports job read files under `daily/` in the `reports-bucket` bucket, and it produced this:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    { "Effect": "Allow", "Action": "s3:*", "Resource": "*" }
+  ]
+}
+```
+
+Tighten it, then list the checks you would run before it is applied to anything real.
+
+**Done when:** the policy grants only `s3:GetObject` on `arn:aws:s3:::reports-bucket/daily/*`, and your check list includes a plan or diff, a policy scanner, and an explicit human approval before apply.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The flag that did not exist">
+<CaseStudy.Context>
+
+*Illustrative scenario.* An engineer asks an assistant for a command to change a setting in a lesser-known CLI tool. The answer looks right, uses a tidy flag, and goes straight into a maintenance script.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The flag did not exist in the installed version of the tool. The assistant had produced something plausible-sounding, and nobody had checked it against the documentation or a dry run. The script failed on its first real run.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Models invent plausible flags, keys, and methods, especially for less common tools or versions newer than their training. Check generated commands against real documentation or a dry run before they touch anything that matters, and ask the assistant to say when it is unsure.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to critique your own prompt against the guide's five techniques, then rewrite it yourself and compare. Treat the critique as a suggestion, not a verdict.
+- Paste a noisy alert burst and ask for ranked hypotheses, then check each one against real metrics or traces before you act on any of them.
+- Have it draft a postmortem from your incident timeline, then verify every timestamp and causal claim against the source data by hand.
+
+</AISpark>
+
+---
+
 ## 10. One-Line Summary
 
 **AI coding assistants are a fast, tireless first-pass collaborator for
