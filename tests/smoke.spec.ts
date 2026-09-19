@@ -16,6 +16,7 @@ const ROUTES = [
   ['Certificates', '/certificates'],
   ['Dashboard', '/dashboard'],
   ['Start', '/start'],
+  ['Library', '/library'],
   ['Roadmap', '/roadmap'],
   ['Skills', '/skills'],
   ['About', '/about'],

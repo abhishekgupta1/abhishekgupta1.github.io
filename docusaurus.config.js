@@ -163,6 +163,7 @@ const config = {
     // Per-page Open Graph images, generated at build time. Best-effort:
     // never breaks the build. Remove this line to disable.
     './plugins/og-image',
+    './plugins/docs-index',
   ],
 
   themes: [
@@ -212,6 +213,7 @@ const config = {
             label: 'Learn',
             position: 'left',
             items: [
+              {to: '/library', label: 'Library'},
               {to: '/roadmap', label: 'Skill Roadmap'},
               {to: '/skills', label: 'Skills Matrix'},
               {to: '/dashboard', label: 'Progress Dashboard'},
@@ -250,6 +252,7 @@ const config = {
           {
             title: 'Learn',
             items: [
+              {label: 'Library', to: '/library'},
               {label: 'Skill Roadmap', to: '/roadmap'},
               {label: 'Skills Matrix', to: '/skills'},
               {label: 'Progress Dashboard', to: '/dashboard'},
