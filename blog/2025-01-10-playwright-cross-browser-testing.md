@@ -12,6 +12,15 @@ Cross-browser testing is one of those things that sounds straightforward until y
 
 <a class="topic-crosslink" href="/cheatsheets/playwright-cross-browser-testing">📋 Quick reference: Cross-Browser Playwright →</a>
 
+<KeyTakeaways>
+
+- Playwright's unified API and auto-waiting remove most browser-specific workarounds and `sleep()`-driven flakiness.
+- Structure the project, multi-browser config, and auth-state fixtures deliberately from the start.
+- Parallel execution plus cached auth took a regression suite from 45 to 18 minutes.
+- Stability rose from ~82% to 95% across Chromium, Firefox, and WebKit — invest in test infrastructure early.
+
+</KeyTakeaways>
+
 <!-- truncate -->
 
 <div class="mental-model">

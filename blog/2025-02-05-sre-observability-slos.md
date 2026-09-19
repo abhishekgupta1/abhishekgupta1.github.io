@@ -12,6 +12,15 @@ Most teams start their observability journey by throwing metrics at a dashboard 
 
 <a class="topic-crosslink" href="/cheatsheets/sre-observability-slos">📋 Quick reference: SLOs & Observability →</a>
 
+<KeyTakeaways>
+
+- Measure what matters to users, not what's easy to instrument — start with SLIs, not dashboards.
+- Set SLOs from 2–4 weeks of real data, not aspirations.
+- Multi-window, multi-burn-rate alerts cut noise while still catching real incidents.
+- A written error-budget policy turns reliability into a constraint product and engineering can negotiate around.
+
+</KeyTakeaways>
+
 <!-- truncate -->
 
 <div class="mental-model">

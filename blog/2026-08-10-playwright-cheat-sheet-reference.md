@@ -12,6 +12,15 @@ Every time I set up a new Playwright suite or review someone else's, I end up hu
 
 There's also a [scannable cheat sheet page](/cheatsheets/playwright) with the same material in card form.
 
+<KeyTakeaways>
+
+- Prefer semantic locators (`getByRole`, `getByLabel`, `getByText`) over CSS/XPath — they survive markup changes.
+- Use auto-retrying, web-first assertions instead of manual waits or fixed timeouts.
+- A good framework is POM structure, isolated contexts, reused auth state, and CI config that keeps the suite fast.
+- Traces and failure-only artifacts are how you see why a CI test failed instead of guessing.
+
+</KeyTakeaways>
+
 <!-- truncate -->
 
 <div class="mental-model">
