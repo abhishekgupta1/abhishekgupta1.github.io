@@ -23,6 +23,15 @@ across **Test Automation (SDET)**, **Site Reliability Engineering (SRE)**,
 
 Browse the sidebar to explore each category.
 
+<TenMinute minutes={5} title="Start here">
+
+1. Not sure where to begin? Try [Pick Your Focus](/start)
+2. Browse every guide by track, level, and reading time in the [Library](/library)
+3. See a suggested learning order for each track on the [Skill Roadmap](/roadmap)
+4. Need a quick lookup rather than a full guide? Use the [Cheat Sheets](/cheatsheets)
+
+</TenMinute>
+
 <div class="mental-model">
 <span class="mental-model__label">🧭 Mental model</span>
 
