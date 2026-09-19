@@ -16,6 +16,8 @@ Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the core annotations: `@Test`, `@BeforeEach`, `@AfterEach`
@@ -24,6 +26,15 @@ Organized as a lookup you can also read top-to-bottom.
 4. Skim JUnit 5 vs TestNG to know which fits your project
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Write JUnit 5 tests with the core annotations
+- Use parameterized and nested tests
+- Filter runs with tags
+- Extend behaviour with `@ExtendWith`
+
+</KeyTakeaways>
 
 ---
 

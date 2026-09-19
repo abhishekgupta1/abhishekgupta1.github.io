@@ -25,6 +25,15 @@ Organized as a lookup you can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Explain how the JVM compiles and runs code
+- Use OOP, generics, collections, and streams
+- Handle exceptions and basic concurrency
+- Build a project with Maven or Gradle
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

@@ -25,6 +25,15 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Navigate the filesystem hierarchy and set correct permissions
+- Inspect, signal, and manage processes and services
+- Read logs and troubleshoot networking from the OS side
+- Automate routine work with shell scripts, cron, and text-processing tools
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

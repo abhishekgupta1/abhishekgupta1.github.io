@@ -16,6 +16,8 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide)
+
 <TenMinute minutes={10}>
 
 1. Understand WebDriver: how a script talks to the browser
@@ -24,6 +26,15 @@ interview. Organized as a lookup you can also read top-to-bottom.
 4. Structure tests with the Page Object Model, then scale with Grid
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain how WebDriver talks to the browser
+- Pick stable locators and use explicit waits
+- Structure tests with the Page Object Model
+- Run in parallel with Selenium Grid
+
+</KeyTakeaways>
 
 ---
 

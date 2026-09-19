@@ -17,6 +17,8 @@ you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Cloud Infrastructure](/docs/sre-skills/cloud-infrastructure/cloud-infrastructure-guide), [Networking Fundamentals](/docs/sre-skills/networking-fundamentals/networking-fundamentals-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the Shared Responsibility Model — what AWS secures vs what you do
@@ -25,6 +27,15 @@ you can also read top-to-bottom.
 4. Skim the CLI Essentials for the commands you'll use daily
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain the Shared Responsibility Model
+- Reason about compute, storage, VPC networking, and IAM
+- Design for high availability and cost
+- Use the AWS CLI for everyday tasks
+
+</KeyTakeaways>
 
 ---
 

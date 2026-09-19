@@ -16,6 +16,8 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Git](/docs/sde-skills/git/git-guide), [Cloud Infrastructure](/docs/sre-skills/cloud-infrastructure/cloud-infrastructure-guide)
+
 <TenMinute minutes={10}>
 
 1. Understand the loop: `init` → `plan` → `apply` — and why you read the plan every time
@@ -24,6 +26,15 @@ interview. Organized as a lookup you can also read top-to-bottom.
 4. Use the Safe Apply checklist for your next change
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain why infrastructure is defined as code and what the plan/apply loop guarantees
+- Write HCL with variables, modules, and providers
+- Manage remote state safely and detect drift
+- Apply changes in a team using a safe-apply checklist
+
+</KeyTakeaways>
 
 ---
 

@@ -16,6 +16,8 @@ an SDET interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the core annotations and their execution order
@@ -24,6 +26,15 @@ an SDET interview. Organized as a lookup you can also read top-to-bottom.
 4. Understand soft vs hard assertions and parallel execution
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Use TestNG annotations and their execution order
+- Configure suites in `testng.xml`
+- Run data-driven and parallel tests
+- Choose between soft and hard assertions
+
+</KeyTakeaways>
 
 ---
 

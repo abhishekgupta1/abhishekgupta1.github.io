@@ -26,6 +26,15 @@ top-to-bottom as a course.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Write and run a Playwright test end to end
+- Choose resilient locators and rely on auto-waiting
+- Structure a suite with fixtures and the Page Object Model
+- Mock the network, handle auth, and run in CI
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

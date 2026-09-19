@@ -32,6 +32,15 @@ documentation before depending on it in production tooling.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Contrast spec-driven development with vibe coding
+- Write requirements in EARS format
+- Use steering, hooks, and MCP to shape the agent
+- Fit Kiro into a team's SDLC
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

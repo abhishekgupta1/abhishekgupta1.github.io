@@ -17,6 +17,8 @@ as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the Given / When / Then structure of Gherkin
@@ -25,6 +27,15 @@ as a lookup you can also read top-to-bottom.
 4. Read Common Anti-Patterns so scenarios stay readable to non-engineers
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Write scenarios in Gherkin
+- Bind steps to step definitions
+- Use scenario outlines, hooks, and tags
+- Avoid the common BDD anti-patterns
+
+</KeyTakeaways>
 
 ---
 

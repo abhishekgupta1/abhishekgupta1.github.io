@@ -17,6 +17,8 @@ top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide), [JUnit](/docs/sdet-skills/junit/junit-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the `given() / when() / then()` DSL
@@ -25,6 +27,15 @@ top-to-bottom.
 4. Add JSON schema validation to catch contract drift
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Write API tests with the given/when/then DSL
+- Assert on JSON with JSON Path and Hamcrest
+- Reuse setup with request specifications
+- Validate responses against a JSON schema
+
+</KeyTakeaways>
 
 ---
 

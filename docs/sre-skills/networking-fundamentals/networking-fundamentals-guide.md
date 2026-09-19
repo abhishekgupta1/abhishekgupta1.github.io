@@ -17,6 +17,8 @@ you can also read top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Linux Administration](/docs/sre-skills/linux-administration/linux-administration-guide)
+
 <TenMinute minutes={10}>
 
 1. Trace one request through the layers: DNS → TCP handshake → TLS → HTTP
@@ -25,6 +27,15 @@ you can also read top-to-bottom.
 4. Read Common Failure Scenarios to see how each layer breaks
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Trace a request through OSI/TCP-IP layers, DNS, TCP, and TLS
+- Work out CIDR ranges and subnet sizes
+- Explain L4 vs L7 load balancing, firewalls, and NAT
+- Diagnose common network failures with standard tools
+
+</KeyTakeaways>
 
 ---
 

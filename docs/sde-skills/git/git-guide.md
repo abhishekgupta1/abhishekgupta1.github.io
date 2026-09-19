@@ -25,6 +25,15 @@ into an SDE interview. Organized as a lookup you can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Explain Git's object model and the three trees
+- Branch, merge, and rebase with confidence
+- Resolve conflicts and undo mistakes safely
+- Use tags, `.gitignore`, and hooks
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

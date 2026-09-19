@@ -17,6 +17,8 @@ top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Python](/docs/sde-skills/python/python-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the `.robot` file structure: settings, variables, test cases, keywords
@@ -25,6 +27,15 @@ top-to-bottom.
 4. Read When to Choose Robot Framework to decide if it fits your team
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Read and write `.robot` suite files
+- Use built-in libraries and write custom keywords
+- Drive one test with many inputs
+- Decide when a keyword-driven framework fits
+
+</KeyTakeaways>
 
 ---
 

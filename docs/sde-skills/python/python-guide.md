@@ -25,6 +25,15 @@ Organized as a lookup you can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Use Python's core types, comprehensions, and functions
+- Write decorators, generators, and classes
+- Choose between threading, multiprocessing, and asyncio
+- Test with `pytest` and manage environments
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

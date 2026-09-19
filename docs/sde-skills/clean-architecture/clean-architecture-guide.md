@@ -17,6 +17,8 @@ top-to-bottom.
 
 <LevelBadge level="advanced" />
 
+**Prerequisites:** [Python](/docs/sde-skills/python/python-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the Dependency Rule: source dependencies point only inward
@@ -25,6 +27,15 @@ top-to-bottom.
 4. Read Common Mistakes to avoid over-layering a simple CRUD app
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- State the Dependency Rule and apply it
+- Separate the four concentric layers
+- Use ports and adapters to invert dependencies
+- Recognise when the pattern is overkill
+
+</KeyTakeaways>
 
 ---
 

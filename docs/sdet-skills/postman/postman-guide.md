@@ -26,6 +26,15 @@ can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Organise requests into collections and environments
+- Write test scripts and chain requests
+- Run collections in CI with Newman
+- Choose between Postman and Rest Assured
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

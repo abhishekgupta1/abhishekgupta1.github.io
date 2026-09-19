@@ -28,6 +28,15 @@ this doc focuses on Prometheus and Grafana specifically.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Explain how Prometheus scrapes, stores, and queries metrics
+- Write practical PromQL
+- Define SLIs, SLOs, and an error budget
+- Route alerts through Alertmanager and build Grafana dashboards
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

@@ -16,6 +16,8 @@ SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Docker Basics](/docs/sde-skills/docker-basics/docker-basics-guide), [Networking Fundamentals](/docs/sre-skills/networking-fundamentals/networking-fundamentals-guide), [Linux Administration](/docs/sre-skills/linux-administration/linux-administration-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the architecture: control plane vs worker nodes
@@ -24,6 +26,15 @@ SRE interview. Organized as a lookup you can also read top-to-bottom.
 4. Read the Troubleshooting section for CrashLoopBackOff and Pending pods
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Describe the control-plane and node architecture
+- Use Pods, Deployments, and Services correctly
+- Roll out and roll back a change
+- Troubleshoot with `kubectl` and probes
+
+</KeyTakeaways>
 
 ---
 

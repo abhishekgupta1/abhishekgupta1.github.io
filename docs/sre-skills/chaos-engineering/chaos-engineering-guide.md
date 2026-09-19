@@ -16,6 +16,8 @@ as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="advanced" />
 
+**Prerequisites:** [Kubernetes](/docs/sre-skills/kubernetes/kubernetes-guide), [Observability (Grafana & Prometheus)](/docs/sre-skills/observability-grafana-prometheus/observability-grafana-prometheus-guide)
+
 <TenMinute minutes={10}>
 
 1. Define a steady-state hypothesis before injecting anything
@@ -24,6 +26,15 @@ as a lookup you can also read top-to-bottom.
 4. Study the LitmusChaos pod-delete example as your first experiment
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Write a steady-state hypothesis and run an experiment through its lifecycle
+- Choose failure-injection types and tools
+- Limit blast radius and define stop conditions
+- Plan and run a Game Day
+
+</KeyTakeaways>
 
 ---
 

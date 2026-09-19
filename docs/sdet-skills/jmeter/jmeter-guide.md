@@ -17,6 +17,8 @@ lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Networking Fundamentals](/docs/sre-skills/networking-fundamentals/networking-fundamentals-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the test plan structure: thread group, samplers, listeners
@@ -25,6 +27,15 @@ lookup you can also read top-to-bottom.
 4. Run in non-GUI mode for CI and read the key metrics
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Build a test plan with thread groups and samplers
+- Distinguish load, stress, spike, and soak tests
+- Correlate and parameterize dynamic values
+- Run headless in CI and interpret the key metrics
+
+</KeyTakeaways>
 
 ---
 

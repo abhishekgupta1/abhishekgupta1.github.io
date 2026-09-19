@@ -20,6 +20,8 @@ on, see the
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [AI-Assisted Engineering Workflows](/docs/sre-skills/ai-assisted-engineering-workflows/ai-assisted-engineering-workflows-guide)
+
 <TenMinute minutes={10}>
 
 1. Understand the Host / Client / Server split in MCP
@@ -28,6 +30,15 @@ on, see the
 4. Review Safety & Guardrails before giving an agent any write access
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain MCP's host, client, and server roles
+- Distinguish an agent from a single-shot LLM call
+- Pick an agent design pattern for a dev-automation task
+- Apply safety guardrails before granting an agent write access
+
+</KeyTakeaways>
 
 ---
 

@@ -16,6 +16,8 @@ Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="beginner" />
 
+**Prerequisites:** [Linux Administration](/docs/sre-skills/linux-administration/linux-administration-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn containers vs VMs and how images are built from layers
@@ -24,6 +26,15 @@ Organized as a lookup you can also read top-to-bottom.
 4. Use the Debugging Playbook the next time a container won't start
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain images, layers, and the container lifecycle
+- Write and shrink a Dockerfile with multi-stage builds
+- Persist data with volumes and connect containers
+- Run multi-service setups with docker-compose
+
+</KeyTakeaways>
 
 ---
 

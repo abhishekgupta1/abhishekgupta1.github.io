@@ -20,6 +20,8 @@ you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Linux Administration](/docs/sre-skills/linux-administration/linux-administration-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the USE method: Utilisation, Saturation, Errors for every resource
@@ -28,6 +30,15 @@ you can also read top-to-bottom.
 4. Read Common Mistakes so you don't blame CPU by default
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Apply the USE method to CPU, memory, disk, and network
+- Use the standard toolkit in a sensible order
+- Diagnose a slow server end to end
+- Avoid the common mistakes that mislead performance debugging
+
+</KeyTakeaways>
 
 ---
 

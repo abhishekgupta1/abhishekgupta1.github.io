@@ -16,6 +16,8 @@ into an SRE interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Git](/docs/sde-skills/git/git-guide), [Docker Basics](/docs/sde-skills/docker-basics/docker-basics-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the pipeline stages: build → test → scan → deploy
@@ -24,6 +26,15 @@ into an SRE interview. Organized as a lookup you can also read top-to-bottom.
 4. Read Secrets Management and Common Pitfalls before wiring credentials
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Describe the stages of a delivery pipeline
+- Compare rolling, blue-green, and canary deployments
+- Read and write pipelines in Jenkins, GitLab CI, or GitHub Actions
+- Handle secrets without leaking them
+
+</KeyTakeaways>
 
 ---
 

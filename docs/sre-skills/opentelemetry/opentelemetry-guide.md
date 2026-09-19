@@ -16,6 +16,8 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Observability (Grafana & Prometheus)](/docs/sre-skills/observability-grafana-prometheus/observability-grafana-prometheus-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn the three signals — traces, metrics, logs — and how they correlate
@@ -24,6 +26,15 @@ interview. Organized as a lookup you can also read top-to-bottom.
 4. Read the Sampling section before turning on tracing in production
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain traces, metrics, and logs and how they correlate
+- Distinguish the API, SDK, and Collector and what each does
+- Instrument a service with auto and manual instrumentation
+- Choose a sampling strategy and debug common pitfalls
+
+</KeyTakeaways>
 
 ---
 

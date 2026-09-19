@@ -16,6 +16,8 @@ interview. Organized as a lookup you can also read top-to-bottom.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Java](/docs/sdet-skills/java/java-guide), [Selenium](/docs/sdet-skills/selenium/selenium-guide)
+
 <TenMinute minutes={10}>
 
 1. Understand the architecture: client → Appium server → platform driver → device
@@ -24,6 +26,15 @@ interview. Organized as a lookup you can also read top-to-bottom.
 4. Read Common Flakiness Pitfalls before running on real devices or a cloud farm
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Explain how the Appium client, server, and platform driver interact
+- Configure capabilities for Android and iOS
+- Choose reliable mobile locators
+- Decide between emulators, real devices, and cloud farms
+
+</KeyTakeaways>
 
 ---
 

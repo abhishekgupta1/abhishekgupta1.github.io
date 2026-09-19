@@ -27,6 +27,15 @@ Organized as a lookup you can also read top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Say where AI assistants help SRE work and where they don't
+- Write structured prompts for engineering tasks
+- Apply guardrails to changes that touch production
+- Roll AI-assisted workflows out across a team
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

@@ -26,6 +26,15 @@ top-to-bottom.
 
 </TenMinute>
 
+<KeyTakeaways title="After this guide you can">
+
+- Query data with joins, aggregates, and subqueries
+- Choose between subqueries, CTEs, and window functions
+- Explain indexes and transactions
+- Use SQL for test data setup and validation
+
+</KeyTakeaways>
+
 ---
 
 <div class="mental-model">

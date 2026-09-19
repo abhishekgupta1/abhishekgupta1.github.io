@@ -25,6 +25,8 @@ is organized around those five ideas.
 
 <LevelBadge level="intermediate" />
 
+**Prerequisites:** [Networking Fundamentals](/docs/sre-skills/networking-fundamentals/networking-fundamentals-guide)
+
 <TenMinute minutes={10}>
 
 1. Learn HA design: multiple AZs, no single point of failure
@@ -33,6 +35,15 @@ is organized around those five ideas.
 4. Read the 3-tier reference architecture end to end
 
 </TenMinute>
+
+<KeyTakeaways title="After this guide you can">
+
+- Design for high availability across zones
+- Choose between VMs, containers, and serverless
+- Pick a disaster-recovery pattern from RTO and RPO
+- Sketch a 3-tier HA reference architecture
+
+</KeyTakeaways>
 
 ---
 
