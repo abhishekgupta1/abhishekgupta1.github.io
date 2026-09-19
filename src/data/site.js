@@ -26,6 +26,22 @@ export const PERSON = {
 export const GOATCOUNTER_CODE = '';
 
 /**
+ * Giscus comments (GitHub Discussions). Empty REPO_ID = comments are not
+ * rendered. To turn on:
+ *   1. enable Discussions on the repo (Settings -> General -> Features)
+ *   2. install the giscus app: https://github.com/apps/giscus
+ *   3. open https://giscus.app, enter the repo, and copy the generated
+ *      data-repo-id and data-category-id into the constants below
+ * Comments load from giscus.app/GitHub, so mention this in the privacy page.
+ */
+export const GISCUS = {
+  repo: 'abhishekgupta1/abhishekgupta1.github.io',
+  repoId: '',
+  category: 'General',
+  categoryId: '',
+};
+
+/**
  * Google AdSense — OFF until the site is approved. To turn on:
  *   1. set ADS_ENABLED = true
  *   2. set ADSENSE_CLIENT to your real `ca-pub-XXXXXXXXXXXXXXXX`

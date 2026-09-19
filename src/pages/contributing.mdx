@@ -188,3 +188,27 @@ My take: ...
 
 Renders nothing until AdSense is enabled in `src/data/site.js`. Place at most
 one per page, after the first major section: `<AdSlot slot="1234567890" />`.
+
+### Mermaid diagrams
+
+Flowcharts, sequence diagrams, and state machines can be written as text in a
+fenced `mermaid` block — no SVG needed. They follow the light/dark theme.
+Prefer this for new diagrams; the hand-drawn SVG mental models stay as they are.
+
+````md
+```mermaid
+flowchart LR
+  Alert --> Triage --> Mitigate --> Postmortem
+```
+````
+
+```mermaid
+flowchart LR
+  Alert --> Triage --> Mitigate --> Postmortem
+```
+
+### Comments
+
+Docs and articles (not cheat sheets) show a Giscus comment thread at the
+bottom once `GISCUS.repoId` and `GISCUS.categoryId` are set in
+`src/data/site.js`. Until then nothing is rendered.

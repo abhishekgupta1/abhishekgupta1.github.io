@@ -62,6 +62,10 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
+  markdown: {
+    mermaid: true,
+  },
+
   onBrokenLinks: 'warn',
 
   headTags: conditionalHeadTags,
@@ -162,6 +166,7 @@ const config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       '@easyops-cn/docusaurus-search-local',
       {
