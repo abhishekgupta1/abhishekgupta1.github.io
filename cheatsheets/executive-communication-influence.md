@@ -12,6 +12,14 @@ the full articles, see the [complete guide](/docs/mba-skills/executive-communica
 
 <a class="topic-crosslink" href="/docs/mba-skills/executive-communication-influence/executive-presence-influence/executive-presence">📖 Full guide: Executive Communication & Influence →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Executive presence: pitch structure** card
+2. Then the **Personal branding** and **Stakeholder alignment** cards
+3. Open the [full guide](/docs/mba-skills/executive-communication-influence/executive-presence-influence/executive-presence) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

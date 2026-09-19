@@ -12,6 +12,15 @@ reasoning, read [the article](/articles/playwright-cross-browser-testing-guide).
 
 <a class="topic-crosslink" href="/articles/playwright-cross-browser-testing-guide">📖 Full article: Cross-Browser Playwright →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Why Playwright for this** card
+2. Then the **Structure that scales** and **Multi-browser config essentials** cards
+3. Treat the other 4 cards as lookups — scan by card title when you need one
+4. Open the [full article](/articles/playwright-cross-browser-testing-guide) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--sdet">
 
 <div class="cheat-card">

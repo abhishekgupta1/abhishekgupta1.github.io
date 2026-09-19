@@ -13,6 +13,15 @@ tool-by-tool breakdown across every layer, see the
 
 <a class="topic-crosslink" href="/docs/sdet-skills/test-automation-tooling-landscape/test-automation-tools-technology-landscape">📖 Full guide: Tooling Landscape →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **The modern pyramid** card
+2. Then the **Web UI / E2E — pick one** and **Mobile** cards
+3. Treat the other 7 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/sdet-skills/test-automation-tooling-landscape/test-automation-tools-technology-landscape) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--sdet">
 
 <div class="cheat-card">

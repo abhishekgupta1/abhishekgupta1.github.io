@@ -12,6 +12,15 @@ full articles, see the [complete guide](/docs/mba-skills/technical-product-manag
 
 <a class="topic-crosslink" href="/docs/mba-skills/technical-product-management-product-strategy/product-vision-execution/roadmapping-prioritization-frameworks">📖 Full guide: Technical Product Management →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Roadmapping & prioritization** card
+2. Then the **Product discovery & user research** and **North Star & product metrics** cards
+3. Treat the other 3 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/technical-product-management-product-strategy/product-vision-execution/roadmapping-prioritization-frameworks) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

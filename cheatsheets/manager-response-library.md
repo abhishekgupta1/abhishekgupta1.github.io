@@ -12,6 +12,15 @@ the full worked responses, see the [complete guide](/docs/mba-skills/manager-res
 
 <a class="topic-crosslink" href="/docs/mba-skills/manager-response-library/category-1-performance-underperformance">📖 Full guide: Manager Response Library →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Missing deadlines / buggy work** card
+2. Then the **Formal PIP or tough review** and **Architectural disagreement (two seniors)** cards
+3. Treat the other 11 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/manager-response-library/category-1-performance-underperformance) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

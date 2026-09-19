@@ -12,6 +12,15 @@ For the full articles, see the [complete guide](/docs/mba-skills/engineering-gov
 
 <a class="topic-crosslink" href="/docs/mba-skills/engineering-governance-operations/technical-debt-vs-feature-velocity/quantifying-technical-debt-with-a-framework">📖 Full guide: Engineering Governance & Operations →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Quantifying technical debt** card
+2. Then the **Pitching refactoring to non-technical leaders** and **Cloud spend & FinOps** cards
+3. Treat the other 5 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/engineering-governance-operations/technical-debt-vs-feature-velocity/quantifying-technical-debt-with-a-framework) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

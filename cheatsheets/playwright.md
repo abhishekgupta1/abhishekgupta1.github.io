@@ -2,6 +2,7 @@
 title: "Playwright Cheat Sheet"
 description: "Quick reference for Playwright — install, locators, waiting, assertions, fixtures, mocking, and debugging."
 sidebar_position: 2
+level: intermediate
 tags: [playwright, sdet, test-automation, e2e, cheat-sheet]
 hide_table_of_contents: true
 ---
@@ -12,6 +13,17 @@ A one-page reference for Playwright. For the full walkthrough — architecture,
 POM, CI setup, interview Q&A — see the [complete guide](/docs/sdet-skills/playwright/playwright-guide).
 
 <a class="topic-crosslink" href="/docs/sdet-skills/playwright/playwright-guide">📖 Full guide: Playwright →</a>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Begin with the **Install & config** card
+2. Then the **Anatomy of a test** and **Locators — priority order** cards
+3. Treat the other 9 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/sdet-skills/playwright/playwright-guide) when a card isn't enough
+
+</TenMinute>
 
 Also on the blog: [The Playwright Reference I Keep Coming Back To](/articles/playwright-cheat-sheet-reference).
 

@@ -12,6 +12,15 @@ examples and interview Q&A, see the [complete guide](/docs/mba-skills/leadership
 
 <a class="topic-crosslink" href="/docs/mba-skills/leadership-for-sdet-managers/leadership-scenarios-guide">📖 Full guide: Leadership for SDET Managers →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **STAR & SBI** card
+2. Then the **Situational Leadership (Hersey-Blanchard)** and **Servant leadership & Radical Candor** cards
+3. Treat the other 9 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/leadership-for-sdet-managers/leadership-scenarios-guide) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

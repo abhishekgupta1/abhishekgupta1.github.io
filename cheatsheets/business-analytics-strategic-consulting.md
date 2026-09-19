@@ -12,6 +12,15 @@ the full articles, see the [complete guide](/docs/mba-skills/business-analytics-
 
 <a class="topic-crosslink" href="/docs/mba-skills/business-analytics-strategic-consulting/independent-consulting-business-operations/consulting-frameworks">📖 Full guide: Business Analytics & Strategic Consulting →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Consulting frameworks at a glance** card
+2. Then the **Financial & legal modeling for consultants** and **Value-based pricing & client acquisition** cards
+3. Treat the other 3 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/business-analytics-strategic-consulting/independent-consulting-business-operations/consulting-frameworks) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

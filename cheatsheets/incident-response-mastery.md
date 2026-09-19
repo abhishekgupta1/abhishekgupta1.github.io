@@ -12,6 +12,15 @@ full mindset, roadmap, and interview scenarios, see the [complete guide](/docs/s
 
 <a class="topic-crosslink" href="/docs/sre-skills/incident-response-mastery/overview">📖 Full guide: Incident Response →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Severity & roles** card
+2. Then the **Incident lifecycle** and **On-call & paging** cards
+3. Treat the other 7 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/sre-skills/incident-response-mastery/overview) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--sre">
 
 <div class="cheat-card">

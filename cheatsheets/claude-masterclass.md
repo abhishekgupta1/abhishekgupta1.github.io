@@ -12,6 +12,15 @@ transcript, see the [course overview](/docs/ai-skills/claude-masterclass/course-
 
 <a class="topic-crosslink" href="/docs/ai-skills/claude-masterclass/course-overview">📖 Full guide: Claude Masterclass →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Claude Cowork** card
+2. Then the **Claude Skills basics** and **Claude Plugins** cards
+3. Treat the other 7 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/ai-skills/claude-masterclass/course-overview) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--ai">
 
 <div class="cheat-card">

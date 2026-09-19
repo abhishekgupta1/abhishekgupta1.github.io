@@ -12,6 +12,15 @@ layout, read [the article](/articles/sre-observability-slos-practical-guide).
 
 <a class="topic-crosslink" href="/articles/sre-observability-slos-practical-guide">📖 Full article: SRE Observability & SLOs →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Start with SLIs, not dashboards** card
+2. Then the **SLO → error budget** and **Common SLO mistakes** cards
+3. Treat the other 4 cards as lookups — scan by card title when you need one
+4. Open the [full article](/articles/sre-observability-slos-practical-guide) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--sre">
 
 <div class="cheat-card">

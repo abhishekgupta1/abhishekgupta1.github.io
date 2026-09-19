@@ -12,6 +12,15 @@ the full articles, see the [complete guide](/docs/mba-skills/team-organizational
 
 <a class="topic-crosslink" href="/docs/mba-skills/team-organizational-leadership/conflict-resolution-negotiation/handling-underperformance">📖 Full guide: Team & Organizational Leadership →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **Handling underperformance** card
+2. Then the **Navigating inter-team friction** and **Resolving architectural deadlocks** cards
+3. Treat the other 7 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/team-organizational-leadership/conflict-resolution-negotiation/handling-underperformance) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">

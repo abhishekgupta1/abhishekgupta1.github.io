@@ -12,6 +12,15 @@ full worked responses, see the [complete guide](/docs/mba-skills/quality-enginee
 
 <a class="topic-crosslink" href="/docs/mba-skills/quality-engineering-leadership-playbook/category-1-test-strategy-automation-architecture">📖 Full guide: Quality Engineering Leadership →</a>
 
+<TenMinute minutes={5}>
+
+1. Begin with the **SDET as "manual safety net"** card
+2. Then the **Custom framework vs. adopt existing** and **Too much E2E, not enough pyramid** cards
+3. Treat the other 10 cards as lookups — scan by card title when you need one
+4. Open the [full guide](/docs/mba-skills/quality-engineering-leadership-playbook/category-1-test-strategy-automation-architecture) when a card isn't enough
+
+</TenMinute>
+
 <div class="cheat-sheet cheat-sheet--mba">
 
 <div class="cheat-card">
