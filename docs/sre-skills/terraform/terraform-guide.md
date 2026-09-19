@@ -1074,6 +1074,65 @@ re-surfacing the same drift as if it were unwanted.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Apply the plan you reviewed, not a fresh one" level="intermediate" stretch="Run terraform plan again and explain why it still proposes a change.">
+
+Using the `local` provider (no cloud account needed), create a `local_file` resource, apply it, then rehearse the safe-apply rule:
+
+```bash
+terraform plan -out=tfplan
+# now edit the file content in main.tf again
+terraform apply tfplan
+cat note.txt
+```
+
+**Done when:** the file contains the content from the plan you saved, not the newer edit in `main.tf`, and a fresh `terraform plan` proposes the newer change. That gap is why CI applies a saved plan artifact.
+
+</Exercises.Task>
+<Exercises.Task title="Gate a plan on its JSON" level="advanced" stretch="Extend the gate to also fail on any resource whose actions include update, and report which address triggered it.">
+
+Write a one-line check that fails a plan containing any destroy or forced replacement:
+
+```bash
+terraform plan -out=tfplan
+terraform show -json tfplan | jq -e '[.resource_changes[] | select(.change.actions | index("delete"))] | length == 0'
+```
+
+Test it on two plans: one that only adds a new `local_file`, and one that changes an existing file's content.
+
+**Done when:** the create-only plan exits `0` and the replacement plan exits `1`, showing `delete,create` for the existing resource.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The apply that replaced the database">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A pull request changes one database setting. Reviewers read the HCL diff, see a single edited line, and approve. The apply runs later.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The apply step computed a fresh plan instead of using the reviewed one. That plan marked the database for replacement, a `+/-` line nobody had looked at, because reviewers had read the code diff rather than the plan.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+The plan is the real code review. Post it on the pull request, apply the saved plan from the same commit, block merges on unexpected destroys or replacements, and mark irreplaceable resources with `lifecycle.prevent_destroy`.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Paste `terraform plan` output and ask an assistant to list every destroy or replace (`-` and `+/-`) and why it happens. Confirm each against the resource attributes yourself before approving.
+- Ask it to draft an Open Policy Agent (Rego) or Sentinel rule that denies an S3 bucket without encryption, then test it against `terraform show -json` from one passing and one failing plan.
+- Have it generate a starting resource block for an import from a real resource's attributes, then still run `terraform plan` and fill in until the diff is zero before any apply.
+
+</AISpark>
+
+---
+
 ## 13. One-Line Summary
 
 **Terraform turns infrastructure changes into a reviewable diff against a

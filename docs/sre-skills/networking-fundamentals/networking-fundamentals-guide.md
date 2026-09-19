@@ -473,6 +473,59 @@ per-instance access control.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Carve a /24 into eight subnets" level="beginner" stretch="Repeat with 10.20.0.0/16 split into /20 subnets and state how many you get.">
+
+Split `192.168.10.0/24` into `/27` subnets **by hand**. Write each subnet's address range and its usable host count using `2^(32 - prefix) - 2`. Then check yourself:
+
+```bash
+python3 -c "import ipaddress; print([str(s) for s in ipaddress.ip_network('192.168.10.0/24').subnets(new_prefix=27)])"
+```
+
+**Done when:** your list has 8 subnets from `192.168.10.0/27` to `192.168.10.224/27`, each with 30 usable hosts, and it matches the script's output.
+
+</Exercises.Task>
+<Exercises.Task title="Walk the diagnostic order against a real host" level="intermediate" stretch="Compare a refused connection (nc -zv localhost 9) with a timeout (nc -zv -w 3 10.255.255.1 80, an address that typically goes unanswered) and say what each means.">
+
+Pick any public HTTPS site and run the guide's tools in its order: `ping -c 4`, `dig`, `nc -zv HOST 443`, then `curl -o /dev/null -s -w "%{time_total}\n" https://HOST`. Finish by reading the certificate expiry:
+
+```bash
+echo | openssl s_client -connect HOST:443 2>/dev/null | openssl x509 -noout -enddate
+```
+
+**Done when:** you have written one sentence per tool stating which layer it tested and what it told you, and you have a `notAfter` date for the certificate.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The cutover half the users never saw">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A team moves a service to a new IP and changes the DNS A record at the moment of cutover. The new servers are healthy, yet for hours some users keep reaching the old ones.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The record had a long TTL. Caching resolvers that had already looked it up kept serving the old address until their copy expired, so different users saw different answers depending on when they last resolved.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Lower the TTL hours before a planned cutover, make the change, then raise the TTL back afterwards. Lowering it at the moment of change is too late, because resolvers are still holding the old value.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Paste `dig` and `curl -v` output and ask which layer the failure sits at and why. Then confirm by running the next tool in the diagnostic order yourself.
+- Ask it to check a multi-VPC subnet plan for overlapping ranges, and verify every range with Python's `ipaddress` module instead of trusting its arithmetic.
+- Have it explain a `tcpdump` capture line by line, and treat that as a hypothesis to check against `ss -s` or a capture from the other end of the connection.
+
+</AISpark>
+
+---
+
 ## 11. One-Line Summary
 
 **Every networking problem an SRE debugs collapses into the same layered

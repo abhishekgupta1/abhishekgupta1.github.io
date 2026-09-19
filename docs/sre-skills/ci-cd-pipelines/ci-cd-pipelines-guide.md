@@ -1325,6 +1325,56 @@ green MRs together break main" case before it happens instead of after.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Build, stage, then approve to production" level="intermediate" stretch="Make the staging job run a smoke test and stop the pipeline if it fails.">
+
+In a GitHub repository, write a workflow with three jobs: build, deploy to staging, deploy to production. Upload the build output as an **artifact** and download that same artifact in both deploy jobs. Put production behind an `environment` with required reviewers, and give the deploy job `permissions: id-token: write` for OIDC instead of a stored cloud key.
+
+**Done when:** production waits for a human approval, both deploys use the artifact from the build job rather than rebuilding, and no long-lived cloud access key exists in the repository secrets.
+
+</Exercises.Task>
+<Exercises.Task title="Predict a rolling update before you run it" level="advanced">
+
+On a local cluster such as kind, create a Deployment with `replicas: 6`, `maxSurge: 1`, and `maxUnavailable: 0`. Before changing the image, write down the largest number of pods that can exist and the smallest number available during the rollout. Then trigger it and watch:
+
+```bash
+kubectl rollout status deployment/DEPLOYMENT_NAME
+kubectl get pods -w
+```
+
+**Done when:** you observed at most 7 pods and never fewer than 6 available, matching your prediction, and you can explain what changes if `maxUnavailable` becomes 1.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The pipeline nobody trusted">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A team's pipeline goes red several times a week. The habit is to re-run it, and it usually goes green, so red builds are treated as noise.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+One of those red runs was a real regression, hidden among the flaky failures. It was re-run until it passed, merged, and reached production. By then the pipeline had effectively stopped working as a safety net.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Quarantine and fix flaky tests instead of tolerating them. A pipeline is only useful while a red build means something, and pipeline changes deserve review just like application code.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Paste a failing job log and ask an assistant to find the first real error and what changed. Then reproduce it locally or re-run only that stage before touching the pipeline.
+- Ask it to convert a Jenkinsfile stage to GitHub Actions or GitLab CI, and check the result against the guide's side-by-side table (approval gates, matrix builds, secrets), since equivalents are rarely one-to-one.
+- Have it review a workflow for secret exposure, such as fork-PR triggers or echoed secret-derived values, and confirm each finding yourself before changing any trigger.
+
+</AISpark>
+
+---
+
 ## 11. One-Line Summary
 
 **CI/CD automates build-test-deploy into a repeatable pipeline — the concepts
