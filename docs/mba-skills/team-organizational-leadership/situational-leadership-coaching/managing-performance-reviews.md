@@ -2,6 +2,7 @@
 title: "Managing Performance Reviews"
 description: "A good performance review contains zero surprises."
 sidebar_position: 3
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -60,6 +61,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">A good performance review contains zero surprises because it's just a written rollup of feedback already delivered across the period's 1-on-1s, and that same written record is what feeds fair calibration across the org and any future promotion case.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Calibrate against the level's actual bar, not against the rest of the team informally — otherwise reviews drift with whoever happens to be on the team that cycle
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -48,6 +48,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">AI testing tools accelerate the loop but never replace it — a generated test or self-healing locator still goes through the same human review as any other code, gets merged and piloted on a lower-risk suite, and its real-world outcomes get monitored before the team trusts it more broadly.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 61. Evaluating and onboarding Generative AI testing tools (e.g., self-healing locator scripts, AI test generators) safely
 
 **Core Objective**: Get real productivity gains from AI testing tools without blindly trusting output that needs the same scrutiny as any other generated code.

@@ -52,6 +52,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">One set of contractual standards, defined upfront in the SOW, radiates out to every offshore, contractor, or global QA team, with a regular review cadence catching gaps early and the account relationship as the escalation path when direct technical feedback isn't enough.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 71. Managing deliverable quality and automation standards for an outsourced, offshore QA team or vendor
 
 **Core Objective**: Hold vendor-delivered automation to the same quality bar as internal work, enforced through the contract and defined standards, not goodwill alone.

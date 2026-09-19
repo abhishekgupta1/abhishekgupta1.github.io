@@ -67,6 +67,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Whether it's a personal crisis, team-wide crunch fatigue, a leave request, a manager's own overwork, or a sudden departure, every burnout scenario runs through the same instinct: notice the signal early, respond with genuine care and concrete adjustments, and protect the team's sustainable capacity rather than treating exhaustion as normal.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 41. A high-performing employee shows subtle signs of mental health struggles or personal crisis affecting their work
 
 **Core Objective**: Support the person first, while still being honest about the impact on their work, without overstepping into a role you're not qualified for.

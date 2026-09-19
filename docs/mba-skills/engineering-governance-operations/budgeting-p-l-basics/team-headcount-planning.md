@@ -2,6 +2,7 @@
 title: "Team Headcount Planning"
 description: "Build a headcount plan backward from roadmap commitments and forward from budget reality, and reconcile the two explicitly."
 sidebar_position: 3
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -55,6 +56,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">A good headcount plan reconciles two directions explicitly — what the roadmap demands and what the budget will actually fund — and the result is presented as a real choice: the specific ask tied to an outcome, alongside the honest alternative if it isn't approved.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Always present the alternative (descope, extend timeline, or delay something else) alongside the ask — it shows you've thought about the tradeoff rather than just asking for more, and gives the decision-maker a real choice
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

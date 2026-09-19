@@ -2,6 +2,7 @@
 title: "Data Visualization & Storytelling"
 description: "One chart, one message — if a chart needs a paragraph to explain what it's showing, simplify the chart, not the audience."
 sidebar_position: 2
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -58,6 +59,17 @@ tags: [business-analytics, consulting, mba]
 
 <p class="mental-model__caption">The same raw metrics get designed two different ways depending on who's using them: a dashboard supports ongoing, self-serve exploration, while a presentation is a single narrative chain that states the takeaway first, proves it with one uncluttered chart, and ends in a concrete recommendation — mixing the two designs is why data-rich presentations often fail to drive a decision.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: One chart, one message — a chart trying to show multiple things at once usually shows none of them clearly; split it into multiple simple charts rather than one complex one
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

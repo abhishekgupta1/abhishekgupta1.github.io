@@ -50,6 +50,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Modernization spreads through the org one contained pilot at a time — skeptics review the actual results before the next phase, and each successful cycle earns the trust needed to expand further, rather than mandating a full overhaul on day one.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 81. Overhauling a 10-year-old manual QA testing process in a conservative enterprise shifting to Agile/DevOps
 
 **Core Objective**: Modernize the testing process without triggering the organizational resistance that comes from moving too fast for a genuinely conservative culture.

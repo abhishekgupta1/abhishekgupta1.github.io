@@ -42,6 +42,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Whole-team ownership of quality only becomes real when developers actually write and maintain test code and SDETs shift toward building frameworks, coaching, and strategy — not when either side just declares the value while the old division of labor stays exactly the same.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 51. Establishing a culture of "Whole Team Ownership of Quality" where developers actively write and maintain test automation
 
 **Core Objective**: Make quality a shared team responsibility in practice, not just in a stated value — measured by actual developer contribution to test code.

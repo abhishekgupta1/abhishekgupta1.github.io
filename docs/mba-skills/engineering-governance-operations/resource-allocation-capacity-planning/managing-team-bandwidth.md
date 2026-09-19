@@ -2,6 +2,7 @@
 title: "Managing Team Bandwidth"
 description: "Plan against effective capacity, not headcount × hours."
 sidebar_position: 1
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -63,6 +64,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">Nominal capacity looks fixed on paper, but meetings, on-call, code review, onboarding ramp, interviews, and an honest unplanned-work buffer each take a real bite out of it — the effective number left over is often barely half of what the headcount count implies.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Treat the unplanned-work buffer as a real, named line item in planning, not a hidden assumption — a team with historically 15% unplanned work that plans at 100% commitment will reliably miss, regardless of how good the plan looks on paper
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Crafting Tech Interview Loops"
 description: "Design each interview stage to test one clear signal relevant to on-the-job success, not a general impression of 'smartness.' Common loop: recruiter screen → technical screen (signal: baseline coding ability) → onsite with 3-4 stages (signal: system design, collaborative coding, "
 sidebar_position: 1
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -66,6 +67,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">Each interview stage should measure exactly one signal that no other stage covers — a recruiter screen for fit, a technical screen for baseline coding, and a small set of onsite stages for system design, hands-on debugging, and values fit — converging into a structured debrief where everyone writes up independently before discussing.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: A debugging/troubleshooting stage is one of the most underused, highest-signal formats — it mirrors real work far more than algorithm puzzles do
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

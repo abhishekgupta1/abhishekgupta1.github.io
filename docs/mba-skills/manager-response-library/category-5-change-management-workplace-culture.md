@@ -49,6 +49,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Whether the change is a new process, a new hire's first ninety days, a remote team's norms, or your own visible mistake, the same chain holds: name the change, explain why it matters instead of just announcing it, build the structure that makes it stick, and be willing to model the standard yourself — skip a link and the next one gets harder to trust.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 22. Introducing a mandatory process change (e.g., stricter code reviews, new QA pipelines) that the team resists
 
 **Core Objective**: Get genuine buy-in, or at minimum informed compliance, rather than quiet, resentful non-adherence.

@@ -55,6 +55,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Every known risk routes through the same gate — state it plainly, lay out the real options of fixing it, shipping with mitigation, or shipping and accepting it, and make sure whoever chooses has the authority to do so, with the decision documented in writing.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 11. A Product Manager demands shipping a feature with known open high-severity bugs to hit a critical marketing deadline
 
 **Core Objective**: Make the risk explicit and get an informed decision from someone with the authority to accept it — not silently comply or unilaterally block.

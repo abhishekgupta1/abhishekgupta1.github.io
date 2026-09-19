@@ -2,6 +2,7 @@
 title: "Handling Underperformance"
 description: "Diagnose before you act: is this a skill gap, a will/motivation problem, an unclear-expectations problem, or a situational/personal problem? Each has a different fix."
 sidebar_position: 2
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -67,6 +68,17 @@ tags: [leadership, management, mba]
 </div>
 
 <a class="topic-crosslink" href="/cheatsheets/team-organizational-leadership">📋 Quick reference: Team & Organizational Leadership →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Address it within 1-2 weeks of the pattern becoming clear — delay reads as either not noticing or not caring, both of which are worse than an early, direct conversation
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

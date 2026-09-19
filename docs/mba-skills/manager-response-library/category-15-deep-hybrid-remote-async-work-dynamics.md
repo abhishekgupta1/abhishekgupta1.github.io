@@ -57,6 +57,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Unresponsive hours, meeting fatigue, excluded remote voices, untracked relocation, and isolated team members are all symptoms of one distributed-team reality, where the same instincts that build trust in person - noticing, asking, and adjusting - have to be applied deliberately instead of happening by accident.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 71. A team member is consistently unresponsive on Slack/Teams during core business hours without prior notice
 
 **Core Objective**: Restore reliable availability during agreed hours without assuming bad faith before you understand the cause.

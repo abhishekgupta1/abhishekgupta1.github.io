@@ -50,6 +50,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Retention isn't a single save-the-day conversation — it's a loop: regular one-on-ones surface what someone wants next, stretch and visibility work gives them room to grow into it, and when a growth signal does fire, whether that's feeling stuck, demanding a promotion, or giving notice, addressing it head-on feeds straight back into the next round of ongoing conversations.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 12. A top performer demands an immediate promotion or raise that you cannot grant right now
 
 **Core Objective**: Give a real, respectful answer that preserves trust — even though it's not the answer they want.

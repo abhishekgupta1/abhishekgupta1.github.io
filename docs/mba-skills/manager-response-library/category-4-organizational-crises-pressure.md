@@ -53,6 +53,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Every one of these scenarios is pressure arriving from a different direction — a sudden org-level shock, a live outage that could turn into a blame hunt, an executive demanding an unrealistic date, or scope quietly creeping past the team's capacity — and in each case the manager's actual job is the same: absorb it, translate it honestly, and hand the team something they can act on instead of raw panic.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 17. Communicating sudden company layoffs, budget cuts, or project cancellations to the team
 
 **Core Objective**: Deliver hard news honestly and quickly, minimizing the damage of rumor and uncertainty without overpromising what you don't control.

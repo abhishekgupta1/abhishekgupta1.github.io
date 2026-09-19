@@ -2,6 +2,7 @@
 title: "Product Discovery & User Research"
 description: "Interview for past behavior, not future intent ('walk me through the last time you hit this problem' beats 'would you use a feature that...')."
 sidebar_position: 1
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -49,6 +50,17 @@ tags: [product-management, tpm, mba]
 
 <p class="mental-model__caption">Product discovery narrows raw interview signal down to a usable persona in one direction only: gather behavioral interviews about what actually happened, keep only the friction that surfaces unprompted and repeatedly across many people, and let that pattern — not a demographic guess — define the persona.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Weight unprompted, repeated mentions far above anything said only in response to a direct, leading question — the former is real signal, the latter is often just politeness
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

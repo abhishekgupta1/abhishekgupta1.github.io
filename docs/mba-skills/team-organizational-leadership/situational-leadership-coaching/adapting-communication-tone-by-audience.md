@@ -2,6 +2,7 @@
 title: "Adapting Communication Tone by Audience"
 description: "The same message needs a different shape for each audience."
 sidebar_position: 4
+level: intermediate
 tags: [leadership, management, mba]
 ---
 
@@ -58,6 +59,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">The underlying facts don't change across a peer manager, a direct report, a stakeholder, and upper management — but what gets foregrounded and how much context is assumed should shift deliberately for each, or the same message either buries the signal or fails to land.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Always pair a problem with a proposed path forward when speaking to stakeholders or upper management — "here's the issue" alone reads as unmanaged; "here's the issue and here's the plan" reads as in control
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

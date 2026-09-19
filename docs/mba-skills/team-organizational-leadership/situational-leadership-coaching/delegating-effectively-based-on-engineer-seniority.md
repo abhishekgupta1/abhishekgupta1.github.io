@@ -2,6 +2,7 @@
 title: "Delegating Effectively Based on Engineer Seniority"
 description: "Delegate based on the engineer's competence and confidence for this specific task, not their title."
 sidebar_position: 1
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -57,6 +58,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">Direct, Coach, Support, and Empower aren't fixed traits of a person — they're one sliding scale driven by an engineer's skill and confidence on this specific task, so a senior engineer new to a domain can need Direct-mode guidance there while a junior engineer who has shipped the same work repeatedly is ready for Support.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: The failure mode of over-delegating (Empower mode on a low-competence task) looks like missed deadlines and rework; the failure mode of under-delegating (Direct mode on a high-competence task) looks like disengagement and attrition
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

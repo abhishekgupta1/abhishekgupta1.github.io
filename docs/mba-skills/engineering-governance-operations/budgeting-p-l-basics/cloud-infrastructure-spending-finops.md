@@ -2,6 +2,7 @@
 title: "Cloud Infrastructure Spending & FinOps"
 description: "Treat cloud and license spend as an ongoing discipline, not an annual surprise: tag everything by team/service so cost is attributable, review monthly against budget and trend, and right-size before you scale down — most savings come from eliminating waste (idle resources, oversi"
 sidebar_position: 2
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -52,6 +53,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">FinOps isn't a one-time cost-cutting exercise — it's a loop that runs every month: attribute the spend so it's traceable to a team or service, diagnose what caused any spike, fix and quantify the specific issue, then add a guardrail so the same spike catches itself next time.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Set proactive budget alerts (percentage-based, not just absolute dollar thresholds) so anomalies are caught within days, not discovered a full billing cycle later in a finance review
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

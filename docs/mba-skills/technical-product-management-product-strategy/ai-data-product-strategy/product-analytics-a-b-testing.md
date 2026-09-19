@@ -2,6 +2,7 @@
 title: "Product Analytics & A/B Testing"
 description: "Write a real hypothesis before testing: 'changing X will cause Y because Z' — not just 'let's see what happens.' Calculate required sample size before launching, not after (underpowered tests produce noise dressed as insight)."
 sidebar_position: 3
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -53,6 +54,17 @@ tags: [product-management, tpm, mba]
 
 <p class="mental-model__caption">A trustworthy A/B test is a strict four-step chain, not a single click of a "start test" button: a specific hypothesis, a sample size calculated before launch, a full run without early-stopping, and a result read for both statistical significance and a practically meaningful effect size.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Never stop a test early because it "looks significant" partway through — repeatedly checking and stopping at the first significant-looking result dramatically inflates the true false-positive rate, a well-known statistical trap (sometimes called "peeking")
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

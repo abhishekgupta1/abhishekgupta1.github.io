@@ -59,6 +59,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Team conflict tends to be either structural — an architecture deadlock or cross-team friction wearing a personality-conflict costume — or behavioral — pushback, exclusion, or a peer complaint about conduct — and each needs a different first move, but both only resolve for good once you name the real gap underneath instead of just settling the moment in front of you.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 7. Two senior team members disagree on architectural choices and hit a dead end
 
 **Core Objective**: Get to a decision without either engineer feeling overridden by rank — preserve both the decision quality and the relationship.

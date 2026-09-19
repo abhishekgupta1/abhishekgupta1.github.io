@@ -2,6 +2,7 @@
 title: "Running 1-on-1s"
 description: "The 1-on-1 belongs to the engineer, not you."
 sidebar_position: 2
+level: intermediate
 tags: [leadership, management, mba]
 ---
 
@@ -49,6 +50,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">A 1-on-1 has a strict default order — the engineer's agenda first, their career and growth second, and the manager's own items last if time allows — repeating on a steady cadence so small problems surface while they're still small.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Keep a running doc per engineer; patterns across weeks (recurring frustration, repeated blockers) are more informative than any single meeting
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

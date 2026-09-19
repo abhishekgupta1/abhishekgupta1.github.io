@@ -63,6 +63,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">A distributed, mixed-employment team creates four distinct pressure points — managing vendors and contractors through their lifecycle, timezone load without burning anyone out, cultural gaps in how feedback gets given, and trust gaps between offshore and onshore sites — but the fix in every case is the same: apply one consistent standard, regardless of where someone sits or how they're employed.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 36. Managing performance and deliverable quality for third-party vendors or external contractors
 
 **Core Objective**: Hold external work to the same quality bar as internal work, using the contract itself as the enforcement mechanism rather than relationship goodwill alone.

@@ -53,6 +53,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Tests are tiered by speed and risk so fast checks gate every PR while fuller regression runs on merge and full suites run on a schedule, keeping feedback fast without sacrificing coverage, while the infrastructure spend that parallel execution drives gets tracked with the same FinOps discipline as any other cloud cost.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 21. Integrating automated test suites into CI/CD pipelines without slowing down developer build-and-PR validation times
 
 **Core Objective**: Keep the fast feedback loop developers need on every PR while still getting meaningful quality signal before merge.

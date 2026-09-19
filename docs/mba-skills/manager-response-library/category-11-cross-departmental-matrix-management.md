@@ -63,6 +63,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Whether it's delivering without formal authority, a cross-team stalemate, being blamed publicly, an overcommitting sales team, or stalled co-leadership, every matrix-management friction converges on the same fix: manage by influence, made concrete through a shared stake, an explicit ask, visible tracking, and timely escalation.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 51. Managing a project where you have accountability for delivery, but zero direct authority over cross-functional resources (Design, Legal, Security)
 
 **Core Objective**: Deliver the project by influence and structured process instead of authority you don't have — make the dependency visible and negotiate it explicitly rather than hoping it resolves itself.

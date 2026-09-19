@@ -54,6 +54,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Every on-call and reliability scenario runs the same loop: pages fire, get triaged and tuned, their root causes get fixed as real roadmap work, and page volume gets tracked as an ongoing metric - the same discipline that also underlies on-call refusal, customer-facing data incidents, tooling investment, and legacy release pipelines.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 66. Managing high team anxiety and fatigue caused by frequent off-hours PagerDuty alerts and production fires
 
 **Core Objective**: Reduce the actual alert burden, not just the complaints about it — treat high page volume as a system health signal to fix, not an inconvenience to tolerate.

@@ -2,6 +2,7 @@
 title: "Predictive & Prescriptive Analytics"
 description: "Predictive analytics answers 'what's likely to happen' (regression, time-series forecasting); prescriptive analytics answers 'what should we do about it' (optimization, scenario modeling given constraints)."
 sidebar_position: 1
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -53,6 +54,17 @@ tags: [business-analytics, consulting, mba]
 
 <p class="mental-model__caption">Predictive analytics turns historical data into a forecast expressed as a range with a confidence level, never a single number; prescriptive analytics takes that range plus real-world constraints and recommends a specific action, so the chain only counts as decision-ready once it ends in a concrete choice, not just a chart.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Pair every prediction with a recommended action (the prescriptive layer) — a forecast without a "so what do we do" is informative but not decision-ready, and executives are evaluating you on decision support, not just analysis
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

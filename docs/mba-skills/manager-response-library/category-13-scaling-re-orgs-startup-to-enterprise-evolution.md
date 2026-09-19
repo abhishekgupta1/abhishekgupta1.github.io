@@ -48,6 +48,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">As a company grows from startup chaos through a scaling structure to enterprise process, each transition - handling founders' syndrome, merging cultures, splitting teams, bringing in senior hires, retraining for a new stack - is handled the same way: acknowledge people's history, show the evidence for the change, involve them in shaping it, and then hold the line.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 61. Managing "founders' syndrome" or early-employee entitlement when moving from startup chaos to structured enterprise processes
 
 **Core Objective**: Bring an early employee along into a more structured way of working without dismissing the real value of their tenure and institutional knowledge.

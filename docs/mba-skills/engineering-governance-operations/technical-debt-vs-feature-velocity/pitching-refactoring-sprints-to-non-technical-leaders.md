@@ -2,6 +2,7 @@
 title: "Pitching Refactoring Sprints to Non-Technical Leaders"
 description: "Pitch a refactor exactly like any other investment ask: cost (time, in weeks, and opportunity cost against roadmap), return (velocity recovered, incidents avoided, translated to dollars or roadmap capacity), and risk of not doing it (what gets worse, and when it becomes a crisis "
 sidebar_position: 2
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -55,6 +56,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">A refactor pitch competes for the same budget as a feature, so it has to be built the same way — cost, return, and the risk of not acting, all in the leader's own terms — converging into one decision instead of an appeal to code quality.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: The "risk of not doing it" framing is usually the most persuasive part of the pitch — it reframes the refactor from a nice-to-have into risk management, which non-technical leaders are used to funding
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

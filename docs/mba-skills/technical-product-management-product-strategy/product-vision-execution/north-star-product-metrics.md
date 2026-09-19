@@ -2,6 +2,7 @@
 title: "North Star & Product Metrics"
 description: "A North Star Metric is the single measure that best captures the value your product delivers to customers *and* correlates with business success — not a vanity metric like signups."
 sidebar_position: 2
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -53,6 +54,17 @@ tags: [product-management, tpm, mba]
 
 <p class="mental-model__caption">The North Star Metric captures real value delivered and sits at the center of the system, but it never stands alone — acquisition cost, engagement stickiness, retention and churn, and lifetime value each answer a different question, and reading only one of them misses the full picture of product health.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Never read LTV, CAC, retention, or DAU/MAU in isolation — each answers a different question, and a product can look healthy on one while being unhealthy on another (e.g., great acquisition efficiency masking a retention problem)
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

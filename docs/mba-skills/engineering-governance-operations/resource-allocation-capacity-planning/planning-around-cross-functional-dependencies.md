@@ -2,6 +2,7 @@
 title: "Planning Around Cross-Functional Dependencies"
 description: "Map every dependency explicitly before committing to a date: what do we need, from whom, by when — and get that team to confirm it, not just assume it."
 sidebar_position: 3
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -51,6 +52,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">A plan's real date is set by its least-confirmed external dependency, not by your own team's work — mapping each one with an owner, a needed-by date, and an honest confirmation status turns a hopeful timeline into one you can actually defend.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Request the longest-lead-time dependencies (legal, security review, procurement) first, even before the work that depends on them is fully scoped — their turnaround time often doesn't compress no matter how urgently you ask later
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

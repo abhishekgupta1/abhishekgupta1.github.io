@@ -2,6 +2,7 @@
 title: "Resolving Architectural Deadlocks"
 description: "Most architectural deadlocks are stuck because the decision criteria were never made explicit, not because the technical options are genuinely equal."
 sidebar_position: 3
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -60,6 +61,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">Most architectural deadlocks are stuck because the decision criteria and the reversibility of the choice were never made explicit, not because the technical options are genuinely equal — once that's clear, two-way-door decisions get picked and moved on, and only a genuine one-way-door disagreement needs a named decider with a deadline.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Reversible decisions should be made fast by whoever's closest to the work; irreversible decisions deserve more process, not more debate time from more people
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

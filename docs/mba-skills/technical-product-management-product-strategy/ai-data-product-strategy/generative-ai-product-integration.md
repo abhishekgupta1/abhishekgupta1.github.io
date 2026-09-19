@@ -2,6 +2,7 @@
 title: "Generative AI Product Integration"
 description: "Evaluate LLMs on task-specific accuracy, latency, and cost per unit of value delivered, not benchmark leaderboards alone."
 sidebar_position: 2
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -53,6 +54,17 @@ tags: [product-management, tpm, mba]
 
 <p class="mental-model__caption">Every generative AI feature is really four linked decisions around one probabilistic component: which model to use and how to tier it by task difficulty, whether to ground it in your own data through retrieval, how to keep its API cost predictable, and how to build in privacy and ethics guardrails before launch rather than retrofitting them after.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Model-tiering (routing easy requests to cheap models, hard ones to expensive models) is usually the single highest-leverage cost control — most requests are easier than the hardest case you're optimizing accuracy for
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

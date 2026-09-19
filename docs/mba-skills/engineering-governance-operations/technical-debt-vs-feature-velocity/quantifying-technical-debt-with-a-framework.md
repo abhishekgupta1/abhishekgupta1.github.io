@@ -2,6 +2,7 @@
 title: "Quantifying Technical Debt with a Framework"
 description: "Measure debt along three axes that map to business cost: velocity drag (how much slower is shipping in this area vs."
 sidebar_position: 1
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -71,6 +72,17 @@ tags: [engineering-management, operations, mba]
 </div>
 
 <a class="topic-crosslink" href="/cheatsheets/engineering-governance-operations">📋 Quick reference: Engineering Governance & Operations →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Incident-hours and change-failure-rate are the two metrics that translate most directly into dollars and are hardest for a non-technical leader to dismiss
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

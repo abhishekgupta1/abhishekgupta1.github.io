@@ -57,6 +57,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Inheriting a skeptical team, promoting a peer, handling a bias accusation, building psychological safety, and running a blameless post-mortem all draw on the same underlying trust: it is earned through small, consistent, fair actions rather than claimed by title or persuasion.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 46. Inheriting an established team as a new manager where the team is loyal to their previous boss and skeptical of you
 
 **Core Objective**: Earn trust through demonstrated competence and consistency, without trying to force it or badmouth the predecessor.

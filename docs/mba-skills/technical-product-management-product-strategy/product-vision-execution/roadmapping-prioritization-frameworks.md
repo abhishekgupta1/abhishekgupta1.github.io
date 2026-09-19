@@ -2,6 +2,7 @@
 title: "Roadmapping & Prioritization Frameworks"
 description: "RICE (Reach × Impact × Confidence ÷ Effort) is best for comparing a long backlog of discrete features on relative value."
 sidebar_position: 3
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -51,6 +52,17 @@ tags: [product-management, tpm, mba]
 </div>
 
 <a class="topic-crosslink" href="/cheatsheets/technical-product-management-product-strategy">📋 Quick reference: Technical Product Management →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Kano is best used qualitatively as a portfolio-balance check, not as a precise scoring exercise — the value is noticing "we have no Delighters this quarter," not computing a Kano score to the decimal
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

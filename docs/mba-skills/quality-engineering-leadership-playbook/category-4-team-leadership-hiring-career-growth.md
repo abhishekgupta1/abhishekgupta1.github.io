@@ -53,6 +53,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Career growth runs on a visible ladder from junior QA up through SDET, senior SDET, and principal quality architect, and manual QA engineers get a real, structured on-ramp onto that same ladder — training time, pairing, and gradually increasing scope — rather than being left outside it.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 31. An SDET feels like a "second-class citizen" compared to feature developers and demands a transition to a core SDE role
 
 **Core Objective**: Address the underlying status and growth concern honestly, whether the resolution is growing their SDET scope or genuinely supporting a transition.

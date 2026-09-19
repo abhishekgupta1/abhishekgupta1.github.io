@@ -49,6 +49,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Modernization stacks: solid CI/CD pipelines are the foundation, safe tool rollout that respects compliance sits on top of that, AI guardrails like output review and usage policy sit on top of that, and only once all three are solid does the team's actual trust in AI show up — you can't reassure your way to that top layer, you have to build it.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 31. The team is anxious that Generative AI tools (e.g., automated coding/testing) will make their jobs redundant
 
 **Core Objective**: Address the anxiety honestly without either dismissing it or overpromising certainty you don't have — redirect toward what's actually within their control.

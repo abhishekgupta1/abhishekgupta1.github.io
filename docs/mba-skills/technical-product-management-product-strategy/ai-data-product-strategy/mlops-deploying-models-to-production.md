@@ -2,6 +2,7 @@
 title: "MLOps: Deploying Models to Production"
 description: "A model shipping to production needs everything a normal service needs (CI/CD, monitoring, rollback) plus model-specific concerns a normal service doesn't: data/concept drift (the world changes, the model doesn't), training-serving skew (the model behaves differently in productio"
 sidebar_position: 1
+level: advanced
 tags: [product-management, tpm, mba]
 ---
 
@@ -55,6 +56,17 @@ tags: [product-management, tpm, mba]
 
 <p class="mental-model__caption">A production model runs as a closed loop, not a one-off handoff: train and validate it, deploy it with the same rigor as any service, monitor it continuously for drift because it can degrade without ever throwing an error, and retrain it on a cadence decided in advance rather than only after something breaks.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Training-serving skew (the model behaving differently live than in validation) is one of the most common and hardest-to-detect production ML failures — sharing feature-computation code between training and serving is the most reliable fix
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

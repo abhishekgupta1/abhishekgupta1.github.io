@@ -2,6 +2,7 @@
 title: "Reducing Developer Attrition"
 description: "Regretted attrition is almost always driven by a small set of addressable causes: unclear or blocked growth, a bad manager relationship, lack of autonomy/ownership, compensation falling behind market, and burnout."
 sidebar_position: 3
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -65,6 +66,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">Regretted attrition almost always traces back to one of five addressable causes — blocked growth, a bad manager relationship, low autonomy, lagging compensation, or burnout — and nearly all of them surface in 1-on-1s months before a resignation, so the fix is noticing and acting on the early signal instead of reacting well at the exit interview.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: By the time someone resigns, you're usually 6-12 months too late to act on the actual cause — the leverage point is noticing the signal in 1-on-1s much earlier
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

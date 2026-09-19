@@ -2,6 +2,7 @@
 title: "Sprint Velocity & Burndowns"
 description: "Velocity is a measurement, not a target — use the trailing 3-6 sprint average to forecast, and treat any single sprint's number as noisy."
 sidebar_position: 2
+level: intermediate
 tags: [engineering-management, operations, mba]
 ---
 
@@ -58,6 +59,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">Velocity forecasting is a chain, not a lookup — noisy past sprints become a trailing average and range, that range sets a deliberately low-biased plan, and a mid-sprint burndown check catches drift early enough to actually replan instead of just missing the date.</p>
 </div>
+
+<LevelBadge level="intermediate" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: A burndown that's flattening mid-sprint is the highest-leverage moment to act — replanning on day 6 preserves options that don't exist on day 9
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

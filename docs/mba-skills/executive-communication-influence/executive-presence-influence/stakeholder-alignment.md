@@ -2,6 +2,7 @@
 title: "Stakeholder Alignment"
 description: "Map stakeholders by what they actually need from you and in what register (per [Adapting Communication Tone by Audience](../../team-organizational-leadership/situational-leadership-coaching/adapting-communication-tone-by-audience.md)): sales wants a confident, simple answer they "
 sidebar_position: 2
+level: advanced
 tags: [executive-communication, leadership, mba]
 ---
 
@@ -54,6 +55,17 @@ tags: [executive-communication, leadership, mba]
 
 <p class="mental-model__caption">Stakeholder alignment means translating one consistent underlying fact into the register each group actually needs — sales a simple script, legal explicit risk, the C-suite outcome and tradeoff — without ever letting the substance drift between the versions each hears.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Keep the underlying facts identical across every audience even as the framing changes — inconsistency between what different stakeholders were told is what turns a manageable issue into a trust crisis when it surfaces
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

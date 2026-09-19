@@ -2,6 +2,7 @@
 title: "Navigating Inter-Team Friction"
 description: "Recurring inter-team friction is almost always a structural problem (unclear ownership, misaligned incentives, competing priorities) wearing a personal costume."
 sidebar_position: 1
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -51,6 +52,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">Recurring inter-team friction is almost always a structural problem — unclear ownership, misaligned incentives, or competing priorities — wearing a personal costume, so fixing the structure underneath the argument does more than trying to fix the relationship on top of it.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Get agreements in writing; verbal "let's do better" resolutions evaporate within a sprint
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

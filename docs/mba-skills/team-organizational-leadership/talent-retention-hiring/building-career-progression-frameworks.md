@@ -2,6 +2,7 @@
 title: "Building Career Progression Frameworks"
 description: "A good framework defines each level along a few consistent dimensions (e.g., scope, technical depth, mentorship, communication) with behavioral, observable criteria — not vague adjectives."
 sidebar_position: 2
+level: advanced
 tags: [leadership, management, mba]
 ---
 
@@ -53,6 +54,17 @@ tags: [leadership, management, mba]
 
 <p class="mental-model__caption">A leveling framework is a staircase, not a cliff — each step up from Junior to Mid-level to Senior to Staff redefines the same handful of dimensions, like scope of ownership, technical depth, mentorship, and communication, using concrete behavioral criteria instead of vague adjectives.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Keep the number of dimensions small (4-6) — more granularity feels rigorous but becomes unusable in practice and encourages box-checking over holistic judgment
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

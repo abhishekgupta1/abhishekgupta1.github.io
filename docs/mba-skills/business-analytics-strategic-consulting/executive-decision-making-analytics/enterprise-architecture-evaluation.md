@@ -2,6 +2,7 @@
 title: "Enterprise Architecture Evaluation"
 description: "Evaluate a company's engineering operations across four lenses: deployment practices (how often, how safely, how automated), testing/QA maturity (coverage, flakiness, manual vs."
 sidebar_position: 3
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -61,6 +62,17 @@ tags: [business-analytics, consulting, mba]
 
 <p class="mental-model__caption">Each lens is assessed with objective evidence on its own, but the most consequential findings live at the seams between them — unclear ownership forcing coordination into every deploy, or missing test automation slowing the whole release cycle — so the synthesis step connects the four lenses rather than scoring each in isolation.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Use objective, measurable evidence (deploy frequency, test coverage percentage, detection/resolution time) rather than interviewing engineers about how they feel the process works — self-reported process maturity is notoriously optimistic compared to what the data shows
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -2,6 +2,7 @@
 title: "Financial & Legal Modeling for Consultants"
 description: "Keep 3-6 months of expenses in a cash reserve — consulting income is lumpy and client payment terms (often net-30 or net-60) mean revenue lags work by months."
 sidebar_position: 3
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -54,6 +55,17 @@ tags: [business-analytics, consulting, mba]
 
 <p class="mental-model__caption">A consulting practice stays solvent and legally protected by four independent pillars, not one — a formal entity limits personal liability, written contracts define scope and IP, a sized cash reserve absorbs the lag between work and payment, and tax set-asides prevent an invoice from being treated as fully spendable income.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Size your cash reserve for consulting-specific lumpiness (payment lags, gaps between engagements), not a generic personal-finance rule of thumb — 3-6 months is a reasonable starting point, more if client concentration is high (one client is a large share of income)
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

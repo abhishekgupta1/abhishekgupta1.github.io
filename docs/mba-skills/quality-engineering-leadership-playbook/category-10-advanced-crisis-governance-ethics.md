@@ -47,6 +47,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">A serious compliance risk escalates in order — from the person who found it, through legal and compliance before any business tradeoff is discussed, to a documented decision with a named owner, because this kind of exposure sits above what any single engineer or executive can informally accept.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 91. Executive leadership demands shipping software with known critical compliance risks (e.g., GDPR violations)
 
 **Core Objective**: Refuse to let a serious compliance risk ship silently, while giving leadership a real, informed choice with the actual legal exposure stated plainly.

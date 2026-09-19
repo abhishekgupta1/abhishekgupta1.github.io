@@ -49,6 +49,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Executive credibility comes from swapping activity metrics like bug count for outcome metrics like defect escape rate and mean time to detect, then translating those into avoided cost so quality competes for budget attention the same way any other investment does.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 41. Countering bad quality metrics imposed by executives (e.g., measuring SDET performance by "number of bugs found")
 
 **Core Objective**: Replace a metric that rewards the wrong behavior with one that actually reflects quality outcomes, without simply refusing to be measured.

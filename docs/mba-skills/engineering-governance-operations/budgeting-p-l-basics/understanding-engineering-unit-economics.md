@@ -2,6 +2,7 @@
 title: "Understanding Engineering Unit Economics"
 description: "Know your team's fully-loaded cost (salary + benefits + overhead, roughly 1.3-1.5x base salary) and connect it to a business unit of output — cost per customer served, cost per transaction processed, or cost as a percentage of revenue for the product the team supports."
 sidebar_position: 1
+level: advanced
 tags: [engineering-management, operations, mba]
 ---
 
@@ -61,6 +62,17 @@ tags: [engineering-management, operations, mba]
 
 <p class="mental-model__caption">Unit economics is a two-stage funnel — headcount and infrastructure cost first combine into one total, and that total is then divided by a business output to produce the ratios finance actually compares against benchmarks, quarter over quarter.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Track the trend of your unit economics over time, not just a single snapshot — a high cost ratio for a growing product is often fine; a rising cost ratio for a mature product is a signal worth investigating
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

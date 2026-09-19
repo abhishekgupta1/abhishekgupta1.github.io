@@ -67,6 +67,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Performance problems arrive looking very different — a quiet missed deadline, slipping output or motivation, or an emotional or toxic reaction — but every one of them needs the cause diagnosed before you respond, and the response should only get more formal, up to a documented PIP, if the pattern actually repeats.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 1. A senior engineer is consistently missing sprint deadlines without warning
 
 **Core Objective**: Convert a recurring, silent pattern into an open one — get the engineer surfacing risk early instead of you discovering it at the deadline.

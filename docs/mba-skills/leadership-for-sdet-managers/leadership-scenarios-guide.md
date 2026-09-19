@@ -68,6 +68,14 @@ playbook on the job.
 <p class="mental-model__caption">The frameworks aren't competing choices — they're lenses for different parts of the same scenario: STAR structures how you narrate what happened, SBI structures the feedback you give inside it, and Situational Leadership plus RACI structure who does what next. Pick the lens that fits the moment, and the response comes out structured instead of improvised.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Read why SDET management is a distinct discipline
+2. Learn the frameworks — STAR, SBI, Situational Leadership, RACI — enough to name them
+3. Work through one Worked Scenario, such as Flaky Test Culture, and compare to your own approach
+
+</TenMinute>
+
 ## 1. Why SDET Management Is a Distinct Discipline
 
 An SDET (Software Development Engineer in Test) manager sits at the

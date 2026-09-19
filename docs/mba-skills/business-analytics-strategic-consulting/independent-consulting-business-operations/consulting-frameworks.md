@@ -2,6 +2,7 @@
 title: "Consulting Frameworks (SWOT, PESTLE, Value Chain, 5 Whys)"
 description: "SWOT (Strengths/Weaknesses/Opportunities/Threats) for a quick internal-vs-external strategic snapshot."
 sidebar_position: 1
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -54,6 +55,17 @@ tags: [business-analytics, consulting, mba]
 </div>
 
 <a class="topic-crosslink" href="/cheatsheets/business-analytics-strategic-consulting">📋 Quick reference: Business Analytics & Strategic Consulting →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: 5 Whys is only as good as the honesty of each answer — stopping at "it's a tooling problem" instead of continuing to "no one owns this" produces a recommendation that treats the symptom, not the cause
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

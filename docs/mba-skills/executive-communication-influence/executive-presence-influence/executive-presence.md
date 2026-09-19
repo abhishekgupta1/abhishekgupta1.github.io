@@ -2,6 +2,7 @@
 title: "Executive Presence"
 description: "Structure any executive pitch as: conclusion first (what you recommend), why it matters to them (business impact, in one sentence), the ask (what you need from them), in that order — under two minutes, zero jargon."
 sidebar_position: 1
+level: advanced
 tags: [executive-communication, leadership, mba]
 ---
 
@@ -49,6 +50,17 @@ tags: [executive-communication, leadership, mba]
 </div>
 
 <a class="topic-crosslink" href="/cheatsheets/executive-communication-influence">📋 Quick reference: Executive Communication & Influence →</a>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Translate every technical term into its business consequence — "fault tolerance" becomes "risk of an outage," "technical debt" becomes "this makes changes here slower and riskier" — the translation, not the term, is what the audience needs
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

@@ -52,6 +52,15 @@ tags: [sdet, quality-engineering, playbook, mba]
 <p class="mental-model__caption">Quality is built in layers — fast, cheap unit and integration tests owned by developers should catch most bugs before the slower, costlier SDET suite and manual testing ever see them, and a flaky suite at any layer trains the team to ignore red builds, breaking trust in the whole pipeline.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 1. Developers push feature code without unit/integration tests, treating the SDET team as a manual "safety net"
 
 **Core Objective**: Shift test ownership left to developers without it reading as SDET offloading its own job.

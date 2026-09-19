@@ -2,6 +2,7 @@
 title: "Personal Branding"
 description: "Pick one specific, narrow area of expertise to be known for — 'engineering leader' is too broad to be memorable; 'helps mid-size SaaS companies fix engineering-org scaling pain' is specific enough to be referred."
 sidebar_position: 3
+level: advanced
 tags: [executive-communication, leadership, mba]
 ---
 
@@ -61,6 +62,17 @@ tags: [executive-communication, leadership, mba]
 
 <p class="mental-model__caption">A narrow, specific positioning published consistently through a small set of formats compounds over time into a visible reputation, which then generates inbound opportunity — recruiters, consulting clients, speaking invitations — without repeated outbound effort for each one.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Consistency compounds — a sporadic post every few months rarely builds recognition; a steady, predictable cadence over many months is what actually builds an audience and a reputation
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

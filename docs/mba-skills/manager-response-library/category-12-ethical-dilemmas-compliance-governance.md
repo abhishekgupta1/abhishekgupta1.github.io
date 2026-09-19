@@ -54,6 +54,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Whether the dilemma is a risky ship deadline, suspected IP theft, a pending leak, an employee's ethical objection, or a scheduling accommodation conflict, the same chain applies: state the issue plainly, lay out the real options, and either put the decision in writing or escalate it to the people whose job it is to own that risk.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 56. An executive asks you to ship software with known severe security vulnerabilities or compliance risks to meet an artificial deadline
 
 **Core Objective**: Refuse to ship unacceptable risk while giving the executive a real, informed choice — make the risk impossible to unknowingly accept.

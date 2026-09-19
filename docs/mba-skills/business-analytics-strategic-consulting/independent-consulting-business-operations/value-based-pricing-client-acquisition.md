@@ -2,6 +2,7 @@
 title: "Value-Based Pricing & Client Acquisition"
 description: "Price against the value the client gets, not the hours you spend — a two-week engagement that saves a client $500K is worth far more than $150/hour × 80 hours, and pricing it that way leaves money on the table while also anchoring the client's expectations on your time instead of"
 sidebar_position: 2
+level: advanced
 tags: [business-analytics, consulting, mba]
 ---
 
@@ -61,6 +62,17 @@ tags: [business-analytics, consulting, mba]
 
 <p class="mental-model__caption">Value-based pricing replaces hourly billing's time-anchored frame with a four-step chain: quantify the outcome in the client's own terms, price as a defensible fraction of that value, lead every proposal with their problem instead of your process, and negotiate any follow-on retainer against an explicitly scoped outcome so it can't quietly expand.</p>
 </div>
+
+<LevelBadge level="advanced" />
+
+<TenMinute minutes={5}>
+
+1. Read the Quick Reference — the whole idea in one paragraph
+2. Check When to Use against your current situation
+3. Take away this rule of thumb: Lead every proposal with the client's problem and the outcome you'll deliver, not your process or credentials — clients buy outcomes; process detail belongs in an appendix, not the opening page
+4. Skim Common Mistakes before you apply it
+
+</TenMinute>
 
 ## Quick Reference
 

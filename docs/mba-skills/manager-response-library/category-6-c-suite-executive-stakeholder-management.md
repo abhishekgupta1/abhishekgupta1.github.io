@@ -46,6 +46,15 @@ tags: [management, playbook, mba]
 <p class="mental-model__caption">Executive stakeholder management isn't one skill applied everywhere — it's concentric: the innermost ring is your team, which you protect with a firm boundary when a VP tries to bypass you; the middle ring is your own boss, who needs directness when priorities keep shifting; and the outer ring is the C-suite or board, who need your delays, budget asks, and technical bets translated into terms they can act on.</p>
 </div>
 
+<TenMinute minutes={10}>
+
+1. Skim the mental-model diagram above — it's the one idea behind this whole category
+2. Scan the scenario headings and pick the one closest to a situation you face
+3. Read its Core Objective and Mental Model / Leadership Principle
+4. Follow its Step-by-Step Action Strategy, then adapt it to your team
+
+</TenMinute>
+
 ## 26. Pushing back against a CEO/VP who bypasses you and assigns ad-hoc work directly to your engineers
 
 **Core Objective**: Restore the chain of visibility without embarrassing the executive or putting your engineer in an awkward position — protect team capacity while staying politically intact.
