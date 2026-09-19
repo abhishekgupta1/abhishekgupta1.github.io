@@ -181,7 +181,7 @@ Update the boxes as batches land, and record the commit hash.
 - [x] Batch 1 — SRE infra (6) — commit: `51eda9a`
 - [x] Batch 2 — SRE reliability (5) — commit: `441996b` (+ stretch fix)
 - [x] Batch 3 — AI (3) — commit: `9620a34`
-- [ ] Batch 4 — SDET Java stack (6) — commit: ______
+- [x] Batch 4 — SDET Java stack (6) — commit: `2de6a02`
 - [ ] Batch 5 — SDET API/perf/data (6) — commit: ______
 - [ ] Batch 6 — SDE + leadership (5) — commit: ______
 
