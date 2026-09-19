@@ -1,0 +1,84 @@
+.wrap {
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--cm-radius);
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.sandbox {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.4rem 0.6rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.tab,
+.tabActive {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.tabActive {
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.body {
+  padding: 1rem;
+}
+
+.pane > :last-child {
+  margin-bottom: 0;
+}
+
+.runner {
+  margin-top: 0.75rem;
+}
+
+.runBtn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+}

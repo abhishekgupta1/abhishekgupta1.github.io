@@ -944,3 +944,119 @@ a:hover {
 .start-picker-result {
   margin-top: 1rem;
 }
+
+/* ============================================
+   Content model — shared tokens
+   Per-component chrome lives in each component's
+   styles.module.css; only cross-component tokens
+   belong here.
+   ============================================ */
+:root {
+  --cm-beginner: #2e7d32;
+  --cm-intermediate: #b45309;
+  --cm-advanced: #8000ff;
+  --cm-radius: 10px;
+}
+
+[data-theme='dark'] {
+  --cm-beginner: #66bb6a;
+  --cm-intermediate: #fbbf24;
+  --cm-advanced: #b366ff;
+}
+
+.cm-level-beginner { color: var(--cm-beginner); }
+.cm-level-intermediate { color: var(--cm-intermediate); }
+.cm-level-advanced { color: var(--cm-advanced); }
+
+/* Dashboard export / import row */
+.progress-io {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.progress-io-msg {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Certificates — filter bar + card meta */
+.cert-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  justify-content: center;
+  margin: 0 0 1.75rem;
+  font-size: 0.85rem;
+}
+
+.cert-filters select {
+  margin-left: 0.3rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.cert-count {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.4rem 0.6rem 0;
+}
+
+.cert-provider,
+.cert-skill {
+  font-size: 0.68rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cert-provider {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.cert-verify {
+  display: inline-block;
+  margin: 0.45rem 0.6rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Resume — role variant tabs */
+.resume-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.resume-tab {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.resume-tab--active {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: #fff;
+}

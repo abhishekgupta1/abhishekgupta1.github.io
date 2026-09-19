@@ -10,6 +10,7 @@
  */
 import React, {useRef} from 'react';
 import clsx from 'clsx';
+import Head from '@docusaurus/Head';
 import {ThemeClassNames} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
@@ -18,6 +19,7 @@ import ListenButton from '@site/src/components/ListenButton';
 import MindMapButton from '@site/src/components/MindMapButton';
 import ProgressTracker from '@site/src/components/ProgressTracker';
 import {topics} from '@site/src/data/topics';
+import {SITE_URL} from '@site/src/data/site';
 
 function useSyntheticTitle() {
   const {metadata, frontMatter, contentTitle} = useDoc();
@@ -26,6 +28,28 @@ function useSyntheticTitle() {
     return null;
   }
   return metadata.title;
+}
+
+const titleCase = (seg) =>
+  seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+/** BreadcrumbList JSON-LD derived from the doc permalink — SEO rich result. */
+function breadcrumbJsonLd(permalink, title) {
+  const parts = permalink.split('/').filter(Boolean);
+  const items = parts.map((seg, i) => {
+    const isLast = i === parts.length - 1;
+    return {
+      '@type': 'ListItem',
+      position: i + 1,
+      name: isLast ? title : titleCase(seg),
+      item: `${SITE_URL}/${parts.slice(0, i + 1).join('/')}`,
+    };
+  });
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items,
+  };
 }
 
 export default function DocItemContent({children}) {
@@ -38,6 +62,11 @@ export default function DocItemContent({children}) {
 
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbJsonLd(metadata.permalink, metadata.title))}
+        </script>
+      </Head>
       {!isCheatSheet && <ListenButton targetRef={contentRef} />}
       {!isCheatSheet && (
         <MindMapButton

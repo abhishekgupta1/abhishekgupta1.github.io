@@ -1,0 +1,43 @@
+.wrap {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--cm-radius);
+  background: var(--ifm-background-surface-color);
+}
+
+.summary {
+  margin-bottom: 0.9rem;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.visual {
+  overflow-x: auto;
+}
+
+.visual :global(svg) {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+}

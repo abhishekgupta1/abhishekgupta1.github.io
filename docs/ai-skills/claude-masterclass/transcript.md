@@ -11,7 +11,7 @@ Raw lecture transcript for the Udemy course *"Use Claude Cowork, Claude Code,
 Claude Design with 70+ Resources, 200+ Prompts, 20+ Claude Skills, 10+ Claude
 Plugins."* Kept as the source-of-truth reference behind
 [Course Overview](./course-overview) and the
-[Master Study Guide](./claude-masterclass-study-guide).
+[Cheat Sheet](/cheatsheets/claude-masterclass).
 
 :::note
 This is an auto-generated lecture transcript, lightly reformatted (section/
@@ -19,7 +19,7 @@ lecture headers converted to Markdown, caption index numbers stripped). It
 was not manually edited for typos — auto-captioning occasionally renders
 **"Claude" as "Cloud"** (e.g. "cloud co-work" = "Claude Cowork", "cloud code"
 = "Claude Code"). Read it with that substitution in mind, or use the
-[Master Study Guide](./claude-masterclass-study-guide) for a cleaned-up,
+[Cheat Sheet](/cheatsheets/claude-masterclass) for a cleaned-up,
 synthesized version of this same material.
 :::
 

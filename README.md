@@ -1,41 +1,53 @@
-# Website
+# abhishekgupta1.github.io
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+[![CI](https://github.com/abhishekgupta1/abhishekgupta1.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/abhishekgupta1/abhishekgupta1.github.io/actions/workflows/ci.yml)
+[![Deploy](https://github.com/abhishekgupta1/abhishekgupta1.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/abhishekgupta1/abhishekgupta1.github.io/actions/workflows/deploy.yml)
 
-## Installation
+Personal portfolio + knowledge base built with [Docusaurus](https://docusaurus.io/).
+Reference guides (`/docs`), quick-lookup cheat sheets (`/cheatsheets`), articles
+(`/articles`), and learning tools (`/roadmap`, `/skills`, `/quiz`, `/dashboard`).
 
-```bash
-yarn
-```
-
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## Develop
 
 ```bash
-yarn build
+npm install
+npm start          # dev server with hot reload
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+## Build & preview
 
 ```bash
-USE_SSH=true yarn deploy
+npm run build      # static output in build/
+npm run serve      # serve the built site locally
 ```
 
-Not using SSH:
+## Tests (CI gates)
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run build
+npm run test:e2e                 # Playwright smoke tests against the built site
+npx linkinator ./build --recurse --silent --skip "^https?://"   # internal link check
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+`.github/workflows/ci.yml` runs build + link check + Playwright + Lighthouse on
+every push and PR. `.github/workflows/deploy.yml` builds and publishes to GitHub
+Pages on push to `main`.
+
+## Configuration you own
+
+Edit `src/data/site.js`:
+
+| Setting | What to do |
+| --- | --- |
+| `GOATCOUNTER_CODE` | Create a site at [goatcounter.com](https://www.goatcounter.com/) and paste its code. Empty = no analytics script. Cookieless, so no consent banner. |
+| `ADS_ENABLED` / `ADSENSE_CLIENT` | Leave `false` until AdSense approves the site. When enabling, also fill `static/ads.txt` and lower the `performance` budget in `lighthouserc.json` to ~0.8. |
+
+Also replace `REPLACE_WITH_SEARCH_CONSOLE_TOKEN` in `docusaurus.config.js`
+(`themeConfig.metadata`) with your Google Search Console verification token.
+
+## Content model
+
+Every guide / cheat sheet / article follows a shared structure (10-minute path,
+learning path, interactive examples, interview questions, exercises, case study +
+AI usage, knowledge map). See `src/pages/contributing.mdx` (published at
+`/contributing`).

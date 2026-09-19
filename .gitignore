@@ -8,6 +8,12 @@
 .docusaurus
 .cache-loader
 
+# Test output
+/test-results
+/playwright-report
+/blob-report
+/.lighthouseci
+
 # Misc
 .DS_Store
 .env.local

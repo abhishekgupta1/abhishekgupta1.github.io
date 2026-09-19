@@ -14,9 +14,9 @@ Resources, 200+ Prompts, 20+ Claude Skills, 10+ Claude Plugins*
 This page is the navigation map for the course material captured in this
 knowledge base:
 
-- **[Master Study Guide](./claude-masterclass-study-guide)** — the
-  synthesized, interview/onboarding-ready knowledge system (concepts,
-  frameworks, expert insights, AI tool stack, cheat sheet). Start here.
+- **[Cheat Sheet](/cheatsheets/claude-masterclass)** — the condensed
+  quick reference for the course's concepts, frameworks, and tool stack.
+  Start here.
 - **[Course Transcript](./transcript)** — the full raw lecture transcript,
   kept as backing reference material for anything the study guide
   summarizes.

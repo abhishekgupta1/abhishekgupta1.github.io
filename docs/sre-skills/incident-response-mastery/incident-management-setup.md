@@ -12,7 +12,7 @@ tags: [sre, incident-response, incident-management, on-call, pagerduty, opsgenie
 1. [Quick Reference](#quick-reference)
 2. [What Is It / Core Concepts](#what-is-it--core-concepts)
 3. [Detailed Examples](#detailed-examples)
-4. [Key Takeaways](#key-takeaways)
+4. [Summary](#summary)
 5. [Common Mistakes](#common-mistakes)
 6. [Advanced Usage](#advanced-usage)
 7. [Related Topics](#related-topics)

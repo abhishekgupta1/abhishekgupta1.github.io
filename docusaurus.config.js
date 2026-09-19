@@ -1,10 +1,53 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
+import {GOATCOUNTER_CODE, ADS_ENABLED, ADSENSE_CLIENT} from './src/data/site.js';
+
+const GITHUB_REPO = 'https://github.com/abhishekgupta1/abhishekgupta1.github.io';
+const EDIT_URL = `${GITHUB_REPO}/tree/main/`;
+
+/**
+ * Analytics + ads are injected here only when switched on in src/data/site.js.
+ * GoatCounter is cookieless; AdSense stays off until the site is approved.
+ */
+const conditionalHeadTags = [
+  {
+    tagName: 'link',
+    attributes: {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicon-32x32.png'},
+  },
+  {
+    tagName: 'link',
+    attributes: {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/favicon-16x16.png'},
+  },
+  ...(GOATCOUNTER_CODE
+    ? [
+        {
+          tagName: 'script',
+          attributes: {
+            'data-goatcounter': `https://${GOATCOUNTER_CODE}.goatcounter.com/count`,
+            async: true,
+            src: '//gc.zgo.at/count.js',
+          },
+        },
+      ]
+    : []),
+  ...(ADS_ENABLED
+    ? [
+        {
+          tagName: 'script',
+          attributes: {
+            async: true,
+            src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
+            crossorigin: 'anonymous',
+          },
+        },
+      ]
+    : []),
+];
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Abhishek Gupta | Portfolio',
-  tagline: 'Exploring the World of Testing, Reliability, and AI',
+  title: 'docssheet',
+  tagline: 'Docs & cheat sheets for testing, reliability, and AI',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -21,6 +64,8 @@ const config = {
 
   onBrokenLinks: 'warn',
 
+  headTags: conditionalHeadTags,
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -35,10 +80,16 @@ const config = {
           path: './docs',
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
+          editUrl: EDIT_URL,
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           path: './blog',
           routeBasePath: 'articles',
+          editUrl: EDIT_URL,
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           showReadingTime: true,
           blogSidebarCount: 'ALL',
           feedOptions: {
@@ -77,8 +128,37 @@ const config = {
         path: 'cheatsheets',
         routeBasePath: 'cheatsheets',
         sidebarPath: './sidebarsCheatsheets.js',
+        editUrl: EDIT_URL,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
       }),
     ],
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: false,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {tagName: 'link', rel: 'manifest', href: '/manifest.json'},
+          {tagName: 'meta', name: 'theme-color', content: '#FFC933'},
+          {tagName: 'meta', name: 'apple-mobile-web-app-capable', content: 'yes'},
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#000',
+          },
+          {tagName: 'link', rel: 'apple-touch-icon', href: '/img/apple-touch-icon-180x180.png'},
+          {tagName: 'link', rel: 'mask-icon', href: '/img/logo-icon.svg', color: '#FFC933'},
+        ],
+      },
+    ],
+    // Per-page Open Graph images, generated at build time. Best-effort:
+    // never breaks the build. Remove this line to disable.
+    './plugins/og-image',
   ],
 
   themes: [
@@ -111,13 +191,29 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Abhishek Gupta',
+        title: 'docssheet',
+        logo: {
+          alt: 'docssheet logo',
+          src: 'img/logo-icon.svg',
+        },
         items: [
           {to: '/', label: 'Home', position: 'left'},
           {to: '/projects', label: 'Projects', position: 'left'},
           {to: '/articles', label: 'Articles', position: 'left'},
           {type: 'docSidebar', sidebarId: 'docs', label: 'Docs', position: 'left'},
           {type: 'docSidebar', docsPluginId: 'cheatsheets', sidebarId: 'cheatsheets', label: 'Cheat Sheets', position: 'left'},
+          {
+            type: 'dropdown',
+            label: 'Learn',
+            position: 'left',
+            items: [
+              {to: '/roadmap', label: 'Skill Roadmap'},
+              {to: '/skills', label: 'Skills Matrix'},
+              {to: '/quiz', label: 'Quiz'},
+              {to: '/dashboard', label: 'Progress Dashboard'},
+              {to: '/start', label: 'Pick Your Focus'},
+            ],
+          },
           {to: '/resume', label: 'Resume', position: 'left'},
           {to: '/certificates', label: 'Certificates', position: 'left'},
           {
@@ -148,9 +244,21 @@ const config = {
             ],
           },
           {
+            title: 'Learn',
+            items: [
+              {label: 'Skill Roadmap', to: '/roadmap'},
+              {label: 'Skills Matrix', to: '/skills'},
+              {label: 'Quiz', to: '/quiz'},
+              {label: 'Progress Dashboard', to: '/dashboard'},
+              {label: 'Pick Your Focus', to: '/start'},
+            ],
+          },
+          {
             title: 'Site',
             items: [
               {label: 'About', to: '/about'},
+              {label: 'Uses', to: '/uses'},
+              {label: 'Now', to: '/now'},
               {label: 'Contact', to: '/contact'},
               {label: 'Resume', to: '/resume'},
               {label: 'Certificates', to: '/certificates'},

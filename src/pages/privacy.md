@@ -43,10 +43,11 @@ all progress") or by clearing site data in your browser.
 - **Google Fonts / static assets** may be requested from a CDN when a page
   loads, which exposes your IP address to that CDN as part of the normal HTTP
   request.
-- **Analytics (planned).** If Google Analytics (GA4) is enabled, it collects
-  aggregated, pseudonymous usage data (pages viewed, approximate location,
-  device type) to help me understand which content is useful. IP anonymisation
-  is enabled where supported.
+- **Analytics.** This site uses [GoatCounter](https://www.goatcounter.com/) for
+  aggregate visit counts (page, referrer, rough country, browser). It sets **no
+  cookies**, stores no personal data, and does not track you across sites, so no
+  consent prompt is needed for it. It is only active once a site code is
+  configured; if the counter is not set up, no analytics script loads at all.
 - **Advertising (planned).** If Google AdSense is enabled, Google and its
   partners may use cookies or similar technologies to serve and measure ads.
   You can review and control this at

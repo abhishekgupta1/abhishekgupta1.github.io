@@ -1,0 +1,58 @@
+.wrap {
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--cm-radius);
+  overflow: hidden;
+}
+
+.head {
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.item {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.q {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+
+.q:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.chev {
+  color: var(--ifm-color-primary);
+}
+
+.qText {
+  flex: 1;
+}
+
+.a {
+  padding: 0.2rem 1rem 0.9rem 2.1rem;
+  font-size: 0.9rem;
+}
+
+.a > :last-child {
+  margin-bottom: 0;
+}

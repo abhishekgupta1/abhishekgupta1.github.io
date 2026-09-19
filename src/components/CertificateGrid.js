@@ -20,6 +20,23 @@ function CertificateItem({cert, onClick}) {
     >
       <img src={imgSrc} alt={cert.title} loading="lazy" />
       <div className="cert-title">{cert.title}</div>
+      <div className="cert-meta">
+        {cert.provider && <span className="cert-provider">{cert.provider}</span>}
+        {(cert.skills || []).map((s) => (
+          <span key={s} className="cert-skill">{s}</span>
+        ))}
+      </div>
+      {cert.verifyUrl ? (
+        <a
+          className="cert-verify"
+          href={cert.verifyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          onKeyDown={(e) => e.stopPropagation()}>
+          Verify ↗
+        </a>
+      ) : null}
     </div>
   );
 }

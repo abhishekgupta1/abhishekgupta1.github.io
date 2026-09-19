@@ -81,7 +81,6 @@ export const topics = [
 
   // AI Skills
   {id: 'using-claude', title: 'Claude', emoji: '🧠', href: '/cheatsheets/using-claude', category: 'ai'},
-  {id: 'claude-masterclass', title: 'Claude Masterclass', emoji: '🎓', href: '/cheatsheets/claude-masterclass', category: 'ai'},
   {id: 'kiro', title: 'Kiro', emoji: '✨', href: '/cheatsheets/kiro', category: 'ai'},
 
   // MBA Skills
