@@ -148,3 +148,48 @@ company-wide mandate without a proof point invites quiet non-compliance.
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Give the business a risk picture, not a veto" level="intermediate" stretch="Add a fourth option that uses a feature flag, and say what it costs.">
+
+The PM wants to ship with a known bug: the checkout total is off by about $0.40 for orders with more than ten items. Those are 2% of roughly 5,000 daily orders. Write the message you send. Quantify the impact, offer the options with their risks, and make a recommendation.
+
+**Done when:** your message states about 100 affected orders and about $40 a day (roughly $14,600 a year), lays out at least two options such as ship now with a fix next sprint or delay a day, uses no wording like "I'm not comfortable", and ends with a clear request for the business to decide.
+
+</Exercises.Task>
+<Exercises.Task title="Redirect a bug-count metric to outcomes" level="advanced">
+
+Executives compare two teams by bug count. Team A found 120 bugs before release and 5 escaped to production. Team B found 40 before release and 20 escaped. Define defect escape rate as production defects divided by all defects found (before release plus production).
+
+**Done when:** you calculate 4.0% for Team A and 33.3% for Team B, explain why the raw bug count makes the weaker team look better, and propose two outcome metrics from the sheet to report instead.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="Blocked on a feeling">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A quality lead asks to hold a release, saying only that they are not comfortable with it. The product owner asks what specifically is wrong and gets no concrete answer.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The executives treated it as an opinion and overrode it. The release went out, and a gap in the payment flow that the lead had suspected but never named caused a production incident. Afterwards each side remembered the conversation differently.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+State the specific gap and the risk in business terms, such as "we cannot verify the refund path, and it handles real money". A named gap can be weighed, scheduled, or accepted deliberately, while a feeling can only be overruled.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to turn a vague concern about a release into a specific coverage gap and business risk, then confirm the gap with the team before sending it.
+- Have it draft an ROI comparison of prevention cost against production-incident cost, and replace every assumed figure with one from your own incident history.
+- Ask it to suggest which of your tests could move down the pyramid, then check by hand that each would still catch the same failure.
+
+</AISpark>

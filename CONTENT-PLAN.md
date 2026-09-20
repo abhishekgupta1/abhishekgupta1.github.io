@@ -10,13 +10,13 @@ Scope rules from `CLAUDE.md` apply: this is **content work only**. Do not touch
 
 ---
 
-## 1. Where things stand (Phase 0 and Phase 1 finished; owner review gate next)
+## 1. Where things stand (Phases 0, 1 and a scoped Phase 2 finished)
 
 | Page type | Pages | Done | Still missing |
 |---|---|---|---|
 | Topic guide (`*-guide.md`) | 31 | `level`, `LevelBadge`, `TenMinute`, outcomes (`KeyTakeaways`) on 30–31; `Exercises`, `CaseStudy`, `AISpark` on all 31 | nothing further planned |
 | Deep subtopic (short SDET / MBA / incident pages) | 133 | `TenMinute` on 132, `LevelBadge` on 107 | intentionally out of scope (see §6) |
-| Cheat sheet (`cheatsheets/`) | 45 | `TenMinute` on 44 (not the `intro.md` index); `level` + badge on 31 | nothing further planned (Phase 2 is optional) |
+| Cheat sheet (`cheatsheets/`) | 45 | `TenMinute` on 44 (not the `intro.md` index); `level` + badge on 31; `Exercises`, `CaseStudy`, `AISpark` on the 12 sheets with no guide-level exercises | the other 31 sheets link to guides that already have them — intentionally not duplicated |
 | Article (`blog/`) | 5 | `KeyTakeaways` on 4; the 5th (draft) has a plain-markdown Key Takeaways section | — |
 | Other | 2 | `docs/intro.md` has a "Start here" fast path | `leadership-scenarios-guide.md` has no level (none justified) |
 
@@ -187,7 +187,7 @@ Update the boxes as batches land, and record the commit hash.
 
 **Gate**
 
-- [ ] Owner reviewed 3–4 finished guides → decision on Phase 2: ______
+- [x] Owner review gate: the owner asked for everything to be completed ("complete all the jobs"), so Phase 2 ran in a scoped form — the 12 cheat sheets with no guide-level exercises: playwright-cross-browser-testing, sre-observability-slos, incident-response-mastery, test-automation-tooling-landscape, claude-masterclass, business-analytics-strategic-consulting, engineering-governance-operations, executive-communication-influence, manager-response-library, quality-engineering-leadership-playbook, team-organizational-leadership, technical-product-management-product-strategy. The 31 guide-backed sheets were skipped to avoid duplicating the guides' exercises (thin-content risk).
 
 **Coverage re-check** (run after each phase)
 

@@ -87,3 +87,53 @@ modeling under constraints).
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Match four questions to the right framework" level="intermediate" stretch="For one question, describe the tidy but unhelpful analysis you would get from the wrong framework.">
+
+Choose SWOT, PESTLE, Value Chain, or 5 Whys for each question, and write one sentence on why:
+
+1. "Why do our releases keep slipping?"
+2. "What outside forces could hurt our launch in a new country?"
+3. "Where do we lose time between a commit and production?"
+4. "Give me a quick snapshot of where we stand, inside and outside the company."
+
+**Done when:** you assign 5 Whys, PESTLE, Value Chain, and SWOT in that order, and each sentence names the specific kind of question that framework answers.
+
+</Exercises.Task>
+<Exercises.Task title="Price an engagement on value and check your runway" level="advanced">
+
+You will spend two weeks on work that removes a bottleneck costing a client about $300,000 a year in delays. Your hourly rate is $150, you would spend 80 hours, and your monthly expenses are $6,000. Work out the hourly total, the reserve the sheet recommends, and a value-based price you can defend.
+
+**Done when:** you get an hourly total of $12,000 and a reserve of $18,000 to $36,000, and your proposed price states the value, chooses a share of it with a reason, and treats the hourly figure only as a comparison and not as the basis of the price.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The faster she worked, the less she earned">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A consultant bills by the hour. Over time she builds tooling that lets her finish the same analysis in a fraction of the time.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The client's result was just as valuable as before, but her invoices shrank with her hours, and the client began to expect the price to follow the time spent. Hourly billing rewarded her for being slower and anchored every conversation on her time instead of their outcome.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Price against the value the client receives, not the hours you spend. Keep a few months of expenses in reserve, because consulting income is lumpy and payment terms delay revenue well after the work is done.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to run a SWOT for your business, then cross out any point generic enough to apply to any company and replace it with one you can evidence.
+- Have it draft a one-sentence chart title and takeaway for a dataset, and check that the chart supports exactly that message and nothing more.
+- Ask it to model best, base, and worst cases for a decision, and check the assumptions yourself rather than only the arithmetic.
+
+</AISpark>

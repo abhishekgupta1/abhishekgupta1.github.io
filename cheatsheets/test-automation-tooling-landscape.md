@@ -142,3 +142,78 @@ degrades gracefully instead of cascading.
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Pick one tool per layer for a real product" level="intermediate" stretch="Say which single layer you would invest in first and why.">
+
+A shop has a web front end, a mobile app, a Java REST API, and a Postgres database, and it expects sharp traffic spikes. Choose one primary tool for each layer from this sheet (web UI, mobile, API, unit, performance) and one way to handle the database in integration tests. Write one sentence per choice tying it to this product.
+
+**Done when:** every layer has exactly one primary tool with a product-specific reason, the boundary between the services is covered by contract testing, the database is handled with a real containerized instance instead of mocks, and your performance tool is one you could run in CI.
+
+</Exercises.Task>
+<Exercises.Task title="Fail a build with a k6 threshold" level="advanced">
+
+This needs Docker and an HTTP endpoint you control (the small server from the Postman guide's exercise works, on port 4010). Save this as `load.js`:
+
+```js
+import http from 'k6/http';
+import { check } from 'k6';
+
+export const options = {
+  vus: 5,
+  duration: '5s',
+  thresholds: {
+    http_req_failed: ['rate<0.01'],
+    http_req_duration: ['p(95)<500'],
+  },
+};
+
+export default function () {
+  const res = http.post(
+    'http://host.docker.internal:4010/login',
+    JSON.stringify({ username: 'validuser', password: 'correctpass' }),
+    { headers: { 'Content-Type': 'application/json' } },
+  );
+  check(res, { 'status is 200': (r) => r.status === 200 });
+}
+```
+
+```bash
+docker run --rm -i grafana/k6 run - < load.js
+echo "exit code: $?"
+```
+
+On Linux, add `--add-host=host.docker.internal:host-gateway` to the `docker run` command. Run it once with the server up and once with the server stopped.
+
+**Done when:** the first run passes both thresholds and exits `0`, the second fails the `http_req_failed` threshold and exits `99`, and you can explain why the latency threshold can still pass when every request fails.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="Everything mocked, and the real database disagreed">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A team's integration tests replace the database layer with mocks so they run fast. The suite is green and trusted.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+A change relied on a database constraint and a query behaviour that the mocks did not reproduce. It passed every test and then failed against the real Postgres in a shared environment. The mocks had only ever verified the team's own assumptions about the database.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+For integration tests, start real dependencies such as the database or a queue in containers, and keep mocks for the layers where behaviour genuinely does not matter. The extra seconds buy tests that can actually disagree with your assumptions.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Describe your stack to an assistant and ask for a tool per layer with trade-offs, then check each recommendation against this sheet and your team's skills before adopting anything.
+- Ask it to draft a Pact contract between two services, and verify it by breaking a field on the provider side and watching the contract test fail.
+- Have it map your current tests onto the pyramid layers and point out the thinnest layer, then confirm by counting the tests yourself.
+
+</AISpark>

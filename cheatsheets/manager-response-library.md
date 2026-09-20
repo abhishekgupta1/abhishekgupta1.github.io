@@ -159,3 +159,48 @@ person who reported the issue guarantees the next one gets hidden.
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Separate the pattern from the incident" level="intermediate" stretch="Write what you would do next for each of the three possible answers.">
+
+A senior engineer has missed their third deadline in two months. Draft the opening of your first conversation about it and the questions you would ask before any consequence is discussed.
+
+**Done when:** the opening cites specific dates and facts and not character judgments, you ask three diagnostic questions that separate a skill gap, a motivation problem, and unclear expectations, and no consequence, warning, or formal plan is mentioned yet.
+
+</Exercises.Task>
+<Exercises.Task title="Redirect a VP who bypassed you" level="advanced">
+
+A VP has asked one of your engineers directly to build something, skipping you. Write a reply of about four sentences to the VP.
+
+**Done when:** it is not accusatory, it says you are happy to prioritise the request, it asks that future requests come through you so you can sequence them against the team's commitments, and it offers a concrete next step with a time.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The performance plan nobody saw coming">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A manager has been uneasy about an engineer's work for months but mostly says nothing. At the next formal review, they open with a list of concerns and a plan for improvement.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+None of the points had come up before. The engineer felt ambushed and disputed each one, and the process turned into an argument about whether the concerns were fair instead of about how to improve. The relationship did not recover.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Aim for zero surprises in the room. Every point should already have been raised in earlier one-on-ones, so that a formal plan documents a pattern the person already knows about instead of introducing one.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to role-play the employee in a hard conversation, and judge whether your own wording stays on behaviour and facts.
+- Have it draft talking points for a difficult message, then remove any euphemism and check each statement against what has actually been decided.
+- Ask it what you might be missing about a performance pattern, such as skill, motivation, or expectations, and verify by asking the person, not the assistant.
+
+</AISpark>

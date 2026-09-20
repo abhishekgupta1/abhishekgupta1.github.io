@@ -123,3 +123,48 @@ Firecrawl, UI design with Google Stitch 2.0.
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Write zero-shot, one-shot, and few-shot versions of one prompt" level="beginner">
+
+Take one task, such as classifying support messages as `bug`, `feature`, or `question`. Write the prompt three ways: with no examples, with one labelled example, and with at least three labelled examples in the same format you want back. Try all three on the same five messages you have not shown the model.
+
+**Done when:** the few-shot version shows its examples in exactly the output format you expect, you have run all three on the same messages, and you can say which version produced the most consistent format and where it still got a case wrong.
+
+</Exercises.Task>
+<Exercises.Task title="Give a small project a CLAUDE.md" level="intermediate">
+
+Pick a small project you work on and write a `CLAUDE.md` at its root: what the project is, the exact commands to run and test it, the conventions to follow, and the parts that must not be changed without asking.
+
+**Done when:** the file fits in under about 40 lines, every command in it actually runs when you try it, the "do not change" list names specific files or directories, and a fresh session given a small task follows the file without you repeating it.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The assistant that reorganised the wrong files">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A team points a coding assistant at a repository with no written project guidance and asks it to add a small feature.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+With no boundaries to go on, the assistant tidied up shared components and configuration that the team considered off limits, so the small feature arrived inside a large, hard-to-review diff. Nobody had told it which parts were stable or what to leave alone.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+A `CLAUDE.md` carries the context an assistant cannot guess: how to run things, the conventions, and the boundaries. State plainly what content changes are expected and which core files should only change when asked.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask Claude to critique your `CLAUDE.md` for vague rules, then test it by giving a fresh session a small task and checking whether it follows the file.
+- Have it rewrite a vague prompt in few-shot form, then compare the outputs on three new inputs of your own choosing.
+- Before installing a skill or plugin, ask it to summarise what the files can do and which permissions they need, and read the files yourself before you enable them.
+
+</AISpark>

@@ -110,3 +110,72 @@ shared language between product and engineering.
 </div>
 
 </div>
+
+---
+
+<Exercises>
+<Exercises.Task title="Work out what each alert row costs in budget" level="intermediate" stretch="Explain why the 3x and 1x rows are tickets while the 14.4x row pages.">
+
+For a 99.9% SLO over 30 days, calculate how much of the monthly error budget is consumed by each burn rate held for its long window in the alert table: 14.4x for 1 hour, 6x for 6 hours, 3x for 1 day, and 1x for 3 days. The month is 720 hours, so consumption is the burn rate times the hours, divided by 720.
+
+**Done when:** you get 2%, 5%, 10%, and 10%, and you can say why each alert is sized to catch a fixed slice of the budget rather than a fixed error rate.
+
+</Exercises.Task>
+<Exercises.Task title="Write and validate the fast-burn alert" level="advanced">
+
+Write the 14.4x fast-burn rule for a 99.9% SLO as a Prometheus alert with both a long (1 hour) and a short (5 minute) window. Save it as `slo.rules.yml` and check it with `promtool`, which ships with Prometheus:
+
+```yaml
+groups:
+  - name: api-slo-burn-rate
+    rules:
+      - alert: ApiErrorBudgetFastBurn
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[1h])) / sum(rate(http_requests_total[1h])) > (14.4 * 0.001)
+          )
+          and
+          (
+            sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m])) > (14.4 * 0.001)
+          )
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: "Error budget burning 14.4x too fast (99.9% SLO)"
+```
+
+```bash
+promtool check rules slo.rules.yml
+```
+
+**Done when:** `promtool` reports `SUCCESS: 1 rules found`. Then delete one closing bracket and confirm `promtool` fails with a parse error, and explain why the rule needs both windows.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="Paged at 3am by a two-minute blip">
+<CaseStudy.Context>
+
+*Illustrative scenario.* An alert pages the on-call engineer whenever the error rate is high over a single short window. A brief dependency hiccup lasting two minutes wakes someone at 3am, and by the time they look, everything has recovered.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The alert could not tell a short self-resolving spike from a sustained problem. After several of these, the rotation started treating pages as noise, which made a later genuine incident easier to miss.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Pair a long window that confirms the burn is sustained with a short window that confirms it is still happening. That dual-window alert pages on real budget risk, clears promptly when the problem stops, and ignores brief blips.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to turn a static error-rate alert into a multi-window burn-rate rule for your SLO, then recompute the multiplier and check it with `promtool` before deploying.
+- Have it draft an error budget policy with thresholds, and adjust them yourself to what your product and engineering leads will actually agree to.
+- Ask it to list which SLIs to track for a described service, then keep only the two or three that reflect what users experience.
+
+</AISpark>
