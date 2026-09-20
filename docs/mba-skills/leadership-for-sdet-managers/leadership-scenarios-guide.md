@@ -469,6 +469,51 @@ from how it played out.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Turn a judgment into SBI feedback" level="intermediate" stretch="Say how you would deliver the same feedback differently to a new hire and to a senior engineer, using Situational Leadership.">
+
+Rewrite this comment as SBI feedback: **"Your tests are sloppy and always break the build."** Use a real or realistic moment: name the situation, describe the observable behaviour, and state the impact with something measurable.
+
+**Done when:** your feedback has all three parts (Situation, Behavior, Impact), names a specific time or place, contains no character judgments such as sloppy, careless, or always, and states an impact you could count, such as a delayed release or lost hours.
+
+</Exercises.Task>
+<Exercises.Task title="Answer an ownership problem with the five-step template" level="advanced">
+
+Two teams each own a service, and integration tests between them fail every week. Each team says the other one should fix them, and releases keep stalling. Write an answer of about 150 words that follows the five steps of the reusable template: clarify the constraint, diagnose before acting, pick the framework, make the trade-off visible to whoever owns the risk, and close the loop systemically.
+
+**Done when:** your answer says what is fixed and what is negotiable, treats it as a process gap and not a person problem, uses RACI with exactly one Accountable owner named, puts the trade-off in front of the person who owns the risk, and ends with what changes permanently so the problem does not return.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The senior engineer who was managed like a new hire">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A new SDET manager uses one style with everyone: detailed instructions, frequent check-ins, and approval before changes. That worked well for the newest hire on the team.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The most experienced engineer, who owns a whole test domain, found the same style stifling. Their motivation dropped, and they started looking at other teams. Meanwhile the newest hire, who needed the direction, was getting only the same generic attention.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Match the style to the person and the task, not to a fixed label. Delegate to the senior engineer and check in lightly, and direct the new hire on what and how. Using one default style for everyone is the mistake Situational Leadership exists to correct.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to role-play the engineer hearing your feedback, then judge whether your SBI wording lands as observable fact or as a judgment about their character.
+- Have it critique a STAR answer for a missing Result or vague impact, then rewrite the Result yourself with a real number from your own experience, because it cannot know your numbers.
+- Ask it to list what could go wrong with the options you would put in front of leadership, and decide yourself which risks the decision-maker needs to see.
+
+</AISpark>
+
+---
+
 ## 6. One-Line Summary
 
 **SDET leadership is risk management wearing a people-management hat —

@@ -858,6 +858,79 @@ stays untouched elsewhere) without stashing or cloning twice.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Recover a commit after reset --hard" level="intermediate" stretch="Recover it a second time by creating a branch at the commit instead of moving your current branch.">
+
+In a scratch directory, create three commits, throw the last one away, and get it back:
+
+```bash
+git init -b main rescue && cd rescue
+echo one > notes.txt && git add . && git commit -m "first"
+echo two >> notes.txt && git commit -am "second"
+echo three >> notes.txt && git commit -am "third"
+
+git reset --hard HEAD~1
+git log --oneline
+git reflog
+```
+
+Find the `third` commit's hash in the reflog, then move back to it with `git reset --hard HASH`.
+
+**Done when:** after the reset, `git log --oneline` shows only two commits and `notes.txt` has two lines, and after the recovery all three commits are back and `notes.txt` has three lines.
+
+</Exercises.Task>
+<Exercises.Task title="See ours and theirs flip during a rebase" level="advanced">
+
+Create a conflict between two branches, then rebase and inspect both sides (this needs Git 2.23 or newer for `git switch`):
+
+```bash
+git init -b main conflict && cd conflict
+printf 'greeting: hello\n' > app.txt && git add . && git commit -m "base"
+git switch -c feature
+printf 'greeting: hello from feature\n' > app.txt && git commit -am "feature edit"
+git switch main
+printf 'greeting: hello from main\n' > app.txt && git commit -am "main edit"
+git switch feature
+
+git rebase main
+git checkout --ours app.txt && cat app.txt
+git checkout --theirs app.txt && cat app.txt
+git rebase --abort
+```
+
+**Done when:** the rebase stops with a conflict in `app.txt`, `--ours` gives `greeting: hello from main`, `--theirs` gives `greeting: hello from feature`, and after the abort you are back on `feature`. You can explain why this is the opposite of what a merge would suggest.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The bad commit that was reset instead of reverted">
+<CaseStudy.Context>
+
+*Illustrative scenario.* A broken commit reaches the shared main branch. To get rid of it quickly, an engineer resets their local branch back one commit and force-pushes.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+Several teammates had already pulled the bad commit. After the force-push, the commit no longer existed on the remote, so their histories diverged from it and their next pulls produced confusing conflicts. The engineer had also overwritten a commit someone else had pushed in the meantime.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+On any shared or pushed branch, undo with `git revert`, which adds a new commit and rewrites nothing. Keep `reset` for local, unpushed work, and use `--force-with-lease`, never plain `--force`, and only on a feature branch that is yours.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to explain a sequence of reflog entries and propose the recovery command, then rehearse it in a scratch clone and check with `git log` and `git diff` before touching your real repository.
+- Have it draft a plan for splitting a large change into commits with `git add -p`, and review by hand that each commit builds and passes tests on its own.
+- Ask it to resolve a merge conflict, then read both sides with `git log --merge -p` to confirm it merged intent instead of silently choosing one side.
+
+</AISpark>
+
+---
+
 ## 13. One-Line Summary
 
 **Git is a content-addressable DAG of snapshots, not a stack of diffs — the
