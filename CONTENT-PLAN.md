@@ -10,11 +10,11 @@ Scope rules from `CLAUDE.md` apply: this is **content work only**. Do not touch
 
 ---
 
-## 1. Where things stand (Phase 0 finished; Phase 1 not started)
+## 1. Where things stand (Phase 0 and Phase 1 finished; owner review gate next)
 
 | Page type | Pages | Done | Still missing |
 |---|---|---|---|
-| Topic guide (`*-guide.md`) | 31 | `level`, `LevelBadge`, `TenMinute`, outcomes (`KeyTakeaways`) on 30–31 | `Exercises`, `CaseStudy`, `AISpark` |
+| Topic guide (`*-guide.md`) | 31 | `level`, `LevelBadge`, `TenMinute`, outcomes (`KeyTakeaways`) on 30–31; `Exercises`, `CaseStudy`, `AISpark` on all 31 | nothing further planned |
 | Deep subtopic (short SDET / MBA / incident pages) | 133 | `TenMinute` on 132, `LevelBadge` on 107 | intentionally out of scope (see §6) |
 | Cheat sheet (`cheatsheets/`) | 45 | `TenMinute` on 44 (not the `intro.md` index); `level` + badge on 31 | nothing further planned (Phase 2 is optional) |
 | Article (`blog/`) | 5 | `KeyTakeaways` on 4; the 5th (draft) has a plain-markdown Key Takeaways section | — |
@@ -183,7 +183,7 @@ Update the boxes as batches land, and record the commit hash.
 - [x] Batch 3 — AI (3) — commit: `9620a34`
 - [x] Batch 4 — SDET Java stack (6) — commit: `2de6a02`
 - [x] Batch 5 — SDET API/perf/data (6) — commit: `e00d9ff`
-- [ ] Batch 6 — SDE + leadership (5) — commit: ______
+- [x] Batch 6 — SDE + leadership (5) — commit: `1b66ce3`
 
 **Gate**
 
@@ -232,4 +232,4 @@ Target after Phase 1: `Exercises`, `CaseStudy`, `AISpark` = 31 on guides.
 
 ## 10. Next action
 
-Phase 0 is done. Start **Phase 1 Batch 1** (SRE — infra, 6 guides).
+Phase 1 is done. The next step is the owner review gate: read 3–4 finished guides and decide whether to do Phase 2.
