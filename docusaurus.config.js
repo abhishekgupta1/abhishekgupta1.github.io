@@ -2,9 +2,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import {GOATCOUNTER_CODE, ADS_ENABLED, ADSENSE_CLIENT} from './src/data/site.js';
 
-const GITHUB_REPO = 'https://github.com/abhishekgupta1/abhishekgupta1.github.io';
-const EDIT_URL = `${GITHUB_REPO}/tree/main/`;
-
 /**
  * Analytics + ads are injected here only when switched on in src/data/site.js.
  * GoatCounter is cookieless; AdSense stays off until the site is approved.
@@ -84,16 +81,10 @@ const config = {
           path: './docs',
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
-          editUrl: EDIT_URL,
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
         },
         blog: {
           path: './blog',
           routeBasePath: 'articles',
-          editUrl: EDIT_URL,
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
           showReadingTime: true,
           blogSidebarCount: 'ALL',
           feedOptions: {
@@ -132,9 +123,6 @@ const config = {
         path: 'cheatsheets',
         routeBasePath: 'cheatsheets',
         sidebarPath: './sidebarsCheatsheets.js',
-        editUrl: EDIT_URL,
-        showLastUpdateTime: true,
-        showLastUpdateAuthor: true,
       }),
     ],
     [
@@ -193,8 +181,8 @@ const config = {
         {name: 'google-site-verification', content: 'REPLACE_WITH_SEARCH_CONSOLE_TOKEN'},
       ],
       colorMode: {
-        defaultMode: 'dark',
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'docssheet',

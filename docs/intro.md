@@ -23,6 +23,17 @@ across **Test Automation (SDET)**, **Site Reliability Engineering (SRE)**,
 
 Browse the sidebar to explore each category.
 
+## Top features at a glance
+
+- **Guides by track** — in-depth guides across SDET, SRE, SDE, MBA and AI, each opening with a Mental Model diagram.
+- **Cheat Sheets** — quick-lookup pages with a progress tracker so you can mark what you've covered.
+- **Library, Roadmap & Skills Matrix** — browse every guide by track, level and reading time, and follow a suggested learning order.
+- **Progress Dashboard** — see your cheat-sheet progress across topics in one place.
+- **🧠 Mind map** — open an interactive map of any guide's headings in one click.
+- **🎧 Podcast** — listen to a guide as audio where a podcast is available.
+- **Hands-on practice** — exercises, case studies, interview questions and AI ideas on many guides.
+- **Light & dark themes, offline-ready** — light by default, with a toggle in the navbar, and installable as an app.
+
 <TenMinute minutes={5} title="Start here">
 
 1. Not sure where to begin? Try [Pick Your Focus](/start)

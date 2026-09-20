@@ -1,10 +1,10 @@
 /**
- * Swizzled from @docusaurus/theme-classic to add a "Listen" control above
- * doc content, powered by the browser's Web Speech API (see
- * src/components/ListenButton). Keep this in sync with upstream
+ * Swizzled from @docusaurus/theme-classic to add "Listen to podcast" (from the
+ * `podcast` front matter, see src/components/PodcastButton) and "Mind map"
+ * controls above doc content. Keep this in sync with upstream
  * DocItem/Content if Docusaurus is upgraded.
  *
- * Cheat Sheets (/cheatsheets/*) opt out of Listen/Mind map — they're dense
+ * Cheat Sheets (/cheatsheets/*) opt out of Podcast/Mind map — they're dense
  * lookup pages, not narrative content those features are meant for. They get
  * a ProgressTracker toggle instead (see src/components/ProgressTracker).
  */
@@ -15,7 +15,7 @@ import {ThemeClassNames} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Heading from '@theme/Heading';
 import MDXContent from '@theme/MDXContent';
-import ListenButton from '@site/src/components/ListenButton';
+import PodcastButton from '@site/src/components/PodcastButton';
 import MindMapButton from '@site/src/components/MindMapButton';
 import ProgressTracker from '@site/src/components/ProgressTracker';
 import {topics} from '@site/src/data/topics';
@@ -67,7 +67,7 @@ export default function DocItemContent({children}) {
           {JSON.stringify(breadcrumbJsonLd(metadata.permalink, metadata.title))}
         </script>
       </Head>
-      {!isCheatSheet && <ListenButton targetRef={contentRef} />}
+      {!isCheatSheet && <PodcastButton src={frontMatter.podcast} />}
       {!isCheatSheet && (
         <MindMapButton
           targetRef={contentRef}

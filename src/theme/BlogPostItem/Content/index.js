@@ -1,7 +1,7 @@
 /**
- * Swizzled from @docusaurus/theme-classic to add "Listen" and "Mind map"
- * controls above article content, mirroring the same features added to
- * DocItem/Content (see src/components/ListenButton, MindMapButton). Only
+ * Swizzled from @docusaurus/theme-classic to add "Listen to podcast" and
+ * "Mind map" controls above article content, mirroring the same features added
+ * to DocItem/Content (see src/components/PodcastButton, MindMapButton). Only
  * rendered on the full post page, not on blog listing/summary cards. Keep
  * this in sync with upstream BlogPostItem/Content if Docusaurus is upgraded.
  *
@@ -13,7 +13,7 @@ import Head from '@docusaurus/Head';
 import {blogPostContainerID} from '@docusaurus/utils-common';
 import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
 import MDXContent from '@theme/MDXContent';
-import ListenButton from '@site/src/components/ListenButton';
+import PodcastButton from '@site/src/components/PodcastButton';
 import MindMapButton from '@site/src/components/MindMapButton';
 import {SITE_URL, PERSON} from '@site/src/data/site';
 
@@ -49,7 +49,7 @@ export default function BlogPostItemContent({children, className}) {
               {JSON.stringify(blogPostingJsonLd(metadata))}
             </script>
           </Head>
-          <ListenButton targetRef={contentRef} />
+          <PodcastButton src={metadata.frontMatter.podcast} />
           <MindMapButton targetRef={contentRef} title={metadata.title} subtitle={metadata.description} />
         </>
       )}
