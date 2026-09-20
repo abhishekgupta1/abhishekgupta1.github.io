@@ -3,6 +3,7 @@ title: "Category 12: Ethical Dilemmas, Compliance & Governance"
 description: "Scenarios 56–60 of the Manager Response Library: Ethical Dilemmas, Compliance & Governance."
 sidebar_position: 12
 tags: [management, playbook, mba]
+image: /img/social/category-12-ethical-dilemmas-compliance-governance.png
 ---
 
 # Category 12: Ethical Dilemmas, Compliance & Governance

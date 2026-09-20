@@ -3,6 +3,7 @@ title: "Category 5: Change Management & Workplace Culture"
 description: "Scenarios 22–25 of the Manager Response Library: Change Management & Workplace Culture."
 sidebar_position: 5
 tags: [management, playbook, mba]
+image: /img/social/category-5-change-management-workplace-culture.png
 ---
 
 # Category 5: Change Management & Workplace Culture

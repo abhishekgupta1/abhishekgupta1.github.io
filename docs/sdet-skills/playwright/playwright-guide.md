@@ -4,6 +4,7 @@ description: "End-to-end reference for Playwright — architecture, locators, wa
 sidebar_position: 1
 level: intermediate
 tags: [playwright, sdet, test-automation, e2e]
+image: /img/social/playwright-guide.png
 ---
 
 # Playwright — The Complete Guide

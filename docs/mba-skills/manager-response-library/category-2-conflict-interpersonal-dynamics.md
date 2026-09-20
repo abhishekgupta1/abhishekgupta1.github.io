@@ -3,6 +3,7 @@ title: "Category 2: Conflict & Interpersonal Dynamics"
 description: "Scenarios 7–11 of the Manager Response Library: Conflict & Interpersonal Dynamics."
 sidebar_position: 2
 tags: [management, playbook, mba]
+image: /img/social/category-2-conflict-interpersonal-dynamics.png
 ---
 
 # Category 2: Conflict & Interpersonal Dynamics

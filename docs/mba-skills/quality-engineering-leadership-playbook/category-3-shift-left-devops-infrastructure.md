@@ -3,6 +3,7 @@ title: "Category 3: Shift-Left, DevOps & Infrastructure"
 description: "Scenarios 21–30 of the Quality Engineering Leadership Playbook: Shift-Left, DevOps & Infrastructure."
 sidebar_position: 3
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-3-shift-left-devops-infrastructure.png
 ---
 
 # Category 3: Shift-Left, DevOps & Infrastructure

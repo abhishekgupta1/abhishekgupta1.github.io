@@ -4,6 +4,7 @@ description: "A good framework defines each level along a few consistent dimensi
 sidebar_position: 2
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/building-career-progression-frameworks.png
 ---
 
 # Building Career Progression Frameworks

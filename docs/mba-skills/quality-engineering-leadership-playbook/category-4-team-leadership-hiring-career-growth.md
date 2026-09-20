@@ -3,6 +3,7 @@ title: "Category 4: Team Leadership, Hiring & Career Growth"
 description: "Scenarios 31–40 of the Quality Engineering Leadership Playbook: Team Leadership, Hiring & Career Growth."
 sidebar_position: 4
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-4-team-leadership-hiring-career-growth.png
 ---
 
 # Category 4: Team Leadership, Hiring & Career Growth

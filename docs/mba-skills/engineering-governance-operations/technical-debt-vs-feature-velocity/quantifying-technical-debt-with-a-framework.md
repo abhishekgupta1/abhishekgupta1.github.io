@@ -4,6 +4,7 @@ description: "Measure debt along three axes that map to business cost: velocity 
 sidebar_position: 1
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/quantifying-technical-debt-with-a-framework.png
 ---
 
 # Quantifying Technical Debt with a Framework

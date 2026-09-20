@@ -4,6 +4,7 @@ description: "Quick reference for OpenTelemetry — traces/spans, context propag
 level: intermediate
 tags: [opentelemetry, observability, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/opentelemetry.png
 ---
 
 # OpenTelemetry cheatsheet

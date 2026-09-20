@@ -4,6 +4,7 @@ description: "End-to-end reference for Terraform — IaC philosophy, core workfl
 sidebar_position: 1
 level: intermediate
 tags: [terraform, sre, infrastructure-as-code]
+image: /img/social/terraform-guide.png
 ---
 
 # Terraform — The Complete Guide

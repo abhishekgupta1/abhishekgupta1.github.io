@@ -5,6 +5,7 @@ sidebar_position: 2
 level: intermediate
 tags: [playwright, sdet, test-automation, e2e, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/playwright.png
 ---
 
 # Playwright cheatsheet

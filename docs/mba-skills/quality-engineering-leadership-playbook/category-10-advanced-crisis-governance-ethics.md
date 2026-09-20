@@ -3,6 +3,7 @@ title: "Category 10: Advanced Crisis, Governance & Ethics"
 description: "Scenarios 91–100 of the Quality Engineering Leadership Playbook: Advanced Crisis, Governance & Ethics."
 sidebar_position: 10
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-10-advanced-crisis-governance-ethics.png
 ---
 
 # Category 10: Advanced Crisis, Governance & Ethics

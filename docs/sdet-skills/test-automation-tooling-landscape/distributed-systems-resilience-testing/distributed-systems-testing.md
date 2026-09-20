@@ -4,6 +4,7 @@ description: "Distributed systems testing verifies properties that only exist be
 sidebar_position: 2
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Distributed Systems Testing

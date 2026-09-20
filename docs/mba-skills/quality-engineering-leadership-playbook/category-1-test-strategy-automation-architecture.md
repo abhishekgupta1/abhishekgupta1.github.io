@@ -3,6 +3,7 @@ title: "Category 1: Test Strategy & Automation Architecture"
 description: "Scenarios 1–10 of the Quality Engineering Leadership Playbook: Test Strategy & Automation Architecture."
 sidebar_position: 1
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-1-test-strategy-automation-architecture.png
 ---
 
 # Category 1: Test Strategy & Automation Architecture

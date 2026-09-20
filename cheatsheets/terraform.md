@@ -4,6 +4,7 @@ description: "Quick reference for Terraform — core workflow, HCL syntax, state
 level: intermediate
 tags: [terraform, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/terraform.png
 ---
 
 # Terraform cheatsheet

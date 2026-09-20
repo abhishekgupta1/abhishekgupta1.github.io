@@ -4,6 +4,7 @@ description: "Autonomous testing — an AI agent that explores an application, g
 sidebar_position: 6
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Autonomous Testing & AI Agents

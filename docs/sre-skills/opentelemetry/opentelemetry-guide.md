@@ -4,6 +4,7 @@ description: "End-to-end reference for OpenTelemetry — traces, metrics, logs, 
 sidebar_position: 1
 level: intermediate
 tags: [opentelemetry, observability, sre, tracing, metrics]
+image: /img/social/opentelemetry-guide.png
 ---
 
 # OpenTelemetry — The Complete Guide

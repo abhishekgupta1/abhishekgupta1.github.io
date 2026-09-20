@@ -4,6 +4,7 @@ description: "Provider-agnostic architecture patterns — HA design, network top
 sidebar_position: 1
 level: intermediate
 tags: [cloud-infrastructure, sre, architecture, high-availability]
+image: /img/social/cloud-infrastructure-guide.png
 ---
 
 # Cloud Infrastructure — The Complete Guide

@@ -4,6 +4,7 @@ description: "Mocking and service virtualization simulate a dependency's behavio
 sidebar_position: 8
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Mocking & Service Virtualization

@@ -4,6 +4,7 @@ description: "An SRE's 'testing' stack extends an SDET's with production-facing 
 sidebar_position: 4
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Modern SRE Testing Stack

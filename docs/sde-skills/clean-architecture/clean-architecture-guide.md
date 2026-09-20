@@ -4,6 +4,7 @@ description: "End-to-end reference for Clean Architecture — the Dependency Rul
 sidebar_position: 1
 level: advanced
 tags: [clean-architecture, sde, software-design, hexagonal-architecture]
+image: /img/social/clean-architecture-guide.png
 ---
 
 # Clean Architecture — The Complete Guide

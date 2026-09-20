@@ -4,6 +4,7 @@ description: "**Appium** is the default choice for cross-platform (Android + iOS
 sidebar_position: 2
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Mobile Test Automation

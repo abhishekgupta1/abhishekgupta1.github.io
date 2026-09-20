@@ -4,6 +4,7 @@ description: "Evaluate a company's engineering operations across four lenses: de
 sidebar_position: 3
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/enterprise-architecture-evaluation.png
 ---
 
 # Enterprise Architecture Evaluation

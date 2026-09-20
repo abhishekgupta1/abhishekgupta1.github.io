@@ -4,6 +4,7 @@ description: "End-to-end reference for Selenium — WebDriver architecture, loca
 sidebar_position: 1
 level: beginner
 tags: [selenium, sdet, automation, web-testing]
+image: /img/social/selenium-guide.png
 ---
 
 # Selenium — The Complete Guide

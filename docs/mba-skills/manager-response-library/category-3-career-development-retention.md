@@ -3,6 +3,7 @@ title: "Category 3: Career Development & Retention"
 description: "Scenarios 12–16 of the Manager Response Library: Career Development & Retention."
 sidebar_position: 3
 tags: [management, playbook, mba]
+image: /img/social/category-3-career-development-retention.png
 ---
 
 # Category 3: Career Development & Retention

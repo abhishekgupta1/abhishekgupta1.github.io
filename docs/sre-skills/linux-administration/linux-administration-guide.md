@@ -4,6 +4,7 @@ description: "End-to-end reference for Linux Administration — filesystem, perm
 sidebar_position: 1
 level: beginner
 tags: [linux, sre, sysadmin]
+image: /img/social/linux-administration-guide.png
 ---
 
 # Linux Administration — The Complete Guide

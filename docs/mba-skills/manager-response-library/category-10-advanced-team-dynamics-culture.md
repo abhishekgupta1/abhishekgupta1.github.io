@@ -3,6 +3,7 @@ title: "Category 10: Advanced Team Dynamics & Culture"
 description: "Scenarios 46–50 of the Manager Response Library: Advanced Team Dynamics & Culture."
 sidebar_position: 10
 tags: [management, playbook, mba]
+image: /img/social/category-10-advanced-team-dynamics-culture.png
 ---
 
 # Category 10: Advanced Team Dynamics & Culture

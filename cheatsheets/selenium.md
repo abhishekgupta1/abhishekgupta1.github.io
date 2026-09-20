@@ -4,6 +4,7 @@ description: "Quick reference for Selenium — locators, waits, Page Object Mode
 level: beginner
 tags: [selenium, sdet, e2e, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/selenium.png
 ---
 
 # Selenium cheatsheet

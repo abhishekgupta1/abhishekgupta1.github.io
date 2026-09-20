@@ -4,6 +4,7 @@ description: "Unit tests verify a single function, method, or class in isolation
 sidebar_position: 4
 level: beginner
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Unit Testing

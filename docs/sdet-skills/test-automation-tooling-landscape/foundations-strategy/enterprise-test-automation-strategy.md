@@ -4,6 +4,7 @@ description: "An enterprise test strategy defines what runs on every PR, after m
 sidebar_position: 7
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Enterprise Test Automation Strategy

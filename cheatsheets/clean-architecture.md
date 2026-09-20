@@ -4,6 +4,7 @@ description: "Quick reference for Clean Architecture — the Dependency Rule, th
 level: advanced
 tags: [clean-architecture, sde, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/clean-architecture.png
 ---
 
 # Clean Architecture cheatsheet

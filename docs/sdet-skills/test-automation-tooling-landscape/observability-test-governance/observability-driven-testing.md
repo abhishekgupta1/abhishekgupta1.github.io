@@ -4,6 +4,7 @@ description: "Observability tooling isn't traditional test automation — it's w
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/observability-driven-testing.png
 ---
 
 # Observability-Driven Testing

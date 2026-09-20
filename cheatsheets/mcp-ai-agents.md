@@ -4,6 +4,7 @@ description: "Quick reference for MCP and AI agents — hosts/clients/servers, t
 level: intermediate
 tags: [mcp, ai-agents, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/mcp-ai-agents.png
 ---
 
 # MCP & AI agents cheatsheet

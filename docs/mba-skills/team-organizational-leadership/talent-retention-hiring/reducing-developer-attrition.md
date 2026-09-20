@@ -4,6 +4,7 @@ description: "Regretted attrition is almost always driven by a small set of addr
 sidebar_position: 3
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/reducing-developer-attrition.png
 ---
 
 # Reducing Developer Attrition

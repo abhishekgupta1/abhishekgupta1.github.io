@@ -4,6 +4,7 @@ description: "Quick reference for cloud infrastructure — HA design, network to
 level: intermediate
 tags: [cloud-infrastructure, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/cloud-infrastructure.png
 ---
 
 # Cloud infrastructure cheatsheet

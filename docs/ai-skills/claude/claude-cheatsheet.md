@@ -1,5 +1,6 @@
 ---
 level: beginner
+image: /img/social/claude-cheatsheet.png
 ---
 # Claude Cheatsheet — Learn It in One Read
 

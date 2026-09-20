@@ -3,6 +3,7 @@ title: "Category 7: Modern Tech, AI & Process Modernization"
 description: "Scenarios 31–35 of the Manager Response Library: Modern Tech, AI & Process Modernization."
 sidebar_position: 7
 tags: [management, playbook, mba]
+image: /img/social/category-7-modern-tech-ai-process-modernization.png
 ---
 
 # Category 7: Modern Tech, AI & Process Modernization

@@ -4,6 +4,7 @@ description: "**Page Object Model (POM)** is the standard pattern for UI test ab
 sidebar_position: 2
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Automation Design Patterns

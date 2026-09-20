@@ -4,6 +4,7 @@ description: "End-to-end reference for Kubernetes — architecture, core objects
 sidebar_position: 1
 level: intermediate
 tags: [kubernetes, sre, containers, orchestration]
+image: /img/social/kubernetes-guide.png
 ---
 
 # Kubernetes — The Complete Guide

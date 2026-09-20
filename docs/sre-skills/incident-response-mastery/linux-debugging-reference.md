@@ -4,6 +4,7 @@ description: "Master outline of Linux subsystems and tools an SRE must know cold
 sidebar_position: 6
 level: intermediate
 tags: [linux, sre, debugging, systemd, networking, containers, security, boot]
+image: /img/social/linux-debugging-reference.png
 ---
 
 You should deeply understand: `/proc`, `strace`, `tcpdump`, `vmstat`, `iostat`, `systemctl`, `journalctl`, `top`, `ss`.

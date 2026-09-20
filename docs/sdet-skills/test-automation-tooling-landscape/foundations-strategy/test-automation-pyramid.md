@@ -4,6 +4,7 @@ description: "The pyramid is a cost-and-stability model, not a build order: writ
 sidebar_position: 2
 level: beginner
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Automation Pyramid

@@ -4,6 +4,7 @@ description: "Integration testing verifies that multiple real collaborating part
 sidebar_position: 6
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Integration Testing

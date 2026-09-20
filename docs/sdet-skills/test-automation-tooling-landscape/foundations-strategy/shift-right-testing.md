@@ -4,6 +4,7 @@ description: "Shift-right testing extends verification into and beyond productio
 sidebar_position: 5
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Shift-Right Testing

@@ -4,6 +4,7 @@ description: "Quick reference for Prometheus/Grafana observability — PromQL, g
 level: intermediate
 tags: [observability, prometheus, grafana, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/observability-grafana-prometheus.png
 ---
 
 # Prometheus & Grafana cheatsheet

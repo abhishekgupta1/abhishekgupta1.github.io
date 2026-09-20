@@ -4,6 +4,7 @@ description: "Diagnose before you act: is this a skill gap, a will/motivation pr
 sidebar_position: 2
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/handling-underperformance.png
 ---
 
 # Handling Underperformance

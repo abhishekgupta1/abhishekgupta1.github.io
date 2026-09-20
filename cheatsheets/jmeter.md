@@ -4,6 +4,7 @@ description: "Quick reference for JMeter — test plan structure, load test type
 level: intermediate
 tags: [jmeter, sdet, performance-testing, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/jmeter.png
 ---
 
 # JMeter cheatsheet

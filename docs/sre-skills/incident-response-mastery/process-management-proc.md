@@ -4,6 +4,7 @@ description: "Command-level and conceptual mastery of Linux process debugging vi
 sidebar_position: 7
 level: intermediate
 tags: [linux, sre, process, proc-filesystem, ps, top, kill, zombie, troubleshooting]
+image: /img/social/process-management-proc.png
 ---
 
 A clean, SRE-focused mental model for debugging a slow or stuck service using only the CLI.

@@ -3,6 +3,7 @@ title: "Category 7: Modern Testing Paradigms & AI in Quality"
 description: "Scenarios 61–70 of the Quality Engineering Leadership Playbook: Modern Testing Paradigms & AI in Quality."
 sidebar_position: 7
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-7-modern-testing-paradigms-ai-in-quality.png
 ---
 
 # Category 7: Modern Testing Paradigms & AI in Quality

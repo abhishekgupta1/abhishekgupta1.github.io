@@ -4,6 +4,7 @@ description: "Two different categories get called 'AI testing' and they carry op
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # AI-Powered Test Automation

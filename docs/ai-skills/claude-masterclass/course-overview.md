@@ -4,6 +4,7 @@ description: "Section-by-section index for the Udemy course: Use Claude Cowork, 
 sidebar_position: 1
 level: beginner
 tags: [claude, udemy, course-index]
+image: /img/social/course-overview.png
 ---
 
 # Claude Masterclass — Course Overview & Index

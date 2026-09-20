@@ -4,6 +4,7 @@ description: "The core transferable instinct is the same in both roles: define w
 sidebar_position: 2
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # SDET → SRE Transition

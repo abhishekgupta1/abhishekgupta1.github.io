@@ -4,6 +4,7 @@ description: "Keep 3-6 months of expenses in a cash reserve — consulting incom
 sidebar_position: 3
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/financial-legal-modeling-for-consultants.png
 ---
 
 # Financial & Legal Modeling for Consultants

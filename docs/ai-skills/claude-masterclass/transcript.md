@@ -3,6 +3,7 @@ title: "Course Transcript"
 description: "Full lecture transcript for the Claude Cowork, Claude Code, Skills & Plugins masterclass, organized by section and lecture."
 sidebar_position: 2
 tags: [claude, udemy, transcript, reference]
+image: /img/social/transcript.png
 ---
 
 # Course Transcript — Reference Material

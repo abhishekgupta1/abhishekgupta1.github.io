@@ -4,6 +4,7 @@ description: "End-to-end reference for diagnosing Linux system performance with 
 sidebar_position: 1
 level: intermediate
 tags: [system-performance, sre, linux, troubleshooting, use-method]
+image: /img/social/system-performance-guide.png
 ---
 
 # System Performance — The Complete Guide

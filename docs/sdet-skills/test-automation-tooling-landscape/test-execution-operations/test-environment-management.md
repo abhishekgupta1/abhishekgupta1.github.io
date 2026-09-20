@@ -4,6 +4,7 @@ description: "Test environment management is the practice of provisioning, confi
 sidebar_position: 1
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Environment Management

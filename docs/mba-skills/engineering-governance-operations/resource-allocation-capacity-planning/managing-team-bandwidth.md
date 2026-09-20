@@ -4,6 +4,7 @@ description: "Plan against effective capacity, not headcount × hours."
 sidebar_position: 1
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/managing-team-bandwidth.png
 ---
 
 # Managing Team Bandwidth

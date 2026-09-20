@@ -3,6 +3,7 @@ title: "Claude Masterclass Cheat Sheet"
 description: "Quick reference for the Claude Masterclass course — Cowork, Skills, Plugins, Claude Code, and Claude Design at a glance."
 tags: [claude, ai, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/claude-masterclass.png
 ---
 
 # Claude Masterclass cheatsheet

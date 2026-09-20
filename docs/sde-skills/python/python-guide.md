@@ -4,6 +4,7 @@ description: "End-to-end reference for Python — core language, data structures
 sidebar_position: 1
 level: beginner
 tags: [python, sde, programming-language, automation, devops]
+image: /img/social/python-guide.png
 ---
 
 # Python — The Complete Guide

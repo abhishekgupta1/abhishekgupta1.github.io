@@ -4,6 +4,7 @@ description: "A test automation framework's architecture determines whether a su
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Automation Framework Architecture

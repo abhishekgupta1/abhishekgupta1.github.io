@@ -5,6 +5,7 @@ sidebar_position: 6
 level: beginner
 tags: [docker, sde, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/docker.png
 ---
 
 # Docker cheatsheet

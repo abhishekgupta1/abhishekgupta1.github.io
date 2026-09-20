@@ -4,6 +4,7 @@ description: "SWOT (Strengths/Weaknesses/Opportunities/Threats) for a quick inte
 sidebar_position: 1
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/consulting-frameworks.png
 ---
 
 # Consulting Frameworks (SWOT, PESTLE, Value Chain, 5 Whys)

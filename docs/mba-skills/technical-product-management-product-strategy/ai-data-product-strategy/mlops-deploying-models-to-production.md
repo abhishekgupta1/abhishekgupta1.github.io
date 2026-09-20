@@ -4,6 +4,7 @@ description: "A model shipping to production needs everything a normal service n
 sidebar_position: 1
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/mlops-deploying-models-to-production.png
 ---
 
 # MLOps: Deploying Models to Production

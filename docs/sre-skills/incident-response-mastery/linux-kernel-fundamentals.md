@@ -4,6 +4,7 @@ description: "Conceptual foundation of how the Linux kernel manages processes, m
 sidebar_position: 10
 level: advanced
 tags: [linux, sre, kernel, syscalls, interrupts, context-switching, kernel-modules]
+image: /img/social/linux-kernel-fundamentals.png
 ---
 
 Understand how Linux actually works before debugging it.

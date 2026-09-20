@@ -4,6 +4,7 @@ description: "Shift-left testing means moving verification as early as possible 
 sidebar_position: 4
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Shift-Left Testing

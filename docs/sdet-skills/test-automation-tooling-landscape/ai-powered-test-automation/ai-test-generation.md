@@ -4,6 +4,7 @@ description: "AI coding agents (GitHub Copilot, Cursor, Claude Code, OpenAI Code
 sidebar_position: 2
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # AI Test Generation

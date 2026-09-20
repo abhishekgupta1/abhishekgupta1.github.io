@@ -4,6 +4,7 @@ description: "Know your team's fully-loaded cost (salary + benefits + overhead, 
 sidebar_position: 1
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/understanding-engineering-unit-economics.png
 ---
 
 # Understanding Engineering Unit Economics

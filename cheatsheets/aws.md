@@ -4,6 +4,7 @@ description: "Quick reference for AWS — EC2, S3, VPC, IAM, RDS/DynamoDB, ELB/A
 level: intermediate
 tags: [aws, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/aws.png
 ---
 
 # AWS cheatsheet

@@ -3,6 +3,7 @@ title: "Technical Product Management Cheat Sheet"
 description: "Quick reference for technical product management — roadmapping, product metrics, and AI/data product strategy."
 tags: [product-management, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/technical-product-management-product-strategy.png
 ---
 
 # Technical product management cheatsheet

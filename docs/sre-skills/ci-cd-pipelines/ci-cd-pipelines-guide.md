@@ -4,6 +4,7 @@ description: "End-to-end reference for CI/CD — pipeline concepts, deployment s
 sidebar_position: 1
 level: intermediate
 tags: [ci-cd, jenkins, gitlab-ci, github-actions, sre]
+image: /img/social/ci-cd-pipelines-guide.png
 ---
 
 # CI/CD (Jenkins, GitLab CI & GitHub Actions) — The Complete Guide

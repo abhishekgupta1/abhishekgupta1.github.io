@@ -4,6 +4,7 @@ description: "The test automation landscape spans dozens of tool categories — 
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/sdet-career-skill-roadmap.png
 ---
 
 # SDET Career & Skill Roadmap

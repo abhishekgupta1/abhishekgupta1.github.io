@@ -4,6 +4,7 @@ description: "Static analysis (**Checkov**, **TFLint**, **tfsec**) catches misco
 sidebar_position: 3
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Infrastructure as Code (IaC) Testing

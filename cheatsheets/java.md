@@ -4,6 +4,7 @@ description: "Quick reference for Java — OOP, generics, collections, streams, 
 level: beginner
 tags: [java, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/java.png
 ---
 
 # Java cheatsheet

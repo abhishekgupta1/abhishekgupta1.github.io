@@ -4,6 +4,7 @@ description: "Quick reference for Postman — collections, pm.* scripts, Newman 
 level: beginner
 tags: [postman, sdet, api-testing, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/postman.png
 ---
 
 # Postman cheatsheet

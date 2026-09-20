@@ -4,6 +4,7 @@ description: "Rapid-fire practice material for SRE and DevOps troubleshooting in
 sidebar_position: 9
 level: advanced
 tags: [sre, devops, interview, scenarios, aws, kubernetes, incident-response]
+image: /img/social/devops-sre-interview-scenarios.png
 ---
 
 <LevelBadge level="advanced" />

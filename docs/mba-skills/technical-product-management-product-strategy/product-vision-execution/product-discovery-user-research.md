@@ -4,6 +4,7 @@ description: "Interview for past behavior, not future intent ('walk me through t
 sidebar_position: 1
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/product-discovery-user-research.png
 ---
 
 # Product Discovery & User Research

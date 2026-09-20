@@ -4,6 +4,7 @@ description: "Quick reference for TestNG — annotations, testng.xml, parallel e
 level: intermediate
 tags: [testng, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/testng.png
 ---
 
 # TestNG cheatsheet

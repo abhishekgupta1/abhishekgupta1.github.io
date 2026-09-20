@@ -3,6 +3,7 @@ title: "Category 9: Burnout, Health & Well-being"
 description: "Scenarios 41–45 of the Manager Response Library: Burnout, Health & Well-being."
 sidebar_position: 9
 tags: [management, playbook, mba]
+image: /img/social/category-9-burnout-health-well-being.png
 ---
 
 # Category 9: Burnout, Health & Well-being

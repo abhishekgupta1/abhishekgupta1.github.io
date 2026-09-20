@@ -4,6 +4,7 @@ description: "End-to-end reference for Git — the object model, branching/mergi
 sidebar_position: 1
 level: beginner
 tags: [git, sde, version-control]
+image: /img/social/git-guide.png
 ---
 
 # Git — The Complete Guide

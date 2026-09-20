@@ -4,6 +4,7 @@ description: "Every tool comparison in this domain reduces to the same criteria:
 sidebar_position: 5
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Tool Selection & Evaluation

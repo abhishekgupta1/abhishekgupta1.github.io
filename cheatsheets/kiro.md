@@ -4,6 +4,7 @@ description: "Quick reference for Kiro — the spec-driven requirements/design/t
 level: intermediate
 tags: [kiro, ai, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/kiro.png
 ---
 
 # Kiro cheatsheet

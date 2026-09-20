@@ -5,6 +5,7 @@ sidebar_position: 5
 level: beginner
 tags: [python, sde, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/python.png
 ---
 
 # Python cheatsheet

@@ -4,6 +4,7 @@ description: "The same message needs a different shape for each audience."
 sidebar_position: 4
 level: intermediate
 tags: [leadership, management, mba]
+image: /img/social/adapting-communication-tone-by-audience.png
 ---
 
 # Adapting Communication Tone by Audience

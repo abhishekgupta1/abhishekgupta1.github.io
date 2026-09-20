@@ -4,6 +4,7 @@ description: "Quick reference for Claude — model tiers, where to access it, pr
 level: beginner
 tags: [claude, ai, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/using-claude.png
 ---
 
 # Claude cheatsheet

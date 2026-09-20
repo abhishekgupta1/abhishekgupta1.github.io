@@ -3,6 +3,7 @@ title: "SLOs & Error Budgets Cheat Sheet"
 description: "Key takeaways for defining SLOs, tracking error budgets, and building burn-rate alerts that don't cry wolf."
 tags: [sre, observability, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/sre-observability-slos.png
 ---
 
 # SLOs, error budgets & alerting — key takeaways

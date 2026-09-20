@@ -4,6 +4,7 @@ description: "A concrete, defensible modern SDET stack: **TypeScript/Python** as
 sidebar_position: 3
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Modern SDET Technology Stack

@@ -4,6 +4,7 @@ description: "Evaluate LLMs on task-specific accuracy, latency, and cost per uni
 sidebar_position: 2
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/generative-ai-product-integration.png
 ---
 
 # Generative AI Product Integration

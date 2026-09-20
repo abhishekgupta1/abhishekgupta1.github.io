@@ -4,6 +4,7 @@ description: "A good performance review contains zero surprises."
 sidebar_position: 3
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/managing-performance-reviews.png
 ---
 
 # Managing Performance Reviews

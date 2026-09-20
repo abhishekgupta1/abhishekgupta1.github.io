@@ -4,6 +4,7 @@ description: "Delegate based on the engineer's competence and confidence for thi
 sidebar_position: 1
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/delegating-effectively-based-on-engineer-seniority.png
 ---
 
 # Delegating Effectively Based on Engineer Seniority

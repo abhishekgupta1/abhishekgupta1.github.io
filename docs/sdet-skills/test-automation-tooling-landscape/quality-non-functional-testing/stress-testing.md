@@ -4,6 +4,7 @@ description: "Stress testing deliberately pushes load well beyond expected level
 sidebar_position: 3
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Stress Testing

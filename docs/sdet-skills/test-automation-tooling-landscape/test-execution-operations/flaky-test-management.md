@@ -4,6 +4,7 @@ description: "A flaky test — one that fails intermittently without a correspon
 sidebar_position: 3
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Flaky Test Management

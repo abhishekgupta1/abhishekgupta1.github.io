@@ -4,6 +4,7 @@ description: "The internal thought process experienced SREs execute automaticall
 sidebar_position: 3
 level: intermediate
 tags: [sre, incident-response, mindset, use-method, root-cause-analysis]
+image: /img/social/incident-response-mindset.png
 ---
 
 This is not a generic checklist. This is the internal thought process

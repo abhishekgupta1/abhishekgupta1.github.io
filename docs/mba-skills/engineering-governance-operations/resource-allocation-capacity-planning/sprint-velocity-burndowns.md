@@ -4,6 +4,7 @@ description: "Velocity is a measurement, not a target — use the trailing 3-6 s
 sidebar_position: 2
 level: intermediate
 tags: [engineering-management, operations, mba]
+image: /img/social/sprint-velocity-burndowns.png
 ---
 
 # Sprint Velocity & Burndowns

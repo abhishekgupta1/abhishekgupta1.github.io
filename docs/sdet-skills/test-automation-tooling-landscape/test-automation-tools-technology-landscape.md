@@ -4,6 +4,7 @@ description: "Test automation stopped being 'write Selenium scripts against the 
 sidebar_position: 0
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/social/test-automation-tools-technology-landscape.png
 ---
 
 # Test Automation Tools & Technology Landscape

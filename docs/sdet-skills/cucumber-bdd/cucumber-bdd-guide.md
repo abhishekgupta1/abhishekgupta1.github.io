@@ -4,6 +4,7 @@ description: "End-to-end reference for Cucumber and BDD — Gherkin syntax, feat
 sidebar_position: 1
 level: beginner
 tags: [cucumber, bdd, sdet, gherkin]
+image: /img/social/cucumber-bdd-guide.png
 ---
 
 # Cucumber & BDD — The Complete Guide

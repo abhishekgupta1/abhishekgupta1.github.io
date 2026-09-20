@@ -4,6 +4,7 @@ description: "Generate test data programmatically per test run (**Faker**, **Fac
 sidebar_position: 2
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Data Management

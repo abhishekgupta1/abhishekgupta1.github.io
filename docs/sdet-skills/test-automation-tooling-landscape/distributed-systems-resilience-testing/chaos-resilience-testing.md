@@ -4,6 +4,7 @@ description: "Chaos engineering only works with a **steady-state hypothesis defi
 sidebar_position: 4
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/chaos-resilience-testing.png
 ---
 
 # Chaos & Resilience Testing

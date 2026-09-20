@@ -3,6 +3,7 @@ title: "Category 1: Performance & Underperformance"
 description: "Scenarios 1–6 of the Manager Response Library: Performance & Underperformance."
 sidebar_position: 1
 tags: [management, playbook, mba]
+image: /img/social/category-1-performance-underperformance.png
 ---
 
 # Category 1: Performance & Underperformance

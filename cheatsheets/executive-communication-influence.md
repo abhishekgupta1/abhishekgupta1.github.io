@@ -3,6 +3,7 @@ title: "Executive Communication & Influence Cheat Sheet"
 description: "Quick reference for executive communication — presence, personal branding, and stakeholder alignment."
 tags: [executive-communication, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/executive-communication-influence.png
 ---
 
 # Executive communication & influence cheatsheet

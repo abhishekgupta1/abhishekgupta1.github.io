@@ -4,6 +4,7 @@ description: "Structure any executive pitch as: conclusion first (what you recom
 sidebar_position: 1
 level: advanced
 tags: [executive-communication, leadership, mba]
+image: /img/social/executive-presence.png
 ---
 
 # Executive Presence

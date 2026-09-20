@@ -3,6 +3,7 @@ title: "Business Analytics & Strategic Consulting Cheat Sheet"
 description: "Quick reference for business analytics and strategic consulting — frameworks, pricing, analytics, and executive decision-making."
 tags: [business-analytics, consulting, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/business-analytics-strategic-consulting.png
 ---
 
 # Business analytics & strategic consulting cheatsheet

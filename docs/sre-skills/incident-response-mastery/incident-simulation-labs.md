@@ -4,6 +4,7 @@ description: "10 timed production incident simulations plus 6 hands-on labs — 
 sidebar_position: 4
 level: advanced
 tags: [sre, linux, simulation, chaos-engineering, incident-response]
+image: /img/social/incident-simulation-labs.png
 ---
 
 <LevelBadge level="advanced" />

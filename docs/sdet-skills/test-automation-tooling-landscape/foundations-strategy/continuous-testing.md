@@ -4,6 +4,7 @@ description: "Continuous testing is the practice of executing the right automate
 sidebar_position: 3
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Continuous Testing

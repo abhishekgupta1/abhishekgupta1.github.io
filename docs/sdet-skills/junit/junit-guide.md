@@ -4,6 +4,7 @@ description: "End-to-end reference for JUnit — JUnit 5 architecture, annotatio
 sidebar_position: 1
 level: beginner
 tags: [junit, sdet, java, testing-framework]
+image: /img/social/junit-guide.png
 ---
 
 # JUnit — The Complete Guide

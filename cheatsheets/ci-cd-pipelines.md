@@ -4,6 +4,7 @@ description: "Quick reference for CI/CD — deployment strategies, GitHub Action
 level: intermediate
 tags: [ci-cd, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/ci-cd-pipelines.png
 ---
 
 # CI/CD cheatsheet

@@ -4,6 +4,7 @@ description: "Quick reference for Robot Framework — suite structure, built-in 
 level: beginner
 tags: [robot-framework, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/robot-framework.png
 ---
 
 # Robot Framework cheatsheet

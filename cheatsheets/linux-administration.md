@@ -4,6 +4,7 @@ description: "Quick reference for Linux administration — permissions, processe
 level: beginner
 tags: [linux, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/linux-administration.png
 ---
 
 # Linux administration cheatsheet

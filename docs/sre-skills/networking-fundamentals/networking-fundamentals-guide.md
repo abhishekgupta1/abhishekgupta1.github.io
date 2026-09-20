@@ -4,6 +4,7 @@ description: "End-to-end reference for Networking Fundamentals — OSI/TCP-IP mo
 sidebar_position: 1
 level: beginner
 tags: [networking, sre, tcp-ip, dns]
+image: /img/social/networking-fundamentals-guide.png
 ---
 
 # Networking Fundamentals — The Complete Guide

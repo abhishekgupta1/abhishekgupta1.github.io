@@ -4,6 +4,7 @@ description: "End-to-end reference for Robot Framework — keyword-driven testin
 sidebar_position: 1
 level: beginner
 tags: [robot-framework, sdet, automation, bdd]
+image: /img/social/robot-framework-guide.png
 ---
 
 # Robot Framework — The Complete Guide

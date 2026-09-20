@@ -4,6 +4,7 @@ description: "Quick reference for networking — troubleshooting tools, diagnost
 level: beginner
 tags: [networking, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/networking-fundamentals.png
 ---
 
 # Networking cheatsheet

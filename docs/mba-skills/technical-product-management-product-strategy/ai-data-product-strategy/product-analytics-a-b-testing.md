@@ -4,6 +4,7 @@ description: "Write a real hypothesis before testing: 'changing X will cause Y b
 sidebar_position: 3
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/product-analytics-a-b-testing.png
 ---
 
 # Product Analytics & A/B Testing

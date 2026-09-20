@@ -4,6 +4,7 @@ description: "Quick reference for SQL — joins, aggregates, CTEs vs window func
 level: beginner
 tags: [sql, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/sql.png
 ---
 
 # SQL cheatsheet

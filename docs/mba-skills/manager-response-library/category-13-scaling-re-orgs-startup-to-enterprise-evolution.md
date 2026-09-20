@@ -3,6 +3,7 @@ title: "Category 13: Scaling, Re-orgs & Startup-to-Enterprise Evolution"
 description: "Scenarios 61–65 of the Manager Response Library: Scaling, Re-orgs & Startup-to-Enterprise Evolution."
 sidebar_position: 13
 tags: [management, playbook, mba]
+image: /img/social/category-13-scaling-re-orgs-startup-to-enterprise-evolution.png
 ---
 
 # Category 13: Scaling, Re-orgs & Startup-to-Enterprise Evolution

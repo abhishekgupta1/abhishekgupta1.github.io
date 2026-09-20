@@ -4,6 +4,7 @@ description: "API testing verifies a service's behavior at its contract boundary
 sidebar_position: 3
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # API Automation

@@ -4,6 +4,7 @@ description: "Test event-driven boundaries against **real infrastructure in a di
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/event-driven-messaging-testing.png
 ---
 
 # Event-Driven & Messaging Testing

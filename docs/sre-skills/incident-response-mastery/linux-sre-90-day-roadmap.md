@@ -4,6 +4,7 @@ description: "A 12-week phased learning plan from Linux comfort to production-gr
 sidebar_position: 5
 level: beginner
 tags: [sre, linux, roadmap, learning-plan, performance, containers, observability]
+image: /img/social/linux-sre-90-day-roadmap.png
 ---
 
 <LevelBadge level="beginner" />

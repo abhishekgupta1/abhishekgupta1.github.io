@@ -4,6 +4,7 @@ description: "A North Star Metric is the single measure that best captures the v
 sidebar_position: 2
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/north-star-product-metrics.png
 ---
 
 # North Star & Product Metrics

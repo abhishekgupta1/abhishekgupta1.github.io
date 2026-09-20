@@ -3,6 +3,7 @@ title: "Category 9: Process Modernization & Change Management"
 description: "Scenarios 81–90 of the Quality Engineering Leadership Playbook: Process Modernization & Change Management."
 sidebar_position: 9
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-9-process-modernization-change-management.png
 ---
 
 # Category 9: Process Modernization & Change Management

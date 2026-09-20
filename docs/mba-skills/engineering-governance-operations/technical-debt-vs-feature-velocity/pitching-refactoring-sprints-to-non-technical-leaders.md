@@ -4,6 +4,7 @@ description: "Pitch a refactor exactly like any other investment ask: cost (time
 sidebar_position: 2
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/pitching-refactoring-sprints-to-non-technical-leaders.png
 ---
 
 # Pitching Refactoring Sprints to Non-Technical Leaders

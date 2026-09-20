@@ -4,6 +4,7 @@ description: "Org-level incident management scaffolding — severity classificat
 sidebar_position: 2
 level: intermediate
 tags: [sre, incident-response, incident-management, on-call, pagerduty, opsgenie, postmortem, runbooks]
+image: /img/social/incident-management-setup.png
 ---
 
 [Incident Response Mindset](./incident-response-mindset) is what an individual engineer thinks while debugging. This document is the scaffolding around them: how an org classifies incidents, who does what during one, how paging routes an alert to a human, and how the organization turns the incident into a written record. Get the setup wrong and even a sharp debugger drowns in noise, unclear authority, and comms chaos. Get it right and a mediocre debugger still ships a controlled, well-communicated resolution.

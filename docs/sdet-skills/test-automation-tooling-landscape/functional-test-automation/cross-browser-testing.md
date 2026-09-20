@@ -4,6 +4,7 @@ description: "Cross-browser testing verifies a web application renders and behav
 sidebar_position: 9
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Cross-Browser Testing

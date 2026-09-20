@@ -4,6 +4,7 @@ description: "Most architectural deadlocks are stuck because the decision criter
 sidebar_position: 3
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/resolving-architectural-deadlocks.png
 ---
 
 # Resolving Architectural Deadlocks

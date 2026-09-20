@@ -3,6 +3,7 @@ title: "Team & Organizational Leadership Cheat Sheet"
 description: "Quick reference for team leadership — conflict resolution, talent retention/hiring, and situational coaching."
 tags: [team-leadership, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/team-organizational-leadership.png
 ---
 
 # Team & organizational leadership cheatsheet

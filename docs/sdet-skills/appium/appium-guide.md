@@ -4,6 +4,7 @@ description: "End-to-end reference for Appium — architecture, capabilities, An
 sidebar_position: 1
 level: intermediate
 tags: [appium, sdet, automation, mobile-testing]
+image: /img/social/appium-guide.png
 ---
 
 # Appium — The Complete Guide

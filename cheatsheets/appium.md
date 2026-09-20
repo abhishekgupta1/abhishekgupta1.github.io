@@ -4,6 +4,7 @@ description: "Quick reference for Appium — capabilities, locators, gestures, d
 level: intermediate
 tags: [appium, sdet, mobile, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/appium.png
 ---
 
 # Appium cheatsheet

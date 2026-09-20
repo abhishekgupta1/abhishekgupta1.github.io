@@ -4,6 +4,7 @@ description: "**axe-core** is the tool to standardize on — it's the underlying
 sidebar_position: 6
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/social/accessibility-testing.png
 ---
 
 # Accessibility Testing

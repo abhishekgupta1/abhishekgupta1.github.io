@@ -4,6 +4,7 @@ description: "End-to-end reference for Kiro, AWS's spec-driven agentic IDE — t
 sidebar_position: 1
 level: intermediate
 tags: [kiro, ai-ide, aws, spec-driven-development, agentic-coding]
+image: /img/social/kiro-guide.png
 ---
 
 # Kiro — The Complete Guide

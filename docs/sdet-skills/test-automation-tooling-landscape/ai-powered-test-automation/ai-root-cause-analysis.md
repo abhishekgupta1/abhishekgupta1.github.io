@@ -4,6 +4,7 @@ description: "AI root cause analysis correlates a test failure with everything t
 sidebar_position: 5
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # AI Root Cause Analysis

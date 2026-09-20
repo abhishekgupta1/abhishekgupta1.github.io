@@ -4,6 +4,7 @@ description: "Navigation map for the Incident Response Mastery series — org-le
 sidebar_position: 1
 level: beginner
 tags: [sre, linux, incident-response, index]
+image: /img/social/overview.png
 ---
 
 A complete SRE and Linux debugging knowledge base, organized by depth:

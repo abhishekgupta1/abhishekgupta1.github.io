@@ -4,6 +4,7 @@ description: "Treat cloud and license spend as an ongoing discipline, not an ann
 sidebar_position: 2
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/cloud-infrastructure-spending-finops.png
 ---
 
 # Cloud Infrastructure Spending & FinOps

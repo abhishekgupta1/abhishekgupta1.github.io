@@ -4,6 +4,7 @@ description: "End-to-end reference for Rest Assured — given/when/then DSL, req
 sidebar_position: 1
 level: intermediate
 tags: [rest-assured, sdet, api-testing, java]
+image: /img/social/rest-assured-guide.png
 ---
 
 # Rest Assured — The Complete Guide

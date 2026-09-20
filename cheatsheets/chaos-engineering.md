@@ -4,6 +4,7 @@ description: "Quick reference for chaos engineering — the lifecycle, failure i
 level: advanced
 tags: [chaos-engineering, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/chaos-engineering.png
 ---
 
 # Chaos engineering cheatsheet

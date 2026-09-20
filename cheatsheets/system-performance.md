@@ -4,6 +4,7 @@ description: "Quick reference for system performance — the USE method, RED met
 level: intermediate
 tags: [system-performance, linux, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/system-performance.png
 ---
 
 # System performance cheatsheet

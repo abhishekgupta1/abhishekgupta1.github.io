@@ -4,6 +4,7 @@ description: "Start with **Playwright's built-in screenshot comparison** — it'
 sidebar_position: 5
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/social/visual-ui-regression-testing.png
 ---
 
 # Visual & UI Regression Testing

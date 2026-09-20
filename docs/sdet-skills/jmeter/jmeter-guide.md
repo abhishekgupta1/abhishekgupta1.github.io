@@ -4,6 +4,7 @@ description: "End-to-end reference for JMeter — test plan structure, load/stre
 sidebar_position: 1
 level: intermediate
 tags: [jmeter, sdet, performance-testing]
+image: /img/social/jmeter-guide.png
 ---
 
 # JMeter — The Complete Guide

@@ -4,6 +4,7 @@ description: "End-to-end reference for TestNG — annotations, testng.xml suite 
 sidebar_position: 1
 level: intermediate
 tags: [testng, sdet, java, testing-framework]
+image: /img/social/testng-guide.png
 ---
 
 # TestNG — The Complete Guide

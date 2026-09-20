@@ -3,6 +3,7 @@ title: "Incident Response Cheat Sheet"
 description: "Quick reference for incident response — severity/roles, on-call, linux debugging commands, and the postmortem process."
 tags: [incident-response, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/incident-response-mastery.png
 ---
 
 # Incident response cheatsheet

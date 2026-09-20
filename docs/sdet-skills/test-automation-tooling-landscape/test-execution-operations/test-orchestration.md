@@ -4,6 +4,7 @@ description: "Test orchestration is the layer that decides which tests run, wher
 sidebar_position: 5
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Orchestration

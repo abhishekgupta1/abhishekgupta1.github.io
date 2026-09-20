@@ -3,6 +3,7 @@ title: "Category 15: Deep Hybrid, Remote & Async Work Dynamics"
 description: "Scenarios 71–75 of the Manager Response Library: Deep Hybrid, Remote & Async Work Dynamics."
 sidebar_position: 15
 tags: [management, playbook, mba]
+image: /img/social/category-15-deep-hybrid-remote-async-work-dynamics.png
 ---
 
 # Category 15: Deep Hybrid, Remote & Async Work Dynamics

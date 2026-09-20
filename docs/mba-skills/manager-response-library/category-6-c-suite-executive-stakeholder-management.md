@@ -3,6 +3,7 @@ title: "Category 6: C-Suite & Executive Stakeholder Management"
 description: "Scenarios 26–30 of the Manager Response Library: C-Suite & Executive Stakeholder Management."
 sidebar_position: 6
 tags: [management, playbook, mba]
+image: /img/social/category-6-c-suite-executive-stakeholder-management.png
 ---
 
 # Category 6: C-Suite & Executive Stakeholder Management

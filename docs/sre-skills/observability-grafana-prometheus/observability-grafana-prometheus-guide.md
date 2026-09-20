@@ -4,6 +4,7 @@ description: "End-to-end reference for Observability (Grafana & Prometheus) — 
 sidebar_position: 1
 level: intermediate
 tags: [observability, grafana, prometheus, sre, sli, slo, error-budget, elk, datadog]
+image: /img/social/observability-grafana-prometheus-guide.png
 ---
 
 # Observability (Grafana & Prometheus) — The Complete Guide

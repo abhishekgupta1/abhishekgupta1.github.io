@@ -4,6 +4,7 @@ description: "Load testing answers one specific question: does the system meet i
 sidebar_position: 2
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Load Testing

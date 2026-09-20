@@ -3,6 +3,7 @@ title: "Quality Engineering Leadership Playbook Cheat Sheet"
 description: "Quick reference for quality engineering leadership — test strategy, release gating, metrics, and SDET team leadership scenarios."
 tags: [quality-engineering-leadership, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/quality-engineering-leadership-playbook.png
 ---
 
 # Quality engineering leadership playbook cheatsheet

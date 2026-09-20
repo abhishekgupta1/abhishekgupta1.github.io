@@ -4,6 +4,7 @@ description: "Prefer open source where a tool's value is mostly in the engine (t
 sidebar_position: 4
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Open-Source vs Commercial Testing Tools

@@ -4,6 +4,7 @@ description: "Behavior-Driven Development (BDD) testing frameworks express test 
 sidebar_position: 12
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # BDD & Specification Testing

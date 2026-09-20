@@ -4,6 +4,7 @@ description: "**Testcontainers** is the highest-leverage tool here — it spins 
 sidebar_position: 8
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/social/database-testing.png
 ---
 
 # Database Testing

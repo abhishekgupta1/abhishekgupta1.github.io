@@ -4,6 +4,7 @@ description: "Price against the value the client gets, not the hours you spend â
 sidebar_position: 2
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/value-based-pricing-client-acquisition.png
 ---
 
 # Value-Based Pricing & Client Acquisition

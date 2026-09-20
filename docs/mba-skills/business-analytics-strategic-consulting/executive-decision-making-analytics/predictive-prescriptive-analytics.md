@@ -4,6 +4,7 @@ description: "Predictive analytics answers 'what's likely to happen' (regression
 sidebar_position: 1
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/predictive-prescriptive-analytics.png
 ---
 
 # Predictive & Prescriptive Analytics

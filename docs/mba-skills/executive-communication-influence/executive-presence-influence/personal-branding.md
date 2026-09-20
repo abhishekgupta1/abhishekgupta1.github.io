@@ -4,6 +4,7 @@ description: "Pick one specific, narrow area of expertise to be known for — 'e
 sidebar_position: 3
 level: advanced
 tags: [executive-communication, leadership, mba]
+image: /img/social/personal-branding.png
 ---
 
 # Personal Branding

@@ -4,6 +4,7 @@ description: "Design each interview stage to test one clear signal relevant to o
 sidebar_position: 1
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/crafting-tech-interview-loops.png
 ---
 
 # Crafting Tech Interview Loops

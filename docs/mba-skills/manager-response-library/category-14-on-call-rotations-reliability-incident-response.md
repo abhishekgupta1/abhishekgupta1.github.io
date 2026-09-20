@@ -3,6 +3,7 @@ title: "Category 14: On-Call Rotations, Reliability & Incident Response"
 description: "Scenarios 66–70 of the Manager Response Library: On-Call Rotations, Reliability & Incident Response."
 sidebar_position: 14
 tags: [management, playbook, mba]
+image: /img/social/category-14-on-call-rotations-reliability-incident-response.png
 ---
 
 # Category 14: On-Call Rotations, Reliability & Incident Response

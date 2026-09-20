@@ -4,6 +4,7 @@ description: "A test suite that only reports pass/fail in a CI log is invisible 
 sidebar_position: 2
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Reporting & Analytics

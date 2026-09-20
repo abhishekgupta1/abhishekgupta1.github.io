@@ -4,6 +4,7 @@ description: "**GitLab CI/CD** and **GitHub Actions** are the strongest defaults
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/ci-cd-automation.png
 ---
 
 # CI/CD Automation

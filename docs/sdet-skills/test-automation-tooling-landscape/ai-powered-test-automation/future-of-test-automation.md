@@ -4,6 +4,7 @@ description: "The trajectory across this entire domain points one direction: tes
 sidebar_position: 7
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Future of Test Automation

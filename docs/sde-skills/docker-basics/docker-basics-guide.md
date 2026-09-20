@@ -4,6 +4,7 @@ description: "End-to-end reference for Docker — images and layers, Dockerfile 
 sidebar_position: 1
 level: beginner
 tags: [docker, sde, containers]
+image: /img/social/docker-basics-guide.png
 ---
 
 # Docker Basics — The Complete Guide

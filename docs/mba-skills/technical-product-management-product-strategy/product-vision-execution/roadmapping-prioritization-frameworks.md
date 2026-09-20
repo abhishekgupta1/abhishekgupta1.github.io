@@ -4,6 +4,7 @@ description: "RICE (Reach × Impact × Confidence ÷ Effort) is best for compari
 sidebar_position: 3
 level: advanced
 tags: [product-management, tpm, mba]
+image: /img/social/roadmapping-prioritization-frameworks.png
 ---
 
 # Roadmapping & Prioritization Frameworks

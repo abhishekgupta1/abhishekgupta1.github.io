@@ -4,6 +4,7 @@ description: "The 1-on-1 belongs to the engineer, not you."
 sidebar_position: 2
 level: intermediate
 tags: [leadership, management, mba]
+image: /img/social/running-1-on-1s.png
 ---
 
 # Running 1-on-1s

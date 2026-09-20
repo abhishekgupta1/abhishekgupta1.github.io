@@ -4,6 +4,7 @@ description: "A quality gate is a pipeline checkpoint that blocks progression (m
 sidebar_position: 6
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Quality Gates

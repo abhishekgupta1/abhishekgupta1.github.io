@@ -4,6 +4,7 @@ description: "End-to-end reference for AWS — compute, storage, networking, IAM
 sidebar_position: 1
 level: intermediate
 tags: [aws, sre, cloud, solutions-architect, aws-cli]
+image: /img/social/aws-guide.png
 ---
 
 # AWS — The Complete Guide

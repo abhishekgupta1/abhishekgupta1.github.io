@@ -4,6 +4,7 @@ description: "Device and browser farms give on-demand access to real browsers, O
 sidebar_position: 11
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Device & Browser Farm Testing

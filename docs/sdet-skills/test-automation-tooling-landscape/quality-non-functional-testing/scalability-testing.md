@@ -4,6 +4,7 @@ description: "Scalability testing verifies that adding resources — horizontal 
 sidebar_position: 4
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Scalability Testing

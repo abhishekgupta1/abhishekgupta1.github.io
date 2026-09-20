@@ -4,6 +4,7 @@ description: "Parallel test execution splits a suite across multiple workers/run
 sidebar_position: 4
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Parallel Test Execution

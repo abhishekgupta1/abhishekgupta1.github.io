@@ -3,6 +3,7 @@ title: "Knowledge Base"
 description: "A curated collection of technical guides covering SDET, SRE, SDE, MBA/leadership, and AI skills."
 sidebar_position: 1
 tags: [knowledge-base, overview]
+image: /img/mental-model-share.png
 ---
 
 # Knowledge Base

@@ -5,6 +5,7 @@ sidebar_position: 3
 level: intermediate
 tags: [kubernetes, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/kubernetes.png
 ---
 
 # Kubernetes cheatsheet

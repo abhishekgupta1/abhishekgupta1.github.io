@@ -3,6 +3,7 @@ title: "Category 5: Metrics, ROI & Executive Communication"
 description: "Scenarios 41–50 of the Quality Engineering Leadership Playbook: Metrics, ROI & Executive Communication."
 sidebar_position: 5
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-5-metrics-roi-executive-communication.png
 ---
 
 # Category 5: Metrics, ROI & Executive Communication

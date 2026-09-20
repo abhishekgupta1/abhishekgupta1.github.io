@@ -4,6 +4,7 @@ description: "End-to-end reference for MCP & AI Agents — the Model Context Pro
 sidebar_position: 1
 level: intermediate
 tags: [mcp, ai-agents, llm, automation]
+image: /img/social/mcp-ai-agents-guide.png
 ---
 
 # MCP & AI Agents — The Complete Guide

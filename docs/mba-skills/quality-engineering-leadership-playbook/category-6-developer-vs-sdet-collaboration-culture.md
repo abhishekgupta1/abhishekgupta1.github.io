@@ -3,6 +3,7 @@ title: "Category 6: Developer vs. SDET Collaboration & Culture"
 description: "Scenarios 51–60 of the Quality Engineering Leadership Playbook: Developer vs. SDET Collaboration & Culture."
 sidebar_position: 6
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-6-developer-vs-sdet-collaboration-culture.png
 ---
 
 # Category 6: Developer vs. SDET Collaboration & Culture

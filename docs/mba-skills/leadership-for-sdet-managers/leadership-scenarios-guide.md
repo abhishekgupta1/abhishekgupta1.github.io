@@ -3,6 +3,7 @@ title: "Leadership Scenario Handling for SDET Managers"
 description: "End-to-end guide to leadership frameworks and worked scenarios for SDET/QE managers — interview-ready and onboarding-ready."
 sidebar_position: 1
 tags: [leadership, management, sdet, mba, people-management]
+image: /img/social/leadership-scenarios-guide.png
 ---
 
 # Leadership Scenario Handling for SDET Managers

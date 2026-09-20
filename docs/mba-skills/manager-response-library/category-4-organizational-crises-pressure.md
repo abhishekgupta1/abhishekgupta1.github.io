@@ -3,6 +3,7 @@ title: "Category 4: Organizational Crises & Pressure"
 description: "Scenarios 17–21 of the Manager Response Library: Organizational Crises & Pressure."
 sidebar_position: 4
 tags: [management, playbook, mba]
+image: /img/social/category-4-organizational-crises-pressure.png
 ---
 
 # Category 4: Organizational Crises & Pressure

@@ -4,6 +4,7 @@ description: "Recurring inter-team friction is almost always a structural proble
 sidebar_position: 1
 level: advanced
 tags: [leadership, management, mba]
+image: /img/social/navigating-inter-team-friction.png
 ---
 
 # Navigating Inter-Team Friction

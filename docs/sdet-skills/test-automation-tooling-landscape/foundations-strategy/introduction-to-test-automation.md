@@ -4,6 +4,7 @@ description: "Test automation is the practice of using code and tooling — not 
 sidebar_position: 1
 level: beginner
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Introduction to Test Automation

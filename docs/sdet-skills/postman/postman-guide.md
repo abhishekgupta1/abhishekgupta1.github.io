@@ -4,6 +4,7 @@ description: "End-to-end reference for Postman — collections, environments, pr
 sidebar_position: 1
 level: beginner
 tags: [postman, sdet, api-testing]
+image: /img/social/postman-guide.png
 ---
 
 # Postman — The Complete Guide

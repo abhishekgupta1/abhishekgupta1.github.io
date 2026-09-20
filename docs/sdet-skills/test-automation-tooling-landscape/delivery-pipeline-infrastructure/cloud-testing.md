@@ -4,6 +4,7 @@ description: "Cloud testing verifies application and infrastructure behavior aga
 sidebar_position: 4
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Cloud Testing

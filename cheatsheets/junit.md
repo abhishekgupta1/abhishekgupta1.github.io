@@ -4,6 +4,7 @@ description: "Quick reference for JUnit 5 — annotations, assertions, parameter
 level: beginner
 tags: [junit, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/junit.png
 ---
 
 # JUnit cheatsheet

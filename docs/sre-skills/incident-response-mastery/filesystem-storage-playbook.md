@@ -4,6 +4,7 @@ description: "Deep filesystem, storage, and disk-incident debugging knowledge fo
 sidebar_position: 8
 level: intermediate
 tags: [linux, sre, filesystem, storage, inodes, lvm, raid, permissions, disk-full]
+image: /img/social/filesystem-storage-playbook.png
 ---
 
 From an SRE perspective, filesystem & storage knowledge is not theoretical. It directly impacts:

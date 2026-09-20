@@ -4,6 +4,7 @@ description: "Quick reference for Rest Assured — the given/when/then DSL, requ
 level: intermediate
 tags: [rest-assured, sdet, api-testing, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/rest-assured.png
 ---
 
 # Rest Assured cheatsheet

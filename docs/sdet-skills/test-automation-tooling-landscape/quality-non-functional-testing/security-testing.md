@@ -4,6 +4,7 @@ description: "Security testing splits into distinct categories that get conflate
 sidebar_position: 7
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/social/security-testing.png
 ---
 
 # Security Testing

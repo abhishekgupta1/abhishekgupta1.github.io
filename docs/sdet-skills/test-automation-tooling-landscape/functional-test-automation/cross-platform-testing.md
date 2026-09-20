@@ -4,6 +4,7 @@ description: "Cross-platform testing verifies an application behaves consistentl
 sidebar_position: 10
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Cross-Platform Testing

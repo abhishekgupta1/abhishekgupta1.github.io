@@ -4,6 +4,7 @@ description: "Build a headcount plan backward from roadmap commitments and forwa
 sidebar_position: 3
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/team-headcount-planning.png
 ---
 
 # Team Headcount Planning

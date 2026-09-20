@@ -4,6 +4,7 @@ description: "Microservices testing verifies correctness across a system decompo
 sidebar_position: 3
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Microservices Testing

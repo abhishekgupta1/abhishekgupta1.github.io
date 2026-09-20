@@ -4,6 +4,7 @@ description: "Map every dependency explicitly before committing to a date: what 
 sidebar_position: 3
 level: advanced
 tags: [engineering-management, operations, mba]
+image: /img/social/planning-around-cross-functional-dependencies.png
 ---
 
 # Planning Around Cross-Functional Dependencies

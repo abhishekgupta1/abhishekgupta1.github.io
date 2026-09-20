@@ -3,6 +3,7 @@ title: "Engineering Governance & Operations Cheat Sheet"
 description: "Quick reference for engineering governance and operations — technical debt, budgeting/FinOps, and capacity planning."
 tags: [engineering-governance, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/engineering-governance-operations.png
 ---
 
 # Engineering governance & operations cheatsheet

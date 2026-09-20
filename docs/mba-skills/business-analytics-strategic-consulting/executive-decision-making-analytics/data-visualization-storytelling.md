@@ -4,6 +4,7 @@ description: "One chart, one message — if a chart needs a paragraph to explain
 sidebar_position: 2
 level: advanced
 tags: [business-analytics, consulting, mba]
+image: /img/social/data-visualization-storytelling.png
 ---
 
 # Data Visualization & Storytelling

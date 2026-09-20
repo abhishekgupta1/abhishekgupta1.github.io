@@ -4,6 +4,7 @@ description: "**k6** is the modern default for API/service-level performance tes
 sidebar_position: 1
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Performance Testing

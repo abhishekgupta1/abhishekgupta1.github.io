@@ -4,6 +4,7 @@ description: "End-to-end reference for SQL — DML/DDL, joins, aggregates, subqu
 sidebar_position: 1
 level: beginner
 tags: [sql, sdet, database]
+image: /img/social/sql-guide.png
 ---
 
 # SQL — The Complete Guide

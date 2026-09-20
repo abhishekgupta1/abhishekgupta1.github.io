@@ -3,6 +3,7 @@ title: "Manager Response Library Cheat Sheet"
 description: "Quick reference for the manager response library — terse situation-to-response frameworks across 15 people-leadership categories."
 tags: [manager-response-library, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/manager-response-library.png
 ---
 
 # Manager response library cheatsheet

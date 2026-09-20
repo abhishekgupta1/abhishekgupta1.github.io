@@ -4,6 +4,7 @@ description: "Infrastructure testing is the umbrella discipline of verifying tha
 sidebar_position: 2
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Infrastructure Testing

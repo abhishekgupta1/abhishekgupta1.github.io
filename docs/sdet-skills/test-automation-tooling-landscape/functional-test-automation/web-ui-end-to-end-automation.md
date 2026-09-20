@@ -4,6 +4,7 @@ description: "For new work, **Playwright** is the default choice — auto-waitin
 sidebar_position: 1
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/social/web-ui-end-to-end-automation.png
 ---
 
 # Web UI & End-to-End Automation

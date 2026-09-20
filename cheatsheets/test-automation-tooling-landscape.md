@@ -3,6 +3,7 @@ title: "Test Automation Tooling Landscape Cheat Sheet"
 description: "Quick reference for the modern test automation tooling landscape — pyramid layers, tool-by-tool comparisons, and decision heuristics."
 tags: [test-automation, sdet, tooling, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/test-automation-tooling-landscape.png
 ---
 
 # Test automation tooling landscape cheatsheet

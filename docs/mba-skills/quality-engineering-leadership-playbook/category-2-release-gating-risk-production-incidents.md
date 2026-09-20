@@ -3,6 +3,7 @@ title: "Category 2: Release Gating, Risk & Production Incidents"
 description: "Scenarios 11–20 of the Quality Engineering Leadership Playbook: Release Gating, Risk & Production Incidents."
 sidebar_position: 2
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-2-release-gating-risk-production-incidents.png
 ---
 
 # Category 2: Release Gating, Risk & Production Incidents

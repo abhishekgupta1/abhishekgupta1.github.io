@@ -5,6 +5,7 @@ sidebar_position: 1
 slug: /
 tags: [cheat-sheets, quick-reference]
 hide_table_of_contents: true
+image: /img/mental-model-share.png
 ---
 
 # Cheat Sheets

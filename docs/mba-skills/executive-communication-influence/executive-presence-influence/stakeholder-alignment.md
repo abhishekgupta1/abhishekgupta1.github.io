@@ -4,6 +4,7 @@ description: "Map stakeholders by what they actually need from you and in what r
 sidebar_position: 2
 level: advanced
 tags: [executive-communication, leadership, mba]
+image: /img/social/stakeholder-alignment.png
 ---
 
 # Stakeholder Alignment

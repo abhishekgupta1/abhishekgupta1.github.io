@@ -4,6 +4,7 @@ description: "End-to-end reference for Java — JVM internals, OOP and generics,
 sidebar_position: 1
 level: beginner
 tags: [java, sdet, programming-language]
+image: /img/social/java-guide.png
 ---
 
 # Java — The Complete Guide

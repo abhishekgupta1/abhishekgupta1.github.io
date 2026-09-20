@@ -3,6 +3,7 @@ title: "Cross-Browser Playwright Cheat Sheet"
 description: "Key takeaways for building a resilient cross-browser Playwright suite — structure, config, fixtures, and CI."
 tags: [playwright, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/playwright-cross-browser-testing.png
 ---
 
 # Cross-browser Playwright — key takeaways

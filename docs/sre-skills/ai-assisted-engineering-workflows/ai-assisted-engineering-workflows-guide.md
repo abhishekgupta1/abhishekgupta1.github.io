@@ -4,6 +4,7 @@ description: "End-to-end reference for AI-Assisted Engineering Workflows — whe
 sidebar_position: 1
 level: beginner
 tags: [ai, sre, developer-productivity, automation]
+image: /img/social/ai-assisted-engineering-workflows-guide.png
 ---
 
 # AI-Assisted Engineering Workflows — The Complete Guide

@@ -4,6 +4,7 @@ description: "Contract testing verifies that a consumer's expectations of a prod
 sidebar_position: 7
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Contract Testing

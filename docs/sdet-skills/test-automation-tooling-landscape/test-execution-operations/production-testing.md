@@ -4,6 +4,7 @@ description: "Production testing runs synthetic checks and monitors against the 
 sidebar_position: 6
 level: advanced
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Production Testing

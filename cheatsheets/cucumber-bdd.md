@@ -4,6 +4,7 @@ description: "Quick reference for Cucumber and BDD — Gherkin syntax, step defi
 level: beginner
 tags: [cucumber, bdd, sdet, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/cucumber-bdd.png
 ---
 
 # Cucumber & BDD cheatsheet

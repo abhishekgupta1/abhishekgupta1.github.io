@@ -3,6 +3,7 @@ title: "Category 8: Contractor, Vendor & Global Team Management"
 description: "Scenarios 71–80 of the Quality Engineering Leadership Playbook: Contractor, Vendor & Global Team Management."
 sidebar_position: 8
 tags: [sdet, quality-engineering, playbook, mba]
+image: /img/social/category-8-contractor-vendor-global-team-management.png
 ---
 
 # Category 8: Contractor, Vendor & Global Team Management

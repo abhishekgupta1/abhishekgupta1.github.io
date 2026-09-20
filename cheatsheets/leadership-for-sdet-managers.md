@@ -3,6 +3,7 @@ title: "Leadership for SDET Managers Cheat Sheet"
 description: "Quick reference for SDET leadership — response frameworks, worked scenarios, and a reusable answer template."
 tags: [leadership, mba, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/leadership-for-sdet-managers.png
 ---
 
 # Leadership for SDET managers cheatsheet

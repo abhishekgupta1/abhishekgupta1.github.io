@@ -4,6 +4,7 @@ description: "End-to-end reference for chaos engineering — the steady-state hy
 sidebar_position: 1
 level: advanced
 tags: [chaos-engineering, sre, reliability, resilience]
+image: /img/social/chaos-engineering-guide.png
 ---
 
 # Chaos Engineering — The Complete Guide

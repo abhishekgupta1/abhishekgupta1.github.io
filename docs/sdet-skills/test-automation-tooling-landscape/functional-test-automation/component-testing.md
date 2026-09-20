@@ -4,6 +4,7 @@ description: "Component testing verifies a single module — often a UI componen
 sidebar_position: 5
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Component Testing

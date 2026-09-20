@@ -3,6 +3,7 @@ title: "Category 11: Cross-Departmental & Matrix Management"
 description: "Scenarios 51–55 of the Manager Response Library: Cross-Departmental & Matrix Management."
 sidebar_position: 11
 tags: [management, playbook, mba]
+image: /img/social/category-11-cross-departmental-matrix-management.png
 ---
 
 # Category 11: Cross-Departmental & Matrix Management

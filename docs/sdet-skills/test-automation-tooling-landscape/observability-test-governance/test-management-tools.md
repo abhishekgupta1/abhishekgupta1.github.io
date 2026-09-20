@@ -4,6 +4,7 @@ description: "Test management tools matter once test *case* management — trace
 sidebar_position: 3
 level: intermediate
 tags: [test-automation, sdet, tooling]
+image: /img/mental-model-share.png
 ---
 
 # Test Management Tools

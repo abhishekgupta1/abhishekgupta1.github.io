@@ -3,6 +3,7 @@ title: "Category 8: Contractor, Vendor & Global Cross-Border Teams"
 description: "Scenarios 36–40 of the Manager Response Library: Contractor, Vendor & Global Cross-Border Teams."
 sidebar_position: 8
 tags: [management, playbook, mba]
+image: /img/social/category-8-contractor-vendor-global-cross-border-teams.png
 ---
 
 # Category 8: Contractor, Vendor & Global Cross-Border Teams

@@ -4,6 +4,7 @@ description: "Quick reference for AI-assisted engineering workflows — guardrai
 level: beginner
 tags: [ai-assisted-engineering, sre, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/ai-assisted-engineering-workflows.png
 ---
 
 # AI-assisted engineering cheatsheet

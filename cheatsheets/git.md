@@ -5,6 +5,7 @@ sidebar_position: 4
 level: beginner
 tags: [git, sde, cheat-sheet]
 hide_table_of_contents: true
+image: /img/social/git.png
 ---
 
 # Git cheatsheet
