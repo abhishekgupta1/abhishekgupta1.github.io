@@ -631,6 +631,81 @@ Newman, but the day-to-day interaction model is GUI-first.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Chain calls with a reusable request specification" level="intermediate" stretch="Add a ResponseSpecification that expects a JSON content type and reuse it in both tests.">
+
+Start the small server from the Postman guide's exercise (it listens on port 4010). In a Maven project with `io.rest-assured:rest-assured` 5.5.x and `org.junit.jupiter:junit-jupiter` 5.10.x as test dependencies, write a test that creates an order and then fetches it, using one shared `RequestSpecification`:
+
+```java
+static final RequestSpecification SPEC = new RequestSpecBuilder()
+    .setBaseUri("http://localhost:4010")
+    .setContentType(ContentType.JSON)
+    .build();
+
+int id = given().spec(SPEC).body("{\"item\":\"Widget\"}")
+    .when().post("/orders")
+    .then().statusCode(201).body("item", equalTo("Widget"))
+    .extract().path("id");
+
+given().spec(SPEC).pathParam("id", id).log().ifValidationFails()
+    .when().get("/orders/{id}")
+    .then().statusCode(200).body("id", equalTo(id));
+```
+
+**Done when:** `mvn test` passes, the second request uses the id returned by the first, and neither request repeats the base URI or content type.
+
+</Exercises.Task>
+<Exercises.Task title="Validate the whole response against a JSON schema" level="advanced">
+
+Add `io.rest-assured:json-schema-validator` 5.5.x. Save this as `src/test/resources/schemas/order-schema.json`:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "item"],
+  "properties": {
+    "id": { "type": "integer" },
+    "item": { "type": "string" }
+  }
+}
+```
+
+Fetch an order and validate it with `.body(matchesJsonSchemaInClasspath("schemas/order-schema.json"))`. Then add `"price"` to the `required` list and run again.
+
+**Done when:** the first run passes, and the second fails with a message reporting `object has missing required properties (["price"])`, so you can see how a schema catches a missing field that a status-code check would not.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The renamed field nobody noticed">
+<CaseStudy.Context>
+
+*Illustrative scenario.* An API team renames a response field. The consumer's tests check the status code and the `id`, and they keep passing.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The renamed field was not one the tests looked at, so nothing failed until a downstream consumer that actually read it started misbehaving. Field-by-field assertions only cover the fields someone remembered to assert on.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Validate the whole response shape against a JSON schema, and deserialize into POJOs so structural drift such as a renamed field or a changed type shows up in the tests, not in production.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to draft a JSON schema from a sample response, then tighten it by hand, because a schema generated from one example often marks optional fields as required or misses allowed values.
+- Have it convert a set of copy-pasted tests into a parameterized test with a request specification, and confirm each case still reports individually.
+- Ask it to review your tests for assertions that only check the status code, and decide which need body or schema checks.
+
+</AISpark>
+
+---
+
 ## 14. One-Line Summary
 
 **Rest Assured turns HTTP API testing into readable Java code —

@@ -486,6 +486,89 @@ tests directly in a general-purpose language.
 
 ---
 
+<Exercises>
+<Exercises.Task title="Turn three rows into three tests with a template" level="intermediate" stretch="Tag one row smoke and run only it with robot --include smoke.">
+
+Run `pip install robotframework`, save this as `discount.robot`, and run `robot discount.robot`:
+
+```robotframework
+*** Settings ***
+Test Template    Discount Should Be
+
+*** Test Cases ***                 PRICE    PERCENT    EXPECTED
+Ten percent off                    100      10         90
+Quarter off                        80       25         60
+No discount                        50       0          50
+
+*** Keywords ***
+Discount Should Be
+    [Arguments]    ${price}    ${percent}    ${expected}
+    ${result}=    Evaluate    round(${price} * (100 - ${percent}) / 100, 2)
+    Should Be Equal As Numbers    ${result}    ${expected}
+```
+
+**Done when:** the run reports `3 tests, 3 passed`, each row appearing as its own named test. Then change one `EXPECTED` value to a wrong number and confirm exactly one test fails, with a message such as `60.0 != 61.0`, while the other two still pass.
+
+</Exercises.Task>
+<Exercises.Task title="Call a Python keyword from a suite, and fix the string trap" level="advanced">
+
+Save the guide's custom keyword library as `CartUtils.py`:
+
+```python
+from robot.api.deco import keyword, library
+
+
+@library
+class CartUtils:
+
+    @keyword("Calculate Expected Total")
+    def calculate_expected_total(self, items, tax_rate=0.08):
+        subtotal = sum(item["price"] * item["qty"] for item in items)
+        return round(subtotal * (1 + tax_rate), 2)
+```
+
+Then write `cart.robot` with two items in a list of dictionaries and two tests: one using the default tax rate and one passing `tax_rate=0.10`. Tag the first test `smoke`. Write the item prices and quantities as plain text first (for example `price=10`) and watch what happens, then fix it. Robot Framework passes plain values as strings, and the number syntax is `${10}`:
+
+```robotframework
+*** Variables ***
+&{WIDGET}         price=${10}    qty=${2}
+&{GADGET}         price=${5}     qty=${1}
+@{CART_ITEMS}     ${WIDGET}    ${GADGET}
+```
+
+**Done when:** the first test expects `27.0` and the second expects `27.5` and both pass, `robot --include smoke cart.robot` runs only the tagged test, and you can explain the `TypeError` you saw before the fix.
+
+</Exercises.Task>
+</Exercises>
+
+<CaseStudy title="The login steps pasted into forty suites">
+<CaseStudy.Context>
+
+*Illustrative scenario.* Every suite file starts with the same handful of login steps, copied in when it was created. A redesign of the login page changes the fields.
+
+</CaseStudy.Context>
+<CaseStudy.WhatHappened>
+
+The change needed editing in every suite, and a few copies were missed, so some suites kept failing at login for reasons unrelated to what they tested. The steps were also hard for non-programmers to read, because each suite spelled out raw field IDs.
+
+</CaseStudy.WhatHappened>
+<CaseStudy.Lesson>
+
+Put shared login and setup in one keyword inside a `.resource` file and import it from each suite. Sequencing existing actions belongs in a readable user keyword, and only genuine logic, such as calculations or API calls, needs a Python library.
+
+</CaseStudy.Lesson>
+</CaseStudy>
+
+<AISpark>
+
+- Ask an assistant to refactor a suite with repeated steps into a template plus a `.resource` file, then run it and confirm each data row still reports as its own test.
+- Have it write a Python keyword library for a calculation, then test it with values that come from Robot variables. Remember they arrive as strings unless written like `${10}`.
+- Ask it to suggest tags such as smoke and regression, then run `--include` for each and count how many tests execute.
+
+</AISpark>
+
+---
+
 ## 10. One-Line Summary
 
 **Robot Framework trades some of the expressiveness and tooling maturity
