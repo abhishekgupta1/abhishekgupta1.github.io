@@ -21,7 +21,7 @@ const conditionalHeadTags = [
           tagName: 'script',
           attributes: {
             'data-goatcounter': `https://${GOATCOUNTER_CODE}.goatcounter.com/count`,
-            async: true,
+            async: 'async',
             src: '//gc.zgo.at/count.js',
           },
         },
@@ -32,7 +32,7 @@ const conditionalHeadTags = [
         {
           tagName: 'script',
           attributes: {
-            async: true,
+            async: 'async',
             src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
             crossorigin: 'anonymous',
           },
