@@ -49,8 +49,8 @@ export const GISCUS = {
  *   4. drop the Lighthouse "performance" budget in lighthouserc.json to ~0.8
  * While false: no loader script, no <AdSlot> output, no consent banner.
  */
-export const ADS_ENABLED = false;
-export const ADSENSE_CLIENT = 'ca-pub-0000000000000000';
+export const ADS_ENABLED = true;
+export const ADSENSE_CLIENT = 'ca-pub-1394375154476572';
 
 /** localStorage key the ConsentBanner writes once a choice is made. */
 export const CONSENT_KEY = 'site:ad-consent';
